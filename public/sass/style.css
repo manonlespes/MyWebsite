@@ -31,11 +31,13 @@ html {
   z-index: 99999999;
   -webkit-transition: width 0.3s, height 0.3s;
   transition: width 0.3s, height 0.3s;
+  /* for the show/hide transition */
   top: 0px;
   right: 0px;
   -webkit-transform-origin: 100% 0%;
           transform-origin: 100% 0%;
-  /* design Menu-mobile */
+  /* design Menu-tablet */
+  /* design Menu-desktop */
 }
 
 .navBar .menu {
