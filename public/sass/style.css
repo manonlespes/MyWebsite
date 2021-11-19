@@ -1,4 +1,66 @@
+@font-face {
+  font-family: "MvtDirect-Thin";
+  src: url("../fonts/Movement-DirectThin.woff");
+}
+
 body {
+  font-size: 15px;
   background: #f2f5f8;
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* design Menu */
+.navBar {
+  width: 290px;
+  height: 210px;
+  border-bottom-left-radius: 200px;
+  background-color: #0e7a69;
+  position: fixed;
+  z-index: 99999999;
+  -webkit-transition: width 0.3s, height 0.3s;
+  transition: width 0.3s, height 0.3s;
+  top: 0px;
+  right: 0px;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  /* design Menu-mobile */
+}
+
+.navBar .menu {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+  height: 100%;
+  font-size: 0.65em;
+  color: #f2f5f8;
+  text-align: center;
+}
+
+.navBar .list {
+  font-size: 1.5em;
+  line-height: 22px;
+  padding-top: 10px;
+}
+
+.navBar .list li {
+  list-style: none;
+}
+
+.navBar .list a {
+  color: #f2f5f8;
+  text-decoration: none;
+  font-family: "MvtDirect-Thin";
 }
 /*# sourceMappingURL=style.css.map */
