@@ -23,14 +23,15 @@ html {
 
 /* TODO use variables to create breakpoints */
 /* design Menu */
-.menu_hamburger {
+#menu_hamburger {
   position: fixed;
   z-index: 2;
   top: 15px;
   right: 20px;
+  cursor: pointer;
 }
 
-.menu_hamburger img {
+#menu_hamburger img {
   width: 40px;
 }
 
@@ -41,9 +42,6 @@ html {
   background-color: #0e7a69;
   position: fixed;
   z-index: 99999999;
-  -webkit-transition: width 0.3s, height 0.3s;
-  transition: width 0.3s, height 0.3s;
-  /* for the show/hide transition */
   top: 0px;
   right: 0px;
   -webkit-transform-origin: 100% 0%;
@@ -69,13 +67,23 @@ html {
 
 .navBar .list li {
   list-style: none;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.navBar .list li:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .navBar .list li img {
   width: 30px;
 }
 
-.navBar .list a {
+.navBar .list li a {
   color: #f2f5f8;
   text-decoration: none;
   font-family: "MvtDirect-Thin";
@@ -87,7 +95,7 @@ html {
 
 /* design Menu-tablet */
 @media all and (min-width: 700px) {
-  .menu_hamburger img {
+  #menu_hamburger img {
     width: 70px;
   }
   .navBar {
@@ -108,7 +116,7 @@ html {
 
 /* design Menu-desktop */
 @media all and (min-width: 960px) {
-  .menu_hamburger img {
+  #menu_hamburger img {
     width: 90px;
   }
   .navBar {
