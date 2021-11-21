@@ -1,7 +1,9 @@
-<nav class="navBar">
+<nav id="menu" class="navBar hide_menu">
     <ul class="menu">
         <div class="list">
-            <li><a href="#">X</a></li><!-- TODO mettre un favicon fermé -->
+            <li id="close_menu">
+                <img src="public/images/cross_closed.png" alt="cross_closed">
+            </li>
             <li><a href="#">Experiences</a></li>
             <li><a href="#">Backgrounds</a></li>
             <li><a href="#">Skills</a></li>
@@ -11,3 +13,7 @@
         </div>
     </ul>
 </nav>
+
+<div class="menu_hamburger">
+    <img src="public/images/hamburger.png" alt="menu_hamburger">
+</div>

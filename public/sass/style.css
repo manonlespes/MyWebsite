@@ -21,9 +21,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* TODO use variables to create breakpoints */
 /* design Menu */
+.menu_hamburger {
+  position: fixed;
+  z-index: 2;
+  top: 15px;
+  right: 20px;
+}
+
+.menu_hamburger img {
+  width: 40px;
+}
+
 .navBar {
-  width: 290px;
+  width: 220px;
   height: 210px;
   border-bottom-left-radius: 200px;
   background-color: #0e7a69;
@@ -36,8 +48,6 @@ html {
   right: 0px;
   -webkit-transform-origin: 100% 0%;
           transform-origin: 100% 0%;
-  /* design Menu-tablet */
-  /* design Menu-desktop */
 }
 
 .navBar .menu {
@@ -54,15 +64,66 @@ html {
   font-size: 1.5em;
   line-height: 22px;
   padding-top: 10px;
+  padding-left: 60px;
 }
 
 .navBar .list li {
   list-style: none;
 }
 
+.navBar .list li img {
+  width: 30px;
+}
+
 .navBar .list a {
   color: #f2f5f8;
   text-decoration: none;
   font-family: "MvtDirect-Thin";
+}
+
+.hide_menu {
+  visibility: hidden;
+}
+
+/* design Menu-tablet */
+@media all and (min-width: 700px) {
+  .menu_hamburger img {
+    width: 70px;
+  }
+  .navBar {
+    width: 295px;
+    height: 302px;
+    border-bottom-left-radius: 295px;
+  }
+  .navBar .list {
+    font-size: 2.5em;
+    line-height: 30px;
+    padding-left: 80px;
+    padding-top: 15px;
+  }
+  .navBar .list li img {
+    width: 40px;
+  }
+}
+
+/* design Menu-desktop */
+@media all and (min-width: 960px) {
+  .menu_hamburger img {
+    width: 90px;
+  }
+  .navBar {
+    width: 400px;
+    height: 375px;
+    border-bottom-left-radius: 385px;
+  }
+  .navBar .list {
+    font-size: 3em;
+    line-height: 38px;
+    padding-left: 100px;
+    padding-top: 25px;
+  }
+  .navBar .list li img {
+    width: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
