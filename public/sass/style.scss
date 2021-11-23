@@ -3,6 +3,16 @@
     src: url("../fonts/Movement-DirectThin.woff");
 }
 
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
 body {
     font-size: 15px;
     background: #f2f5f8;
@@ -24,95 +34,107 @@ html {
 
 /* design Menu */
 
-#menu_hamburger {
-    position: fixed;
-    z-index: 2;
-    top: 15px;
-    right: 20px;
-    cursor: pointer;
-
-    img {
-        width: 40px;
-    }
-}
-
-.navBar {
-    width: 220px;
-    height: 210px;
-    border-bottom-left-radius: 200px;
-    background-color: #0e7a69;
-    position: fixed;
-    z-index: 99999999;
-    top: 0px;
-    right: 0px;
-    transform-origin: 100% 0%;
-
-    .menu {
-        opacity: 1;
-        transition: opacity 0.3s 0.3s;
-        height: 100%;
-        font-size: 0.65em;
-        color: #f2f5f8;
-        text-align: center;
-    }
-
-    .list {
-        font-size: 1.5em;
-        line-height: 22px;
-        padding-top: 10px;
-        padding-left: 60px;
-
-        li {
-            list-style: none;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
-	
-
-            &:hover {
-                opacity: 1;
-                transform: scale(1.4);
-            }
-
-            img {
-                width: 30px;
-            }
-
-            a {
-                color: #f2f5f8;
-                text-decoration: none;
-                font-family: "MvtDirect-Thin";
-            }
-        }
-    }
-}
-
-.hide_menu {
-    visibility: hidden;
-}
-
-/* design Menu-tablet */
-@media all and (min-width: 700px) {
+nav {
     #menu_hamburger {
+        position: fixed;
+        z-index: 2;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+
         img {
-            width: 70px;
+            width: 40px;
         }
     }
 
     .navBar {
-        width: 295px;
-        height: 302px;
-        border-bottom-left-radius: 295px;
+        width: 220px;
+        height: 210px;
+        border-bottom-left-radius: 200px;
+        background-color: #0e7a69;
+        position: fixed;
+        z-index: 99999999;
+        top: 0px;
+        right: 0px;
+        /* transform-origin: 100% 0%; */
+
+        .menu {
+            opacity: 1;
+            /* transition: opacity 0.3s 0.3s; */
+            height: 100%;
+            font-size: 0.65em;
+            color: #f2f5f8;
+            text-align: center;
+        }
 
         .list {
-            font-size: 2.5em;
-            line-height: 30px;
-            padding-left: 80px;
-            padding-top: 15px;
+            font-size: 1.5em;
+            line-height: 22px;
+            padding-top: 10px;
+            padding-left: 60px;
 
             li {
+                list-style: none;
+                cursor: pointer;
+                opacity: 0.7;
+                /* transition: all 400ms cubic-bezier(.47,1.64,.41,.8); */
+
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1.4);
+                }
+
                 img {
-                    width: 40px;
+                    width: 30px;
+                }
+
+                a {
+                    color: #f2f5f8;
+                    text-decoration: none;
+                    font-family: "MvtDirect-Thin";
+                }
+            }
+        }
+    }
+
+    .hide_menu {
+        visibility: hidden;
+    }
+
+    .bounce{
+       @include keyframes(menu_bounce){
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+        40% {transform: translateY(-30px);} 
+        60% {transform: translateY(-15px);} 
+       };
+       @include animate(menu_bounce, 1s , ease-in-out, 1);
+    }
+}
+
+/* design Menu-tablet */
+@media all and (min-width: 700px) {
+    nav {
+        #menu_hamburger {
+            img {
+                width: 70px;
+            }
+        }
+
+        .navBar {
+            width: 295px;
+            height: 302px;
+            border-bottom-left-radius: 295px;
+
+            .list {
+                font-size: 2.5em;
+                line-height: 30px;
+                padding-left: 80px;
+                padding-top: 15px;
+
+                li {
+                    img {
+                        width: 40px;
+                    }
                 }
             }
         }
@@ -121,26 +143,28 @@ html {
 
 /* design Menu-desktop */
 @media all and (min-width: 960px) {
-    #menu_hamburger {
-        img {
-            width: 90px;
+    nav {
+        #menu_hamburger {
+            img {
+                width: 90px;
+            }
         }
-    }
 
-    .navBar {
-        width: 400px;
-        height: 375px;
-        border-bottom-left-radius: 385px;
+        .navBar {
+            width: 400px;
+            height: 375px;
+            border-bottom-left-radius: 385px;
 
-        .list {
-            font-size: 3em;
-            line-height: 38px;
-            padding-left: 100px;
-            padding-top: 25px;
+            .list {
+                font-size: 3em;
+                line-height: 38px;
+                padding-left: 100px;
+                padding-top: 25px;
 
-            li {
-                img {
-                    width: 50px;
+                li {
+                    img {
+                        width: 50px;
+                    }
                 }
             }
         }

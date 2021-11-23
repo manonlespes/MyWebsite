@@ -1,4 +1,4 @@
-<nav id="menu" class="navBar hide_menu">
+<nav id="menu" class="navBar hide_menu bounce">
     <ul class="menu">
         <div class="list">
             <li id="close_menu">
