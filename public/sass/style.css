@@ -23,7 +23,7 @@ html {
 
 /* TODO use variables to create breakpoints */
 /* design Menu */
-#menu_hamburger {
+nav #menu_hamburger {
   position: fixed;
   z-index: 2;
   top: 15px;
@@ -31,11 +31,11 @@ html {
   cursor: pointer;
 }
 
-#menu_hamburger img {
+nav #menu_hamburger img {
   width: 40px;
 }
 
-.navBar {
+nav .navBar {
   width: 220px;
   height: 210px;
   border-bottom-left-radius: 200px;
@@ -44,93 +44,90 @@ html {
   z-index: 99999999;
   top: 0px;
   right: 0px;
-  -webkit-transform-origin: 100% 0%;
-          transform-origin: 100% 0%;
+  /* transform-origin: 100% 0%; */
 }
 
-.navBar .menu {
+nav .navBar .menu {
   opacity: 1;
-  -webkit-transition: opacity 0.3s 0.3s;
-  transition: opacity 0.3s 0.3s;
+  /* transition: opacity 0.3s 0.3s; */
   height: 100%;
   font-size: 0.65em;
   color: #f2f5f8;
   text-align: center;
 }
 
-.navBar .list {
+nav .navBar .list {
   font-size: 1.5em;
   line-height: 22px;
   padding-top: 10px;
   padding-left: 60px;
 }
 
-.navBar .list li {
+nav .navBar .list li {
   list-style: none;
   cursor: pointer;
   opacity: 0.7;
-  -webkit-transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
-  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  /* transition: all 400ms cubic-bezier(.47,1.64,.41,.8); */
 }
 
-.navBar .list li:hover {
+nav .navBar .list li:hover {
   opacity: 1;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.navBar .list li img {
+nav .navBar .list li img {
   width: 30px;
 }
 
-.navBar .list li a {
+nav .navBar .list li a {
   color: #f2f5f8;
   text-decoration: none;
   font-family: "MvtDirect-Thin";
 }
 
-.hide_menu {
+nav .hide_menu {
   visibility: hidden;
 }
 
 /* design Menu-tablet */
 @media all and (min-width: 700px) {
-  #menu_hamburger img {
+  nav #menu_hamburger img {
     width: 70px;
   }
-  .navBar {
+  nav .navBar {
     width: 295px;
     height: 302px;
     border-bottom-left-radius: 295px;
   }
-  .navBar .list {
+  nav .navBar .list {
     font-size: 2.5em;
     line-height: 30px;
     padding-left: 80px;
     padding-top: 15px;
   }
-  .navBar .list li img {
+  nav .navBar .list li img {
     width: 40px;
   }
 }
 
 /* design Menu-desktop */
 @media all and (min-width: 960px) {
-  #menu_hamburger img {
+  nav #menu_hamburger img {
     width: 90px;
   }
-  .navBar {
+  nav .navBar {
     width: 400px;
     height: 375px;
     border-bottom-left-radius: 385px;
   }
-  .navBar .list {
+  nav .navBar .list {
     font-size: 3em;
     line-height: 38px;
     padding-left: 100px;
     padding-top: 25px;
   }
-  .navBar .list li img {
+  nav .navBar .list li img {
     width: 50px;
   }
 }

@@ -3,15 +3,6 @@
     src: url("../fonts/Movement-DirectThin.woff");
 }
 
-@mixin animate($animation,$duration,$method,$times){
-    animation: $animation $duration $method $times;
-}
-
-@mixin keyframes($name){
-    @keyframes #{$name}{
-        @content;
-    }
-}
 
 body {
     font-size: 15px;
@@ -99,15 +90,6 @@ nav {
 
     .hide_menu {
         visibility: hidden;
-    }
-
-    .bounce{
-       @include keyframes(menu_bounce){
-        0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-        40% {transform: translateY(-30px);} 
-        60% {transform: translateY(-15px);} 
-       };
-       @include animate(menu_bounce, 1s , ease-in-out, 1);
     }
 }
 

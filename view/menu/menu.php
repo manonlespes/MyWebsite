@@ -1,9 +1,9 @@
-<nav id="menu" class="navBar hide_menu bounce">
+<nav id="menu" class="navBar hide_menu">
     <ul class="menu">
         <div class="list">
             <li id="close_menu">
                 <img src="public/images/cross_closed.png" alt="cross_closed">
-            </li>
+            </li> <!-- TODO make it visible only on click -->
             <li><a href="#">Experiences</a></li>
             <li><a href="#">Backgrounds</a></li>
             <li><a href="#">Skills</a></li>
