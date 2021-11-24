@@ -3,31 +3,57 @@
     src: url("../fonts/Movement-DirectThin.woff");
 }
 
-  
-  @mixin keyframes($name) {
-      @-webkit-keyframes #{$name} {@content; }
-      @-moz-keyframes #{$name} {@content;}
-      @-ms-keyframes #{$name} {@content;}
-      @keyframes #{$name} {@content;} 
-  }
-  
-  @mixin animation ($animation, $duration, $timing, $iteration) {
-      -webkit-animation-name: $animation;
-      -webkit-animation-duration: $duration;
-      -webkit-animation-timing-function: $timing;
-      -webkit-animation-iteration-count: $iteration;
+@font-face {
+    font-family: "MvtDirect-Black";
+    src: url("../fonts/Movement-DirectBlack.woff");
+}
 
-      -moz-animation-name: $animation;
-      -moz-animation-duration: $duration;
-      -moz-animation-timing-function: $timing;
-      -moz-animation-iteration-count: $iteration;
-   
-      animation-name: $animation;
-      animation-duration: $duration;
-      animation-timing-function: $timing;
-      animation-iteration-count: $iteration;
-  }
+@font-face {
+    font-family: "MontserratAlternates-Regular";
+    src: url("../fonts/MontserratAlternates-Regular.ttf");
+}
 
+@font-face {
+    font-family: "MontserratAlternates-Medium";
+    src: url("../fonts/MontserratAlternates-Medium.ttf");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Light";
+    src: url("../fonts/MontserratAlternates-Light.ttf");
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animation($animation, $duration, $timing, $iteration) {
+    -webkit-animation-name: $animation;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-timing-function: $timing;
+    -webkit-animation-iteration-count: $iteration;
+
+    -moz-animation-name: $animation;
+    -moz-animation-duration: $duration;
+    -moz-animation-timing-function: $timing;
+    -moz-animation-iteration-count: $iteration;
+
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+    animation-iteration-count: $iteration;
+}
 
 body {
     font-size: 15px;
@@ -74,7 +100,7 @@ html {
 
     .menu {
         opacity: 1;
-        
+
         height: 100%;
         font-size: 0.65em;
         color: #f2f5f8;
@@ -91,7 +117,7 @@ html {
             list-style: none;
             cursor: pointer;
             opacity: 0.7;
-            transition: all 0.5s ease-in-out ;
+            transition: all 0.5s ease-in-out;
 
             &:hover {
                 opacity: 1;
@@ -111,24 +137,34 @@ html {
     }
 }
 
-.hide_menu{
+.hide_menu {
     visibility: hidden;
 }
 
-.bounce{
-    @include keyframes(bounce){
-        0% {transform: translateY(-1px)};
-        20%{transform: translateY(-50px);}
-        40%{transform: translateY(-5px);}
-        60%{transform: translateY(-30px);}
-        80%{transform: translateY(-1px);}
-        100%{transform: translateY(0px);}
+.bounce {
+    @include keyframes(bounce) {
+        0% {
+            transform: translateY(-1px);
+        }
+        20% {
+            transform: translateY(-50px);
+        }
+        40% {
+            transform: translateY(-5px);
+        }
+        60% {
+            transform: translateY(-30px);
+        }
+        80% {
+            transform: translateY(-1px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
     }
 
-    @include animation(bounce, 0.8s, ease, 1)
+    @include animation(bounce, 0.8s, ease, 1);
 }
-
-
 
 /* design Menu-tablet */
 @media all and (min-width: 700px) {
@@ -182,6 +218,89 @@ html {
                     width: 50px;
                 }
             }
+        }
+    }
+}
+
+/* design Intro */
+
+.logo {
+    a {
+        position: fixed;
+        z-index: 9999999999;
+        top: 15px;
+        left: 20px;
+        cursor: pointer;
+
+        img {
+            width: 60px;
+        }
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%vw;
+    margin-top: 100px;
+
+    .images_intro {
+        width: 50%vw;
+       
+
+        .web_safe {
+            display: flex;
+            position: relative;
+            top: 25vh;
+            left: 10%vw;
+            right: 0;
+
+            img {
+                width: 100px;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .image_Manon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+        }
+
+        .image_Manon {
+            img {
+                width: 300px;
+                z-index: 2;
+            }
+        }
+    }
+
+    .text_intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        margin: auto;
+        text-align: center;
+        width: 80%;
+
+        h1 {
+            font-family: "MvtDirect-Black";
+            font-size: 1rem;
+            color: #7a0e1d;
+        }
+
+        h3 {
+            font-family: "MontserratAlternates-Light";
+            font-size: 0.7rem;
+            color: #22d3b8;
+            line-height: 20px;
+            margin: 15px;
         }
     }
 }
