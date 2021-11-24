@@ -23,7 +23,7 @@ html {
 
 /* TODO use variables to create breakpoints */
 /* design Menu */
-nav #menu_hamburger {
+#menu_hamburger {
   position: fixed;
   z-index: 2;
   top: 15px;
@@ -31,11 +31,11 @@ nav #menu_hamburger {
   cursor: pointer;
 }
 
-nav #menu_hamburger img {
+#menu_hamburger img {
   width: 40px;
 }
 
-nav .navBar {
+.navBar {
   width: 220px;
   height: 210px;
   border-bottom-left-radius: 200px;
@@ -44,90 +44,158 @@ nav .navBar {
   z-index: 99999999;
   top: 0px;
   right: 0px;
-  /* transform-origin: 100% 0%; */
 }
 
-nav .navBar .menu {
+.navBar .menu {
   opacity: 1;
-  /* transition: opacity 0.3s 0.3s; */
   height: 100%;
   font-size: 0.65em;
   color: #f2f5f8;
   text-align: center;
 }
 
-nav .navBar .list {
+.navBar .list {
   font-size: 1.5em;
   line-height: 22px;
   padding-top: 10px;
   padding-left: 60px;
 }
 
-nav .navBar .list li {
+.navBar .list li {
   list-style: none;
   cursor: pointer;
   opacity: 0.7;
-  /* transition: all 400ms cubic-bezier(.47,1.64,.41,.8); */
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-nav .navBar .list li:hover {
+.navBar .list li:hover {
   opacity: 1;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-nav .navBar .list li img {
+.navBar .list li img {
   width: 30px;
 }
 
-nav .navBar .list li a {
+.navBar .list li a {
   color: #f2f5f8;
   text-decoration: none;
   font-family: "MvtDirect-Thin";
 }
 
-nav .hide_menu {
+.hide_menu {
   visibility: hidden;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-name: bounce;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-iteration-count: 1;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  20% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  80% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  20% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  80% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 /* design Menu-tablet */
 @media all and (min-width: 700px) {
-  nav #menu_hamburger img {
+  #menu_hamburger img {
     width: 70px;
   }
-  nav .navBar {
+  .navBar {
     width: 295px;
     height: 302px;
     border-bottom-left-radius: 295px;
   }
-  nav .navBar .list {
+  .navBar .list {
     font-size: 2.5em;
     line-height: 30px;
     padding-left: 80px;
     padding-top: 15px;
   }
-  nav .navBar .list li img {
+  .navBar .list li img {
     width: 40px;
   }
 }
 
 /* design Menu-desktop */
 @media all and (min-width: 960px) {
-  nav #menu_hamburger img {
+  #menu_hamburger img {
     width: 90px;
   }
-  nav .navBar {
+  .navBar {
     width: 400px;
     height: 375px;
     border-bottom-left-radius: 385px;
   }
-  nav .navBar .list {
+  .navBar .list {
     font-size: 3em;
     line-height: 38px;
     padding-left: 100px;
     padding-top: 25px;
   }
-  nav .navBar .list li img {
+  .navBar .list li img {
     width: 50px;
   }
 }

@@ -11,28 +11,16 @@ const close_menu = document.getElementById('close_menu');
 hamburger.addEventListener('click', function(){
     /* for the element "menu", addition/delete of the class 'hide_menu' */
     menu.classList.toggle('hide_menu');
+    menu.classList.toggle('bounce');
 
 })
 
 close_menu.addEventListener('click', function(){
     menu.classList.toggle('hide_menu');
+    menu.classList.toggle('bounce');
+
 })
 
 
-/* bounce effect */
-
-/* hamburger.addEventListener("click", function(e) {
-  e.preventDefault;
-  
-  // -> removing the class
-  element.classList.remove("bounce");
-  
-  // -> triggering reflow /* The actual magic */
-  // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
- /*  element.offsetWidth = element.offsetWidth;
-  
-  // -> and re-adding the class
-  element.classList.add("bounce");
-}, false); */
 
 
