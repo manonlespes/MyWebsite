@@ -291,6 +291,24 @@ html {
   margin: 15px;
 }
 
+/* design aim_banner */
+.aim_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.aim_banner .aim img {
+  width: 220px;
+}
+
 /*******************Responsive Tablet */
 @media all and (min-width: 700px) {
   /* design Menu */
@@ -322,6 +340,9 @@ html {
   .introduction .images_intro .image_Manon img {
     width: 390px;
   }
+  .introduction .text_intro {
+    padding-bottom: 25px;
+  }
   .introduction .text_intro h1 {
     margin-top: 30px;
     font-size: 1.5rem;
@@ -330,6 +351,10 @@ html {
     margin-top: 30px;
     font-size: 1rem;
     line-height: 25px;
+  }
+  /* design aim_banner */
+  .aim_banner .aim img {
+    width: 285px;
   }
 }
 
@@ -356,6 +381,16 @@ html {
   /* design intro */
   .introduction .images_intro .image_Manon img {
     width: 460px;
+  }
+  .introduction .text_intro {
+    padding-bottom: 40px;
+  }
+  /* design aim_banner */
+  .aim_banner .aim {
+    margin-top: 40px;
+  }
+  .aim_banner .aim img {
+    width: 365px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -32,5 +32,10 @@
         <p>My name is Manon.<br> If you have a question or an internship position to offer, drop me a line ! I'd be delighted to hear from you.
         </p>
     </div>
+</section>
 
+<section class="aim_banner">
+  <div class="aim">
+      <img src="public/images/aim.png" alt="seeking_intership_position">
+  </div>
 </section>
