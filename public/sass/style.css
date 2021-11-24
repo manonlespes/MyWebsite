@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "MvtDirect-Thin";
   src: url("../fonts/Movement-DirectThin.woff");
@@ -23,11 +24,10 @@
   src: url("../fonts/MontserratAlternates-Light.ttf");
 }
 
+/* TODO amélioration font-face avec sass */
 body {
   font-size: 15px;
   background: #f2f5f8;
-  height: 100vh;
-  width: 100vw;
 }
 
 * {
@@ -178,48 +178,6 @@ html {
   }
 }
 
-/* design Menu-tablet */
-@media all and (min-width: 700px) {
-  #menu_hamburger img {
-    width: 70px;
-  }
-  .navBar {
-    width: 295px;
-    height: 302px;
-    border-bottom-left-radius: 295px;
-  }
-  .navBar .list {
-    font-size: 2.5em;
-    line-height: 30px;
-    padding-left: 80px;
-    padding-top: 15px;
-  }
-  .navBar .list li img {
-    width: 40px;
-  }
-}
-
-/* design Menu-desktop */
-@media all and (min-width: 960px) {
-  #menu_hamburger img {
-    width: 90px;
-  }
-  .navBar {
-    width: 400px;
-    height: 375px;
-    border-bottom-left-radius: 385px;
-  }
-  .navBar .list {
-    font-size: 3em;
-    line-height: 38px;
-    padding-left: 100px;
-    padding-top: 25px;
-  }
-  .navBar .list li img {
-    width: 50px;
-  }
-}
-
 /* design Intro */
 .logo a {
   position: fixed;
@@ -237,12 +195,22 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  width: 100%vw;
+  width: 80vw;
   margin-top: 100px;
+  padding-bottom: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #22d3b8), color-stop(10%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #22d3b8 30%, rgba(255, 255, 255, 0) 10%);
+  background-position: bottom;
+  background-size: 10px 3px;
+  background-repeat: repeat-x;
 }
 
 .introduction .images_intro {
@@ -253,9 +221,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  top: 25vh;
-  left: 10%vw;
+  position: absolute;
+  width: 20%;
+  top: 30%;
+  left: 20%;
   right: 0;
 }
 
@@ -314,11 +283,79 @@ html {
   color: #7a0e1d;
 }
 
-.introduction .text_intro h3 {
+.introduction .text_intro p {
   font-family: "MontserratAlternates-Light";
   font-size: 0.7rem;
   color: #22d3b8;
   line-height: 20px;
   margin: 15px;
+}
+
+/*******************Responsive Tablet */
+@media all and (min-width: 700px) {
+  /* design Menu */
+  #menu_hamburger img {
+    width: 70px;
+  }
+  .navBar {
+    width: 295px;
+    height: 302px;
+    border-bottom-left-radius: 295px;
+  }
+  .navBar .list {
+    font-size: 2.5em;
+    line-height: 30px;
+    padding-left: 80px;
+    padding-top: 15px;
+  }
+  .navBar .list li img {
+    width: 40px;
+  }
+  /* design Intro */
+  .logo a {
+    left: 30px;
+    top: 20px;
+  }
+  .logo a img {
+    width: 110px;
+  }
+  .introduction .images_intro .image_Manon img {
+    width: 390px;
+  }
+  .introduction .text_intro h1 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
+  .introduction .text_intro p {
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+
+/***********************Responsive Desktop */
+@media all and (min-width: 960px) {
+  /* design menu */
+  #menu_hamburger img {
+    width: 90px;
+  }
+  .navBar {
+    width: 400px;
+    height: 375px;
+    border-bottom-left-radius: 385px;
+  }
+  .navBar .list {
+    font-size: 3em;
+    line-height: 38px;
+    padding-left: 100px;
+    padding-top: 25px;
+  }
+  .navBar .list li img {
+    width: 50px;
+  }
+  /* design intro */
+  .introduction .images_intro .image_Manon img {
+    width: 460px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
