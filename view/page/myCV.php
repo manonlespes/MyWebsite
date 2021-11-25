@@ -15,14 +15,11 @@
         <div>Junior frontend developer who loves coding and taking on many challenges</div>
     </div> -->
     <div class="images_intro">
-
-        <div class="web_safe">
-            <img src="public/images/web_safe.png" alt="web_icon">
-        </div>
-
         <div class="image_Manon">
-            <img src="public/images/Fusion_transparent-V2.png" alt="image_ManonLespes">
+            <img src="public/images/Fusion_Manon.png" alt="image_ManonLespes">
         </div>
+
+        
 
     </div>
 

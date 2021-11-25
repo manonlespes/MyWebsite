@@ -214,47 +214,18 @@ html {
 }
 
 .introduction .images_intro {
-  width: 50%vw;
-}
-
-.introduction .images_intro .web_safe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 20%;
-  top: 30%;
-  left: 20%;
-  right: 0;
-}
-
-.introduction .images_intro .web_safe img {
-  width: 100px;
-  opacity: 0.7;
-}
-
-.introduction .images_intro .web_safe img:hover {
-  opacity: 1;
-}
-
-.introduction .images_intro .image_Manon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  width: 50%vw;
 }
 
 .introduction .images_intro .image_Manon img {
-  width: 300px;
+  width: 400px;
+  /* TODO do another size for the mobile especially */
   z-index: 2;
 }
 
@@ -338,7 +309,7 @@ html {
     width: 110px;
   }
   .introduction .images_intro .image_Manon img {
-    width: 390px;
+    width: 740px;
   }
   .introduction .text_intro {
     padding-bottom: 25px;
@@ -380,7 +351,7 @@ html {
   }
   /* design intro */
   .introduction .images_intro .image_Manon img {
-    width: 460px;
+    width: 1195px;
   }
   .introduction .text_intro {
     padding-bottom: 40px;
