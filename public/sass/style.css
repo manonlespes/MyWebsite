@@ -106,7 +106,7 @@ html {
 }
 
 .hide_menu {
-  visibility: hidden;
+  display: none;
 }
 
 .bounce {
