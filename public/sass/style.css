@@ -221,6 +221,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%vw;
+  margin-top: 40px;
 }
 
 .introduction .images_intro .image_Manon img {
@@ -255,9 +256,9 @@ html {
 }
 
 .introduction .text_intro p {
-  font-family: "MontserratAlternates-Light";
+  font-family: "MontserratAlternates-Regular";
   font-size: 0.7rem;
-  color: #22d3b8;
+  color: #0e7a69;
   line-height: 20px;
   margin: 15px;
 }

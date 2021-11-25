@@ -4,23 +4,10 @@
 
 
 <section class="introduction">
-
-    <!--  <div class="creativity">
-        <h2>Creativity</h2>
-        <div>Innovative woman who enjoys exploring different point of views</div>
-    </div>
-
-    <div class="code">
-        <h2>&lt;Code&gt;</h2>
-        <div>Junior frontend developer who loves coding and taking on many challenges</div>
-    </div> -->
     <div class="images_intro">
         <div class="image_Manon">
             <img src="public/images/Fusion_Manon.png" alt="image_ManonLespes">
         </div>
-
-        
-
     </div>
 
     <div class="text_intro">
