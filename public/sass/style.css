@@ -332,8 +332,8 @@ html {
   background: transparent;
   margin-top: 25px;
   border-radius: 77% 273% 90% 28% / 35% 31% 35% 100%;
-  border-top: 2px dotted #22d3b8;
-  border-left: 2px dotted #22d3b8;
+  border-top: 3px solid #22d3b8;
+  border-left: 3px solid #22d3b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,8 +344,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding-left: 14px;
+  padding-left: 20px;
   padding-bottom: 10px;
+  overflow-y: scroll;
+  height: 215px;
 }
 
 .experiences .container_exp div > p {
@@ -360,8 +362,22 @@ html {
   color: #1b2d2a;
 }
 
+.experiences .container_exp .subtext > p a {
+  text-decoration: none;
+  color: #1b2d2a;
+  cursor: pointer;
+}
+
+.experiences .container_exp .subtext > p a:visited {
+  color: #0e7a69;
+}
+
 .experiences .container_exp .exp1,
-.experiences .container_exp .exp2, .experiences .container_exp .exp3, .experiences .container_exp .exp4, .experiences .container_exp .exp5, .experiences .container_exp .exp6 {
+.experiences .container_exp .exp2,
+.experiences .container_exp .exp3,
+.experiences .container_exp .exp4,
+.experiences .container_exp .exp5,
+.experiences .container_exp .exp6 {
   width: 100%;
   height: 55px;
   margin-top: 30px;
@@ -378,7 +394,11 @@ html {
 }
 
 .experiences .container_exp .exp1 .container_flex,
-.experiences .container_exp .exp2 .container_flex, .experiences .container_exp .exp3 .container_flex, .experiences .container_exp .exp4 .container_flex, .experiences .container_exp .exp5 .container_flex, .experiences .container_exp .exp6 .container_flex {
+.experiences .container_exp .exp2 .container_flex,
+.experiences .container_exp .exp3 .container_flex,
+.experiences .container_exp .exp4 .container_flex,
+.experiences .container_exp .exp5 .container_flex,
+.experiences .container_exp .exp6 .container_flex {
   /* first div element directly placed after div */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,7 +414,11 @@ html {
 }
 
 .experiences .container_exp .exp1 .tag_exp,
-.experiences .container_exp .exp2 .tag_exp, .experiences .container_exp .exp3 .tag_exp, .experiences .container_exp .exp4 .tag_exp, .experiences .container_exp .exp5 .tag_exp, .experiences .container_exp .exp6 .tag_exp {
+.experiences .container_exp .exp2 .tag_exp,
+.experiences .container_exp .exp3 .tag_exp,
+.experiences .container_exp .exp4 .tag_exp,
+.experiences .container_exp .exp5 .tag_exp,
+.experiences .container_exp .exp6 .tag_exp {
   background-image: url("../images/tag_exp.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -419,7 +443,11 @@ html {
 }
 
 .experiences .container_exp .exp1 .tag_exp p,
-.experiences .container_exp .exp2 .tag_exp p, .experiences .container_exp .exp3 .tag_exp p, .experiences .container_exp .exp4 .tag_exp p, .experiences .container_exp .exp5 .tag_exp p, .experiences .container_exp .exp6 .tag_exp p {
+.experiences .container_exp .exp2 .tag_exp p,
+.experiences .container_exp .exp3 .tag_exp p,
+.experiences .container_exp .exp4 .tag_exp p,
+.experiences .container_exp .exp5 .tag_exp p,
+.experiences .container_exp .exp6 .tag_exp p {
   font-family: "MontserratAlternates-Bold";
   color: #f2f5f8;
   text-align: center;
@@ -429,11 +457,19 @@ html {
 }
 
 .experiences .container_exp .exp1 .subtext p > span,
-.experiences .container_exp .exp2 .subtext p > span, .experiences .container_exp .exp3 .subtext p > span, .experiences .container_exp .exp4 .subtext p > span, .experiences .container_exp .exp5 .subtext p > span, .experiences .container_exp .exp6 .subtext p > span {
+.experiences .container_exp .exp2 .subtext p > span,
+.experiences .container_exp .exp3 .subtext p > span,
+.experiences .container_exp .exp4 .subtext p > span,
+.experiences .container_exp .exp5 .subtext p > span,
+.experiences .container_exp .exp6 .subtext p > span {
   color: #22d3b8;
 }
 
-.experiences .container_exp .exp2, .experiences .container_exp .exp3, .experiences .container_exp .exp4, .experiences .container_exp .exp5, .experiences .container_exp .exp6 {
+.experiences .container_exp .exp2,
+.experiences .container_exp .exp3,
+.experiences .container_exp .exp4,
+.experiences .container_exp .exp5,
+.experiences .container_exp .exp6 {
   margin-top: 10px;
 }
 
@@ -484,6 +520,41 @@ html {
   .aim_banner .aim img {
     width: 285px;
   }
+  /* design section_exp */
+  .experiences {
+    width: 80vw;
+  }
+  .experiences .title1 img {
+    width: 335px;
+  }
+  .experiences .container_exp {
+    width: 100%;
+    padding-left: 40px;
+    height: 215px;
+  }
+  .experiences .container_exp div > p {
+    font-size: 14px;
+  }
+  .experiences .container_exp .subtext > p {
+    font-size: 14px;
+  }
+  .experiences .container_exp .exp1,
+  .experiences .container_exp .exp2,
+  .experiences .container_exp .exp3,
+  .experiences .container_exp .exp4,
+  .experiences .container_exp .exp5,
+  .experiences .container_exp .exp6 {
+    height: 75px;
+  }
+  .experiences .container_exp .exp1 .tag_exp p,
+  .experiences .container_exp .exp2 .tag_exp p,
+  .experiences .container_exp .exp3 .tag_exp p,
+  .experiences .container_exp .exp4 .tag_exp p,
+  .experiences .container_exp .exp5 .tag_exp p,
+  .experiences .container_exp .exp6 .tag_exp p {
+    font-family: "MontserratAlternates-Medium";
+    font-size: 13px;
+  }
 }
 
 /***********************Responsive Desktop */
@@ -519,6 +590,14 @@ html {
   }
   .aim_banner .aim img {
     width: 365px;
+  }
+  /* design exp_section*/
+  .experiences .container_exp .subtext > p {
+    font-family: "MontserratAlternates-Medium";
+    font-size: 10px;
+  }
+  .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active {
+    color: #0e7a69;
   }
 }
 /*# sourceMappingURL=style.css.map */

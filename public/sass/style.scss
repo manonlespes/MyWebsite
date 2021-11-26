@@ -281,13 +281,15 @@ html {
         background: transparent;
         margin-top: 25px;
         border-radius: 77% 273% 90% 28% / 35% 31% 35% 100%;
-        border-top: 2px dotted #22d3b8;
-        border-left: 2px dotted #22d3b8;
+        border-top: 3px solid #22d3b8;
+        border-left: 3px solid #22d3b8;
         display: flex;
         justify-content: flex-start;
         flex-flow: column nowrap;
-        padding-left: 14px;
+        padding-left: 20px;
         padding-bottom: 10px;
+        overflow-y: scroll;
+        height: 215px;
 
         div > p {
             font-family: "MvtDirect-Black";
@@ -299,10 +301,24 @@ html {
             font-family: "MontserratAlternates-Medium";
             font-size: 10px;
             color: #1b2d2a;
+
+            a {
+                text-decoration: none;
+                color: #1b2d2a;
+                cursor: pointer;
+
+                &:visited {
+                    color: #0e7a69;
+                }
+            }
         }
 
         .exp1,
-        .exp2, .exp3, .exp4, .exp5, .exp6 {
+        .exp2,
+        .exp3,
+        .exp4,
+        .exp5,
+        .exp6 {
             width: 100%;
             height: 55px;
             margin-top: 30px;
@@ -348,7 +364,11 @@ html {
             }
         }
 
-        .exp2, .exp3, .exp4, .exp5, .exp6{
+        .exp2,
+        .exp3,
+        .exp4,
+        .exp5,
+        .exp6 {
             margin-top: 10px;
         }
     }
@@ -427,6 +447,48 @@ html {
             }
         }
     }
+
+    /* design section_exp */
+
+    .experiences {
+        width: 80vw;
+
+        .title1 {
+            img {
+                width: 335px;
+            }
+        }
+
+        .container_exp {
+            width: 100%;
+            padding-left: 40px;
+            height: 215px;
+
+            div > p {
+                font-size: 14px;
+            }
+
+            .subtext > p {
+                font-size: 14px;
+            }
+
+            .exp1,
+            .exp2,
+            .exp3,
+            .exp4,
+            .exp5,
+            .exp6 {
+                height: 75px;
+
+                .tag_exp {
+                    p {
+                        font-family: "MontserratAlternates-Medium";
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /***********************Responsive Desktop */
@@ -480,6 +542,24 @@ html {
             margin-top: 40px;
             img {
                 width: 365px;
+            }
+        }
+    }
+
+    /* design exp_section*/
+
+    .experiences {
+        .container_exp {
+            .subtext > p {
+                font-family: "MontserratAlternates-Medium";
+                font-size: 10px;
+
+                a {
+                    &:hover,
+                    &:active {
+                        color: #0e7a69;
+                    }
+                }
             }
         }
     }

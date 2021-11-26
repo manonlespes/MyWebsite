@@ -31,15 +31,17 @@
     </div>
 
     <div class="container_exp">
-        <div class="exp1"> <!-- flex-flow: row -->
-            <div class="container_flex"><!-- flex-flow:column -->
+        <div class="exp1">
+            <!-- flex-flow: row -->
+            <div class="container_flex">
+                <!-- flex-flow:column -->
                 <div>
                     <p>Membership & Event coordinator</p>
                     <p>Project Coordinator</p>
                 </div>
-    
+
                 <div class="subtext">
-                    <p>World Employment Confederation</p>
+                    <p><a href="https://wecglobal.org/" target="_blank" rel="noopener noreferrer">World Employment Confederation</a></p>
                     <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
@@ -49,15 +51,17 @@
             </div>
         </div>
 
-        <div class="exp2"> <!-- flex-flow: row -->
-            <div class="container_flex"><!-- flex-flow:column -->
+        <div class="exp2">
+            <!-- flex-flow: row -->
+            <div class="container_flex">
+                <!-- flex-flow:column -->
                 <div>
                     <p>Assistant Project Manager</p>
                     <p>Junior Community Manager</p>
                 </div>
-    
+
                 <div class="subtext">
-                    <p>Downtown Europe</p>
+                    <p><a href="http://www.downtowneurope.be/" target="_blank" rel="noopener noreferrer">Downtown Europe</a></p>
                     <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
@@ -67,14 +71,16 @@
             </div>
         </div>
 
-        <div class="exp3"> <!-- flex-flow: row -->
-            <div class="container_flex"><!-- flex-flow:column -->
+        <div class="exp3">
+            <!-- flex-flow: row -->
+            <div class="container_flex">
+                <!-- flex-flow:column -->
                 <div>
                     <p>Hostess</p>
                 </div>
-    
+
                 <div class="subtext">
-                    <p>Downtown Europe</p>
+                    <p><a href="http://www.downtowneurope.be/" target="_blank" rel="noopener noreferrer">Downtown Europe</a></p>
                     <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
@@ -84,14 +90,16 @@
             </div>
         </div>
 
-        <div class="exp4"> <!-- flex-flow: row -->
-            <div class="container_flex"><!-- flex-flow:column -->
+        <div class="exp4">
+            <!-- flex-flow: row -->
+            <div class="container_flex">
+                <!-- flex-flow:column -->
                 <div>
                     <p>Intern - Project Coordinator</p>
                 </div>
-    
+
                 <div class="subtext">
-                    <p>Ciudad Alégrià</p>
+                    <p><a href="https://www.ciudadalegria.org.mx/" target="_blank" rel="noopener noreferrer">Fundación  Ciudad de la Alégrià</a></p>
                     <p>Cancùn, Mexico <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
@@ -101,14 +109,16 @@
             </div>
         </div>
 
-        <div class="exp5"> <!-- flex-flow: row -->
-            <div class="container_flex"><!-- flex-flow:column -->
+        <div class="exp5">
+            <!-- flex-flow: row -->
+            <div class="container_flex">
+                <!-- flex-flow:column -->
                 <div>
                     <p>Intern - Frontdesk Officer</p>
                 </div>
-    
+
                 <div class="subtext">
-                    <p>Camping de la Côte Sauvage Ecolabel</p>
+                    <p><a href="https://www.campinglacotesauvage.com/?gclid=EAIaIQobChMIm5uu1bq29AIVlKl3Ch2_9gu_EAAYAiAAEgJ3iPD_BwE" target="_blank" rel="noopener noreferrer">Camping de la Côte Sauvage Ecolabel&lowast;&lowast;</a> </p>
                     <p>Saint-Clément-des-Baleines, France <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
@@ -118,12 +128,14 @@
             </div>
         </div>
 
-        <div class="exp6"> <!-- flex-flow: row -->
-            <div class="container_flex"><!-- flex-flow:column -->
+        <div class="exp6">
+            <!-- flex-flow: row -->
+            <div class="container_flex">
+                <!-- flex-flow:column -->
                 <div>
-                    <p>Intern - Journalist/Editor</p>
+                    <p>Intern - Journalist / Editor</p>
                 </div>
-    
+
                 <div class="subtext">
                     <p>Gazette de Berlin</p>
                     <p>Berlin, Germany <span class="more">SEE MORE +</span></p>
@@ -135,7 +147,7 @@
             </div>
         </div>
 
-        
+
 
     </div>
 </section>
