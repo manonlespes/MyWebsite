@@ -331,9 +331,9 @@ html {
   width: 90%;
   background: transparent;
   margin-top: 25px;
-  border-radius: 151% 124% 90% 48% / 54% 17% 8% 91%;
-  border-top: 2px dashed #22d3b8;
-  border-left: 2px dashed #22d3b8;
+  border-radius: 77% 273% 90% 28% / 35% 31% 35% 100%;
+  border-top: 2px dotted #22d3b8;
+  border-left: 2px dotted #22d3b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,13 +356,14 @@ html {
 
 .experiences .container_exp .subtext > p {
   font-family: "MontserratAlternates-Medium";
-  font-size: 9px;
+  font-size: 10px;
   color: #1b2d2a;
 }
 
 .experiences .container_exp .exp1,
-.experiences .container_exp .exp2 {
+.experiences .container_exp .exp2, .experiences .container_exp .exp3, .experiences .container_exp .exp4, .experiences .container_exp .exp5, .experiences .container_exp .exp6 {
   width: 100%;
+  height: 55px;
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,7 +378,7 @@ html {
 }
 
 .experiences .container_exp .exp1 .container_flex,
-.experiences .container_exp .exp2 .container_flex {
+.experiences .container_exp .exp2 .container_flex, .experiences .container_exp .exp3 .container_flex, .experiences .container_exp .exp4 .container_flex, .experiences .container_exp .exp5 .container_flex, .experiences .container_exp .exp6 .container_flex {
   /* first div element directly placed after div */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,10 +388,13 @@ html {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .experiences .container_exp .exp1 .tag_exp,
-.experiences .container_exp .exp2 .tag_exp {
+.experiences .container_exp .exp2 .tag_exp, .experiences .container_exp .exp3 .tag_exp, .experiences .container_exp .exp4 .tag_exp, .experiences .container_exp .exp5 .tag_exp, .experiences .container_exp .exp6 .tag_exp {
   background-image: url("../images/tag_exp.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -415,7 +419,7 @@ html {
 }
 
 .experiences .container_exp .exp1 .tag_exp p,
-.experiences .container_exp .exp2 .tag_exp p {
+.experiences .container_exp .exp2 .tag_exp p, .experiences .container_exp .exp3 .tag_exp p, .experiences .container_exp .exp4 .tag_exp p, .experiences .container_exp .exp5 .tag_exp p, .experiences .container_exp .exp6 .tag_exp p {
   font-family: "MontserratAlternates-Bold";
   color: #f2f5f8;
   text-align: center;
@@ -425,11 +429,11 @@ html {
 }
 
 .experiences .container_exp .exp1 .subtext p > span,
-.experiences .container_exp .exp2 .subtext p > span {
+.experiences .container_exp .exp2 .subtext p > span, .experiences .container_exp .exp3 .subtext p > span, .experiences .container_exp .exp4 .subtext p > span, .experiences .container_exp .exp5 .subtext p > span, .experiences .container_exp .exp6 .subtext p > span {
   color: #22d3b8;
 }
 
-.experiences .container_exp .exp2 {
+.experiences .container_exp .exp2, .experiences .container_exp .exp3, .experiences .container_exp .exp4, .experiences .container_exp .exp5, .experiences .container_exp .exp6 {
   margin-top: 10px;
 }
 
