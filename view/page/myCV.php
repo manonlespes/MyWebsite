@@ -23,3 +23,7 @@
       <img src="public/images/aim.png" alt="seeking_intership_position">
   </div>
 </section>
+
+<section class="experiences">
+
+</section>
