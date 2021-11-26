@@ -203,7 +203,7 @@ html {
 
         .image_Manon {
             img {
-                width: 400px;/* TODO do another size for the mobile especially */
+                width: 400px; /* TODO do another size for the mobile especially */
                 z-index: 2;
             }
         }
@@ -227,7 +227,7 @@ html {
         p {
             font-family: "MontserratAlternates-Regular";
             font-size: 0.7rem;
-            color:#0e7a69;
+            color: #0e7a69;
             line-height: 20px;
             margin: 15px;
         }
@@ -241,6 +241,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 40px;
 
     .aim {
         img {
@@ -251,9 +252,62 @@ html {
 
 /* design experiences_section */
 
+.experiences {
+    margin-top: 55px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
 
+    .title1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            width: 200px;
+        }
+    }
 
+    .container_exp {
+        width: 80%;
+        height: 193px;
+        background: transparent;
+        margin-top: 25px;
+        border-radius: 151% 124% 90% 48% / 54% 17% 8% 91%;
+        border-top: 2px dashed #22d3b8;
+        border-left: 2px dashed #22d3b8;
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        padding: 20px;
 
+        div > p {
+            font-family: "MvtDirect-Black";
+            font-size: 10px;
+            color: #7a0e1d;
+        }
+
+        .subtext>p{
+            font-family: "MontserratAlternates-Medium";
+            font-size: 9px;
+            color: #1b2d2a
+        }
+
+        .exp1 {
+            width: 95%;
+            margin-top: 15px;
+
+            .img_tag{
+                background-image: url("../images/tag_exp.png")
+
+            };
+
+        }
+    }
+}
 
 /*******************Responsive Tablet */
 @media all and (min-width: 700px) {

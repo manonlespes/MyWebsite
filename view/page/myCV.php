@@ -19,11 +19,34 @@
 </section>
 
 <section class="aim_banner">
-  <div class="aim">
-      <img src="public/images/aim.png" alt="seeking_intership_position">
-  </div>
+    <div class="aim">
+        <img src="public/images/aim.png" alt="seeking_intership_position">
+    </div>
 </section>
 
 <section class="experiences">
+
+    <div class="title1">
+        <img src="public/images/title_experiences.png" alt="experiences">
+    </div>
+
+    <div class="container_exp">
+        <div class="exp1"> <!-- flex-flow: row -->
+            <div><!-- flex-flow:column -->
+                <div>
+                    <p>Membership & Event coordinator</p>
+                    <p>Project Coordinator</p>
+                </div>
+    
+                <div class="subtext">
+                    <p>World Employment Confederation</p>
+                    <p>Brussels, Belgium</p>
+                </div>
+            </div>
+
+            <div class="img_tag"></div>
+        </div>
+
+    </div>
 
 </section>
