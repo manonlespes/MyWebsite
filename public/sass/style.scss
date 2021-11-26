@@ -23,6 +23,11 @@
     src: url("../fonts/MontserratAlternates-Light.ttf");
 }
 
+@font-face {
+    font-family: "MontserratAlternates-Bold";
+    src: url("../fonts/MontserratAlternates-Bold.ttf");
+}
+
 /* TODO amélioration font-face avec sass */
 
 @mixin keyframes($name) {
@@ -272,8 +277,7 @@ html {
     }
 
     .container_exp {
-        width: 80%;
-        height: 193px;
+        width: 90%;
         background: transparent;
         margin-top: 25px;
         border-radius: 151% 124% 90% 48% / 54% 17% 8% 91%;
@@ -281,8 +285,9 @@ html {
         border-left: 2px dashed #22d3b8;
         display: flex;
         justify-content: flex-start;
-        flex-flow: row wrap;
-        padding: 20px;
+        flex-flow: column nowrap;
+        padding-left: 14px;
+        padding-bottom: 10px;
 
         div > p {
             font-family: "MvtDirect-Black";
@@ -290,21 +295,59 @@ html {
             color: #7a0e1d;
         }
 
-        .subtext>p{
+        .subtext > p {
             font-family: "MontserratAlternates-Medium";
             font-size: 9px;
-            color: #1b2d2a
+            color: #1b2d2a;
         }
 
-        .exp1 {
-            width: 95%;
-            margin-top: 15px;
+        .exp1,
+        .exp2 {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
 
-            .img_tag{
-                background-image: url("../images/tag_exp.png")
+            .container_flex {
+                /* first div element directly placed after div */
+                display: flex;
+                flex-flow: column nowrap;
+                width: 60%;
+            }
 
-            };
+            .tag_exp {
+                background-image: url("../images/tag_exp.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-flow: column;
+                align-items: center;
+                padding-left: 17px;
 
+                p {
+                    font-family: "MontserratAlternates-Bold";
+                    color: #f2f5f8;
+                    text-align: center;
+                    padding-right: 5px;
+                    padding-bottom: 5px;
+                    font-size: 9px;
+                }
+            }
+
+            .subtext {
+                p > span {
+                    color: #22d3b8;
+                }
+            }
+        }
+
+        .exp2 {
+            margin-top: 10px;
         }
     }
 }

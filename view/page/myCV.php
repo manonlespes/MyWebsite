@@ -32,7 +32,7 @@
 
     <div class="container_exp">
         <div class="exp1"> <!-- flex-flow: row -->
-            <div><!-- flex-flow:column -->
+            <div class="container_flex"><!-- flex-flow:column -->
                 <div>
                     <p>Membership & Event coordinator</p>
                     <p>Project Coordinator</p>
@@ -40,13 +40,40 @@
     
                 <div class="subtext">
                     <p>World Employment Confederation</p>
-                    <p>Brussels, Belgium</p>
+                    <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
 
-            <div class="img_tag"></div>
+            <div class="tag_exp">
+                <p>01/2020-12/2020</p>
+            </div>
+        </div>
+
+        <div class="exp2"> <!-- flex-flow: row -->
+            <div class="container_flex"><!-- flex-flow:column -->
+                <div>
+                    <p>Membership & Event coordinator</p>
+                    <p>Project Coordinator</p>
+                </div>
+    
+                <div class="subtext">
+                    <p>World Employment Confederation</p>
+                    <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
+                </div>
+            </div>
+
+            <div class="tag_exp">
+                <p>01/2020-12/2020</p>
+            </div>
         </div>
 
     </div>
+</section>
+
+<section style="height: 100px;">
+
+</section>
+
+<section>
 
 </section>

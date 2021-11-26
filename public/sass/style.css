@@ -24,6 +24,11 @@
   src: url("../fonts/MontserratAlternates-Light.ttf");
 }
 
+@font-face {
+  font-family: "MontserratAlternates-Bold";
+  src: url("../fonts/MontserratAlternates-Bold.ttf");
+}
+
 /* TODO amélioration font-face avec sass */
 body {
   font-size: 15px;
@@ -323,8 +328,7 @@ html {
 }
 
 .experiences .container_exp {
-  width: 80%;
-  height: 193px;
+  width: 90%;
   background: transparent;
   margin-top: 25px;
   border-radius: 151% 124% 90% 48% / 54% 17% 8% 91%;
@@ -336,11 +340,12 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  padding: 20px;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding-left: 14px;
+  padding-bottom: 10px;
 }
 
 .experiences .container_exp div > p {
@@ -355,13 +360,77 @@ html {
   color: #1b2d2a;
 }
 
-.experiences .container_exp .exp1 {
-  width: 95%;
-  margin-top: 15px;
+.experiences .container_exp .exp1,
+.experiences .container_exp .exp2 {
+  width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.experiences .container_exp .exp1 .img_tag {
+.experiences .container_exp .exp1 .container_flex,
+.experiences .container_exp .exp2 .container_flex {
+  /* first div element directly placed after div */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 60%;
+}
+
+.experiences .container_exp .exp1 .tag_exp,
+.experiences .container_exp .exp2 .tag_exp {
   background-image: url("../images/tag_exp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 17px;
+}
+
+.experiences .container_exp .exp1 .tag_exp p,
+.experiences .container_exp .exp2 .tag_exp p {
+  font-family: "MontserratAlternates-Bold";
+  color: #f2f5f8;
+  text-align: center;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  font-size: 9px;
+}
+
+.experiences .container_exp .exp1 .subtext p > span,
+.experiences .container_exp .exp2 .subtext p > span {
+  color: #22d3b8;
+}
+
+.experiences .container_exp .exp2 {
+  margin-top: 10px;
 }
 
 /*******************Responsive Tablet */
