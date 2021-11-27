@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "MvtDirect-Thin";
+    src: url("../fonts/Movement-DirectThin.woff");
+}
+$MvtThin:"MvtDirect-Thin";
+
+@font-face {
+    font-family: "MvtDirect-Black";
+    src: url("../fonts/Movement-DirectBlack.woff");
+}
+$MvtBlack:"MvtDirect-Black";
+
+@font-face {
+    font-family: "MontserratAlternates-Regular";
+    src: url("../fonts/MontserratAlternates-Regular.ttf");
+}
+$MontReg:"MontserratAlternates-Regular";
+
+@font-face {
+    font-family: "MontserratAlternates-Medium";
+    src: url("../fonts/MontserratAlternates-Medium.ttf");
+}
+$MontMed:"MontserratAlternates-Medium";
+
+@font-face {
+    font-family: "MontserratAlternates-Light";
+    src: url("../fonts/MontserratAlternates-Light.ttf");
+}
+$MontLight: "MontserratAlternates-Light";
+
+@font-face {
+    font-family: "MontserratAlternates-Bold";
+    src: url("../fonts/MontserratAlternates-Bold.ttf");
+}
+$MontBold: "MontserratAlternates-Bold";

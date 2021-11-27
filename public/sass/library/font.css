@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "MvtDirect-Thin";
+  src: url("../fonts/Movement-DirectThin.woff");
+}
+
+@font-face {
+  font-family: "MvtDirect-Black";
+  src: url("../fonts/Movement-DirectBlack.woff");
+}
+
+@font-face {
+  font-family: "MontserratAlternates-Regular";
+  src: url("../fonts/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MontserratAlternates-Medium";
+  src: url("../fonts/MontserratAlternates-Medium.ttf");
+}
+
+@font-face {
+  font-family: "MontserratAlternates-Light";
+  src: url("../fonts/MontserratAlternates-Light.ttf");
+}
+
+@font-face {
+  font-family: "MontserratAlternates-Bold";
+  src: url("../fonts/MontserratAlternates-Bold.ttf");
+}
+/*# sourceMappingURL=font.css.map */

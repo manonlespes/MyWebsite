@@ -1,34 +1,5 @@
-@font-face {
-    font-family: "MvtDirect-Thin";
-    src: url("../fonts/Movement-DirectThin.woff");
-}
-
-@font-face {
-    font-family: "MvtDirect-Black";
-    src: url("../fonts/Movement-DirectBlack.woff");
-}
-
-@font-face {
-    font-family: "MontserratAlternates-Regular";
-    src: url("../fonts/MontserratAlternates-Regular.ttf");
-}
-
-@font-face {
-    font-family: "MontserratAlternates-Medium";
-    src: url("../fonts/MontserratAlternates-Medium.ttf");
-}
-
-@font-face {
-    font-family: "MontserratAlternates-Light";
-    src: url("../fonts/MontserratAlternates-Light.ttf");
-}
-
-@font-face {
-    font-family: "MontserratAlternates-Bold";
-    src: url("../fonts/MontserratAlternates-Bold.ttf");
-}
-
-/* TODO amélioration font-face avec sass */
+@import "library/font.scss";
+@import "library/responsive.scss";
 
 @mixin keyframes($name) {
     @-webkit-keyframes #{$name} {
@@ -62,9 +33,18 @@
     animation-iteration-count: $iteration;
 }
 
+/* variables colors  */
+
+$white: #f2f5f8;
+$green: #0e7a69;
+$red: #7a0e1d;
+$skyblue: #22d3b8;
+$darkgreen: #1b2d2a;
+
+
 body {
     font-size: 15px;
-    background: #f2f5f8;
+    background: $white;
 }
 
 * {
@@ -97,7 +77,7 @@ html {
     width: 220px;
     height: 210px;
     border-bottom-left-radius: 200px;
-    background-color: #0e7a69;
+    background-color:$green;
     position: fixed;
     z-index: 99999999;
     top: 0px;
@@ -108,7 +88,7 @@ html {
 
         height: 100%;
         font-size: 0.65em;
-        color: #f2f5f8;
+        color: $white;
         text-align: center;
     }
 
@@ -134,9 +114,9 @@ html {
             }
 
             a {
-                color: #f2f5f8;
+                color: $white;
                 text-decoration: none;
-                font-family: "MvtDirect-Thin";
+                font-family: $MvtThin;
             }
         }
     }
@@ -195,7 +175,7 @@ html {
     width: 80vw;
     margin-top: 100px;
     padding-bottom: 5px;
-    background-image: linear-gradient(to right, #22d3b8 30%, rgba(255, 255, 255, 0) 10%);
+    background-image: linear-gradient(to right, $skyblue 30%, rgba(255, 255, 255, 0) 10%);
     background-position: bottom;
     background-size: 10px 3px;
     background-repeat: repeat-x;
@@ -224,15 +204,15 @@ html {
         width: 80%;
 
         h1 {
-            font-family: "MvtDirect-Black";
+            font-family: $MvtBlack;
             font-size: 1rem;
-            color: #7a0e1d;
+            color:$red;
         }
 
         p {
-            font-family: "MontserratAlternates-Regular";
+            font-family: $MontReg;
             font-size: 0.7rem;
-            color: #0e7a69;
+            color:$green;
             line-height: 20px;
             margin: 15px;
         }
@@ -281,8 +261,8 @@ html {
         background: transparent;
         margin-top: 25px;
         border-radius: 77% 273% 90% 28% / 35% 31% 35% 100%;
-        border-top: 3px solid #22d3b8;
-        border-left: 3px solid #22d3b8;
+        border-top: 3px solid $skyblue;
+        border-left: 3px solid $skyblue;
         display: flex;
         justify-content: flex-start;
         flex-flow: column nowrap;
@@ -292,23 +272,23 @@ html {
         height: 215px;
 
         div > p {
-            font-family: "MvtDirect-Black";
+            font-family: $MvtBlack;
             font-size: 10px;
-            color: #7a0e1d;
+            color:$red;
         }
 
         .subtext > p {
-            font-family: "MontserratAlternates-Medium";
+            font-family: $MontMed;
             font-size: 10px;
-            color: #1b2d2a;
+            color: $darkgreen;
 
             a {
                 text-decoration: none;
-                color: #1b2d2a;
+                color: $darkgreen;
                 cursor: pointer;
 
                 &:visited {
-                    color: #0e7a69;
+                    color:$green;
                 }
             }
         }
@@ -348,8 +328,8 @@ html {
                 padding-left: 17px;
 
                 p {
-                    font-family: "MontserratAlternates-Bold";
-                    color: #f2f5f8;
+                    font-family: $MontBold;
+                    color:$white;
                     text-align: center;
                     padding-right: 5px;
                     padding-bottom: 5px;
@@ -359,7 +339,7 @@ html {
 
             .subtext {
                 p > span {
-                    color: #22d3b8;
+                    color: $skyblue;
                 }
             }
         }
@@ -375,7 +355,7 @@ html {
 }
 
 /*******************Responsive Tablet */
-@media all and (min-width: 700px) {
+@media #{$tablet} {
     /* design Menu */
     #menu_hamburger {
         img {
@@ -482,7 +462,7 @@ html {
 
                 .tag_exp {
                     p {
-                        font-family: "MontserratAlternates-Medium";
+                        font-family: $MontMed;
                         font-size: 13px;
                     }
                 }
@@ -491,8 +471,10 @@ html {
     }
 }
 
+
+
 /***********************Responsive Desktop */
-@media all and (min-width: 960px) {
+@media #{$desktop} {
     /* design menu */
     #menu_hamburger {
         img {
@@ -551,13 +533,13 @@ html {
     .experiences {
         .container_exp {
             .subtext > p {
-                font-family: "MontserratAlternates-Medium";
+                font-family: $MontMed;
                 font-size: 10px;
 
                 a {
                     &:hover,
                     &:active {
-                        color: #0e7a69;
+                        color:$green;
                     }
                 }
             }

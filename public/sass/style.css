@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "MvtDirect-Thin";
   src: url("../fonts/Movement-DirectThin.woff");
@@ -29,7 +28,7 @@
   src: url("../fonts/MontserratAlternates-Bold.ttf");
 }
 
-/* TODO amélioration font-face avec sass */
+/* variables colors  */
 body {
   font-size: 15px;
   background: #f2f5f8;
