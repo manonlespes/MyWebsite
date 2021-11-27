@@ -6,7 +6,11 @@
 <section class="introduction">
     <div class="images_intro">
         <div class="image_Manon">
-            <img src="public/images/Fusion_Manon.png" alt="image_ManonLespes">
+            <picture>
+                <source media="(min-width:700px)" srcset="public/images/medium_screen.png">
+                <source media="(min-width:960px)" srcset="public/images/large_screen.png">
+                <img src="public/images/small_screen.png" alt="image_ManonLespes"><!-- default -->
+            </picture>
         </div>
     </div>
 

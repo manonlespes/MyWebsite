@@ -45,7 +45,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* TODO use variables to create breakpoints */
 /* design Menu */
 #menu_hamburger {
   position: fixed;
@@ -225,12 +224,11 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%vw;
-  margin-top: 40px;
+  margin-top: 6px;
 }
 
-.introduction .images_intro .image_Manon img {
-  width: 400px;
-  /* TODO do another size for the mobile especially */
+.introduction .images_intro .image_Manon picture img {
+  width: 340px;
   z-index: 2;
 }
 
@@ -283,7 +281,7 @@ html {
 }
 
 .aim_banner .aim img {
-  width: 220px;
+  width: 310px;
 }
 
 /* design experiences_section */
@@ -473,7 +471,7 @@ html {
 }
 
 /*******************Responsive Tablet */
-@media all and (min-width: 700px) {
+@media only screen and (min-width: 700px) {
   /* design Menu */
   #menu_hamburger img {
     width: 70px;
@@ -500,7 +498,7 @@ html {
   .logo a img {
     width: 110px;
   }
-  .introduction .images_intro .image_Manon img {
+  .introduction .images_intro .image_Manon picture img {
     width: 740px;
   }
   .introduction .text_intro {
@@ -557,7 +555,7 @@ html {
 }
 
 /***********************Responsive Desktop */
-@media all and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
   /* design menu */
   #menu_hamburger img {
     width: 90px;
@@ -577,7 +575,7 @@ html {
     width: 50px;
   }
   /* design intro */
-  .introduction .images_intro .image_Manon img {
+  .introduction .images_intro .image_Manon picture img {
     width: 1195px;
   }
   .introduction .text_intro {
