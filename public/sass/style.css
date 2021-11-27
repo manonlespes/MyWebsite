@@ -285,7 +285,8 @@ html {
 }
 
 /* design experiences_section */
-.experiences {
+.experiences,
+.backgrounds {
   margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +305,10 @@ html {
   margin: auto;
 }
 
-.experiences .title1 {
+.experiences .title1,
+.experiences .title2,
+.backgrounds .title1,
+.backgrounds .title2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,19 +316,32 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
+  width: 90%;
 }
 
-.experiences .title1 img {
+.experiences .title1 img,
+.experiences .title2 img,
+.backgrounds .title1 img,
+.backgrounds .title2 img {
   width: 200px;
 }
 
-.experiences .container_exp {
+.experiences .title1,
+.backgrounds .title1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.experiences .container_exp,
+.experiences .container_back,
+.backgrounds .container_exp,
+.backgrounds .container_back {
   width: 90%;
   background: transparent;
   margin-top: 25px;
@@ -347,25 +364,37 @@ html {
   height: 215px;
 }
 
-.experiences .container_exp div > p {
+.experiences .container_exp div > p,
+.experiences .container_back div > p,
+.backgrounds .container_exp div > p,
+.backgrounds .container_back div > p {
   font-family: "MvtDirect-Black";
   font-size: 11px;
   color: #7a0e1d;
 }
 
-.experiences .container_exp .subtext > p {
+.experiences .container_exp .subtext > p,
+.experiences .container_back .subtext > p,
+.backgrounds .container_exp .subtext > p,
+.backgrounds .container_back .subtext > p {
   font-family: "MontserratAlternates-Medium";
   font-size: 10px;
   color: #1b2d2a;
 }
 
-.experiences .container_exp .subtext > p a {
+.experiences .container_exp .subtext > p a,
+.experiences .container_back .subtext > p a,
+.backgrounds .container_exp .subtext > p a,
+.backgrounds .container_back .subtext > p a {
   text-decoration: none;
   color: #1b2d2a;
   cursor: pointer;
 }
 
-.experiences .container_exp .subtext > p a:visited {
+.experiences .container_exp .subtext > p a:visited,
+.experiences .container_back .subtext > p a:visited,
+.backgrounds .container_exp .subtext > p a:visited,
+.backgrounds .container_back .subtext > p a:visited {
   color: #0e7a69;
 }
 
@@ -374,9 +403,51 @@ html {
 .experiences .container_exp .exp3,
 .experiences .container_exp .exp4,
 .experiences .container_exp .exp5,
-.experiences .container_exp .exp6 {
-  width: 100%;
-  height: 55px;
+.experiences .container_exp .exp6,
+.experiences .container_exp .back1,
+.experiences .container_exp .back2,
+.experiences .container_exp .back3,
+.experiences .container_exp .back4,
+.experiences .container_exp .back5,
+.experiences .container_exp .back6,
+.experiences .container_back .exp1,
+.experiences .container_back .exp2,
+.experiences .container_back .exp3,
+.experiences .container_back .exp4,
+.experiences .container_back .exp5,
+.experiences .container_back .exp6,
+.experiences .container_back .back1,
+.experiences .container_back .back2,
+.experiences .container_back .back3,
+.experiences .container_back .back4,
+.experiences .container_back .back5,
+.experiences .container_back .back6,
+.backgrounds .container_exp .exp1,
+.backgrounds .container_exp .exp2,
+.backgrounds .container_exp .exp3,
+.backgrounds .container_exp .exp4,
+.backgrounds .container_exp .exp5,
+.backgrounds .container_exp .exp6,
+.backgrounds .container_exp .back1,
+.backgrounds .container_exp .back2,
+.backgrounds .container_exp .back3,
+.backgrounds .container_exp .back4,
+.backgrounds .container_exp .back5,
+.backgrounds .container_exp .back6,
+.backgrounds .container_back .exp1,
+.backgrounds .container_back .exp2,
+.backgrounds .container_back .exp3,
+.backgrounds .container_back .exp4,
+.backgrounds .container_back .exp5,
+.backgrounds .container_back .exp6,
+.backgrounds .container_back .back1,
+.backgrounds .container_back .back2,
+.backgrounds .container_back .back3,
+.backgrounds .container_back .back4,
+.backgrounds .container_back .back5,
+.backgrounds .container_back .back6 {
+  width: 95%;
+  height: 85px;
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,8 +466,49 @@ html {
 .experiences .container_exp .exp3 .container_flex,
 .experiences .container_exp .exp4 .container_flex,
 .experiences .container_exp .exp5 .container_flex,
-.experiences .container_exp .exp6 .container_flex {
-  /* first div element directly placed after div */
+.experiences .container_exp .exp6 .container_flex,
+.experiences .container_exp .back1 .container_flex,
+.experiences .container_exp .back2 .container_flex,
+.experiences .container_exp .back3 .container_flex,
+.experiences .container_exp .back4 .container_flex,
+.experiences .container_exp .back5 .container_flex,
+.experiences .container_exp .back6 .container_flex,
+.experiences .container_back .exp1 .container_flex,
+.experiences .container_back .exp2 .container_flex,
+.experiences .container_back .exp3 .container_flex,
+.experiences .container_back .exp4 .container_flex,
+.experiences .container_back .exp5 .container_flex,
+.experiences .container_back .exp6 .container_flex,
+.experiences .container_back .back1 .container_flex,
+.experiences .container_back .back2 .container_flex,
+.experiences .container_back .back3 .container_flex,
+.experiences .container_back .back4 .container_flex,
+.experiences .container_back .back5 .container_flex,
+.experiences .container_back .back6 .container_flex,
+.backgrounds .container_exp .exp1 .container_flex,
+.backgrounds .container_exp .exp2 .container_flex,
+.backgrounds .container_exp .exp3 .container_flex,
+.backgrounds .container_exp .exp4 .container_flex,
+.backgrounds .container_exp .exp5 .container_flex,
+.backgrounds .container_exp .exp6 .container_flex,
+.backgrounds .container_exp .back1 .container_flex,
+.backgrounds .container_exp .back2 .container_flex,
+.backgrounds .container_exp .back3 .container_flex,
+.backgrounds .container_exp .back4 .container_flex,
+.backgrounds .container_exp .back5 .container_flex,
+.backgrounds .container_exp .back6 .container_flex,
+.backgrounds .container_back .exp1 .container_flex,
+.backgrounds .container_back .exp2 .container_flex,
+.backgrounds .container_back .exp3 .container_flex,
+.backgrounds .container_back .exp4 .container_flex,
+.backgrounds .container_back .exp5 .container_flex,
+.backgrounds .container_back .exp6 .container_flex,
+.backgrounds .container_back .back1 .container_flex,
+.backgrounds .container_back .back2 .container_flex,
+.backgrounds .container_back .back3 .container_flex,
+.backgrounds .container_back .back4 .container_flex,
+.backgrounds .container_back .back5 .container_flex,
+.backgrounds .container_back .back6 .container_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,16 +523,101 @@ html {
 }
 
 .experiences .container_exp .exp1 .tag_exp,
+.experiences .container_exp .exp1 .tag_back,
 .experiences .container_exp .exp2 .tag_exp,
+.experiences .container_exp .exp2 .tag_back,
 .experiences .container_exp .exp3 .tag_exp,
+.experiences .container_exp .exp3 .tag_back,
 .experiences .container_exp .exp4 .tag_exp,
+.experiences .container_exp .exp4 .tag_back,
 .experiences .container_exp .exp5 .tag_exp,
-.experiences .container_exp .exp6 .tag_exp {
-  background-image: url("../images/tag_exp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 40%;
+.experiences .container_exp .exp5 .tag_back,
+.experiences .container_exp .exp6 .tag_exp,
+.experiences .container_exp .exp6 .tag_back,
+.experiences .container_exp .back1 .tag_exp,
+.experiences .container_exp .back1 .tag_back,
+.experiences .container_exp .back2 .tag_exp,
+.experiences .container_exp .back2 .tag_back,
+.experiences .container_exp .back3 .tag_exp,
+.experiences .container_exp .back3 .tag_back,
+.experiences .container_exp .back4 .tag_exp,
+.experiences .container_exp .back4 .tag_back,
+.experiences .container_exp .back5 .tag_exp,
+.experiences .container_exp .back5 .tag_back,
+.experiences .container_exp .back6 .tag_exp,
+.experiences .container_exp .back6 .tag_back,
+.experiences .container_back .exp1 .tag_exp,
+.experiences .container_back .exp1 .tag_back,
+.experiences .container_back .exp2 .tag_exp,
+.experiences .container_back .exp2 .tag_back,
+.experiences .container_back .exp3 .tag_exp,
+.experiences .container_back .exp3 .tag_back,
+.experiences .container_back .exp4 .tag_exp,
+.experiences .container_back .exp4 .tag_back,
+.experiences .container_back .exp5 .tag_exp,
+.experiences .container_back .exp5 .tag_back,
+.experiences .container_back .exp6 .tag_exp,
+.experiences .container_back .exp6 .tag_back,
+.experiences .container_back .back1 .tag_exp,
+.experiences .container_back .back1 .tag_back,
+.experiences .container_back .back2 .tag_exp,
+.experiences .container_back .back2 .tag_back,
+.experiences .container_back .back3 .tag_exp,
+.experiences .container_back .back3 .tag_back,
+.experiences .container_back .back4 .tag_exp,
+.experiences .container_back .back4 .tag_back,
+.experiences .container_back .back5 .tag_exp,
+.experiences .container_back .back5 .tag_back,
+.experiences .container_back .back6 .tag_exp,
+.experiences .container_back .back6 .tag_back,
+.backgrounds .container_exp .exp1 .tag_exp,
+.backgrounds .container_exp .exp1 .tag_back,
+.backgrounds .container_exp .exp2 .tag_exp,
+.backgrounds .container_exp .exp2 .tag_back,
+.backgrounds .container_exp .exp3 .tag_exp,
+.backgrounds .container_exp .exp3 .tag_back,
+.backgrounds .container_exp .exp4 .tag_exp,
+.backgrounds .container_exp .exp4 .tag_back,
+.backgrounds .container_exp .exp5 .tag_exp,
+.backgrounds .container_exp .exp5 .tag_back,
+.backgrounds .container_exp .exp6 .tag_exp,
+.backgrounds .container_exp .exp6 .tag_back,
+.backgrounds .container_exp .back1 .tag_exp,
+.backgrounds .container_exp .back1 .tag_back,
+.backgrounds .container_exp .back2 .tag_exp,
+.backgrounds .container_exp .back2 .tag_back,
+.backgrounds .container_exp .back3 .tag_exp,
+.backgrounds .container_exp .back3 .tag_back,
+.backgrounds .container_exp .back4 .tag_exp,
+.backgrounds .container_exp .back4 .tag_back,
+.backgrounds .container_exp .back5 .tag_exp,
+.backgrounds .container_exp .back5 .tag_back,
+.backgrounds .container_exp .back6 .tag_exp,
+.backgrounds .container_exp .back6 .tag_back,
+.backgrounds .container_back .exp1 .tag_exp,
+.backgrounds .container_back .exp1 .tag_back,
+.backgrounds .container_back .exp2 .tag_exp,
+.backgrounds .container_back .exp2 .tag_back,
+.backgrounds .container_back .exp3 .tag_exp,
+.backgrounds .container_back .exp3 .tag_back,
+.backgrounds .container_back .exp4 .tag_exp,
+.backgrounds .container_back .exp4 .tag_back,
+.backgrounds .container_back .exp5 .tag_exp,
+.backgrounds .container_back .exp5 .tag_back,
+.backgrounds .container_back .exp6 .tag_exp,
+.backgrounds .container_back .exp6 .tag_back,
+.backgrounds .container_back .back1 .tag_exp,
+.backgrounds .container_back .back1 .tag_back,
+.backgrounds .container_back .back2 .tag_exp,
+.backgrounds .container_back .back2 .tag_back,
+.backgrounds .container_back .back3 .tag_exp,
+.backgrounds .container_back .back3 .tag_back,
+.backgrounds .container_back .back4 .tag_exp,
+.backgrounds .container_back .back4 .tag_back,
+.backgrounds .container_back .back5 .tag_exp,
+.backgrounds .container_back .back5 .tag_back,
+.backgrounds .container_back .back6 .tag_exp,
+.backgrounds .container_back .back6 .tag_back {
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,15 +634,104 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 17px;
 }
 
 .experiences .container_exp .exp1 .tag_exp p,
+.experiences .container_exp .exp1 .tag_back p,
 .experiences .container_exp .exp2 .tag_exp p,
+.experiences .container_exp .exp2 .tag_back p,
 .experiences .container_exp .exp3 .tag_exp p,
+.experiences .container_exp .exp3 .tag_back p,
 .experiences .container_exp .exp4 .tag_exp p,
+.experiences .container_exp .exp4 .tag_back p,
 .experiences .container_exp .exp5 .tag_exp p,
-.experiences .container_exp .exp6 .tag_exp p {
+.experiences .container_exp .exp5 .tag_back p,
+.experiences .container_exp .exp6 .tag_exp p,
+.experiences .container_exp .exp6 .tag_back p,
+.experiences .container_exp .back1 .tag_exp p,
+.experiences .container_exp .back1 .tag_back p,
+.experiences .container_exp .back2 .tag_exp p,
+.experiences .container_exp .back2 .tag_back p,
+.experiences .container_exp .back3 .tag_exp p,
+.experiences .container_exp .back3 .tag_back p,
+.experiences .container_exp .back4 .tag_exp p,
+.experiences .container_exp .back4 .tag_back p,
+.experiences .container_exp .back5 .tag_exp p,
+.experiences .container_exp .back5 .tag_back p,
+.experiences .container_exp .back6 .tag_exp p,
+.experiences .container_exp .back6 .tag_back p,
+.experiences .container_back .exp1 .tag_exp p,
+.experiences .container_back .exp1 .tag_back p,
+.experiences .container_back .exp2 .tag_exp p,
+.experiences .container_back .exp2 .tag_back p,
+.experiences .container_back .exp3 .tag_exp p,
+.experiences .container_back .exp3 .tag_back p,
+.experiences .container_back .exp4 .tag_exp p,
+.experiences .container_back .exp4 .tag_back p,
+.experiences .container_back .exp5 .tag_exp p,
+.experiences .container_back .exp5 .tag_back p,
+.experiences .container_back .exp6 .tag_exp p,
+.experiences .container_back .exp6 .tag_back p,
+.experiences .container_back .back1 .tag_exp p,
+.experiences .container_back .back1 .tag_back p,
+.experiences .container_back .back2 .tag_exp p,
+.experiences .container_back .back2 .tag_back p,
+.experiences .container_back .back3 .tag_exp p,
+.experiences .container_back .back3 .tag_back p,
+.experiences .container_back .back4 .tag_exp p,
+.experiences .container_back .back4 .tag_back p,
+.experiences .container_back .back5 .tag_exp p,
+.experiences .container_back .back5 .tag_back p,
+.experiences .container_back .back6 .tag_exp p,
+.experiences .container_back .back6 .tag_back p,
+.backgrounds .container_exp .exp1 .tag_exp p,
+.backgrounds .container_exp .exp1 .tag_back p,
+.backgrounds .container_exp .exp2 .tag_exp p,
+.backgrounds .container_exp .exp2 .tag_back p,
+.backgrounds .container_exp .exp3 .tag_exp p,
+.backgrounds .container_exp .exp3 .tag_back p,
+.backgrounds .container_exp .exp4 .tag_exp p,
+.backgrounds .container_exp .exp4 .tag_back p,
+.backgrounds .container_exp .exp5 .tag_exp p,
+.backgrounds .container_exp .exp5 .tag_back p,
+.backgrounds .container_exp .exp6 .tag_exp p,
+.backgrounds .container_exp .exp6 .tag_back p,
+.backgrounds .container_exp .back1 .tag_exp p,
+.backgrounds .container_exp .back1 .tag_back p,
+.backgrounds .container_exp .back2 .tag_exp p,
+.backgrounds .container_exp .back2 .tag_back p,
+.backgrounds .container_exp .back3 .tag_exp p,
+.backgrounds .container_exp .back3 .tag_back p,
+.backgrounds .container_exp .back4 .tag_exp p,
+.backgrounds .container_exp .back4 .tag_back p,
+.backgrounds .container_exp .back5 .tag_exp p,
+.backgrounds .container_exp .back5 .tag_back p,
+.backgrounds .container_exp .back6 .tag_exp p,
+.backgrounds .container_exp .back6 .tag_back p,
+.backgrounds .container_back .exp1 .tag_exp p,
+.backgrounds .container_back .exp1 .tag_back p,
+.backgrounds .container_back .exp2 .tag_exp p,
+.backgrounds .container_back .exp2 .tag_back p,
+.backgrounds .container_back .exp3 .tag_exp p,
+.backgrounds .container_back .exp3 .tag_back p,
+.backgrounds .container_back .exp4 .tag_exp p,
+.backgrounds .container_back .exp4 .tag_back p,
+.backgrounds .container_back .exp5 .tag_exp p,
+.backgrounds .container_back .exp5 .tag_back p,
+.backgrounds .container_back .exp6 .tag_exp p,
+.backgrounds .container_back .exp6 .tag_back p,
+.backgrounds .container_back .back1 .tag_exp p,
+.backgrounds .container_back .back1 .tag_back p,
+.backgrounds .container_back .back2 .tag_exp p,
+.backgrounds .container_back .back2 .tag_back p,
+.backgrounds .container_back .back3 .tag_exp p,
+.backgrounds .container_back .back3 .tag_back p,
+.backgrounds .container_back .back4 .tag_exp p,
+.backgrounds .container_back .back4 .tag_back p,
+.backgrounds .container_back .back5 .tag_exp p,
+.backgrounds .container_back .back5 .tag_back p,
+.backgrounds .container_back .back6 .tag_exp p,
+.backgrounds .container_back .back6 .tag_back p {
   font-family: "MontserratAlternates-Bold";
   color: #f2f5f8;
   text-align: center;
@@ -453,12 +739,110 @@ html {
   font-size: 10px;
 }
 
+.experiences .container_exp .exp1 .tag_exp,
+.experiences .container_exp .exp2 .tag_exp,
+.experiences .container_exp .exp3 .tag_exp,
+.experiences .container_exp .exp4 .tag_exp,
+.experiences .container_exp .exp5 .tag_exp,
+.experiences .container_exp .exp6 .tag_exp,
+.experiences .container_exp .back1 .tag_exp,
+.experiences .container_exp .back2 .tag_exp,
+.experiences .container_exp .back3 .tag_exp,
+.experiences .container_exp .back4 .tag_exp,
+.experiences .container_exp .back5 .tag_exp,
+.experiences .container_exp .back6 .tag_exp,
+.experiences .container_back .exp1 .tag_exp,
+.experiences .container_back .exp2 .tag_exp,
+.experiences .container_back .exp3 .tag_exp,
+.experiences .container_back .exp4 .tag_exp,
+.experiences .container_back .exp5 .tag_exp,
+.experiences .container_back .exp6 .tag_exp,
+.experiences .container_back .back1 .tag_exp,
+.experiences .container_back .back2 .tag_exp,
+.experiences .container_back .back3 .tag_exp,
+.experiences .container_back .back4 .tag_exp,
+.experiences .container_back .back5 .tag_exp,
+.experiences .container_back .back6 .tag_exp,
+.backgrounds .container_exp .exp1 .tag_exp,
+.backgrounds .container_exp .exp2 .tag_exp,
+.backgrounds .container_exp .exp3 .tag_exp,
+.backgrounds .container_exp .exp4 .tag_exp,
+.backgrounds .container_exp .exp5 .tag_exp,
+.backgrounds .container_exp .exp6 .tag_exp,
+.backgrounds .container_exp .back1 .tag_exp,
+.backgrounds .container_exp .back2 .tag_exp,
+.backgrounds .container_exp .back3 .tag_exp,
+.backgrounds .container_exp .back4 .tag_exp,
+.backgrounds .container_exp .back5 .tag_exp,
+.backgrounds .container_exp .back6 .tag_exp,
+.backgrounds .container_back .exp1 .tag_exp,
+.backgrounds .container_back .exp2 .tag_exp,
+.backgrounds .container_back .exp3 .tag_exp,
+.backgrounds .container_back .exp4 .tag_exp,
+.backgrounds .container_back .exp5 .tag_exp,
+.backgrounds .container_back .exp6 .tag_exp,
+.backgrounds .container_back .back1 .tag_exp,
+.backgrounds .container_back .back2 .tag_exp,
+.backgrounds .container_back .back3 .tag_exp,
+.backgrounds .container_back .back4 .tag_exp,
+.backgrounds .container_back .back5 .tag_exp,
+.backgrounds .container_back .back6 .tag_exp {
+  width: 40%;
+  background-image: url("../images/tag_exp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 17px;
+}
+
 .experiences .container_exp .exp1 .subtext p > span,
 .experiences .container_exp .exp2 .subtext p > span,
 .experiences .container_exp .exp3 .subtext p > span,
 .experiences .container_exp .exp4 .subtext p > span,
 .experiences .container_exp .exp5 .subtext p > span,
-.experiences .container_exp .exp6 .subtext p > span {
+.experiences .container_exp .exp6 .subtext p > span,
+.experiences .container_exp .back1 .subtext p > span,
+.experiences .container_exp .back2 .subtext p > span,
+.experiences .container_exp .back3 .subtext p > span,
+.experiences .container_exp .back4 .subtext p > span,
+.experiences .container_exp .back5 .subtext p > span,
+.experiences .container_exp .back6 .subtext p > span,
+.experiences .container_back .exp1 .subtext p > span,
+.experiences .container_back .exp2 .subtext p > span,
+.experiences .container_back .exp3 .subtext p > span,
+.experiences .container_back .exp4 .subtext p > span,
+.experiences .container_back .exp5 .subtext p > span,
+.experiences .container_back .exp6 .subtext p > span,
+.experiences .container_back .back1 .subtext p > span,
+.experiences .container_back .back2 .subtext p > span,
+.experiences .container_back .back3 .subtext p > span,
+.experiences .container_back .back4 .subtext p > span,
+.experiences .container_back .back5 .subtext p > span,
+.experiences .container_back .back6 .subtext p > span,
+.backgrounds .container_exp .exp1 .subtext p > span,
+.backgrounds .container_exp .exp2 .subtext p > span,
+.backgrounds .container_exp .exp3 .subtext p > span,
+.backgrounds .container_exp .exp4 .subtext p > span,
+.backgrounds .container_exp .exp5 .subtext p > span,
+.backgrounds .container_exp .exp6 .subtext p > span,
+.backgrounds .container_exp .back1 .subtext p > span,
+.backgrounds .container_exp .back2 .subtext p > span,
+.backgrounds .container_exp .back3 .subtext p > span,
+.backgrounds .container_exp .back4 .subtext p > span,
+.backgrounds .container_exp .back5 .subtext p > span,
+.backgrounds .container_exp .back6 .subtext p > span,
+.backgrounds .container_back .exp1 .subtext p > span,
+.backgrounds .container_back .exp2 .subtext p > span,
+.backgrounds .container_back .exp3 .subtext p > span,
+.backgrounds .container_back .exp4 .subtext p > span,
+.backgrounds .container_back .exp5 .subtext p > span,
+.backgrounds .container_back .exp6 .subtext p > span,
+.backgrounds .container_back .back1 .subtext p > span,
+.backgrounds .container_back .back2 .subtext p > span,
+.backgrounds .container_back .back3 .subtext p > span,
+.backgrounds .container_back .back4 .subtext p > span,
+.backgrounds .container_back .back5 .subtext p > span,
+.backgrounds .container_back .back6 .subtext p > span {
   color: #22d3b8;
 }
 
@@ -466,8 +850,69 @@ html {
 .experiences .container_exp .exp3,
 .experiences .container_exp .exp4,
 .experiences .container_exp .exp5,
-.experiences .container_exp .exp6 {
+.experiences .container_exp .exp6,
+.experiences .container_exp .back2,
+.experiences .container_exp .back3,
+.experiences .container_exp .back4,
+.experiences .container_exp .back5,
+.experiences .container_exp .back6,
+.experiences .container_back .exp2,
+.experiences .container_back .exp3,
+.experiences .container_back .exp4,
+.experiences .container_back .exp5,
+.experiences .container_back .exp6,
+.experiences .container_back .back2,
+.experiences .container_back .back3,
+.experiences .container_back .back4,
+.experiences .container_back .back5,
+.experiences .container_back .back6,
+.backgrounds .container_exp .exp2,
+.backgrounds .container_exp .exp3,
+.backgrounds .container_exp .exp4,
+.backgrounds .container_exp .exp5,
+.backgrounds .container_exp .exp6,
+.backgrounds .container_exp .back2,
+.backgrounds .container_exp .back3,
+.backgrounds .container_exp .back4,
+.backgrounds .container_exp .back5,
+.backgrounds .container_exp .back6,
+.backgrounds .container_back .exp2,
+.backgrounds .container_back .exp3,
+.backgrounds .container_back .exp4,
+.backgrounds .container_back .exp5,
+.backgrounds .container_back .exp6,
+.backgrounds .container_back .back2,
+.backgrounds .container_back .back3,
+.backgrounds .container_back .back4,
+.backgrounds .container_back .back5,
+.backgrounds .container_back .back6 {
   margin-top: 10px;
+}
+
+.backgrounds {
+  margin-top: 50px;
+}
+
+.backgrounds .title2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.backgrounds .container_back {
+  padding-left: 0px;
+  /*  div > p {
+            text-align: end;
+        } */
+}
+
+.backgrounds .container_back .back1 .tag_back, .backgrounds .container_back .back2 .tag_back, .backgrounds .container_back .back3 .tag_back, .backgrounds .container_back .back4 .tag_back, .backgrounds .container_back .back5 .tag_back, .backgrounds .container_back .back6 .tag_back {
+  width: 20%;
+}
+
+.backgrounds .container_back .back1 .tag_back img, .backgrounds .container_back .back2 .tag_back img, .backgrounds .container_back .back3 .tag_back img, .backgrounds .container_back .back4 .tag_back img, .backgrounds .container_back .back5 .tag_back img, .backgrounds .container_back .back6 .tag_back img {
+  width: 90px;
 }
 
 /*******************Responsive Tablet */
@@ -518,21 +963,30 @@ html {
     width: 285px;
   }
   /* design section_exp */
-  .experiences {
+  .experiences,
+  .backgrounds {
     width: 80vw;
   }
-  .experiences .title1 img {
+  .experiences .title1,
+  .backgrounds .title1 {
+    margin-bottom: 45px;
+  }
+  .experiences .title1 img,
+  .backgrounds .title1 img {
     width: 335px;
   }
-  .experiences .container_exp {
+  .experiences .container_exp,
+  .backgrounds .container_exp {
     width: 90%;
     padding-left: 40px;
     height: 320px;
   }
-  .experiences .container_exp div > p {
+  .experiences .container_exp div > p,
+  .backgrounds .container_exp div > p {
     font-size: 14px;
   }
-  .experiences .container_exp .subtext > p {
+  .experiences .container_exp .subtext > p,
+  .backgrounds .container_exp .subtext > p {
     font-size: 14px;
   }
   .experiences .container_exp .exp1,
@@ -540,7 +994,13 @@ html {
   .experiences .container_exp .exp3,
   .experiences .container_exp .exp4,
   .experiences .container_exp .exp5,
-  .experiences .container_exp .exp6 {
+  .experiences .container_exp .exp6,
+  .backgrounds .container_exp .exp1,
+  .backgrounds .container_exp .exp2,
+  .backgrounds .container_exp .exp3,
+  .backgrounds .container_exp .exp4,
+  .backgrounds .container_exp .exp5,
+  .backgrounds .container_exp .exp6 {
     height: 200px;
   }
   .experiences .container_exp .exp1 .tag_exp,
@@ -548,7 +1008,13 @@ html {
   .experiences .container_exp .exp3 .tag_exp,
   .experiences .container_exp .exp4 .tag_exp,
   .experiences .container_exp .exp5 .tag_exp,
-  .experiences .container_exp .exp6 .tag_exp {
+  .experiences .container_exp .exp6 .tag_exp,
+  .backgrounds .container_exp .exp1 .tag_exp,
+  .backgrounds .container_exp .exp2 .tag_exp,
+  .backgrounds .container_exp .exp3 .tag_exp,
+  .backgrounds .container_exp .exp4 .tag_exp,
+  .backgrounds .container_exp .exp5 .tag_exp,
+  .backgrounds .container_exp .exp6 .tag_exp {
     height: 65px;
     padding-left: 25px;
   }
@@ -557,7 +1023,13 @@ html {
   .experiences .container_exp .exp3 .tag_exp p,
   .experiences .container_exp .exp4 .tag_exp p,
   .experiences .container_exp .exp5 .tag_exp p,
-  .experiences .container_exp .exp6 .tag_exp p {
+  .experiences .container_exp .exp6 .tag_exp p,
+  .backgrounds .container_exp .exp1 .tag_exp p,
+  .backgrounds .container_exp .exp2 .tag_exp p,
+  .backgrounds .container_exp .exp3 .tag_exp p,
+  .backgrounds .container_exp .exp4 .tag_exp p,
+  .backgrounds .container_exp .exp5 .tag_exp p,
+  .backgrounds .container_exp .exp6 .tag_exp p {
     font-family: "MontserratAlternates-Bold";
     font-size: 13px;
   }
@@ -605,7 +1077,12 @@ html {
   .experiences .container_exp div > p {
     font-size: 18px;
   }
-  .experiences .container_exp .exp1 .container_flex, .experiences .container_exp .exp2 .container_flex, .experiences .container_exp .exp3 .container_flex, .experiences .container_exp .exp4 .container_flex, .experiences .container_exp .exp5 .container_flex, .experiences .container_exp .exp6 .container_flex {
+  .experiences .container_exp .exp1 .container_flex,
+  .experiences .container_exp .exp2 .container_flex,
+  .experiences .container_exp .exp3 .container_flex,
+  .experiences .container_exp .exp4 .container_flex,
+  .experiences .container_exp .exp5 .container_flex,
+  .experiences .container_exp .exp6 .container_flex {
     height: 80px;
   }
   .experiences .container_exp .subtext > p {
@@ -613,7 +1090,7 @@ html {
     font-size: 14px;
   }
   .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active {
-    color: #0e7a69;
+    color: #c62a40;
   }
 }
 /*# sourceMappingURL=style.css.map */

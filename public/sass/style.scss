@@ -38,6 +38,7 @@
 $white: #f2f5f8;
 $green: #0e7a69;
 $red: #7a0e1d;
+$cherry: #c62a40;
 $skyblue: #22d3b8;
 $darkgreen: #1b2d2a;
 
@@ -236,7 +237,8 @@ html {
 
 /* design experiences_section */
 
-.experiences {
+.experiences,
+.backgrounds {
     margin-top: 55px;
     display: flex;
     flex-flow: column nowrap;
@@ -245,17 +247,26 @@ html {
     width: 100vw;
     margin: auto;
 
-    .title1 {
+    .title1,
+    .title2 {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: flex-start;
         align-items: center;
+        margin-bottom: 15px;
+        width: 90%;
+
         img {
             width: 200px;
         }
     }
 
-    .container_exp {
+    .title1 {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .container_exp,
+    .container_back {
         width: 90%;
         background: transparent;
         margin-top: 25px;
@@ -297,35 +308,35 @@ html {
         .exp3,
         .exp4,
         .exp5,
-        .exp6 {
-            width: 100%;
-            height: 55px;
+        .exp6,
+        .back1,
+        .back2,
+        .back3,
+        .back4,
+        .back5,
+        .back6 {
+            width: 95%;
+            height: 85px;
             margin-top: 30px;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-evenly;
 
             .container_flex {
-                /* first div element directly placed after div */
                 display: flex;
                 flex-flow: column nowrap;
                 width: 60%;
                 justify-content: center;
             }
 
-            .tag_exp {
-                background-image: url("../images/tag_exp.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 40%;
+            .tag_exp,
+            .tag_back {
                 height: 45px;
                 display: flex;
                 justify-content: center;
                 align-content: center;
                 flex-flow: column;
                 align-items: center;
-                padding-left: 17px;
 
                 p {
                     font-family: $MontBold;
@@ -334,6 +345,15 @@ html {
                     padding-bottom: 5px;
                     font-size: 10px;
                 }
+            }
+
+            .tag_exp {
+                width: 40%;
+                background-image: url("../images/tag_exp.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding-left: 17px;
             }
 
             .subtext {
@@ -347,8 +367,39 @@ html {
         .exp3,
         .exp4,
         .exp5,
-        .exp6 {
+        .exp6,
+        .back2,
+        .back3,
+        .back4,
+        .back5,
+        .back6 {
             margin-top: 10px;
+        }
+    }
+}
+
+.backgrounds {
+    margin-top: 50px;
+
+    .title2 {
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    .container_back {
+        padding-left: 0px;
+
+        /*  div > p {
+            text-align: end;
+        } */
+
+        .back1, .back2, .back3, .back4, .back5, .back6 {
+            .tag_back {
+                width: 20%;
+                img {
+                    width: 90px;
+                }
+            }
         }
     }
 }
@@ -431,10 +482,12 @@ html {
 
     /* design section_exp */
 
-    .experiences {
+    .experiences,
+    .backgrounds {
         width: 80vw;
 
         .title1 {
+            margin-bottom: 45px;
             img {
                 width: 335px;
             }
@@ -464,7 +517,6 @@ html {
                 .tag_exp {
                     height: 65px;
                     padding-left: 25px;
-
 
                     p {
                         font-family: $MontBold;
@@ -537,7 +589,6 @@ html {
 
     .experiences {
         .container_exp {
-
             width: 50%;
             height: 362px;
 
@@ -545,8 +596,13 @@ html {
                 font-size: 18px;
             }
 
-            .exp1, .exp2, .exp3, .exp4, .exp5, .exp6{
-                .container_flex{
+            .exp1,
+            .exp2,
+            .exp3,
+            .exp4,
+            .exp5,
+            .exp6 {
+                .container_flex {
                     height: 80px;
                 }
             }
@@ -558,12 +614,10 @@ html {
                 a {
                     &:hover,
                     &:active {
-                        color: $green;
+                        color: $cherry;
                     }
                 }
             }
         }
     }
 }
-
-
