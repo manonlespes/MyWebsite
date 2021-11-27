@@ -28,7 +28,7 @@
     </div>
 </section>
 
-<section class="experiences">
+<section id="experiences" class="experiences">
 
     <div class="title1">
         <img src="public/images/title_experiences.png" alt="experiences">

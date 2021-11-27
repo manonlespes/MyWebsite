@@ -4,7 +4,7 @@
             <li id="close_menu">
                 <img src="public/images/cross_closed.png" alt="cross_closed">
             </li> <!-- TODO make it visible only on click -->
-            <li><a href="#">Experiences</a></li>
+            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#">Backgrounds</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Languages</a></li>

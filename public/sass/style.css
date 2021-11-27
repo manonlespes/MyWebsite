@@ -349,7 +349,7 @@ html {
 
 .experiences .container_exp div > p {
   font-family: "MvtDirect-Black";
-  font-size: 10px;
+  font-size: 11px;
   color: #7a0e1d;
 }
 
@@ -421,6 +421,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   width: 40%;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,9 +449,8 @@ html {
   font-family: "MontserratAlternates-Bold";
   color: #f2f5f8;
   text-align: center;
-  padding-right: 5px;
   padding-bottom: 5px;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .experiences .container_exp .exp1 .subtext p > span,
@@ -525,9 +525,9 @@ html {
     width: 335px;
   }
   .experiences .container_exp {
-    width: 100%;
+    width: 90%;
     padding-left: 40px;
-    height: 215px;
+    height: 320px;
   }
   .experiences .container_exp div > p {
     font-size: 14px;
@@ -541,7 +541,16 @@ html {
   .experiences .container_exp .exp4,
   .experiences .container_exp .exp5,
   .experiences .container_exp .exp6 {
-    height: 75px;
+    height: 200px;
+  }
+  .experiences .container_exp .exp1 .tag_exp,
+  .experiences .container_exp .exp2 .tag_exp,
+  .experiences .container_exp .exp3 .tag_exp,
+  .experiences .container_exp .exp4 .tag_exp,
+  .experiences .container_exp .exp5 .tag_exp,
+  .experiences .container_exp .exp6 .tag_exp {
+    height: 65px;
+    padding-left: 25px;
   }
   .experiences .container_exp .exp1 .tag_exp p,
   .experiences .container_exp .exp2 .tag_exp p,
@@ -549,7 +558,7 @@ html {
   .experiences .container_exp .exp4 .tag_exp p,
   .experiences .container_exp .exp5 .tag_exp p,
   .experiences .container_exp .exp6 .tag_exp p {
-    font-family: "MontserratAlternates-Medium";
+    font-family: "MontserratAlternates-Bold";
     font-size: 13px;
   }
 }
@@ -589,9 +598,19 @@ html {
     width: 365px;
   }
   /* design exp_section*/
+  .experiences .container_exp {
+    width: 50%;
+    height: 362px;
+  }
+  .experiences .container_exp div > p {
+    font-size: 18px;
+  }
+  .experiences .container_exp .exp1 .container_flex, .experiences .container_exp .exp2 .container_flex, .experiences .container_exp .exp3 .container_flex, .experiences .container_exp .exp4 .container_flex, .experiences .container_exp .exp5 .container_flex, .experiences .container_exp .exp6 .container_flex {
+    height: 80px;
+  }
   .experiences .container_exp .subtext > p {
     font-family: "MontserratAlternates-Medium";
-    font-size: 10px;
+    font-size: 14px;
   }
   .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active {
     color: #0e7a69;

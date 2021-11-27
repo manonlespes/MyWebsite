@@ -272,7 +272,7 @@ html {
 
         div > p {
             font-family: $MvtBlack;
-            font-size: 10px;
+            font-size: 11px;
             color: $red;
         }
 
@@ -319,6 +319,7 @@ html {
                 background-repeat: no-repeat;
                 background-position: center;
                 width: 40%;
+                height: 45px;
                 display: flex;
                 justify-content: center;
                 align-content: center;
@@ -330,9 +331,8 @@ html {
                     font-family: $MontBold;
                     color: $white;
                     text-align: center;
-                    padding-right: 5px;
                     padding-bottom: 5px;
-                    font-size: 9px;
+                    font-size: 10px;
                 }
             }
 
@@ -441,9 +441,9 @@ html {
         }
 
         .container_exp {
-            width: 100%;
+            width: 90%;
             padding-left: 40px;
-            height: 215px;
+            height: 320px;
 
             div > p {
                 font-size: 14px;
@@ -459,11 +459,15 @@ html {
             .exp4,
             .exp5,
             .exp6 {
-                height: 75px;
+                height: 200px;
 
                 .tag_exp {
+                    height: 65px;
+                    padding-left: 25px;
+
+
                     p {
-                        font-family: $MontMed;
+                        font-family: $MontBold;
                         font-size: 13px;
                     }
                 }
@@ -533,9 +537,23 @@ html {
 
     .experiences {
         .container_exp {
+
+            width: 50%;
+            height: 362px;
+
+            div > p {
+                font-size: 18px;
+            }
+
+            .exp1, .exp2, .exp3, .exp4, .exp5, .exp6{
+                .container_flex{
+                    height: 80px;
+                }
+            }
+
             .subtext > p {
                 font-family: $MontMed;
-                font-size: 10px;
+                font-size: 14px;
 
                 a {
                     &:hover,
