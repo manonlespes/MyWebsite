@@ -57,7 +57,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* design Menu */
 
 #menu_hamburger {
@@ -317,11 +316,12 @@ html {
         .back5,
         .back6 {
             width: 95%;
-            height: 85px;
-            margin-top: 30px;
+            height: 100%px;
+            margin-top: 16px;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-evenly;
+            padding-top:5px;
 
             .container_flex {
                 display: flex;
@@ -349,12 +349,16 @@ html {
             }
 
             .tag_exp {
-                width: 40%;
-                background-image: url("../images/tag_exp.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                padding-left: 17px;
+                p {
+                    z-index: 2;
+                    position: relative;
+                    top:30px;
+                    padding-left: 25px;
+                }
+
+                img {
+                    width: 130px;
+                }
             }
 
             .subtext {
@@ -394,9 +398,15 @@ html {
             text-align: end;
         } */
 
-        .back1, .back2, .back3, .back4, .back5, .back6 {
+        .back1,
+        .back2,
+        .back3,
+        .back4,
+        .back5,
+        .back6 {
             .tag_back {
                 width: 20%;
+
                 img {
                     width: 90px;
                 }
@@ -516,12 +526,18 @@ html {
                 height: 200px;
 
                 .tag_exp {
-                    height: 65px;
+                    height: 100%;
                     padding-left: 25px;
 
                     p {
                         font-family: $MontBold;
                         font-size: 13px;
+                        top: 40px;
+                        padding-left: 30px;                        
+                    }
+
+                    img{
+                        width: 173px;
                     }
                 }
             }
@@ -603,8 +619,11 @@ html {
             .exp4,
             .exp5,
             .exp6 {
+
+                height: 100%;
+
                 .container_flex {
-                    height: 80px;
+                    height: 100%;
                 }
             }
 
@@ -618,6 +637,10 @@ html {
                         color: $cherry;
                     }
                 }
+            }
+
+            .tag_exp{
+                    height: 100%;
             }
         }
     }

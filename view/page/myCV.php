@@ -52,6 +52,7 @@
 
             <div class="tag_exp">
                 <p>01/2020-12/2020</p>
+                <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
 
@@ -72,6 +73,7 @@
 
             <div class="tag_exp">
                 <p>08/2018-10/2019</p>
+                <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
 
@@ -91,6 +93,7 @@
 
             <div class="tag_exp">
                 <p>2014-2018</p>
+                <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
 
@@ -110,6 +113,7 @@
 
             <div class="tag_exp">
                 <p>08/2017-10/2017</p>
+                <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
 
@@ -129,6 +133,7 @@
 
             <div class="tag_exp">
                 <p>06/2013-09/2013</p>
+                <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
 
@@ -148,6 +153,7 @@
 
             <div class="tag_exp">
                 <p>06/2012-09/2012</p>
+                <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
     </div>
