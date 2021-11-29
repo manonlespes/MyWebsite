@@ -31,7 +31,11 @@
 <section id="experiences" class="experiences">
 
     <div class="title1">
-        <img src="public/images/title_experiences.png" alt="experiences">
+        <picture>
+            <source media="(min-width:700px)" srcset="public/images/experiences_medium.gif">
+            <source media="(min-width:960px)" srcset="public/images/experiences_medium.gif">
+            <img src="public/images/experiences.gif" alt="experiences">
+        </picture>
     </div>
 
     <div class="container_exp">
@@ -46,7 +50,7 @@
 
                 <div class="subtext">
                     <p><a href="https://wecglobal.org/" target="_blank" rel="noopener noreferrer">World Employment Confederation</a></p>
-                    <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreExp1">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -54,6 +58,12 @@
                 <p>01/2020-12/2020</p>
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
+        </div>
+
+        <div id="detailsExp1" class="hide" >
+            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
+            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
+            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
         </div>
 
         <div class="exp2">
@@ -67,7 +77,7 @@
 
                 <div class="subtext">
                     <p><a href="http://www.downtowneurope.be/" target="_blank" rel="noopener noreferrer">Downtown Europe</a></p>
-                    <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreExp2">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -75,6 +85,12 @@
                 <p>08/2018-10/2019</p>
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
+        </div>
+
+        <div id="detailsExp2" class="hide">
+            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
+            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
+            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
         </div>
 
         <div class="exp3">
@@ -87,7 +103,7 @@
 
                 <div class="subtext">
                     <p><a href="http://www.downtowneurope.be/" target="_blank" rel="noopener noreferrer">Downtown Europe</a></p>
-                    <p>Brussels, Belgium <span class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreExp3">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -95,6 +111,11 @@
                 <p>2014-2018</p>
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
+        </div>
+        <div id="detailsExp3" class="hide">
+            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
+            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
+            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
         </div>
 
         <div class="exp4">
@@ -107,7 +128,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.ciudadalegria.org.mx/" target="_blank" rel="noopener noreferrer">Fundación Ciudad de la Alégrià</a></p>
-                    <p>Cancùn, Mexico <span class="more">SEE MORE +</span></p>
+                    <p>Cancùn, Mexico <span class="more" id="moreExp4">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -115,6 +136,12 @@
                 <p>08/2017-10/2017</p>
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
+        </div>
+
+        <div id="detailsExp4" class="hide">
+            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
+            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
+            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
         </div>
 
         <div class="exp5">
@@ -127,7 +154,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.campinglacotesauvage.com/?gclid=EAIaIQobChMIm5uu1bq29AIVlKl3Ch2_9gu_EAAYAiAAEgJ3iPD_BwE" target="_blank" rel="noopener noreferrer">Camping de la Côte Sauvage Ecolabel&lowast;&lowast;</a> </p>
-                    <p>Saint-Clément-des-Baleines, France <span class="more">SEE MORE +</span></p>
+                    <p>Saint-Clément-des-Baleines, France <span class="more" id="moreExp5">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -135,6 +162,12 @@
                 <p>06/2013-09/2013</p>
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
+        </div>
+
+        <div id="detailsExp5" class="hide">
+            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
+            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
+            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
         </div>
 
         <div class="exp6">
@@ -147,7 +180,7 @@
 
                 <div class="subtext">
                     <p class="specialColor">Gazette de Berlin</p>
-                    <p>Berlin, Germany <span class="more">SEE MORE +</span></p>
+                    <p>Berlin, Germany <span class="more" id="moreExp6">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -156,6 +189,12 @@
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
+        <div id="detailsExp6" class="hide">
+            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
+            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
+            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
+        </div>
+
     </div>
 </section>
 
@@ -191,7 +230,7 @@
         <div class="back2">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-               <!--  <source media="(min-width:700px)" srcset="public/images.png">
+                <!--  <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back2_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
@@ -214,7 +253,7 @@
         <div class="back3">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-               <!--  <source media="(min-width:700px)" srcset="public/images.png">
+                <!--  <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back3_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>

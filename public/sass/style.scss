@@ -263,6 +263,11 @@ html {
     .title1 {
         justify-content: flex-start;
         margin-left: 20px;
+        picture {
+            img {
+                width: 200px;
+            }
+        }
     }
 
     .container_exp,
@@ -303,9 +308,13 @@ html {
             }
         }
 
-        .subtext{
-            .specialColor{
+        .subtext {
+            .specialColor {
                 color: $green;
+            }
+
+            p > span {
+                color: $skyblue;
             }
         }
 
@@ -366,12 +375,6 @@ html {
                     width: 130px;
                 }
             }
-
-            .subtext {
-                p > span {
-                    color: $skyblue;
-                }
-            }
         }
 
         .exp2,
@@ -385,6 +388,35 @@ html {
         .back5,
         .back6 {
             margin-top: 10px;
+        }
+
+        .visibleExp {
+            width: 95%;
+            display: flex;
+            flex-flow: column nowrap;
+            p {
+                font-family: $MontMed;
+                color: $darkgreen;
+                font-size: 10px;
+                text-align: justify;
+                margin-top: 6px;
+                
+                .project{
+                    color: $cherry;
+                    text-decoration: none;
+
+                    &:visited{
+                        color: $green;
+                    }
+                }
+
+                
+            }
+        }
+
+        .hide {
+            display: none;
+            overflow: hidden;
         }
     }
 }
@@ -508,6 +540,14 @@ html {
             margin-bottom: 45px;
             img {
                 width: 335px;
+            }
+        }
+
+        .title1 {
+            picture {
+                img {
+                    width: 335px;
+                }
             }
         }
 
@@ -692,7 +732,7 @@ html {
             .back3,
             .back4,
             .back5,
-            .back6{
+            .back6 {
                 .tag_back {
                     img {
                         width: 115px;

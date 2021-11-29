@@ -338,6 +338,11 @@ html {
   margin-left: 20px;
 }
 
+.experiences .title1 picture img,
+.backgrounds .title1 picture img {
+  width: 200px;
+}
+
 .experiences .container_exp,
 .experiences .container_back,
 .backgrounds .container_exp,
@@ -403,6 +408,13 @@ html {
 .backgrounds .container_exp .subtext .specialColor,
 .backgrounds .container_back .subtext .specialColor {
   color: #0e7a69;
+}
+
+.experiences .container_exp .subtext p > span,
+.experiences .container_back .subtext p > span,
+.backgrounds .container_exp .subtext p > span,
+.backgrounds .container_back .subtext p > span {
+  color: #22d3b8;
 }
 
 .experiences .container_exp .exp1,
@@ -852,57 +864,6 @@ html {
   width: 130px;
 }
 
-.experiences .container_exp .exp1 .subtext p > span,
-.experiences .container_exp .exp2 .subtext p > span,
-.experiences .container_exp .exp3 .subtext p > span,
-.experiences .container_exp .exp4 .subtext p > span,
-.experiences .container_exp .exp5 .subtext p > span,
-.experiences .container_exp .exp6 .subtext p > span,
-.experiences .container_exp .back1 .subtext p > span,
-.experiences .container_exp .back2 .subtext p > span,
-.experiences .container_exp .back3 .subtext p > span,
-.experiences .container_exp .back4 .subtext p > span,
-.experiences .container_exp .back5 .subtext p > span,
-.experiences .container_exp .back6 .subtext p > span,
-.experiences .container_back .exp1 .subtext p > span,
-.experiences .container_back .exp2 .subtext p > span,
-.experiences .container_back .exp3 .subtext p > span,
-.experiences .container_back .exp4 .subtext p > span,
-.experiences .container_back .exp5 .subtext p > span,
-.experiences .container_back .exp6 .subtext p > span,
-.experiences .container_back .back1 .subtext p > span,
-.experiences .container_back .back2 .subtext p > span,
-.experiences .container_back .back3 .subtext p > span,
-.experiences .container_back .back4 .subtext p > span,
-.experiences .container_back .back5 .subtext p > span,
-.experiences .container_back .back6 .subtext p > span,
-.backgrounds .container_exp .exp1 .subtext p > span,
-.backgrounds .container_exp .exp2 .subtext p > span,
-.backgrounds .container_exp .exp3 .subtext p > span,
-.backgrounds .container_exp .exp4 .subtext p > span,
-.backgrounds .container_exp .exp5 .subtext p > span,
-.backgrounds .container_exp .exp6 .subtext p > span,
-.backgrounds .container_exp .back1 .subtext p > span,
-.backgrounds .container_exp .back2 .subtext p > span,
-.backgrounds .container_exp .back3 .subtext p > span,
-.backgrounds .container_exp .back4 .subtext p > span,
-.backgrounds .container_exp .back5 .subtext p > span,
-.backgrounds .container_exp .back6 .subtext p > span,
-.backgrounds .container_back .exp1 .subtext p > span,
-.backgrounds .container_back .exp2 .subtext p > span,
-.backgrounds .container_back .exp3 .subtext p > span,
-.backgrounds .container_back .exp4 .subtext p > span,
-.backgrounds .container_back .exp5 .subtext p > span,
-.backgrounds .container_back .exp6 .subtext p > span,
-.backgrounds .container_back .back1 .subtext p > span,
-.backgrounds .container_back .back2 .subtext p > span,
-.backgrounds .container_back .back3 .subtext p > span,
-.backgrounds .container_back .back4 .subtext p > span,
-.backgrounds .container_back .back5 .subtext p > span,
-.backgrounds .container_back .back6 .subtext p > span {
-  color: #22d3b8;
-}
-
 .experiences .container_exp .exp2,
 .experiences .container_exp .exp3,
 .experiences .container_exp .exp4,
@@ -944,6 +905,54 @@ html {
 .backgrounds .container_back .back5,
 .backgrounds .container_back .back6 {
   margin-top: 10px;
+}
+
+.experiences .container_exp .visibleExp,
+.experiences .container_back .visibleExp,
+.backgrounds .container_exp .visibleExp,
+.backgrounds .container_back .visibleExp {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.experiences .container_exp .visibleExp p,
+.experiences .container_back .visibleExp p,
+.backgrounds .container_exp .visibleExp p,
+.backgrounds .container_back .visibleExp p {
+  font-family: "MontserratAlternates-Medium";
+  color: #1b2d2a;
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 6px;
+}
+
+.experiences .container_exp .visibleExp p .project,
+.experiences .container_back .visibleExp p .project,
+.backgrounds .container_exp .visibleExp p .project,
+.backgrounds .container_back .visibleExp p .project {
+  color: #c62a40;
+  text-decoration: none;
+}
+
+.experiences .container_exp .visibleExp p .project:visited,
+.experiences .container_back .visibleExp p .project:visited,
+.backgrounds .container_exp .visibleExp p .project:visited,
+.backgrounds .container_back .visibleExp p .project:visited {
+  color: #0e7a69;
+}
+
+.experiences .container_exp .hide,
+.experiences .container_back .hide,
+.backgrounds .container_exp .hide,
+.backgrounds .container_back .hide {
+  display: none;
+  overflow: hidden;
 }
 
 .backgrounds {
@@ -1044,6 +1053,10 @@ html {
   .experiences .title2 img,
   .backgrounds .title1 img,
   .backgrounds .title2 img {
+    width: 335px;
+  }
+  .experiences .title1 picture img,
+  .backgrounds .title1 picture img {
     width: 335px;
   }
   .experiences .container_exp,
