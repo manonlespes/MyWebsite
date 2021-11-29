@@ -390,18 +390,19 @@ html {
             margin-top: 10px;
         }
 
-        .hide{
+        .hide {
             display: none;
             overflow: hidden;
             transition: all 1s ease-in-out;
         }
 
-        .visibleExp, .visibleBack {
+        .visibleExp,
+        .visibleBack {
             width: 95%;
             display: flex;
             flex-flow: column nowrap;
             display: block;
-            
+
             p {
                 font-family: $MontMed;
                 color: $darkgreen;
@@ -409,7 +410,6 @@ html {
                 text-align: justify;
                 margin-top: 6px;
                 line-height: 13px;
-                
 
                 .project {
                     color: $cherry;
@@ -431,7 +431,7 @@ html {
                     line-height: 15px;
                     list-style: none;
 
-                    &::before{
+                    &::before {
                         content: "->";
                         size: 10px;
                         color: $skyblue;
@@ -440,9 +440,9 @@ html {
             }
         }
 
-        .visibleBack{
+        .visibleBack {
             width: 90%;
-            margin:auto;
+            margin: auto;
             justify-content: flex-start;
             align-items: center;
             margin-bottom: 10px;
@@ -761,6 +761,30 @@ html {
                     &:hover,
                     &:active {
                         color: $cherry;
+                    }
+                }
+
+                .more {
+                    position: relative;
+                    transition: background-size 0.3s ease;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 45%;
+                        width: 85px;
+                        bottom: -2px;
+                        height: 9px;
+                        -webkit-transform: skew(-12deg) translateX(-50%);
+                        transform: skew(-12deg) translateX(-50%);
+                        background: rgba(198, 42, 64, 0.37);
+                        z-index: -1;
+                    }
+
+                    &:hover {
+                        &:before {
+                            background-size: 100% 2px;
+                        }
                     }
                 }
             }

@@ -918,7 +918,8 @@ html {
   transition: all 1s ease-in-out;
 }
 
-.experiences .container_exp .visibleExp, .experiences .container_exp .visibleBack,
+.experiences .container_exp .visibleExp,
+.experiences .container_exp .visibleBack,
 .experiences .container_back .visibleExp,
 .experiences .container_back .visibleBack,
 .backgrounds .container_exp .visibleExp,
@@ -936,7 +937,8 @@ html {
   display: block;
 }
 
-.experiences .container_exp .visibleExp p, .experiences .container_exp .visibleBack p,
+.experiences .container_exp .visibleExp p,
+.experiences .container_exp .visibleBack p,
 .experiences .container_back .visibleExp p,
 .experiences .container_back .visibleBack p,
 .backgrounds .container_exp .visibleExp p,
@@ -951,7 +953,8 @@ html {
   line-height: 13px;
 }
 
-.experiences .container_exp .visibleExp p .project, .experiences .container_exp .visibleBack p .project,
+.experiences .container_exp .visibleExp p .project,
+.experiences .container_exp .visibleBack p .project,
 .experiences .container_back .visibleExp p .project,
 .experiences .container_back .visibleBack p .project,
 .backgrounds .container_exp .visibleExp p .project,
@@ -962,7 +965,8 @@ html {
   text-decoration: none;
 }
 
-.experiences .container_exp .visibleExp p .project:visited, .experiences .container_exp .visibleBack p .project:visited,
+.experiences .container_exp .visibleExp p .project:visited,
+.experiences .container_exp .visibleBack p .project:visited,
 .experiences .container_back .visibleExp p .project:visited,
 .experiences .container_back .visibleBack p .project:visited,
 .backgrounds .container_exp .visibleExp p .project:visited,
@@ -972,7 +976,8 @@ html {
   color: #0e7a69;
 }
 
-.experiences .container_exp .visibleExp ul, .experiences .container_exp .visibleBack ul,
+.experiences .container_exp .visibleExp ul,
+.experiences .container_exp .visibleBack ul,
 .experiences .container_back .visibleExp ul,
 .experiences .container_back .visibleBack ul,
 .backgrounds .container_exp .visibleExp ul,
@@ -982,7 +987,8 @@ html {
   padding-left: 10px;
 }
 
-.experiences .container_exp .visibleExp ul li, .experiences .container_exp .visibleBack ul li,
+.experiences .container_exp .visibleExp ul li,
+.experiences .container_exp .visibleBack ul li,
 .experiences .container_back .visibleExp ul li,
 .experiences .container_back .visibleBack ul li,
 .backgrounds .container_exp .visibleExp ul li,
@@ -996,7 +1002,8 @@ html {
   list-style: none;
 }
 
-.experiences .container_exp .visibleExp ul li::before, .experiences .container_exp .visibleBack ul li::before,
+.experiences .container_exp .visibleExp ul li::before,
+.experiences .container_exp .visibleBack ul li::before,
 .experiences .container_back .visibleExp ul li::before,
 .experiences .container_back .visibleBack ul li::before,
 .backgrounds .container_exp .visibleExp ul li::before,
@@ -1574,6 +1581,35 @@ html {
   .backgrounds .container_back .subtext > p a:hover,
   .backgrounds .container_back .subtext > p a:active {
     color: #c62a40;
+  }
+  .experiences .container_exp .subtext > p .more,
+  .experiences .container_back .subtext > p .more,
+  .backgrounds .container_exp .subtext > p .more,
+  .backgrounds .container_back .subtext > p .more {
+    position: relative;
+    -webkit-transition: background-size 0.3s ease;
+    transition: background-size 0.3s ease;
+  }
+  .experiences .container_exp .subtext > p .more:before,
+  .experiences .container_back .subtext > p .more:before,
+  .backgrounds .container_exp .subtext > p .more:before,
+  .backgrounds .container_back .subtext > p .more:before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    width: 85px;
+    bottom: -2px;
+    height: 9px;
+    -webkit-transform: skew(-12deg) translateX(-50%);
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(198, 42, 64, 0.37);
+    z-index: -1;
+  }
+  .experiences .container_exp .subtext > p .more:hover:before,
+  .experiences .container_back .subtext > p .more:hover:before,
+  .backgrounds .container_exp .subtext > p .more:hover:before,
+  .backgrounds .container_back .subtext > p .more:hover:before {
+    background-size: 100% 2px;
   }
   .experiences .container_exp .tag_exp,
   .experiences .container_exp .tag_back,
