@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <div id="detailsExp1" class="hide" >
+        <div id="detailsExp1" class="hide">
             <p>&lowast; Organisation of all internal & institutional events (General Assemblies, Committees meetings, ILO/WEC meetings, UNI-Europa and WEC-Europe conferences, etc.) and in charge of the memberships (membership development, responses to various requests, daily administrative tasks, etc.). </p>
             <p>&lowast; Project Coordinator on the <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a>: help in collecting data, organisation of interviews with Members, draft of concept notes for different projects, set the agenda for the meetings with the Taskforce Members, creation and filling a dashboard to monitor impact of the crisis on the industry, support in creation of podcasts (<a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work</a>), ensure compliance with project plans, budgets and expenditures.</p>
         </div>
@@ -117,6 +117,7 @@
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
+
         <div id="detailsExp3" class="hide">
             <p>&lowast; Welcoming participants, giving microphones during the meetings, assisting participants, VIPs & speakers, etc.</p>
         </div>
@@ -210,15 +211,35 @@
 
                 <div class="subtext">
                     <p><a href="https://www.interface3.be/fr/formation/webmaster" target="_blank" rel="noopener noreferrer">Interface3</a></p>
-                    <p>Brussels, Belgium <span id="moreBack1">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreBack1">SEE MORE +</span></p>
                 </div>
             </div>
-
-            <div id="detailsBack1" class="visibleBack">
-            <p>&lowast; Organisation of all internal & institutional events (General Assemblies, Committees meetings, ILO/WEC meetings, UNI-Europa and WEC-Europe conferences, etc.) and in charge of the memberships (membership development, responses to various requests, daily administrative tasks, etc.). </p>
-            <p>&lowast; Project Coordinator on the <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a>: help in collecting data, organisation of interviews with Members, draft of concept notes for different projects, set the agenda for the meetings with the Taskforce Members, creation and filling a dashboard to monitor impact of the crisis on the industry, support in creation of podcasts (<a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work</a>), ensure compliance with project plans, budgets and expenditures.</p>
         </div>
+        <div id="detailsBack1" class="hide">
+            <p>&lowast; Study of programing languages, frameworks and CMS :</p>
+            <ul>
+                <li>Html5, CSS3, SASS according to W3C standards</li>
+                <li>PHP/ MySQL</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>React</li>
+                <li>Node.js / NoSQL</li>
+                <li>Bootstrap 4 & 5</li>
+                <li>WordPress</li>
+            </ul>
 
+            <p>&lowast; Follow lectures on design web and use of graphic design softwares:</p>
+            <ul>
+                <li>Principles of ergonomics and UX design</li>
+                <li>Photoshop, Illustrator, XD, Animate</li>
+            </ul>
+
+            <p>&lowast; Others</p>
+            <ul>
+                <li>Web culture, technology watch, internet marketing, internet law</li>
+                <li>Git, GitHub, GitBash, Sublime Merge</li>
+
+            </ul>
         </div>
 
         <div class="back2">
@@ -237,11 +258,16 @@
 
                 <div class="subtext">
                     <p><a href="https://www.bruxellesformation.brussels/catalogue-bf-entreprises/lassertivite-comme-outil-de-travail/" target="_blank" rel="noopener noreferrer">Bruxelles Formation</a></p>
-                    <p>Brussels, Belgium <span id="moreBack2">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack2" class="more">SEE MORE +</span></p>
                 </div>
             </div>
+        </div>
 
-
+        <div id="detailsBack2" class="hide">
+            <p>&lowast; Promote effective communication within your team</p>
+            <p>&lowast; Assert yourself while recognising the other person</p>
+            <p>&lowast; To be heard without being aggressive</p>
+            <p>&lowast; Prevent stress caused by relationships</p>
         </div>
 
         <div class="back3">
@@ -262,11 +288,14 @@
                     <p><a href="https://www.ulb.be/en/programme/ma-babl#programme" target="_blank" rel="noopener noreferrer">Minor Multiculturality</a></p>
                     <p>Languages EN, ES, DE, FR</p>
                     <p><a href="https://www.ulb.be/en/programme/ma-babl" target="_blank" rel="noopener noreferrer">ULB</a></p>
-                    <p>Brussels, Belgium <span id="moreBack3">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack3" class="more">SEE MORE +</span></p>
                 </div>
             </div>
+        </div>
 
-
+        <div id="detailsBack3" class="hide">
+            <p>&lowast; Cross-cultural communications, communication, tourism, social studies, anthropology, and languages (English, French, German & Spanish).</p>
+            <p>&lowast; Master thesis on women sex tourism in Cancún – analysis through an intersectional feminist approach (Vs male sex tourism) - 3 months spent in Mexico: Une recherche exploratoire sur le tourisme sexuel féminin à Cancún – Quelles méthodologies et quelles approches privilégier ?</p>
         </div>
 
         <div class="back4">
@@ -287,11 +316,14 @@
                     <p>Erasmus Dublin (2014) at UCD - 3 months</p>
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://ltc.ulb.be/nos-departements-d-enseignement/ecole-de-traduction-et-interpretation-isti-cooremans-1" target="_blank" rel="noopener noreferrer">ISTI</a></p>
-                    <p>Brussels, Belgium <span id="moreBack4">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack4" class="more">SEE MORE +</span></p>
                 </div>
             </div>
-
-
+        </div>
+        
+        <div id="detailsBack4" class="hide">
+            <p>&lowast; Marketing, communication, law, geopolitics, sociology, science, linguistic, study of languages and cultures (English, French & German).</p>
+            <p>&lowast; Translation from German to French or English to French mainly</p>
         </div>
 
         <div class="back5">
@@ -311,11 +343,13 @@
                 <div class="subtext">
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://www.ict-toulouse.fr/formation/licence-langues-etrangeres-appliquees/" target="_blank" rel="noopener noreferrer">ICT</a> </p>
-                    <p>Toulouse, France <span id="moreBack5">SEE MORE +</span></p>
+                    <p>Toulouse, France <span id="moreBack5" class="more">SEE MORE +</span></p>
                 </div>
             </div>
+        </div>
 
-
+        <div id="detailsBack5" class="hide">
+            <p>&lowast; Marketing, communication, law, geopolitics, sociology, science, linguistic, study of languages and cultures (English, French & German).</p>
         </div>
 
         <div class="back6">
@@ -335,9 +369,13 @@
                 <div class="subtext">
                     <p>Minor German</p>
                     <p> <a href="https://saint-sernin.mon-ent-occitanie.fr/" target="_blank" rel="noopener noreferrer">Lycée Saint-Sernin</a></p>
-                    <p>Toulouse, France <span id="moreBack6">SEE MORE +</span></p>
+                    <p>Toulouse, France <span id="moreBack6" class="more">SEE MORE +</span></p>
                 </div>
             </div>
+        </div>
+
+        <div id="detailsBack6" class="hide">
+            <p>&lowast; First semester spent in Linz, Austria (intercultural exchange via AFS France).</p>
         </div>
 
 </section>
