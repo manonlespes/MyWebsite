@@ -321,7 +321,7 @@ html {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-evenly;
-            padding-top:5px;
+            padding-top: 5px;
 
             .container_flex {
                 display: flex;
@@ -352,7 +352,7 @@ html {
                 p {
                     z-index: 2;
                     position: relative;
-                    top:30px;
+                    top: 30px;
                     padding-left: 25px;
                 }
 
@@ -497,14 +497,16 @@ html {
     .backgrounds {
         width: 80vw;
 
-        .title1 {
+        .title1,
+        .title2 {
             margin-bottom: 45px;
             img {
                 width: 335px;
             }
         }
 
-        .container_exp {
+        .container_exp,
+        .container_back {
             width: 90%;
             padding-left: 40px;
             height: 320px;
@@ -525,7 +527,8 @@ html {
             .exp6 {
                 height: 200px;
 
-                .tag_exp {
+                .tag_exp,
+                .tag_back {
                     height: 100%;
                     padding-left: 25px;
 
@@ -533,12 +536,37 @@ html {
                         font-family: $MontBold;
                         font-size: 13px;
                         top: 40px;
-                        padding-left: 30px;                        
+                        padding-left: 30px;
                     }
 
-                    img{
+                    img {
                         width: 173px;
                     }
+                }
+            }
+        }
+
+        .container_back {
+            padding-left: 0px;
+
+            .back1,
+            .back2,
+            .back3,
+            .back4,
+            .back5,
+            .back6 {
+                height: 100%;
+                padding-top: 0px;
+
+                .tag_back {
+                    height: 100%;
+                    img {
+                        width: 100px;
+                    }
+                }
+
+                .container_flex {
+                    width: 60%;
                 }
             }
         }
@@ -604,8 +632,10 @@ html {
 
     /* design exp_section*/
 
-    .experiences {
-        .container_exp {
+    .experiences,
+    .backgrounds {
+        .container_exp,
+        .container_back {
             width: 50%;
             height: 362px;
 
@@ -618,8 +648,13 @@ html {
             .exp3,
             .exp4,
             .exp5,
-            .exp6 {
-
+            .exp6,
+            .back1,
+            .back2,
+            .back3,
+            .back4,
+            .back5,
+            .back6 {
                 height: 100%;
 
                 .container_flex {
@@ -639,8 +674,24 @@ html {
                 }
             }
 
-            .tag_exp{
-                    height: 100%;
+            .tag_exp,
+            .tag_back {
+                height: 100%;
+            }
+        }
+
+        .container_back {
+            .back1,
+            .back2,
+            .back3,
+            .back4,
+            .back5,
+            .back6{
+                .tag_back {
+                    img {
+                        width: 115px;
+                    }
+                }
             }
         }
     }

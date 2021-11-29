@@ -169,8 +169,8 @@
         <div class="back1">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-                <source media="(min-width:700px)" srcset="public/images.png">
-                <source media="(min-width:960px)" srcset="public/images/.png">
+                <!-- <source media="(min-width:700px)" srcset="public/images/pen_back1_small.png">
+                <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back1_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
@@ -191,8 +191,8 @@
         <div class="back2">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-                <source media="(min-width:700px)" srcset="public/images.png">
-                <source media="(min-width:960px)" srcset="public/images/.png">
+               <!--  <source media="(min-width:700px)" srcset="public/images.png">
+                <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back2_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
@@ -214,8 +214,8 @@
         <div class="back3">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-                <source media="(min-width:700px)" srcset="public/images.png">
-                <source media="(min-width:960px)" srcset="public/images/.png">
+               <!--  <source media="(min-width:700px)" srcset="public/images.png">
+                <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back3_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
@@ -239,8 +239,8 @@
         <div class="back4">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-                <source media="(min-width:700px)" srcset="public/images.png">
-                <source media="(min-width:960px)" srcset="public/images/.png">
+                <!-- <source media="(min-width:700px)" srcset="public/images.png">
+                <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back4_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
@@ -264,8 +264,8 @@
         <div class="back5">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-                <source media="(min-width:700px)" srcset="public/images.png">
-                <source media="(min-width:960px)" srcset="public/images/.png">
+                <!-- <source media="(min-width:700px)" srcset="public/images.png">
+                <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back5_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
@@ -288,8 +288,8 @@
         <div class="back6">
             <!-- flex-flow: row -->
             <picture class="tag_back">
-                <source media="(min-width:700px)" srcset="public/images.png">
-                <source media="(min-width:960px)" srcset="public/images/.png">
+                <!-- <source media="(min-width:700px)" srcset="public/images.png">
+                <source media="(min-width:960px)" srcset="public/images/.png"> -->
                 <img src="public/images/pen_back6_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 

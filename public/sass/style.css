@@ -1028,25 +1028,35 @@ html {
     width: 80vw;
   }
   .experiences .title1,
-  .backgrounds .title1 {
+  .experiences .title2,
+  .backgrounds .title1,
+  .backgrounds .title2 {
     margin-bottom: 45px;
   }
   .experiences .title1 img,
-  .backgrounds .title1 img {
+  .experiences .title2 img,
+  .backgrounds .title1 img,
+  .backgrounds .title2 img {
     width: 335px;
   }
   .experiences .container_exp,
-  .backgrounds .container_exp {
+  .experiences .container_back,
+  .backgrounds .container_exp,
+  .backgrounds .container_back {
     width: 90%;
     padding-left: 40px;
     height: 320px;
   }
   .experiences .container_exp div > p,
-  .backgrounds .container_exp div > p {
+  .experiences .container_back div > p,
+  .backgrounds .container_exp div > p,
+  .backgrounds .container_back div > p {
     font-size: 14px;
   }
   .experiences .container_exp .subtext > p,
-  .backgrounds .container_exp .subtext > p {
+  .experiences .container_back .subtext > p,
+  .backgrounds .container_exp .subtext > p,
+  .backgrounds .container_back .subtext > p {
     font-size: 14px;
   }
   .experiences .container_exp .exp1,
@@ -1055,59 +1065,240 @@ html {
   .experiences .container_exp .exp4,
   .experiences .container_exp .exp5,
   .experiences .container_exp .exp6,
+  .experiences .container_back .exp1,
+  .experiences .container_back .exp2,
+  .experiences .container_back .exp3,
+  .experiences .container_back .exp4,
+  .experiences .container_back .exp5,
+  .experiences .container_back .exp6,
   .backgrounds .container_exp .exp1,
   .backgrounds .container_exp .exp2,
   .backgrounds .container_exp .exp3,
   .backgrounds .container_exp .exp4,
   .backgrounds .container_exp .exp5,
-  .backgrounds .container_exp .exp6 {
+  .backgrounds .container_exp .exp6,
+  .backgrounds .container_back .exp1,
+  .backgrounds .container_back .exp2,
+  .backgrounds .container_back .exp3,
+  .backgrounds .container_back .exp4,
+  .backgrounds .container_back .exp5,
+  .backgrounds .container_back .exp6 {
     height: 200px;
   }
   .experiences .container_exp .exp1 .tag_exp,
+  .experiences .container_exp .exp1 .tag_back,
   .experiences .container_exp .exp2 .tag_exp,
+  .experiences .container_exp .exp2 .tag_back,
   .experiences .container_exp .exp3 .tag_exp,
+  .experiences .container_exp .exp3 .tag_back,
   .experiences .container_exp .exp4 .tag_exp,
+  .experiences .container_exp .exp4 .tag_back,
   .experiences .container_exp .exp5 .tag_exp,
+  .experiences .container_exp .exp5 .tag_back,
   .experiences .container_exp .exp6 .tag_exp,
+  .experiences .container_exp .exp6 .tag_back,
+  .experiences .container_back .exp1 .tag_exp,
+  .experiences .container_back .exp1 .tag_back,
+  .experiences .container_back .exp2 .tag_exp,
+  .experiences .container_back .exp2 .tag_back,
+  .experiences .container_back .exp3 .tag_exp,
+  .experiences .container_back .exp3 .tag_back,
+  .experiences .container_back .exp4 .tag_exp,
+  .experiences .container_back .exp4 .tag_back,
+  .experiences .container_back .exp5 .tag_exp,
+  .experiences .container_back .exp5 .tag_back,
+  .experiences .container_back .exp6 .tag_exp,
+  .experiences .container_back .exp6 .tag_back,
   .backgrounds .container_exp .exp1 .tag_exp,
+  .backgrounds .container_exp .exp1 .tag_back,
   .backgrounds .container_exp .exp2 .tag_exp,
+  .backgrounds .container_exp .exp2 .tag_back,
   .backgrounds .container_exp .exp3 .tag_exp,
+  .backgrounds .container_exp .exp3 .tag_back,
   .backgrounds .container_exp .exp4 .tag_exp,
+  .backgrounds .container_exp .exp4 .tag_back,
   .backgrounds .container_exp .exp5 .tag_exp,
-  .backgrounds .container_exp .exp6 .tag_exp {
+  .backgrounds .container_exp .exp5 .tag_back,
+  .backgrounds .container_exp .exp6 .tag_exp,
+  .backgrounds .container_exp .exp6 .tag_back,
+  .backgrounds .container_back .exp1 .tag_exp,
+  .backgrounds .container_back .exp1 .tag_back,
+  .backgrounds .container_back .exp2 .tag_exp,
+  .backgrounds .container_back .exp2 .tag_back,
+  .backgrounds .container_back .exp3 .tag_exp,
+  .backgrounds .container_back .exp3 .tag_back,
+  .backgrounds .container_back .exp4 .tag_exp,
+  .backgrounds .container_back .exp4 .tag_back,
+  .backgrounds .container_back .exp5 .tag_exp,
+  .backgrounds .container_back .exp5 .tag_back,
+  .backgrounds .container_back .exp6 .tag_exp,
+  .backgrounds .container_back .exp6 .tag_back {
     height: 100%;
     padding-left: 25px;
   }
   .experiences .container_exp .exp1 .tag_exp p,
+  .experiences .container_exp .exp1 .tag_back p,
   .experiences .container_exp .exp2 .tag_exp p,
+  .experiences .container_exp .exp2 .tag_back p,
   .experiences .container_exp .exp3 .tag_exp p,
+  .experiences .container_exp .exp3 .tag_back p,
   .experiences .container_exp .exp4 .tag_exp p,
+  .experiences .container_exp .exp4 .tag_back p,
   .experiences .container_exp .exp5 .tag_exp p,
+  .experiences .container_exp .exp5 .tag_back p,
   .experiences .container_exp .exp6 .tag_exp p,
+  .experiences .container_exp .exp6 .tag_back p,
+  .experiences .container_back .exp1 .tag_exp p,
+  .experiences .container_back .exp1 .tag_back p,
+  .experiences .container_back .exp2 .tag_exp p,
+  .experiences .container_back .exp2 .tag_back p,
+  .experiences .container_back .exp3 .tag_exp p,
+  .experiences .container_back .exp3 .tag_back p,
+  .experiences .container_back .exp4 .tag_exp p,
+  .experiences .container_back .exp4 .tag_back p,
+  .experiences .container_back .exp5 .tag_exp p,
+  .experiences .container_back .exp5 .tag_back p,
+  .experiences .container_back .exp6 .tag_exp p,
+  .experiences .container_back .exp6 .tag_back p,
   .backgrounds .container_exp .exp1 .tag_exp p,
+  .backgrounds .container_exp .exp1 .tag_back p,
   .backgrounds .container_exp .exp2 .tag_exp p,
+  .backgrounds .container_exp .exp2 .tag_back p,
   .backgrounds .container_exp .exp3 .tag_exp p,
+  .backgrounds .container_exp .exp3 .tag_back p,
   .backgrounds .container_exp .exp4 .tag_exp p,
+  .backgrounds .container_exp .exp4 .tag_back p,
   .backgrounds .container_exp .exp5 .tag_exp p,
-  .backgrounds .container_exp .exp6 .tag_exp p {
+  .backgrounds .container_exp .exp5 .tag_back p,
+  .backgrounds .container_exp .exp6 .tag_exp p,
+  .backgrounds .container_exp .exp6 .tag_back p,
+  .backgrounds .container_back .exp1 .tag_exp p,
+  .backgrounds .container_back .exp1 .tag_back p,
+  .backgrounds .container_back .exp2 .tag_exp p,
+  .backgrounds .container_back .exp2 .tag_back p,
+  .backgrounds .container_back .exp3 .tag_exp p,
+  .backgrounds .container_back .exp3 .tag_back p,
+  .backgrounds .container_back .exp4 .tag_exp p,
+  .backgrounds .container_back .exp4 .tag_back p,
+  .backgrounds .container_back .exp5 .tag_exp p,
+  .backgrounds .container_back .exp5 .tag_back p,
+  .backgrounds .container_back .exp6 .tag_exp p,
+  .backgrounds .container_back .exp6 .tag_back p {
     font-family: "MontserratAlternates-Bold";
     font-size: 13px;
     top: 40px;
     padding-left: 30px;
   }
   .experiences .container_exp .exp1 .tag_exp img,
+  .experiences .container_exp .exp1 .tag_back img,
   .experiences .container_exp .exp2 .tag_exp img,
+  .experiences .container_exp .exp2 .tag_back img,
   .experiences .container_exp .exp3 .tag_exp img,
+  .experiences .container_exp .exp3 .tag_back img,
   .experiences .container_exp .exp4 .tag_exp img,
+  .experiences .container_exp .exp4 .tag_back img,
   .experiences .container_exp .exp5 .tag_exp img,
+  .experiences .container_exp .exp5 .tag_back img,
   .experiences .container_exp .exp6 .tag_exp img,
+  .experiences .container_exp .exp6 .tag_back img,
+  .experiences .container_back .exp1 .tag_exp img,
+  .experiences .container_back .exp1 .tag_back img,
+  .experiences .container_back .exp2 .tag_exp img,
+  .experiences .container_back .exp2 .tag_back img,
+  .experiences .container_back .exp3 .tag_exp img,
+  .experiences .container_back .exp3 .tag_back img,
+  .experiences .container_back .exp4 .tag_exp img,
+  .experiences .container_back .exp4 .tag_back img,
+  .experiences .container_back .exp5 .tag_exp img,
+  .experiences .container_back .exp5 .tag_back img,
+  .experiences .container_back .exp6 .tag_exp img,
+  .experiences .container_back .exp6 .tag_back img,
   .backgrounds .container_exp .exp1 .tag_exp img,
+  .backgrounds .container_exp .exp1 .tag_back img,
   .backgrounds .container_exp .exp2 .tag_exp img,
+  .backgrounds .container_exp .exp2 .tag_back img,
   .backgrounds .container_exp .exp3 .tag_exp img,
+  .backgrounds .container_exp .exp3 .tag_back img,
   .backgrounds .container_exp .exp4 .tag_exp img,
+  .backgrounds .container_exp .exp4 .tag_back img,
   .backgrounds .container_exp .exp5 .tag_exp img,
-  .backgrounds .container_exp .exp6 .tag_exp img {
+  .backgrounds .container_exp .exp5 .tag_back img,
+  .backgrounds .container_exp .exp6 .tag_exp img,
+  .backgrounds .container_exp .exp6 .tag_back img,
+  .backgrounds .container_back .exp1 .tag_exp img,
+  .backgrounds .container_back .exp1 .tag_back img,
+  .backgrounds .container_back .exp2 .tag_exp img,
+  .backgrounds .container_back .exp2 .tag_back img,
+  .backgrounds .container_back .exp3 .tag_exp img,
+  .backgrounds .container_back .exp3 .tag_back img,
+  .backgrounds .container_back .exp4 .tag_exp img,
+  .backgrounds .container_back .exp4 .tag_back img,
+  .backgrounds .container_back .exp5 .tag_exp img,
+  .backgrounds .container_back .exp5 .tag_back img,
+  .backgrounds .container_back .exp6 .tag_exp img,
+  .backgrounds .container_back .exp6 .tag_back img {
     width: 173px;
+  }
+  .experiences .container_back,
+  .backgrounds .container_back {
+    padding-left: 0px;
+  }
+  .experiences .container_back .back1,
+  .experiences .container_back .back2,
+  .experiences .container_back .back3,
+  .experiences .container_back .back4,
+  .experiences .container_back .back5,
+  .experiences .container_back .back6,
+  .backgrounds .container_back .back1,
+  .backgrounds .container_back .back2,
+  .backgrounds .container_back .back3,
+  .backgrounds .container_back .back4,
+  .backgrounds .container_back .back5,
+  .backgrounds .container_back .back6 {
+    height: 100%;
+    padding-top: 0px;
+  }
+  .experiences .container_back .back1 .tag_back,
+  .experiences .container_back .back2 .tag_back,
+  .experiences .container_back .back3 .tag_back,
+  .experiences .container_back .back4 .tag_back,
+  .experiences .container_back .back5 .tag_back,
+  .experiences .container_back .back6 .tag_back,
+  .backgrounds .container_back .back1 .tag_back,
+  .backgrounds .container_back .back2 .tag_back,
+  .backgrounds .container_back .back3 .tag_back,
+  .backgrounds .container_back .back4 .tag_back,
+  .backgrounds .container_back .back5 .tag_back,
+  .backgrounds .container_back .back6 .tag_back {
+    height: 100%;
+  }
+  .experiences .container_back .back1 .tag_back img,
+  .experiences .container_back .back2 .tag_back img,
+  .experiences .container_back .back3 .tag_back img,
+  .experiences .container_back .back4 .tag_back img,
+  .experiences .container_back .back5 .tag_back img,
+  .experiences .container_back .back6 .tag_back img,
+  .backgrounds .container_back .back1 .tag_back img,
+  .backgrounds .container_back .back2 .tag_back img,
+  .backgrounds .container_back .back3 .tag_back img,
+  .backgrounds .container_back .back4 .tag_back img,
+  .backgrounds .container_back .back5 .tag_back img,
+  .backgrounds .container_back .back6 .tag_back img {
+    width: 100px;
+  }
+  .experiences .container_back .back1 .container_flex,
+  .experiences .container_back .back2 .container_flex,
+  .experiences .container_back .back3 .container_flex,
+  .experiences .container_back .back4 .container_flex,
+  .experiences .container_back .back5 .container_flex,
+  .experiences .container_back .back6 .container_flex,
+  .backgrounds .container_back .back1 .container_flex,
+  .backgrounds .container_back .back2 .container_flex,
+  .backgrounds .container_back .back3 .container_flex,
+  .backgrounds .container_back .back4 .container_flex,
+  .backgrounds .container_back .back5 .container_flex,
+  .backgrounds .container_back .back6 .container_flex {
+    width: 60%;
   }
 }
 
@@ -1146,11 +1337,17 @@ html {
     width: 365px;
   }
   /* design exp_section*/
-  .experiences .container_exp {
+  .experiences .container_exp,
+  .experiences .container_back,
+  .backgrounds .container_exp,
+  .backgrounds .container_back {
     width: 50%;
     height: 362px;
   }
-  .experiences .container_exp div > p {
+  .experiences .container_exp div > p,
+  .experiences .container_back div > p,
+  .backgrounds .container_exp div > p,
+  .backgrounds .container_back div > p {
     font-size: 18px;
   }
   .experiences .container_exp .exp1,
@@ -1158,7 +1355,49 @@ html {
   .experiences .container_exp .exp3,
   .experiences .container_exp .exp4,
   .experiences .container_exp .exp5,
-  .experiences .container_exp .exp6 {
+  .experiences .container_exp .exp6,
+  .experiences .container_exp .back1,
+  .experiences .container_exp .back2,
+  .experiences .container_exp .back3,
+  .experiences .container_exp .back4,
+  .experiences .container_exp .back5,
+  .experiences .container_exp .back6,
+  .experiences .container_back .exp1,
+  .experiences .container_back .exp2,
+  .experiences .container_back .exp3,
+  .experiences .container_back .exp4,
+  .experiences .container_back .exp5,
+  .experiences .container_back .exp6,
+  .experiences .container_back .back1,
+  .experiences .container_back .back2,
+  .experiences .container_back .back3,
+  .experiences .container_back .back4,
+  .experiences .container_back .back5,
+  .experiences .container_back .back6,
+  .backgrounds .container_exp .exp1,
+  .backgrounds .container_exp .exp2,
+  .backgrounds .container_exp .exp3,
+  .backgrounds .container_exp .exp4,
+  .backgrounds .container_exp .exp5,
+  .backgrounds .container_exp .exp6,
+  .backgrounds .container_exp .back1,
+  .backgrounds .container_exp .back2,
+  .backgrounds .container_exp .back3,
+  .backgrounds .container_exp .back4,
+  .backgrounds .container_exp .back5,
+  .backgrounds .container_exp .back6,
+  .backgrounds .container_back .exp1,
+  .backgrounds .container_back .exp2,
+  .backgrounds .container_back .exp3,
+  .backgrounds .container_back .exp4,
+  .backgrounds .container_back .exp5,
+  .backgrounds .container_back .exp6,
+  .backgrounds .container_back .back1,
+  .backgrounds .container_back .back2,
+  .backgrounds .container_back .back3,
+  .backgrounds .container_back .back4,
+  .backgrounds .container_back .back5,
+  .backgrounds .container_back .back6 {
     height: 100%;
   }
   .experiences .container_exp .exp1 .container_flex,
@@ -1166,18 +1405,90 @@ html {
   .experiences .container_exp .exp3 .container_flex,
   .experiences .container_exp .exp4 .container_flex,
   .experiences .container_exp .exp5 .container_flex,
-  .experiences .container_exp .exp6 .container_flex {
+  .experiences .container_exp .exp6 .container_flex,
+  .experiences .container_exp .back1 .container_flex,
+  .experiences .container_exp .back2 .container_flex,
+  .experiences .container_exp .back3 .container_flex,
+  .experiences .container_exp .back4 .container_flex,
+  .experiences .container_exp .back5 .container_flex,
+  .experiences .container_exp .back6 .container_flex,
+  .experiences .container_back .exp1 .container_flex,
+  .experiences .container_back .exp2 .container_flex,
+  .experiences .container_back .exp3 .container_flex,
+  .experiences .container_back .exp4 .container_flex,
+  .experiences .container_back .exp5 .container_flex,
+  .experiences .container_back .exp6 .container_flex,
+  .experiences .container_back .back1 .container_flex,
+  .experiences .container_back .back2 .container_flex,
+  .experiences .container_back .back3 .container_flex,
+  .experiences .container_back .back4 .container_flex,
+  .experiences .container_back .back5 .container_flex,
+  .experiences .container_back .back6 .container_flex,
+  .backgrounds .container_exp .exp1 .container_flex,
+  .backgrounds .container_exp .exp2 .container_flex,
+  .backgrounds .container_exp .exp3 .container_flex,
+  .backgrounds .container_exp .exp4 .container_flex,
+  .backgrounds .container_exp .exp5 .container_flex,
+  .backgrounds .container_exp .exp6 .container_flex,
+  .backgrounds .container_exp .back1 .container_flex,
+  .backgrounds .container_exp .back2 .container_flex,
+  .backgrounds .container_exp .back3 .container_flex,
+  .backgrounds .container_exp .back4 .container_flex,
+  .backgrounds .container_exp .back5 .container_flex,
+  .backgrounds .container_exp .back6 .container_flex,
+  .backgrounds .container_back .exp1 .container_flex,
+  .backgrounds .container_back .exp2 .container_flex,
+  .backgrounds .container_back .exp3 .container_flex,
+  .backgrounds .container_back .exp4 .container_flex,
+  .backgrounds .container_back .exp5 .container_flex,
+  .backgrounds .container_back .exp6 .container_flex,
+  .backgrounds .container_back .back1 .container_flex,
+  .backgrounds .container_back .back2 .container_flex,
+  .backgrounds .container_back .back3 .container_flex,
+  .backgrounds .container_back .back4 .container_flex,
+  .backgrounds .container_back .back5 .container_flex,
+  .backgrounds .container_back .back6 .container_flex {
     height: 100%;
   }
-  .experiences .container_exp .subtext > p {
+  .experiences .container_exp .subtext > p,
+  .experiences .container_back .subtext > p,
+  .backgrounds .container_exp .subtext > p,
+  .backgrounds .container_back .subtext > p {
     font-family: "MontserratAlternates-Medium";
     font-size: 14px;
   }
-  .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active {
+  .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active,
+  .experiences .container_back .subtext > p a:hover,
+  .experiences .container_back .subtext > p a:active,
+  .backgrounds .container_exp .subtext > p a:hover,
+  .backgrounds .container_exp .subtext > p a:active,
+  .backgrounds .container_back .subtext > p a:hover,
+  .backgrounds .container_back .subtext > p a:active {
     color: #c62a40;
   }
-  .experiences .container_exp .tag_exp {
+  .experiences .container_exp .tag_exp,
+  .experiences .container_exp .tag_back,
+  .experiences .container_back .tag_exp,
+  .experiences .container_back .tag_back,
+  .backgrounds .container_exp .tag_exp,
+  .backgrounds .container_exp .tag_back,
+  .backgrounds .container_back .tag_exp,
+  .backgrounds .container_back .tag_back {
     height: 100%;
+  }
+  .experiences .container_back .back1 .tag_back img,
+  .experiences .container_back .back2 .tag_back img,
+  .experiences .container_back .back3 .tag_back img,
+  .experiences .container_back .back4 .tag_back img,
+  .experiences .container_back .back5 .tag_back img,
+  .experiences .container_back .back6 .tag_back img,
+  .backgrounds .container_back .back1 .tag_back img,
+  .backgrounds .container_back .back2 .tag_back img,
+  .backgrounds .container_back .back3 .tag_back img,
+  .backgrounds .container_back .back4 .tag_back img,
+  .backgrounds .container_back .back5 .tag_back img,
+  .backgrounds .container_back .back6 .tag_back img {
+    width: 115px;
   }
 }
 /*# sourceMappingURL=style.css.map */
