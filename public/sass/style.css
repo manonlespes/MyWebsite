@@ -387,7 +387,7 @@ html {
 .backgrounds .container_exp .subtext > p a,
 .backgrounds .container_back .subtext > p a {
   text-decoration: none;
-  color: #1b2d2a;
+  color: #0e7a69;
   cursor: pointer;
 }
 
@@ -395,6 +395,13 @@ html {
 .experiences .container_back .subtext > p a:visited,
 .backgrounds .container_exp .subtext > p a:visited,
 .backgrounds .container_back .subtext > p a:visited {
+  color: #0e7a69;
+}
+
+.experiences .container_exp .subtext .specialColor,
+.experiences .container_back .subtext .specialColor,
+.backgrounds .container_exp .subtext .specialColor,
+.backgrounds .container_back .subtext .specialColor {
   color: #0e7a69;
 }
 

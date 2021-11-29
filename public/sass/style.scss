@@ -294,12 +294,18 @@ html {
 
             a {
                 text-decoration: none;
-                color: $darkgreen;
+                color: $green;
                 cursor: pointer;
 
                 &:visited {
                     color: $green;
                 }
+            }
+        }
+
+        .subtext{
+            .specialColor{
+                color: $green;
             }
         }
 

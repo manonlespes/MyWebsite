@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="subtext">
-                    <p>Gazette de Berlin</p>
+                    <p class="specialColor">Gazette de Berlin</p>
                     <p>Berlin, Germany <span class="more">SEE MORE +</span></p>
                 </div>
             </div>
