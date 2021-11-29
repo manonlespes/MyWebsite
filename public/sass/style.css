@@ -32,6 +32,7 @@
 body {
   font-size: 15px;
   background: #f2f5f8;
+  /* TODO faire le mode dark */
 }
 
 * {
@@ -907,10 +908,23 @@ html {
   margin-top: 10px;
 }
 
-.experiences .container_exp .visibleExp,
+.experiences .container_exp .hide,
+.experiences .container_back .hide,
+.backgrounds .container_exp .hide,
+.backgrounds .container_back .hide {
+  display: none;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.experiences .container_exp .visibleExp, .experiences .container_exp .visibleBack,
 .experiences .container_back .visibleExp,
+.experiences .container_back .visibleBack,
 .backgrounds .container_exp .visibleExp,
-.backgrounds .container_back .visibleExp {
+.backgrounds .container_exp .visibleBack,
+.backgrounds .container_back .visibleExp,
+.backgrounds .container_back .visibleBack {
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,40 +933,79 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  display: block;
 }
 
-.experiences .container_exp .visibleExp p,
+.experiences .container_exp .visibleExp p, .experiences .container_exp .visibleBack p,
 .experiences .container_back .visibleExp p,
+.experiences .container_back .visibleBack p,
 .backgrounds .container_exp .visibleExp p,
-.backgrounds .container_back .visibleExp p {
+.backgrounds .container_exp .visibleBack p,
+.backgrounds .container_back .visibleExp p,
+.backgrounds .container_back .visibleBack p {
   font-family: "MontserratAlternates-Medium";
   color: #1b2d2a;
   font-size: 10px;
   text-align: justify;
   margin-top: 6px;
+  line-height: 13px;
 }
 
-.experiences .container_exp .visibleExp p .project,
+.experiences .container_exp .visibleExp p .project, .experiences .container_exp .visibleBack p .project,
 .experiences .container_back .visibleExp p .project,
+.experiences .container_back .visibleBack p .project,
 .backgrounds .container_exp .visibleExp p .project,
-.backgrounds .container_back .visibleExp p .project {
+.backgrounds .container_exp .visibleBack p .project,
+.backgrounds .container_back .visibleExp p .project,
+.backgrounds .container_back .visibleBack p .project {
   color: #c62a40;
   text-decoration: none;
 }
 
-.experiences .container_exp .visibleExp p .project:visited,
+.experiences .container_exp .visibleExp p .project:visited, .experiences .container_exp .visibleBack p .project:visited,
 .experiences .container_back .visibleExp p .project:visited,
+.experiences .container_back .visibleBack p .project:visited,
 .backgrounds .container_exp .visibleExp p .project:visited,
-.backgrounds .container_back .visibleExp p .project:visited {
+.backgrounds .container_exp .visibleBack p .project:visited,
+.backgrounds .container_back .visibleExp p .project:visited,
+.backgrounds .container_back .visibleBack p .project:visited {
   color: #0e7a69;
 }
 
-.experiences .container_exp .hide,
-.experiences .container_back .hide,
-.backgrounds .container_exp .hide,
-.backgrounds .container_back .hide {
-  display: none;
-  overflow: hidden;
+.experiences .container_exp .visibleExp ul, .experiences .container_exp .visibleBack ul,
+.experiences .container_back .visibleExp ul,
+.experiences .container_back .visibleBack ul,
+.backgrounds .container_exp .visibleExp ul,
+.backgrounds .container_exp .visibleBack ul,
+.backgrounds .container_back .visibleExp ul,
+.backgrounds .container_back .visibleBack ul {
+  padding-left: 10px;
+}
+
+.experiences .container_exp .visibleExp ul li, .experiences .container_exp .visibleBack ul li,
+.experiences .container_back .visibleExp ul li,
+.experiences .container_back .visibleBack ul li,
+.backgrounds .container_exp .visibleExp ul li,
+.backgrounds .container_exp .visibleBack ul li,
+.backgrounds .container_back .visibleExp ul li,
+.backgrounds .container_back .visibleBack ul li {
+  padding-left: 5px;
+  font-size: 10px;
+  font-family: "MontserratAlternates-Medium";
+  line-height: 15px;
+  list-style: none;
+}
+
+.experiences .container_exp .visibleExp ul li::before, .experiences .container_exp .visibleBack ul li::before,
+.experiences .container_back .visibleExp ul li::before,
+.experiences .container_back .visibleBack ul li::before,
+.backgrounds .container_exp .visibleExp ul li::before,
+.backgrounds .container_exp .visibleBack ul li::before,
+.backgrounds .container_back .visibleExp ul li::before,
+.backgrounds .container_back .visibleBack ul li::before {
+  content: "->";
+  size: 10px;
+  color: #22d3b8;
 }
 
 .backgrounds {
@@ -1259,6 +1312,27 @@ html {
   .backgrounds .container_back .exp6 .tag_back img {
     width: 173px;
   }
+  .experiences .container_exp .visibleExp p,
+  .experiences .container_back .visibleExp p,
+  .backgrounds .container_exp .visibleExp p,
+  .backgrounds .container_back .visibleExp p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .experiences .container_exp .visibleExp ul,
+  .experiences .container_back .visibleExp ul,
+  .backgrounds .container_exp .visibleExp ul,
+  .backgrounds .container_back .visibleExp ul {
+    list-style: none;
+  }
+  .experiences .container_exp .visibleExp ul li,
+  .experiences .container_back .visibleExp ul li,
+  .backgrounds .container_exp .visibleExp ul li,
+  .backgrounds .container_back .visibleExp ul li {
+    font-size: 12px;
+    font-family: "MontserratAlternates-Regular";
+    line-height: 20px;
+  }
   .experiences .container_back,
   .backgrounds .container_back {
     padding-left: 0px;
@@ -1495,6 +1569,13 @@ html {
   .backgrounds .container_back .tag_exp,
   .backgrounds .container_back .tag_back {
     height: 100%;
+  }
+  .experiences .container_exp .visibleExp p,
+  .experiences .container_back .visibleExp p,
+  .backgrounds .container_exp .visibleExp p,
+  .backgrounds .container_back .visibleExp p {
+    font-size: 13px;
+    line-height: 20px;
   }
   .experiences .container_back .back1 .tag_back img,
   .experiences .container_back .back2 .tag_back img,

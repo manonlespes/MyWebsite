@@ -55,7 +55,7 @@ moreExp3.addEventListener("click", function (e) {
     else{
         this.innerHTML = "SEE LESS -"
     }
-    
+
     /* remove the hide class */
     detailsExp3.classList.toggle("hide");
     /* add the visibleExp class */
@@ -87,50 +87,6 @@ moreExp4.addEventListener("click", function (e) {
 
 const moreExp5 = document.getElementById("moreExp5");
 const detailsExp5 = document.getElementById("detailsExp5");
-
-moreExp5.addEventListener("click", function (e) {
-    e.preventDefault;
-   /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
-        this.innerHTML = "SEE MORE +"
-    }
-    else{
-        this.innerHTML = "SEE LESS -"
-    }
-
-    /* remove the hide class */
-    detailsExp5.classList.toggle("hide");
-    /* add the visibleExp class */
-    detailsExp5.classList.toggle("visibleExp");
-
-    /*write back see more + */
-})
-
-const moreExp6 = document.getElementById("moreExp6");
-const detailsExp6 = document.getElementById("detailsExp6");
-
-moreExp6.addEventListener("click", function (e) {
-    e.preventDefault;
-   /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
-        this.innerHTML = "SEE MORE +"
-    }
-    else{
-        this.innerHTML = "SEE LESS -"
-    }
-
-    /* remove the hide class */
-    detailsExp6.classList.toggle("hide");
-    /* add the visibleExp class */
-    detailsExp6.classList.toggle("visibleExp");
-
-    /*write back see more + */
-})
-
-
-
-
-
 
 
 

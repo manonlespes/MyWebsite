@@ -61,9 +61,8 @@
         </div>
 
         <div id="detailsExp1" class="hide" >
-            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
-            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
-            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
+            <p>&lowast; Organisation of all internal & institutional events (General Assemblies, Committees meetings, ILO/WEC meetings, UNI-Europa and WEC-Europe conferences, etc.) and in charge of the memberships (membership development, responses to various requests, daily administrative tasks, etc.). </p>
+            <p>&lowast; Project Coordinator on the <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a>: help in collecting data, organisation of interviews with Members, draft of concept notes for different projects, set the agenda for the meetings with the Taskforce Members, creation and filling a dashboard to monitor impact of the crisis on the industry, support in creation of podcasts (<a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work</a>), ensure compliance with project plans, budgets and expenditures.</p>
         </div>
 
         <div class="exp2">
@@ -88,9 +87,15 @@
         </div>
 
         <div id="detailsExp2" class="hide">
-            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
-            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
-            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
+            <p>&lowast; Organisation of events (logistics and communication with the suppliers), administrative support, communication with participants, website developments with Aventri software, travel arrangements & assistance with visas, preparation of documents for participants, drafting of final reports, daily administrative tasks & answering call of tenders.</p>
+            <p>&lowast; Development of the digital communication (Facebook, LinkedIn, YouTube, update on the website of the company), etc.</p>
+            <p>&lowast; Management and submission of the Label Entreprise Eco-dynamique.</p>
+            <p>Non-exhaustive list of events organised:</p>
+            <ul>
+                <li> 11/07/2019: DG DEVCO, EC | Side event during the UN HLPF, New York | 60 pax.</li>
+                <li> 20/06/2019: DG DEVCO, EC | Head of EU Evaluation Services for Development Cooperation, Brussels | 40 pax.</li>
+                <li> 20-21-22/11/2018: DG DEVCO, EC | EU NGO Forum, Brussels |255 pax.</li>
+            </ul>
         </div>
 
         <div class="exp3">
@@ -113,9 +118,7 @@
             </div>
         </div>
         <div id="detailsExp3" class="hide">
-            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
-            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
-            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
+            <p>&lowast; Welcoming participants, giving microphones during the meetings, assisting participants, VIPs & speakers, etc.</p>
         </div>
 
         <div class="exp4">
@@ -139,9 +142,7 @@
         </div>
 
         <div id="detailsExp4" class="hide">
-            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
-            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
-            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
+            <p>&lowast; Development of a project in order to attract international interns, volunteer in the different sections. Simultaneously, I was conducting research on female sex tourism in Cancún for my master’s thesis.</p>
         </div>
 
         <div class="exp5">
@@ -154,7 +155,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.campinglacotesauvage.com/?gclid=EAIaIQobChMIm5uu1bq29AIVlKl3Ch2_9gu_EAAYAiAAEgJ3iPD_BwE" target="_blank" rel="noopener noreferrer">Camping de la Côte Sauvage Ecolabel&lowast;&lowast;</a> </p>
-                    <p>Saint-Clément-des-Baleines, France <span class="more" id="moreExp5">SEE MORE +</span></p>
+                    <p>Saint-Clément-des-Baleines, France</p>
                 </div>
             </div>
 
@@ -162,12 +163,6 @@
                 <p>06/2013-09/2013</p>
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
-        </div>
-
-        <div id="detailsExp5" class="hide">
-            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
-            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
-            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
         </div>
 
         <div class="exp6">
@@ -180,7 +175,7 @@
 
                 <div class="subtext">
                     <p class="specialColor">Gazette de Berlin</p>
-                    <p>Berlin, Germany <span class="more" id="moreExp6">SEE MORE +</span></p>
+                    <p>Berlin, Germany</p>
                 </div>
             </div>
 
@@ -189,12 +184,6 @@
                 <img src="public/images/tag_exp.png" alt="tag_year">
             </div>
         </div>
-        <div id="detailsExp6" class="hide">
-            <p>&lowast; Organisation de tous les événements internes et institutionnels (Assemblées Générales, Réunions des comités , ILO/WEC événements UNI Europa WEC Europe conférences, etc.).</p>
-            <p> &lowast; Responsable adhésions des membres, accueil des nouveaux membres, soutien aux membres, tâches administratives, etc.).</p>
-            <p>&lowast; Project Coordinator sur le projet <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a> : collecte des informations/données pour suivre l’impact de la crise sur le secteur privé des RH, entretiens qualitatifs avec les membres, notes de synthèse, aide à la réalisation des épisodes du podcast <a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work.</a></p>
-        </div>
-
     </div>
 </section>
 
@@ -221,9 +210,14 @@
 
                 <div class="subtext">
                     <p><a href="https://www.interface3.be/fr/formation/webmaster" target="_blank" rel="noopener noreferrer">Interface3</a></p>
-                    <p>Brussels, Belgium</p>
+                    <p>Brussels, Belgium <span id="moreBack1">SEE MORE +</span></p>
                 </div>
             </div>
+
+            <div id="detailsBack1" class="visibleBack">
+            <p>&lowast; Organisation of all internal & institutional events (General Assemblies, Committees meetings, ILO/WEC meetings, UNI-Europa and WEC-Europe conferences, etc.) and in charge of the memberships (membership development, responses to various requests, daily administrative tasks, etc.). </p>
+            <p>&lowast; Project Coordinator on the <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a>: help in collecting data, organisation of interviews with Members, draft of concept notes for different projects, set the agenda for the meetings with the Taskforce Members, creation and filling a dashboard to monitor impact of the crisis on the industry, support in creation of podcasts (<a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work</a>), ensure compliance with project plans, budgets and expenditures.</p>
+        </div>
 
         </div>
 
@@ -243,7 +237,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.bruxellesformation.brussels/catalogue-bf-entreprises/lassertivite-comme-outil-de-travail/" target="_blank" rel="noopener noreferrer">Bruxelles Formation</a></p>
-                    <p>Brussels, Belgium</p>
+                    <p>Brussels, Belgium <span id="moreBack2">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -268,7 +262,7 @@
                     <p><a href="https://www.ulb.be/en/programme/ma-babl#programme" target="_blank" rel="noopener noreferrer">Minor Multiculturality</a></p>
                     <p>Languages EN, ES, DE, FR</p>
                     <p><a href="https://www.ulb.be/en/programme/ma-babl" target="_blank" rel="noopener noreferrer">ULB</a></p>
-                    <p>Brussels, Belgium</p>
+                    <p>Brussels, Belgium <span id="moreBack3">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -293,7 +287,7 @@
                     <p>Erasmus Dublin (2014) at UCD - 3 months</p>
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://ltc.ulb.be/nos-departements-d-enseignement/ecole-de-traduction-et-interpretation-isti-cooremans-1" target="_blank" rel="noopener noreferrer">ISTI</a></p>
-                    <p>Brussels, Belgium</p>
+                    <p>Brussels, Belgium <span id="moreBack4">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -317,7 +311,7 @@
                 <div class="subtext">
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://www.ict-toulouse.fr/formation/licence-langues-etrangeres-appliquees/" target="_blank" rel="noopener noreferrer">ICT</a> </p>
-                    <p>Toulouse, France</p>
+                    <p>Toulouse, France <span id="moreBack5">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -341,7 +335,7 @@
                 <div class="subtext">
                     <p>Minor German</p>
                     <p> <a href="https://saint-sernin.mon-ent-occitanie.fr/" target="_blank" rel="noopener noreferrer">Lycée Saint-Sernin</a></p>
-                    <p>Toulouse, France</p>
+                    <p>Toulouse, France <span id="moreBack6">SEE MORE +</span></p>
                 </div>
             </div>
         </div>

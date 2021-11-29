@@ -44,7 +44,7 @@ $darkgreen: #1b2d2a;
 
 body {
     font-size: 15px;
-    background: $white;
+    background: $white; /* TODO faire le mode dark */
 }
 
 * {
@@ -390,33 +390,54 @@ html {
             margin-top: 10px;
         }
 
-        .visibleExp {
+        .hide{
+            display: none;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+        }
+
+        .visibleExp, .visibleBack {
             width: 95%;
             display: flex;
             flex-flow: column nowrap;
+            display: block;
+            
             p {
                 font-family: $MontMed;
                 color: $darkgreen;
                 font-size: 10px;
                 text-align: justify;
                 margin-top: 6px;
+                line-height: 13px;
                 
-                .project{
+
+                .project {
                     color: $cherry;
                     text-decoration: none;
 
-                    &:visited{
+                    &:visited {
                         color: $green;
                     }
                 }
-
-                
             }
-        }
 
-        .hide {
-            display: none;
-            overflow: hidden;
+            ul {
+                padding-left: 10px;
+
+                li {
+                    padding-left: 5px;
+                    font-size: 10px;
+                    font-family: $MontMed;
+                    line-height: 15px;
+                    list-style: none;
+
+                    &::before{
+                        content: "->";
+                        size: 10px;
+                        color: $skyblue;
+                    }
+                }
+            }
         }
     }
 }
@@ -590,6 +611,22 @@ html {
                     }
                 }
             }
+
+            .visibleExp {
+                p {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+
+                ul {
+                    list-style: none;
+                    li {
+                        font-size: 12px;
+                        font-family: $MontReg;
+                        line-height: 20px;
+                    }
+                }
+            }
         }
 
         .container_back {
@@ -723,6 +760,13 @@ html {
             .tag_exp,
             .tag_back {
                 height: 100%;
+            }
+
+            .visibleExp {
+                p {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
             }
         }
 
