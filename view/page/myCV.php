@@ -323,7 +323,7 @@
         
         <div id="detailsBack4" class="hide">
             <p>&lowast; Marketing, communication, law, geopolitics, sociology, science, linguistic, study of languages and cultures (English, French & German).</p>
-            <p>&lowast; Translation from German to French or English to French mainly</p>
+            <p>&lowast; Translation from German to French or English to French mainly.</p>
         </div>
 
         <div class="back5">

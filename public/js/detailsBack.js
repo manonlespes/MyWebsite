@@ -14,7 +14,7 @@ moreBack1.addEventListener("click", function (e) {
     /*write back see more + */
 
     /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{
@@ -35,7 +35,7 @@ moreBack2.addEventListener("click", function (e) {
     /*write back see more + */
 
     /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{
@@ -49,7 +49,7 @@ const detailsBack3 = document.getElementById("detailsBack3");
 moreBack3.addEventListener("click", function (e) {
     e.preventDefault;
    /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{
@@ -70,7 +70,7 @@ const detailsBack4 = document.getElementById("detailsBack4");
 moreBack4.addEventListener("click", function (e) {
     e.preventDefault;
    /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{
@@ -92,7 +92,7 @@ const detailsBack5 = document.getElementById("detailsBack5");
 moreBack5.addEventListener("click", function (e) {
     e.preventDefault;
    /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{
@@ -107,14 +107,14 @@ moreBack5.addEventListener("click", function (e) {
     /*write back see more + */
 })
 
-const moreBack5 = document.getElementById("moreBack5");
-const detailsBack5 = document.getElementById("detailsBack5");
+const moreBack6 = document.getElementById("moreBack6");
+const detailsBack6 = document.getElementById("detailsBack6");
 
 
 moreBack6.addEventListener("click", function (e) {
     e.preventDefault;
    /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{

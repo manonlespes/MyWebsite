@@ -914,8 +914,6 @@ html {
 .backgrounds .container_back .hide {
   display: none;
   overflow: hidden;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 .experiences .container_exp .visibleExp,
@@ -1064,6 +1062,55 @@ html {
 .backgrounds .container_back .back5 .tag_back img,
 .backgrounds .container_back .back6 .tag_back img {
   width: 90px;
+}
+
+/* design footer */
+footer {
+  height: 7.5em;
+  background-color: #0e7a69;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #0e7a69;
+  border-top-left-radius: 85% 40%;
+  border-top-right-radius: 85% 40%;
+}
+
+footer p {
+  color: #f2f5f8;
+  font-family: "MvtDirect-Thin";
+  font-size: 0.75em;
+}
+
+footer .social_icon {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .social_icon a i {
+  color: #f2f5f8;
+  font-size: 1.5em;
+}
+
+footer .social_icon .red_line {
+  display: none;
+  overflow: hidden;
 }
 
 /*******************Responsive Tablet */
@@ -1335,22 +1382,34 @@ html {
     width: 173px;
   }
   .experiences .container_exp .visibleExp p,
+  .experiences .container_exp .visibleBack p,
   .experiences .container_back .visibleExp p,
+  .experiences .container_back .visibleBack p,
   .backgrounds .container_exp .visibleExp p,
-  .backgrounds .container_back .visibleExp p {
+  .backgrounds .container_exp .visibleBack p,
+  .backgrounds .container_back .visibleExp p,
+  .backgrounds .container_back .visibleBack p {
     font-size: 12px;
     line-height: 16px;
   }
   .experiences .container_exp .visibleExp ul,
+  .experiences .container_exp .visibleBack ul,
   .experiences .container_back .visibleExp ul,
+  .experiences .container_back .visibleBack ul,
   .backgrounds .container_exp .visibleExp ul,
-  .backgrounds .container_back .visibleExp ul {
+  .backgrounds .container_exp .visibleBack ul,
+  .backgrounds .container_back .visibleExp ul,
+  .backgrounds .container_back .visibleBack ul {
     list-style: none;
   }
   .experiences .container_exp .visibleExp ul li,
+  .experiences .container_exp .visibleBack ul li,
   .experiences .container_back .visibleExp ul li,
+  .experiences .container_back .visibleBack ul li,
   .backgrounds .container_exp .visibleExp ul li,
-  .backgrounds .container_back .visibleExp ul li {
+  .backgrounds .container_exp .visibleBack ul li,
+  .backgrounds .container_back .visibleExp ul li,
+  .backgrounds .container_back .visibleBack ul li {
     font-size: 12px;
     font-family: "MontserratAlternates-Regular";
     line-height: 20px;
@@ -1416,6 +1475,45 @@ html {
   .backgrounds .container_back .back6 .container_flex {
     width: 60%;
   }
+  /* design footer */
+  footer p {
+    font-size: 1em;
+  }
+  footer .social_icon {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    bottom: 88px;
+    right: 0;
+    height: 440px;
+    z-index: 5;
+    width: 88px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: height 1s ease-in;
+    transition: height 1s ease-in;
+  }
+  footer .social_icon a i {
+    color: #0e7a69;
+    font-size: 2em;
+  }
+  footer .social_icon .red_line {
+    display: block;
+    overflow: visible;
+    background-color: #c62a40;
+    height: 175px;
+    z-index: 4;
+    width: 4px;
+    border-radius: 20px;
+  }
 }
 
 /***********************Responsive Desktop */
@@ -1450,7 +1548,7 @@ html {
     margin-top: 40px;
   }
   .aim_banner .aim img {
-    width: 365px;
+    width: 475px;
   }
   /* design exp_section*/
   .experiences .container_exp,
@@ -1572,6 +1670,14 @@ html {
   .backgrounds .container_back .subtext > p {
     font-family: "MontserratAlternates-Medium";
     font-size: 14px;
+    /* transition: background-size 0.3s ease; */
+  }
+  .experiences .container_exp .subtext > p a,
+  .experiences .container_back .subtext > p a,
+  .backgrounds .container_exp .subtext > p a,
+  .backgrounds .container_back .subtext > p a {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active,
   .experiences .container_back .subtext > p a:hover,
@@ -1587,13 +1693,17 @@ html {
   .backgrounds .container_exp .subtext > p .more,
   .backgrounds .container_back .subtext > p .more {
     position: relative;
-    -webkit-transition: background-size 0.3s ease;
-    transition: background-size 0.3s ease;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /* &:hover::before {
+                            background-size: 100% 2px;
+                    } */
   }
-  .experiences .container_exp .subtext > p .more:before,
-  .experiences .container_back .subtext > p .more:before,
-  .backgrounds .container_exp .subtext > p .more:before,
-  .backgrounds .container_back .subtext > p .more:before {
+  .experiences .container_exp .subtext > p .more::before,
+  .experiences .container_back .subtext > p .more::before,
+  .backgrounds .container_exp .subtext > p .more::before,
+  .backgrounds .container_back .subtext > p .more::before {
     content: "";
     position: absolute;
     left: 45%;
@@ -1602,14 +1712,14 @@ html {
     height: 9px;
     -webkit-transform: skew(-12deg) translateX(-50%);
     transform: skew(-12deg) translateX(-50%);
-    background: rgba(198, 42, 64, 0.37);
+    background: rgba(14, 122, 105, 0.15);
     z-index: -1;
   }
-  .experiences .container_exp .subtext > p .more:hover:before,
-  .experiences .container_back .subtext > p .more:hover:before,
-  .backgrounds .container_exp .subtext > p .more:hover:before,
-  .backgrounds .container_back .subtext > p .more:hover:before {
-    background-size: 100% 2px;
+  .experiences .container_exp .subtext > p .more:hover,
+  .experiences .container_back .subtext > p .more:hover,
+  .backgrounds .container_exp .subtext > p .more:hover,
+  .backgrounds .container_back .subtext > p .more:hover {
+    color: #c62a40;
   }
   .experiences .container_exp .tag_exp,
   .experiences .container_exp .tag_back,
@@ -1622,9 +1732,13 @@ html {
     height: 100%;
   }
   .experiences .container_exp .visibleExp p,
+  .experiences .container_exp .visibleBack p,
   .experiences .container_back .visibleExp p,
+  .experiences .container_back .visibleBack p,
   .backgrounds .container_exp .visibleExp p,
-  .backgrounds .container_back .visibleExp p {
+  .backgrounds .container_exp .visibleBack p,
+  .backgrounds .container_back .visibleExp p,
+  .backgrounds .container_back .visibleBack p {
     font-size: 13px;
     line-height: 20px;
   }
@@ -1641,6 +1755,53 @@ html {
   .backgrounds .container_back .back5 .tag_back img,
   .backgrounds .container_back .back6 .tag_back img {
     width: 115px;
+  }
+  footer p {
+    font-size: 1.5em;
+  }
+  footer .social_icon {
+    width: 235px;
+  }
+  footer .social_icon a {
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 15%;
+    border: solid 1px transparent;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  footer .social_icon a:hover {
+    border: solid 1px #22d3b8;
+  }
+  footer .social_icon a i {
+    color: #0e7a69;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  footer .social_icon a i:hover {
+    color: #22d3b8;
+  }
+  footer .social_icon .red_line {
+    display: block;
+    overflow: visible;
+    background-color: #c62a40;
+    height: 175px;
+    z-index: 4;
+    width: 4px;
+    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

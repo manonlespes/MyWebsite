@@ -14,7 +14,7 @@ moreExp1.addEventListener("click", function (e) {
     /*write back see more + */
 
     /* change the text */
-    if (this.innerHTML == "SEE LESS -") {
+    if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
     else{

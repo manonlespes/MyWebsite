@@ -393,7 +393,6 @@ html {
         .hide {
             display: none;
             overflow: hidden;
-            transition: all 1s ease-in-out;
         }
 
         .visibleExp,
@@ -478,6 +477,45 @@ html {
                     width: 90px;
                 }
             }
+        }
+    }
+}
+
+/* design footer */
+
+footer {
+    height: 7.5em;
+    background-color: $green;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: solid 1px $green;
+    border-top-left-radius: 85% 40%;
+    border-top-right-radius: 85% 40%;
+
+    p {
+        color: $white;
+        font-family: $MvtThin;
+        font-size: 0.75em;
+    }
+
+    .social_icon {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+        a {
+            i {
+                color: $white;
+                font-size: 1.5em;
+            }
+        }
+
+        .red_line {
+            display: none;
+            overflow: hidden;
         }
     }
 }
@@ -620,7 +658,8 @@ html {
                 }
             }
 
-            .visibleExp {
+            .visibleExp,
+            .visibleBack {
                 p {
                     font-size: 12px;
                     line-height: 16px;
@@ -659,6 +698,44 @@ html {
                 .container_flex {
                     width: 60%;
                 }
+            }
+        }
+    }
+    /* design footer */
+
+    footer {
+        p {
+            font-size: 1em;
+        }
+
+        .social_icon {
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column;
+            bottom: 88px;
+            right: 0;
+            height: 440px;
+            z-index: 5;
+            width: 88px;
+            align-items: center;
+            transition: height 1s ease-in;
+
+            a {
+                i {
+                    color: $green;
+                    font-size: 2em;
+                }
+            }
+
+            .red_line {
+                display: block;
+                overflow: visible;
+                background-color: #c62a40;
+                height: 175px;
+                z-index: 4;
+                width: 4px;
+                border-radius: 20px;
             }
         }
     }
@@ -716,7 +793,7 @@ html {
         .aim {
             margin-top: 40px;
             img {
-                width: 365px;
+                width: 475px;
             }
         }
     }
@@ -756,8 +833,11 @@ html {
             .subtext > p {
                 font-family: $MontMed;
                 font-size: 14px;
+                /* transition: background-size 0.3s ease; */
 
                 a {
+                    transition: all 0.3s ease;
+
                     &:hover,
                     &:active {
                         color: $cherry;
@@ -766,9 +846,10 @@ html {
 
                 .more {
                     position: relative;
-                    transition: background-size 0.3s ease;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
 
-                    &:before {
+                    &::before {
                         content: "";
                         position: absolute;
                         left: 45%;
@@ -777,14 +858,16 @@ html {
                         height: 9px;
                         -webkit-transform: skew(-12deg) translateX(-50%);
                         transform: skew(-12deg) translateX(-50%);
-                        background: rgba(198, 42, 64, 0.37);
+                        background: rgba(14, 122, 105, 0.15);
                         z-index: -1;
                     }
 
-                    &:hover {
-                        &:before {
+                    /* &:hover::before {
                             background-size: 100% 2px;
-                        }
+                    } */
+
+                    &:hover {
+                        color: $cherry;
                     }
                 }
             }
@@ -794,7 +877,8 @@ html {
                 height: 100%;
             }
 
-            .visibleExp {
+            .visibleExp,
+            .visibleBack {
                 p {
                     font-size: 13px;
                     line-height: 20px;
@@ -814,6 +898,52 @@ html {
                         width: 115px;
                     }
                 }
+            }
+        }
+    }
+
+    footer {
+        p {
+            font-size: 1.5em;
+        }
+
+        .social_icon {
+            width: 235px;
+
+            a {
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                justify-content: center;
+                align-items: center;
+                height: 15%;
+                border: solid 1px transparent;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    border: solid 1px $skyblue;
+                }
+
+                
+                i {
+                    color: $green;
+                    transition: all 0.5s ease;
+                    
+                    &:hover {
+                        color: $skyblue;
+                    }
+                }
+            }
+
+            .red_line {
+                display: block;
+                overflow: visible;
+                background-color: #c62a40;
+                height: 175px;
+                z-index: 4;
+                width: 4px;
+                border-radius: 20px;
             }
         }
     }
