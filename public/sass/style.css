@@ -1116,8 +1116,12 @@ footer .social_icon .red_line {
 /*******************Responsive Tablet */
 @media only screen and (min-width: 700px) {
   /* design Menu */
+  #menu_hamburger {
+    width: 100px;
+    top: 25px;
+  }
   #menu_hamburger img {
-    width: 70px;
+    width: 90px;
   }
   .navBar {
     width: 295px;
@@ -1519,8 +1523,11 @@ footer .social_icon .red_line {
 /***********************Responsive Desktop */
 @media only screen and (min-width: 960px) {
   /* design menu */
+  #menu_hamburger {
+    width: 150px;
+  }
   #menu_hamburger img {
-    width: 90px;
+    width: 100px;
   }
   .navBar {
     width: 400px;
@@ -1761,6 +1768,7 @@ footer .social_icon .red_line {
   }
   footer .social_icon {
     width: 235px;
+    bottom: 100px;
   }
   footer .social_icon a {
     border-radius: 50%;

@@ -524,8 +524,11 @@ footer {
 @media #{$tablet} {
     /* design Menu */
     #menu_hamburger {
+        width: 100px;
+        top: 25px;
+
         img {
-            width: 70px;
+            width: 90px;
         }
     }
 
@@ -745,8 +748,9 @@ footer {
 @media #{$desktop} {
     /* design menu */
     #menu_hamburger {
+        width: 150px;
         img {
-            width: 90px;
+            width: 100px;
         }
     }
 
@@ -909,6 +913,7 @@ footer {
 
         .social_icon {
             width: 235px;
+            bottom: 100px;
 
             a {
                 border-radius: 50%;
