@@ -22,13 +22,13 @@
     </div>
 </section>
 
-<section class="aim_banner">
+<section class="aim_banner fade-in">
     <div class="aim">
         <img src="public/images/aim.png" alt="seeking_intership_position">
     </div>
 </section>
 
-<section id="experiences" class="experiences">
+<section id="experiences" class="experiences fade-in">
 
     <div class="title1">
         <picture>
@@ -188,7 +188,7 @@
     </div>
 </section>
 
-<section id="backgrounds" class="backgrounds">
+<section id="backgrounds" class="backgrounds fade-in">
 
     <div class="title2">
         <img src="public/images/title_background.png" alt="backgrounds">

@@ -28,6 +28,7 @@
 <script src="public/js/menu.js"></script>
 <script src="public/js/detailsBack.js"></script>
 <script src="public/js/detailsExp.js"></script>
+<script src="public/js/fadeIn.js"></script>
 <!-- script title=animation experiences -->
 
 </body>

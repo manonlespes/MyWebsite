@@ -288,7 +288,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 
 .aim_banner .aim img {
@@ -296,6 +296,22 @@ html {
 }
 
 /* design experiences_section */
+.fade-in {
+  opacity: 0;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: opacity 250ms ease, transform 250ms ease;
+  transition: opacity 250ms ease, transform 250ms ease, -webkit-transform 250ms ease;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .experiences,
 .backgrounds {
   margin-top: 55px;
@@ -1039,7 +1055,7 @@ html {
 }
 
 .backgrounds {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .backgrounds .title2 {
@@ -1180,7 +1196,7 @@ footer .contactMe {
   }
   /* design aim_banner */
   .aim_banner .aim img {
-    width: 285px;
+    width: 395px;
   }
   /* design section_exp */
   .experiences,

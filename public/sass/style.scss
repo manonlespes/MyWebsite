@@ -233,7 +233,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
 
     .aim {
         img {
@@ -243,6 +243,17 @@ html {
 }
 
 /* design experiences_section */
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(-40%);
+    transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.fade-in.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .experiences,
 .backgrounds {
@@ -457,7 +468,7 @@ html {
 }
 
 .backgrounds {
-    margin-top: 50px;
+    margin-top: 70px;
 
     .title2 {
         justify-content: flex-end;
@@ -607,7 +618,7 @@ footer {
     .aim_banner {
         .aim {
             img {
-                width: 285px;
+                width: 395px;
             }
         }
     }
