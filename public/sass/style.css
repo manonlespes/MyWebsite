@@ -51,6 +51,33 @@ html {
   scroll-behavior: smooth;
 }
 
+/* custum scroll-bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #22d3b8;
+          box-shadow: inset 0 0 5px #22d3b8;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e7a69), color-stop(#128a77), color-stop(#159a85), color-stop(#19ab94), color-stop(#1dbca3), color-stop(#34c7af), color-stop(#45d1ba), color-stop(#55dcc6), color-stop(#6fe2d0), color-stop(#86e9d9), color-stop(#9cefe2), to(#b0f5eb));
+  background: linear-gradient(to bottom, #0e7a69, #128a77, #159a85, #19ab94, #1dbca3, #34c7af, #45d1ba, #55dcc6, #6fe2d0, #86e9d9, #9cefe2, #b0f5eb);
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3b8;
+  opacity: 0.3;
+}
+
 /* design Menu */
 #menu_hamburger {
   position: fixed;
@@ -288,13 +315,14 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 
 .aim_banner .aim img {
   width: 310px;
 }
 
+/* design background_dotted_dashed */
 /* design experiences_section */
 .fade-in {
   opacity: 0;
@@ -1195,6 +1223,9 @@ footer .contactMe {
     line-height: 25px;
   }
   /* design aim_banner */
+  .aim_banner {
+    margin-bottom: 60px;
+  }
   .aim_banner .aim img {
     width: 395px;
   }
