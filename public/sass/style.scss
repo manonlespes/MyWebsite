@@ -42,7 +42,7 @@ $cherry: #c62a40;
 $skyblue: #22d3b8;
 $darkgreen: #1b2d2a;
 
-$simpleTransition : all 0.5s ease;
+$simpleTransition: all 0.5s ease;
 
 body {
     font-size: 15px;
@@ -220,7 +220,7 @@ html {
 
             a {
                 text-decoration: none;
-                color:$cherry;
+                color: $cherry;
             }
         }
     }
@@ -512,6 +512,7 @@ footer {
         display: flex;
         justify-content: space-around;
         align-content: center;
+        align-items: baseline;
 
         a {
             i {
@@ -524,6 +525,11 @@ footer {
             display: none;
             overflow: hidden;
         }
+    }
+
+    .contactMe {
+        display:none;
+        overflow: hidden;
     }
 }
 
@@ -738,6 +744,11 @@ footer {
                 }
             }
 
+            .contactMeSmall {
+                display: none;
+                overflow: hidden;
+            }
+
             .red_line {
                 display: block;
                 overflow: visible;
@@ -746,6 +757,37 @@ footer {
                 z-index: 4;
                 width: 4px;
                 border-radius: 20px;
+            }
+        }
+
+        .contactMe {
+            position: fixed;
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+            bottom: 100px;
+            left: 0;
+            height: 390px;
+            z-index: 5;
+            width: 114px;
+            align-items: center;
+
+            div {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family: $MvtIndirect;
+                    color: $green;
+                }
+            }
+
+            .dropLine {
+                img {
+                    width: 100px;
+                }
             }
         }
     }
@@ -796,12 +838,12 @@ footer {
         .text_intro {
             padding-bottom: 40px;
 
-            p{
-                a{
-                    color:$green;
+            p {
+                a {
+                    color: $green;
                     transition: $simpleTransition;
 
-                    &:hover{
+                    &:hover {
                         color: $cherry;
                     }
                 }
@@ -855,7 +897,7 @@ footer {
             .subtext > p {
                 font-family: $MontMed;
                 font-size: 14px;
-               
+
                 a {
                     transition: $simpleTransition;
 
@@ -965,6 +1007,27 @@ footer {
                 z-index: 4;
                 width: 4px;
                 border-radius: 20px;
+            }
+        }
+
+        .contactMe {
+            width: 187px;
+            height: 430px;
+
+            div {
+                a {
+                    transition: $simpleTransition;
+
+                  &:hover{
+                      color:$skyblue;
+                  }
+                }
+            }
+
+            .dropLine {
+                img {
+                    width: 130px;
+                }
             }
         }
     }

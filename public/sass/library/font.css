@@ -27,4 +27,9 @@
   font-family: "MontserratAlternates-Bold";
   src: url("../fonts/MontserratAlternates-Bold.ttf");
 }
+
+@font-face {
+  font-family: "MvtIndirect-Black";
+  src: url("../fonts/Movement-IndirectBlack.woff");
+}
 /*# sourceMappingURL=font.css.map */
