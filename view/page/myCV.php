@@ -17,7 +17,7 @@
     <div class="text_intro">
         <h1>Hey You, Welcome on my Portofolio !</h1>
 
-        <p>My name is Manon.<br> If you have a question or an internship position to offer, drop me a line ! I'd be delighted to hear from you.
+        <p>My name is Manon.<br> If you have a question or an internship position to offer, <a href="mailto:manonlespes@hotmail.fr"> drop me a line </a> ! I'd be delighted to hear from you.
         </p>
     </div>
 </section>

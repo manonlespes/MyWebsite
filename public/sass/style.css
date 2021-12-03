@@ -266,6 +266,11 @@ html {
   margin: 15px;
 }
 
+.introduction .text_intro p a {
+  text-decoration: none;
+  color: #c62a40;
+}
+
 /* design aim_banner */
 .aim_banner {
   display: -webkit-box;
@@ -1550,6 +1555,14 @@ footer .social_icon .red_line {
   .introduction .text_intro {
     padding-bottom: 40px;
   }
+  .introduction .text_intro p a {
+    color: #0e7a69;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .introduction .text_intro p a:hover {
+    color: #c62a40;
+  }
   /* design aim_banner */
   .aim_banner .aim {
     margin-top: 40px;
@@ -1677,14 +1690,13 @@ footer .social_icon .red_line {
   .backgrounds .container_back .subtext > p {
     font-family: "MontserratAlternates-Medium";
     font-size: 14px;
-    /* transition: background-size 0.3s ease; */
   }
   .experiences .container_exp .subtext > p a,
   .experiences .container_back .subtext > p a,
   .backgrounds .container_exp .subtext > p a,
   .backgrounds .container_back .subtext > p a {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active,
   .experiences .container_back .subtext > p a:hover,
@@ -1701,8 +1713,8 @@ footer .social_icon .red_line {
   .backgrounds .container_back .subtext > p .more {
     position: relative;
     cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     /* &:hover::before {
                             background-size: 100% 2px;
                     } */

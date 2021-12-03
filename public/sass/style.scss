@@ -42,6 +42,8 @@ $cherry: #c62a40;
 $skyblue: #22d3b8;
 $darkgreen: #1b2d2a;
 
+$simpleTransition : all 0.5s ease;
+
 body {
     font-size: 15px;
     background: $white; /* TODO faire le mode dark */
@@ -215,6 +217,11 @@ html {
             color: $green;
             line-height: 20px;
             margin: 15px;
+
+            a {
+                text-decoration: none;
+                color:$cherry;
+            }
         }
     }
 }
@@ -788,6 +795,17 @@ footer {
 
         .text_intro {
             padding-bottom: 40px;
+
+            p{
+                a{
+                    color:$green;
+                    transition: $simpleTransition;
+
+                    &:hover{
+                        color: $cherry;
+                    }
+                }
+            }
         }
     }
 
@@ -837,10 +855,9 @@ footer {
             .subtext > p {
                 font-family: $MontMed;
                 font-size: 14px;
-                /* transition: background-size 0.3s ease; */
-
+               
                 a {
-                    transition: all 0.3s ease;
+                    transition: $simpleTransition;
 
                     &:hover,
                     &:active {
@@ -851,7 +868,7 @@ footer {
                 .more {
                     position: relative;
                     cursor: pointer;
-                    transition: all 0.3s ease;
+                    transition: $simpleTransition;
 
                     &::before {
                         content: "";
@@ -924,17 +941,16 @@ footer {
                 align-items: center;
                 height: 15%;
                 border: solid 1px transparent;
-                transition: all 0.5s ease;
+                transition: $simpleTransition;
 
-                &:hover{
+                &:hover {
                     border: solid 1px $skyblue;
                 }
 
-                
                 i {
                     color: $green;
-                    transition: all 0.5s ease;
-                    
+                    transition: $simpleTransition;
+
                     &:hover {
                         color: $skyblue;
                     }
