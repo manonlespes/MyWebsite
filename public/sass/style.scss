@@ -564,7 +564,7 @@ html {
         justify-content: center;
         align-items: center;
         width: 90%;
-        z-index:-2;
+        z-index: -2;
 
         .imageSpeaking {
             width: 50%;
@@ -589,7 +589,7 @@ html {
             position: relative;
             box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 
-            p{
+            p {
                 cursor: pointer;
             }
 
@@ -604,17 +604,16 @@ html {
                 right: 86%;
                 -webkit-transform: rotate(60deg);
                 transform: rotate(80deg);
-                z-index:-1;
+                z-index: -1;
 
-           /*  .hide-bubble{
+                /*  .hide-bubble{
                 display: none;
                 overflow: hidden;
             } */
-
+            }
         }
     }
 }
-
 /* design footer */
 
 footer {

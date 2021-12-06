@@ -1430,6 +1430,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+  z-index: -2;
 }
 
 .languages .container-languages .imageSpeaking {
@@ -1466,10 +1467,6 @@ html {
   position: relative;
   -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  /*  .hide-bubble{
-                display: none;
-                overflow: hidden;
-            } */
 }
 
 .languages .container-languages .spoken-languages p {
@@ -1487,6 +1484,11 @@ html {
   right: 86%;
   -webkit-transform: rotate(60deg);
   transform: rotate(80deg);
+  z-index: -1;
+  /*  .hide-bubble{
+                display: none;
+                overflow: hidden;
+            } */
 }
 
 /* design footer */
