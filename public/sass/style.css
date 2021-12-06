@@ -341,7 +341,8 @@ html {
 }
 
 .experiences,
-.backgrounds {
+.backgrounds,
+.languages {
   margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,10 +361,13 @@ html {
   margin: auto;
 }
 
-.experiences .title1,
+.experiences .title1, .experiences .languages .title4, .languages .experiences .title4,
 .experiences .title2,
 .backgrounds .title1,
-.backgrounds .title2 {
+.languages .title1,
+.languages .title4,
+.backgrounds .title2,
+.languages .title2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,30 +382,39 @@ html {
   width: 90%;
 }
 
-.experiences .title1 img,
+.experiences .title1 img, .experiences .languages .title4 img, .languages .experiences .title4 img,
 .experiences .title2 img,
 .backgrounds .title1 img,
-.backgrounds .title2 img {
+.languages .title1 img,
+.languages .title4 img,
+.backgrounds .title2 img,
+.languages .title2 img {
   width: 200px;
 }
 
-.experiences .title1,
-.backgrounds .title1 {
+.experiences .title1, .experiences .languages .title4, .languages .experiences .title4,
+.backgrounds .title1,
+.languages .title1,
+.languages .title4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-left: 20px;
 }
 
-.experiences .title1 picture img,
-.backgrounds .title1 picture img {
+.experiences .title1 picture img, .experiences .languages .title4 picture img, .languages .experiences .title4 picture img,
+.backgrounds .title1 picture img,
+.languages .title1 picture img,
+.languages .title4 picture img {
   width: 200px;
 }
 
 .experiences .container_exp,
 .experiences .container_back,
 .backgrounds .container_exp,
-.backgrounds .container_back {
+.languages .container_exp,
+.backgrounds .container_back,
+.languages .container_back {
   width: 90%;
   background: transparent;
   margin-top: 25px;
@@ -427,7 +440,9 @@ html {
 .experiences .container_exp div > p,
 .experiences .container_back div > p,
 .backgrounds .container_exp div > p,
-.backgrounds .container_back div > p {
+.languages .container_exp div > p,
+.backgrounds .container_back div > p,
+.languages .container_back div > p {
   font-family: "MvtDirect-Black";
   font-size: 11px;
   color: #7a0e1d;
@@ -436,7 +451,9 @@ html {
 .experiences .container_exp .subtext > p,
 .experiences .container_back .subtext > p,
 .backgrounds .container_exp .subtext > p,
-.backgrounds .container_back .subtext > p {
+.languages .container_exp .subtext > p,
+.backgrounds .container_back .subtext > p,
+.languages .container_back .subtext > p {
   font-family: "MontserratAlternates-Medium";
   font-size: 10px;
   color: #1b2d2a;
@@ -445,7 +462,9 @@ html {
 .experiences .container_exp .subtext > p a,
 .experiences .container_back .subtext > p a,
 .backgrounds .container_exp .subtext > p a,
-.backgrounds .container_back .subtext > p a {
+.languages .container_exp .subtext > p a,
+.backgrounds .container_back .subtext > p a,
+.languages .container_back .subtext > p a {
   text-decoration: none;
   color: #0e7a69;
   cursor: pointer;
@@ -454,21 +473,27 @@ html {
 .experiences .container_exp .subtext > p a:visited,
 .experiences .container_back .subtext > p a:visited,
 .backgrounds .container_exp .subtext > p a:visited,
-.backgrounds .container_back .subtext > p a:visited {
+.languages .container_exp .subtext > p a:visited,
+.backgrounds .container_back .subtext > p a:visited,
+.languages .container_back .subtext > p a:visited {
   color: #0e7a69;
 }
 
 .experiences .container_exp .subtext .specialColor,
 .experiences .container_back .subtext .specialColor,
 .backgrounds .container_exp .subtext .specialColor,
-.backgrounds .container_back .subtext .specialColor {
+.languages .container_exp .subtext .specialColor,
+.backgrounds .container_back .subtext .specialColor,
+.languages .container_back .subtext .specialColor {
   color: #0e7a69;
 }
 
 .experiences .container_exp .subtext p > span,
 .experiences .container_back .subtext p > span,
 .backgrounds .container_exp .subtext p > span,
-.backgrounds .container_back .subtext p > span {
+.languages .container_exp .subtext p > span,
+.backgrounds .container_back .subtext p > span,
+.languages .container_back .subtext p > span {
   color: #22d3b8;
 }
 
@@ -497,29 +522,53 @@ html {
 .experiences .container_back .back5,
 .experiences .container_back .back6,
 .backgrounds .container_exp .exp1,
+.languages .container_exp .exp1,
 .backgrounds .container_exp .exp2,
+.languages .container_exp .exp2,
 .backgrounds .container_exp .exp3,
+.languages .container_exp .exp3,
 .backgrounds .container_exp .exp4,
+.languages .container_exp .exp4,
 .backgrounds .container_exp .exp5,
+.languages .container_exp .exp5,
 .backgrounds .container_exp .exp6,
+.languages .container_exp .exp6,
 .backgrounds .container_exp .back1,
+.languages .container_exp .back1,
 .backgrounds .container_exp .back2,
+.languages .container_exp .back2,
 .backgrounds .container_exp .back3,
+.languages .container_exp .back3,
 .backgrounds .container_exp .back4,
+.languages .container_exp .back4,
 .backgrounds .container_exp .back5,
+.languages .container_exp .back5,
 .backgrounds .container_exp .back6,
+.languages .container_exp .back6,
 .backgrounds .container_back .exp1,
+.languages .container_back .exp1,
 .backgrounds .container_back .exp2,
+.languages .container_back .exp2,
 .backgrounds .container_back .exp3,
+.languages .container_back .exp3,
 .backgrounds .container_back .exp4,
+.languages .container_back .exp4,
 .backgrounds .container_back .exp5,
+.languages .container_back .exp5,
 .backgrounds .container_back .exp6,
+.languages .container_back .exp6,
 .backgrounds .container_back .back1,
+.languages .container_back .back1,
 .backgrounds .container_back .back2,
+.languages .container_back .back2,
 .backgrounds .container_back .back3,
+.languages .container_back .back3,
 .backgrounds .container_back .back4,
+.languages .container_back .back4,
 .backgrounds .container_back .back5,
-.backgrounds .container_back .back6 {
+.languages .container_back .back5,
+.backgrounds .container_back .back6,
+.languages .container_back .back6 {
   width: 95%;
   height: 100%px;
   margin-top: 16px;
@@ -561,29 +610,53 @@ html {
 .experiences .container_back .back5 .container_flex,
 .experiences .container_back .back6 .container_flex,
 .backgrounds .container_exp .exp1 .container_flex,
+.languages .container_exp .exp1 .container_flex,
 .backgrounds .container_exp .exp2 .container_flex,
+.languages .container_exp .exp2 .container_flex,
 .backgrounds .container_exp .exp3 .container_flex,
+.languages .container_exp .exp3 .container_flex,
 .backgrounds .container_exp .exp4 .container_flex,
+.languages .container_exp .exp4 .container_flex,
 .backgrounds .container_exp .exp5 .container_flex,
+.languages .container_exp .exp5 .container_flex,
 .backgrounds .container_exp .exp6 .container_flex,
+.languages .container_exp .exp6 .container_flex,
 .backgrounds .container_exp .back1 .container_flex,
+.languages .container_exp .back1 .container_flex,
 .backgrounds .container_exp .back2 .container_flex,
+.languages .container_exp .back2 .container_flex,
 .backgrounds .container_exp .back3 .container_flex,
+.languages .container_exp .back3 .container_flex,
 .backgrounds .container_exp .back4 .container_flex,
+.languages .container_exp .back4 .container_flex,
 .backgrounds .container_exp .back5 .container_flex,
+.languages .container_exp .back5 .container_flex,
 .backgrounds .container_exp .back6 .container_flex,
+.languages .container_exp .back6 .container_flex,
 .backgrounds .container_back .exp1 .container_flex,
+.languages .container_back .exp1 .container_flex,
 .backgrounds .container_back .exp2 .container_flex,
+.languages .container_back .exp2 .container_flex,
 .backgrounds .container_back .exp3 .container_flex,
+.languages .container_back .exp3 .container_flex,
 .backgrounds .container_back .exp4 .container_flex,
+.languages .container_back .exp4 .container_flex,
 .backgrounds .container_back .exp5 .container_flex,
+.languages .container_back .exp5 .container_flex,
 .backgrounds .container_back .exp6 .container_flex,
+.languages .container_back .exp6 .container_flex,
 .backgrounds .container_back .back1 .container_flex,
+.languages .container_back .back1 .container_flex,
 .backgrounds .container_back .back2 .container_flex,
+.languages .container_back .back2 .container_flex,
 .backgrounds .container_back .back3 .container_flex,
+.languages .container_back .back3 .container_flex,
 .backgrounds .container_back .back4 .container_flex,
+.languages .container_back .back4 .container_flex,
 .backgrounds .container_back .back5 .container_flex,
-.backgrounds .container_back .back6 .container_flex {
+.languages .container_back .back5 .container_flex,
+.backgrounds .container_back .back6 .container_flex,
+.languages .container_back .back6 .container_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,53 +719,101 @@ html {
 .experiences .container_back .back6 .tag_exp,
 .experiences .container_back .back6 .tag_back,
 .backgrounds .container_exp .exp1 .tag_exp,
+.languages .container_exp .exp1 .tag_exp,
 .backgrounds .container_exp .exp1 .tag_back,
+.languages .container_exp .exp1 .tag_back,
 .backgrounds .container_exp .exp2 .tag_exp,
+.languages .container_exp .exp2 .tag_exp,
 .backgrounds .container_exp .exp2 .tag_back,
+.languages .container_exp .exp2 .tag_back,
 .backgrounds .container_exp .exp3 .tag_exp,
+.languages .container_exp .exp3 .tag_exp,
 .backgrounds .container_exp .exp3 .tag_back,
+.languages .container_exp .exp3 .tag_back,
 .backgrounds .container_exp .exp4 .tag_exp,
+.languages .container_exp .exp4 .tag_exp,
 .backgrounds .container_exp .exp4 .tag_back,
+.languages .container_exp .exp4 .tag_back,
 .backgrounds .container_exp .exp5 .tag_exp,
+.languages .container_exp .exp5 .tag_exp,
 .backgrounds .container_exp .exp5 .tag_back,
+.languages .container_exp .exp5 .tag_back,
 .backgrounds .container_exp .exp6 .tag_exp,
+.languages .container_exp .exp6 .tag_exp,
 .backgrounds .container_exp .exp6 .tag_back,
+.languages .container_exp .exp6 .tag_back,
 .backgrounds .container_exp .back1 .tag_exp,
+.languages .container_exp .back1 .tag_exp,
 .backgrounds .container_exp .back1 .tag_back,
+.languages .container_exp .back1 .tag_back,
 .backgrounds .container_exp .back2 .tag_exp,
+.languages .container_exp .back2 .tag_exp,
 .backgrounds .container_exp .back2 .tag_back,
+.languages .container_exp .back2 .tag_back,
 .backgrounds .container_exp .back3 .tag_exp,
+.languages .container_exp .back3 .tag_exp,
 .backgrounds .container_exp .back3 .tag_back,
+.languages .container_exp .back3 .tag_back,
 .backgrounds .container_exp .back4 .tag_exp,
+.languages .container_exp .back4 .tag_exp,
 .backgrounds .container_exp .back4 .tag_back,
+.languages .container_exp .back4 .tag_back,
 .backgrounds .container_exp .back5 .tag_exp,
+.languages .container_exp .back5 .tag_exp,
 .backgrounds .container_exp .back5 .tag_back,
+.languages .container_exp .back5 .tag_back,
 .backgrounds .container_exp .back6 .tag_exp,
+.languages .container_exp .back6 .tag_exp,
 .backgrounds .container_exp .back6 .tag_back,
+.languages .container_exp .back6 .tag_back,
 .backgrounds .container_back .exp1 .tag_exp,
+.languages .container_back .exp1 .tag_exp,
 .backgrounds .container_back .exp1 .tag_back,
+.languages .container_back .exp1 .tag_back,
 .backgrounds .container_back .exp2 .tag_exp,
+.languages .container_back .exp2 .tag_exp,
 .backgrounds .container_back .exp2 .tag_back,
+.languages .container_back .exp2 .tag_back,
 .backgrounds .container_back .exp3 .tag_exp,
+.languages .container_back .exp3 .tag_exp,
 .backgrounds .container_back .exp3 .tag_back,
+.languages .container_back .exp3 .tag_back,
 .backgrounds .container_back .exp4 .tag_exp,
+.languages .container_back .exp4 .tag_exp,
 .backgrounds .container_back .exp4 .tag_back,
+.languages .container_back .exp4 .tag_back,
 .backgrounds .container_back .exp5 .tag_exp,
+.languages .container_back .exp5 .tag_exp,
 .backgrounds .container_back .exp5 .tag_back,
+.languages .container_back .exp5 .tag_back,
 .backgrounds .container_back .exp6 .tag_exp,
+.languages .container_back .exp6 .tag_exp,
 .backgrounds .container_back .exp6 .tag_back,
+.languages .container_back .exp6 .tag_back,
 .backgrounds .container_back .back1 .tag_exp,
+.languages .container_back .back1 .tag_exp,
 .backgrounds .container_back .back1 .tag_back,
+.languages .container_back .back1 .tag_back,
 .backgrounds .container_back .back2 .tag_exp,
+.languages .container_back .back2 .tag_exp,
 .backgrounds .container_back .back2 .tag_back,
+.languages .container_back .back2 .tag_back,
 .backgrounds .container_back .back3 .tag_exp,
+.languages .container_back .back3 .tag_exp,
 .backgrounds .container_back .back3 .tag_back,
+.languages .container_back .back3 .tag_back,
 .backgrounds .container_back .back4 .tag_exp,
+.languages .container_back .back4 .tag_exp,
 .backgrounds .container_back .back4 .tag_back,
+.languages .container_back .back4 .tag_back,
 .backgrounds .container_back .back5 .tag_exp,
+.languages .container_back .back5 .tag_exp,
 .backgrounds .container_back .back5 .tag_back,
+.languages .container_back .back5 .tag_back,
 .backgrounds .container_back .back6 .tag_exp,
-.backgrounds .container_back .back6 .tag_back {
+.languages .container_back .back6 .tag_exp,
+.backgrounds .container_back .back6 .tag_back,
+.languages .container_back .back6 .tag_back {
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,53 +881,101 @@ html {
 .experiences .container_back .back6 .tag_exp p,
 .experiences .container_back .back6 .tag_back p,
 .backgrounds .container_exp .exp1 .tag_exp p,
+.languages .container_exp .exp1 .tag_exp p,
 .backgrounds .container_exp .exp1 .tag_back p,
+.languages .container_exp .exp1 .tag_back p,
 .backgrounds .container_exp .exp2 .tag_exp p,
+.languages .container_exp .exp2 .tag_exp p,
 .backgrounds .container_exp .exp2 .tag_back p,
+.languages .container_exp .exp2 .tag_back p,
 .backgrounds .container_exp .exp3 .tag_exp p,
+.languages .container_exp .exp3 .tag_exp p,
 .backgrounds .container_exp .exp3 .tag_back p,
+.languages .container_exp .exp3 .tag_back p,
 .backgrounds .container_exp .exp4 .tag_exp p,
+.languages .container_exp .exp4 .tag_exp p,
 .backgrounds .container_exp .exp4 .tag_back p,
+.languages .container_exp .exp4 .tag_back p,
 .backgrounds .container_exp .exp5 .tag_exp p,
+.languages .container_exp .exp5 .tag_exp p,
 .backgrounds .container_exp .exp5 .tag_back p,
+.languages .container_exp .exp5 .tag_back p,
 .backgrounds .container_exp .exp6 .tag_exp p,
+.languages .container_exp .exp6 .tag_exp p,
 .backgrounds .container_exp .exp6 .tag_back p,
+.languages .container_exp .exp6 .tag_back p,
 .backgrounds .container_exp .back1 .tag_exp p,
+.languages .container_exp .back1 .tag_exp p,
 .backgrounds .container_exp .back1 .tag_back p,
+.languages .container_exp .back1 .tag_back p,
 .backgrounds .container_exp .back2 .tag_exp p,
+.languages .container_exp .back2 .tag_exp p,
 .backgrounds .container_exp .back2 .tag_back p,
+.languages .container_exp .back2 .tag_back p,
 .backgrounds .container_exp .back3 .tag_exp p,
+.languages .container_exp .back3 .tag_exp p,
 .backgrounds .container_exp .back3 .tag_back p,
+.languages .container_exp .back3 .tag_back p,
 .backgrounds .container_exp .back4 .tag_exp p,
+.languages .container_exp .back4 .tag_exp p,
 .backgrounds .container_exp .back4 .tag_back p,
+.languages .container_exp .back4 .tag_back p,
 .backgrounds .container_exp .back5 .tag_exp p,
+.languages .container_exp .back5 .tag_exp p,
 .backgrounds .container_exp .back5 .tag_back p,
+.languages .container_exp .back5 .tag_back p,
 .backgrounds .container_exp .back6 .tag_exp p,
+.languages .container_exp .back6 .tag_exp p,
 .backgrounds .container_exp .back6 .tag_back p,
+.languages .container_exp .back6 .tag_back p,
 .backgrounds .container_back .exp1 .tag_exp p,
+.languages .container_back .exp1 .tag_exp p,
 .backgrounds .container_back .exp1 .tag_back p,
+.languages .container_back .exp1 .tag_back p,
 .backgrounds .container_back .exp2 .tag_exp p,
+.languages .container_back .exp2 .tag_exp p,
 .backgrounds .container_back .exp2 .tag_back p,
+.languages .container_back .exp2 .tag_back p,
 .backgrounds .container_back .exp3 .tag_exp p,
+.languages .container_back .exp3 .tag_exp p,
 .backgrounds .container_back .exp3 .tag_back p,
+.languages .container_back .exp3 .tag_back p,
 .backgrounds .container_back .exp4 .tag_exp p,
+.languages .container_back .exp4 .tag_exp p,
 .backgrounds .container_back .exp4 .tag_back p,
+.languages .container_back .exp4 .tag_back p,
 .backgrounds .container_back .exp5 .tag_exp p,
+.languages .container_back .exp5 .tag_exp p,
 .backgrounds .container_back .exp5 .tag_back p,
+.languages .container_back .exp5 .tag_back p,
 .backgrounds .container_back .exp6 .tag_exp p,
+.languages .container_back .exp6 .tag_exp p,
 .backgrounds .container_back .exp6 .tag_back p,
+.languages .container_back .exp6 .tag_back p,
 .backgrounds .container_back .back1 .tag_exp p,
+.languages .container_back .back1 .tag_exp p,
 .backgrounds .container_back .back1 .tag_back p,
+.languages .container_back .back1 .tag_back p,
 .backgrounds .container_back .back2 .tag_exp p,
+.languages .container_back .back2 .tag_exp p,
 .backgrounds .container_back .back2 .tag_back p,
+.languages .container_back .back2 .tag_back p,
 .backgrounds .container_back .back3 .tag_exp p,
+.languages .container_back .back3 .tag_exp p,
 .backgrounds .container_back .back3 .tag_back p,
+.languages .container_back .back3 .tag_back p,
 .backgrounds .container_back .back4 .tag_exp p,
+.languages .container_back .back4 .tag_exp p,
 .backgrounds .container_back .back4 .tag_back p,
+.languages .container_back .back4 .tag_back p,
 .backgrounds .container_back .back5 .tag_exp p,
+.languages .container_back .back5 .tag_exp p,
 .backgrounds .container_back .back5 .tag_back p,
+.languages .container_back .back5 .tag_back p,
 .backgrounds .container_back .back6 .tag_exp p,
-.backgrounds .container_back .back6 .tag_back p {
+.languages .container_back .back6 .tag_exp p,
+.backgrounds .container_back .back6 .tag_back p,
+.languages .container_back .back6 .tag_back p {
   font-family: "MontserratAlternates-Bold";
   color: #f2f5f8;
   text-align: center;
@@ -839,29 +1008,53 @@ html {
 .experiences .container_back .back5 .tag_exp p,
 .experiences .container_back .back6 .tag_exp p,
 .backgrounds .container_exp .exp1 .tag_exp p,
+.languages .container_exp .exp1 .tag_exp p,
 .backgrounds .container_exp .exp2 .tag_exp p,
+.languages .container_exp .exp2 .tag_exp p,
 .backgrounds .container_exp .exp3 .tag_exp p,
+.languages .container_exp .exp3 .tag_exp p,
 .backgrounds .container_exp .exp4 .tag_exp p,
+.languages .container_exp .exp4 .tag_exp p,
 .backgrounds .container_exp .exp5 .tag_exp p,
+.languages .container_exp .exp5 .tag_exp p,
 .backgrounds .container_exp .exp6 .tag_exp p,
+.languages .container_exp .exp6 .tag_exp p,
 .backgrounds .container_exp .back1 .tag_exp p,
+.languages .container_exp .back1 .tag_exp p,
 .backgrounds .container_exp .back2 .tag_exp p,
+.languages .container_exp .back2 .tag_exp p,
 .backgrounds .container_exp .back3 .tag_exp p,
+.languages .container_exp .back3 .tag_exp p,
 .backgrounds .container_exp .back4 .tag_exp p,
+.languages .container_exp .back4 .tag_exp p,
 .backgrounds .container_exp .back5 .tag_exp p,
+.languages .container_exp .back5 .tag_exp p,
 .backgrounds .container_exp .back6 .tag_exp p,
+.languages .container_exp .back6 .tag_exp p,
 .backgrounds .container_back .exp1 .tag_exp p,
+.languages .container_back .exp1 .tag_exp p,
 .backgrounds .container_back .exp2 .tag_exp p,
+.languages .container_back .exp2 .tag_exp p,
 .backgrounds .container_back .exp3 .tag_exp p,
+.languages .container_back .exp3 .tag_exp p,
 .backgrounds .container_back .exp4 .tag_exp p,
+.languages .container_back .exp4 .tag_exp p,
 .backgrounds .container_back .exp5 .tag_exp p,
+.languages .container_back .exp5 .tag_exp p,
 .backgrounds .container_back .exp6 .tag_exp p,
+.languages .container_back .exp6 .tag_exp p,
 .backgrounds .container_back .back1 .tag_exp p,
+.languages .container_back .back1 .tag_exp p,
 .backgrounds .container_back .back2 .tag_exp p,
+.languages .container_back .back2 .tag_exp p,
 .backgrounds .container_back .back3 .tag_exp p,
+.languages .container_back .back3 .tag_exp p,
 .backgrounds .container_back .back4 .tag_exp p,
+.languages .container_back .back4 .tag_exp p,
 .backgrounds .container_back .back5 .tag_exp p,
-.backgrounds .container_back .back6 .tag_exp p {
+.languages .container_back .back5 .tag_exp p,
+.backgrounds .container_back .back6 .tag_exp p,
+.languages .container_back .back6 .tag_exp p {
   z-index: 2;
   position: relative;
   top: 30px;
@@ -893,29 +1086,53 @@ html {
 .experiences .container_back .back5 .tag_exp img,
 .experiences .container_back .back6 .tag_exp img,
 .backgrounds .container_exp .exp1 .tag_exp img,
+.languages .container_exp .exp1 .tag_exp img,
 .backgrounds .container_exp .exp2 .tag_exp img,
+.languages .container_exp .exp2 .tag_exp img,
 .backgrounds .container_exp .exp3 .tag_exp img,
+.languages .container_exp .exp3 .tag_exp img,
 .backgrounds .container_exp .exp4 .tag_exp img,
+.languages .container_exp .exp4 .tag_exp img,
 .backgrounds .container_exp .exp5 .tag_exp img,
+.languages .container_exp .exp5 .tag_exp img,
 .backgrounds .container_exp .exp6 .tag_exp img,
+.languages .container_exp .exp6 .tag_exp img,
 .backgrounds .container_exp .back1 .tag_exp img,
+.languages .container_exp .back1 .tag_exp img,
 .backgrounds .container_exp .back2 .tag_exp img,
+.languages .container_exp .back2 .tag_exp img,
 .backgrounds .container_exp .back3 .tag_exp img,
+.languages .container_exp .back3 .tag_exp img,
 .backgrounds .container_exp .back4 .tag_exp img,
+.languages .container_exp .back4 .tag_exp img,
 .backgrounds .container_exp .back5 .tag_exp img,
+.languages .container_exp .back5 .tag_exp img,
 .backgrounds .container_exp .back6 .tag_exp img,
+.languages .container_exp .back6 .tag_exp img,
 .backgrounds .container_back .exp1 .tag_exp img,
+.languages .container_back .exp1 .tag_exp img,
 .backgrounds .container_back .exp2 .tag_exp img,
+.languages .container_back .exp2 .tag_exp img,
 .backgrounds .container_back .exp3 .tag_exp img,
+.languages .container_back .exp3 .tag_exp img,
 .backgrounds .container_back .exp4 .tag_exp img,
+.languages .container_back .exp4 .tag_exp img,
 .backgrounds .container_back .exp5 .tag_exp img,
+.languages .container_back .exp5 .tag_exp img,
 .backgrounds .container_back .exp6 .tag_exp img,
+.languages .container_back .exp6 .tag_exp img,
 .backgrounds .container_back .back1 .tag_exp img,
+.languages .container_back .back1 .tag_exp img,
 .backgrounds .container_back .back2 .tag_exp img,
+.languages .container_back .back2 .tag_exp img,
 .backgrounds .container_back .back3 .tag_exp img,
+.languages .container_back .back3 .tag_exp img,
 .backgrounds .container_back .back4 .tag_exp img,
+.languages .container_back .back4 .tag_exp img,
 .backgrounds .container_back .back5 .tag_exp img,
-.backgrounds .container_back .back6 .tag_exp img {
+.languages .container_back .back5 .tag_exp img,
+.backgrounds .container_back .back6 .tag_exp img,
+.languages .container_back .back6 .tag_exp img {
   width: 130px;
 }
 
@@ -940,32 +1157,54 @@ html {
 .experiences .container_back .back5,
 .experiences .container_back .back6,
 .backgrounds .container_exp .exp2,
+.languages .container_exp .exp2,
 .backgrounds .container_exp .exp3,
+.languages .container_exp .exp3,
 .backgrounds .container_exp .exp4,
+.languages .container_exp .exp4,
 .backgrounds .container_exp .exp5,
+.languages .container_exp .exp5,
 .backgrounds .container_exp .exp6,
+.languages .container_exp .exp6,
 .backgrounds .container_exp .back2,
+.languages .container_exp .back2,
 .backgrounds .container_exp .back3,
+.languages .container_exp .back3,
 .backgrounds .container_exp .back4,
+.languages .container_exp .back4,
 .backgrounds .container_exp .back5,
+.languages .container_exp .back5,
 .backgrounds .container_exp .back6,
+.languages .container_exp .back6,
 .backgrounds .container_back .exp2,
+.languages .container_back .exp2,
 .backgrounds .container_back .exp3,
+.languages .container_back .exp3,
 .backgrounds .container_back .exp4,
+.languages .container_back .exp4,
 .backgrounds .container_back .exp5,
+.languages .container_back .exp5,
 .backgrounds .container_back .exp6,
+.languages .container_back .exp6,
 .backgrounds .container_back .back2,
+.languages .container_back .back2,
 .backgrounds .container_back .back3,
+.languages .container_back .back3,
 .backgrounds .container_back .back4,
+.languages .container_back .back4,
 .backgrounds .container_back .back5,
-.backgrounds .container_back .back6 {
+.languages .container_back .back5,
+.backgrounds .container_back .back6,
+.languages .container_back .back6 {
   margin-top: 10px;
 }
 
 .experiences .container_exp .hide,
 .experiences .container_back .hide,
 .backgrounds .container_exp .hide,
-.backgrounds .container_back .hide {
+.languages .container_exp .hide,
+.backgrounds .container_back .hide,
+.languages .container_back .hide {
   display: none;
   overflow: hidden;
 }
@@ -975,9 +1214,13 @@ html {
 .experiences .container_back .visibleExp,
 .experiences .container_back .visibleBack,
 .backgrounds .container_exp .visibleExp,
+.languages .container_exp .visibleExp,
 .backgrounds .container_exp .visibleBack,
+.languages .container_exp .visibleBack,
 .backgrounds .container_back .visibleExp,
-.backgrounds .container_back .visibleBack {
+.languages .container_back .visibleExp,
+.backgrounds .container_back .visibleBack,
+.languages .container_back .visibleBack {
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,9 +1237,13 @@ html {
 .experiences .container_back .visibleExp p,
 .experiences .container_back .visibleBack p,
 .backgrounds .container_exp .visibleExp p,
+.languages .container_exp .visibleExp p,
 .backgrounds .container_exp .visibleBack p,
+.languages .container_exp .visibleBack p,
 .backgrounds .container_back .visibleExp p,
-.backgrounds .container_back .visibleBack p {
+.languages .container_back .visibleExp p,
+.backgrounds .container_back .visibleBack p,
+.languages .container_back .visibleBack p {
   font-family: "MontserratAlternates-Medium";
   color: #1b2d2a;
   font-size: 10px;
@@ -1010,9 +1257,13 @@ html {
 .experiences .container_back .visibleExp p .project,
 .experiences .container_back .visibleBack p .project,
 .backgrounds .container_exp .visibleExp p .project,
+.languages .container_exp .visibleExp p .project,
 .backgrounds .container_exp .visibleBack p .project,
+.languages .container_exp .visibleBack p .project,
 .backgrounds .container_back .visibleExp p .project,
-.backgrounds .container_back .visibleBack p .project {
+.languages .container_back .visibleExp p .project,
+.backgrounds .container_back .visibleBack p .project,
+.languages .container_back .visibleBack p .project {
   color: #c62a40;
   text-decoration: none;
 }
@@ -1022,9 +1273,13 @@ html {
 .experiences .container_back .visibleExp p .project:visited,
 .experiences .container_back .visibleBack p .project:visited,
 .backgrounds .container_exp .visibleExp p .project:visited,
+.languages .container_exp .visibleExp p .project:visited,
 .backgrounds .container_exp .visibleBack p .project:visited,
+.languages .container_exp .visibleBack p .project:visited,
 .backgrounds .container_back .visibleExp p .project:visited,
-.backgrounds .container_back .visibleBack p .project:visited {
+.languages .container_back .visibleExp p .project:visited,
+.backgrounds .container_back .visibleBack p .project:visited,
+.languages .container_back .visibleBack p .project:visited {
   color: #0e7a69;
 }
 
@@ -1033,9 +1288,13 @@ html {
 .experiences .container_back .visibleExp ul,
 .experiences .container_back .visibleBack ul,
 .backgrounds .container_exp .visibleExp ul,
+.languages .container_exp .visibleExp ul,
 .backgrounds .container_exp .visibleBack ul,
+.languages .container_exp .visibleBack ul,
 .backgrounds .container_back .visibleExp ul,
-.backgrounds .container_back .visibleBack ul {
+.languages .container_back .visibleExp ul,
+.backgrounds .container_back .visibleBack ul,
+.languages .container_back .visibleBack ul {
   padding-left: 10px;
 }
 
@@ -1044,9 +1303,13 @@ html {
 .experiences .container_back .visibleExp ul li,
 .experiences .container_back .visibleBack ul li,
 .backgrounds .container_exp .visibleExp ul li,
+.languages .container_exp .visibleExp ul li,
 .backgrounds .container_exp .visibleBack ul li,
+.languages .container_exp .visibleBack ul li,
 .backgrounds .container_back .visibleExp ul li,
-.backgrounds .container_back .visibleBack ul li {
+.languages .container_back .visibleExp ul li,
+.backgrounds .container_back .visibleBack ul li,
+.languages .container_back .visibleBack ul li {
   padding-left: 5px;
   font-size: 10px;
   font-family: "MontserratAlternates-Medium";
@@ -1059,9 +1322,13 @@ html {
 .experiences .container_back .visibleExp ul li::before,
 .experiences .container_back .visibleBack ul li::before,
 .backgrounds .container_exp .visibleExp ul li::before,
+.languages .container_exp .visibleExp ul li::before,
 .backgrounds .container_exp .visibleBack ul li::before,
+.languages .container_exp .visibleBack ul li::before,
 .backgrounds .container_back .visibleExp ul li::before,
-.backgrounds .container_back .visibleBack ul li::before {
+.languages .container_back .visibleExp ul li::before,
+.backgrounds .container_back .visibleBack ul li::before,
+.languages .container_back .visibleBack ul li::before {
   content: "->";
   size: 10px;
   color: #22d3b8;
@@ -1070,7 +1337,9 @@ html {
 .experiences .container_exp .visibleBack,
 .experiences .container_back .visibleBack,
 .backgrounds .container_exp .visibleBack,
-.backgrounds .container_back .visibleBack {
+.languages .container_exp .visibleBack,
+.backgrounds .container_back .visibleBack,
+.languages .container_back .visibleBack {
   width: 90%;
   margin: auto;
   -webkit-box-pack: start;
@@ -1082,49 +1351,118 @@ html {
   margin-bottom: 10px;
 }
 
-.backgrounds {
+
+.backgrounds,
+.languages {
   margin-top: 70px;
 }
 
-.backgrounds .title2 {
+
+.backgrounds .title2,
+.languages .title2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 20px;
 }
 
-.backgrounds .container_back {
+
+.backgrounds .container_back,
+.languages .container_back {
   padding-left: 0px;
   /*  div > p {
             text-align: end;
         } */
 }
 
+
 .backgrounds .container_back .back1 .tag_back,
+.languages .container_back .back1 .tag_back,
 .backgrounds .container_back .back2 .tag_back,
+.languages .container_back .back2 .tag_back,
 .backgrounds .container_back .back3 .tag_back,
+.languages .container_back .back3 .tag_back,
 .backgrounds .container_back .back4 .tag_back,
+.languages .container_back .back4 .tag_back,
 .backgrounds .container_back .back5 .tag_back,
-.backgrounds .container_back .back6 .tag_back {
+.languages .container_back .back5 .tag_back,
+.backgrounds .container_back .back6 .tag_back,
+.languages .container_back .back6 .tag_back {
   width: 20%;
 }
 
-.backgrounds .container_back .back1 .tag_back img,
+.backgrounds .container_back .back1 .tag_back img, .languages .container_back .back1 .tag_back img,
 .backgrounds .container_back .back2 .tag_back img,
+.languages .container_back .back2 .tag_back img,
 .backgrounds .container_back .back3 .tag_back img,
+.languages .container_back .back3 .tag_back img,
 .backgrounds .container_back .back4 .tag_back img,
+.languages .container_back .back4 .tag_back img,
 .backgrounds .container_back .back5 .tag_back img,
-.backgrounds .container_back .back6 .tag_back img {
+.languages .container_back .back5 .tag_back img,
+.backgrounds .container_back .back6 .tag_back img,
+.languages .container_back .back6 .tag_back img {
   width: 90px;
 }
 
 /* design section languages */
 .languages {
-  margin-top: 70px;
+  height: 250px;
+  margin-bottom: 200px;
 }
 
 .languages .title4 img {
   width: 200px;
+}
+
+.languages .container-languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.languages .container-languages .imageSpeaking {
+  width: 50%;
+}
+
+.languages .container-languages .imageSpeaking img {
+  width: 200px;
+}
+
+.languages .container-languages .spoken-languages {
+  width: 50%;
+  height: 100%;
+  background-color: #c62a40;
+  border-radius: 82% 55% 66% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  line-height: 30px;
+  font-family: "MvtDirect-Thin";
+  color: white;
 }
 
 /* design footer */
@@ -1240,29 +1578,40 @@ footer .contactMe {
   }
   /* design section_exp */
   .experiences,
-  .backgrounds {
+  .backgrounds,
+  .languages {
     width: 80vw;
   }
-  .experiences .title1,
+  .experiences .title1, .experiences .languages .title4, .languages .experiences .title4,
   .experiences .title2,
   .backgrounds .title1,
-  .backgrounds .title2 {
+  .languages .title1,
+  .languages .title4,
+  .backgrounds .title2,
+  .languages .title2 {
     margin-bottom: 45px;
   }
-  .experiences .title1 img,
+  .experiences .title1 img, .experiences .languages .title4 img, .languages .experiences .title4 img,
   .experiences .title2 img,
   .backgrounds .title1 img,
-  .backgrounds .title2 img {
+  .languages .title1 img,
+  .languages .title4 img,
+  .backgrounds .title2 img,
+  .languages .title2 img {
     width: 335px;
   }
-  .experiences .title1 picture img,
-  .backgrounds .title1 picture img {
+  .experiences .title1 picture img, .experiences .languages .title4 picture img, .languages .experiences .title4 picture img,
+  .backgrounds .title1 picture img,
+  .languages .title1 picture img,
+  .languages .title4 picture img {
     width: 335px;
   }
   .experiences .container_exp,
   .experiences .container_back,
   .backgrounds .container_exp,
-  .backgrounds .container_back {
+  .languages .container_exp,
+  .backgrounds .container_back,
+  .languages .container_back {
     width: 90%;
     padding-left: 40px;
     height: 320px;
@@ -1270,13 +1619,17 @@ footer .contactMe {
   .experiences .container_exp div > p,
   .experiences .container_back div > p,
   .backgrounds .container_exp div > p,
-  .backgrounds .container_back div > p {
+  .languages .container_exp div > p,
+  .backgrounds .container_back div > p,
+  .languages .container_back div > p {
     font-size: 14px;
   }
   .experiences .container_exp .subtext > p,
   .experiences .container_back .subtext > p,
   .backgrounds .container_exp .subtext > p,
-  .backgrounds .container_back .subtext > p {
+  .languages .container_exp .subtext > p,
+  .backgrounds .container_back .subtext > p,
+  .languages .container_back .subtext > p {
     font-size: 14px;
   }
   .experiences .container_exp .exp1,
@@ -1292,17 +1645,29 @@ footer .contactMe {
   .experiences .container_back .exp5,
   .experiences .container_back .exp6,
   .backgrounds .container_exp .exp1,
+  .languages .container_exp .exp1,
   .backgrounds .container_exp .exp2,
+  .languages .container_exp .exp2,
   .backgrounds .container_exp .exp3,
+  .languages .container_exp .exp3,
   .backgrounds .container_exp .exp4,
+  .languages .container_exp .exp4,
   .backgrounds .container_exp .exp5,
+  .languages .container_exp .exp5,
   .backgrounds .container_exp .exp6,
+  .languages .container_exp .exp6,
   .backgrounds .container_back .exp1,
+  .languages .container_back .exp1,
   .backgrounds .container_back .exp2,
+  .languages .container_back .exp2,
   .backgrounds .container_back .exp3,
+  .languages .container_back .exp3,
   .backgrounds .container_back .exp4,
+  .languages .container_back .exp4,
   .backgrounds .container_back .exp5,
-  .backgrounds .container_back .exp6 {
+  .languages .container_back .exp5,
+  .backgrounds .container_back .exp6,
+  .languages .container_back .exp6 {
     height: 200px;
   }
   .experiences .container_exp .exp1 .tag_exp,
@@ -1330,29 +1695,53 @@ footer .contactMe {
   .experiences .container_back .exp6 .tag_exp,
   .experiences .container_back .exp6 .tag_back,
   .backgrounds .container_exp .exp1 .tag_exp,
+  .languages .container_exp .exp1 .tag_exp,
   .backgrounds .container_exp .exp1 .tag_back,
+  .languages .container_exp .exp1 .tag_back,
   .backgrounds .container_exp .exp2 .tag_exp,
+  .languages .container_exp .exp2 .tag_exp,
   .backgrounds .container_exp .exp2 .tag_back,
+  .languages .container_exp .exp2 .tag_back,
   .backgrounds .container_exp .exp3 .tag_exp,
+  .languages .container_exp .exp3 .tag_exp,
   .backgrounds .container_exp .exp3 .tag_back,
+  .languages .container_exp .exp3 .tag_back,
   .backgrounds .container_exp .exp4 .tag_exp,
+  .languages .container_exp .exp4 .tag_exp,
   .backgrounds .container_exp .exp4 .tag_back,
+  .languages .container_exp .exp4 .tag_back,
   .backgrounds .container_exp .exp5 .tag_exp,
+  .languages .container_exp .exp5 .tag_exp,
   .backgrounds .container_exp .exp5 .tag_back,
+  .languages .container_exp .exp5 .tag_back,
   .backgrounds .container_exp .exp6 .tag_exp,
+  .languages .container_exp .exp6 .tag_exp,
   .backgrounds .container_exp .exp6 .tag_back,
+  .languages .container_exp .exp6 .tag_back,
   .backgrounds .container_back .exp1 .tag_exp,
+  .languages .container_back .exp1 .tag_exp,
   .backgrounds .container_back .exp1 .tag_back,
+  .languages .container_back .exp1 .tag_back,
   .backgrounds .container_back .exp2 .tag_exp,
+  .languages .container_back .exp2 .tag_exp,
   .backgrounds .container_back .exp2 .tag_back,
+  .languages .container_back .exp2 .tag_back,
   .backgrounds .container_back .exp3 .tag_exp,
+  .languages .container_back .exp3 .tag_exp,
   .backgrounds .container_back .exp3 .tag_back,
+  .languages .container_back .exp3 .tag_back,
   .backgrounds .container_back .exp4 .tag_exp,
+  .languages .container_back .exp4 .tag_exp,
   .backgrounds .container_back .exp4 .tag_back,
+  .languages .container_back .exp4 .tag_back,
   .backgrounds .container_back .exp5 .tag_exp,
+  .languages .container_back .exp5 .tag_exp,
   .backgrounds .container_back .exp5 .tag_back,
+  .languages .container_back .exp5 .tag_back,
   .backgrounds .container_back .exp6 .tag_exp,
-  .backgrounds .container_back .exp6 .tag_back {
+  .languages .container_back .exp6 .tag_exp,
+  .backgrounds .container_back .exp6 .tag_back,
+  .languages .container_back .exp6 .tag_back {
     height: 100%;
     padding-left: 25px;
   }
@@ -1381,29 +1770,53 @@ footer .contactMe {
   .experiences .container_back .exp6 .tag_exp p,
   .experiences .container_back .exp6 .tag_back p,
   .backgrounds .container_exp .exp1 .tag_exp p,
+  .languages .container_exp .exp1 .tag_exp p,
   .backgrounds .container_exp .exp1 .tag_back p,
+  .languages .container_exp .exp1 .tag_back p,
   .backgrounds .container_exp .exp2 .tag_exp p,
+  .languages .container_exp .exp2 .tag_exp p,
   .backgrounds .container_exp .exp2 .tag_back p,
+  .languages .container_exp .exp2 .tag_back p,
   .backgrounds .container_exp .exp3 .tag_exp p,
+  .languages .container_exp .exp3 .tag_exp p,
   .backgrounds .container_exp .exp3 .tag_back p,
+  .languages .container_exp .exp3 .tag_back p,
   .backgrounds .container_exp .exp4 .tag_exp p,
+  .languages .container_exp .exp4 .tag_exp p,
   .backgrounds .container_exp .exp4 .tag_back p,
+  .languages .container_exp .exp4 .tag_back p,
   .backgrounds .container_exp .exp5 .tag_exp p,
+  .languages .container_exp .exp5 .tag_exp p,
   .backgrounds .container_exp .exp5 .tag_back p,
+  .languages .container_exp .exp5 .tag_back p,
   .backgrounds .container_exp .exp6 .tag_exp p,
+  .languages .container_exp .exp6 .tag_exp p,
   .backgrounds .container_exp .exp6 .tag_back p,
+  .languages .container_exp .exp6 .tag_back p,
   .backgrounds .container_back .exp1 .tag_exp p,
+  .languages .container_back .exp1 .tag_exp p,
   .backgrounds .container_back .exp1 .tag_back p,
+  .languages .container_back .exp1 .tag_back p,
   .backgrounds .container_back .exp2 .tag_exp p,
+  .languages .container_back .exp2 .tag_exp p,
   .backgrounds .container_back .exp2 .tag_back p,
+  .languages .container_back .exp2 .tag_back p,
   .backgrounds .container_back .exp3 .tag_exp p,
+  .languages .container_back .exp3 .tag_exp p,
   .backgrounds .container_back .exp3 .tag_back p,
+  .languages .container_back .exp3 .tag_back p,
   .backgrounds .container_back .exp4 .tag_exp p,
+  .languages .container_back .exp4 .tag_exp p,
   .backgrounds .container_back .exp4 .tag_back p,
+  .languages .container_back .exp4 .tag_back p,
   .backgrounds .container_back .exp5 .tag_exp p,
+  .languages .container_back .exp5 .tag_exp p,
   .backgrounds .container_back .exp5 .tag_back p,
+  .languages .container_back .exp5 .tag_back p,
   .backgrounds .container_back .exp6 .tag_exp p,
-  .backgrounds .container_back .exp6 .tag_back p {
+  .languages .container_back .exp6 .tag_exp p,
+  .backgrounds .container_back .exp6 .tag_back p,
+  .languages .container_back .exp6 .tag_back p {
     font-family: "MontserratAlternates-Bold";
     font-size: 13px;
     top: 40px;
@@ -1434,29 +1847,53 @@ footer .contactMe {
   .experiences .container_back .exp6 .tag_exp img,
   .experiences .container_back .exp6 .tag_back img,
   .backgrounds .container_exp .exp1 .tag_exp img,
+  .languages .container_exp .exp1 .tag_exp img,
   .backgrounds .container_exp .exp1 .tag_back img,
+  .languages .container_exp .exp1 .tag_back img,
   .backgrounds .container_exp .exp2 .tag_exp img,
+  .languages .container_exp .exp2 .tag_exp img,
   .backgrounds .container_exp .exp2 .tag_back img,
+  .languages .container_exp .exp2 .tag_back img,
   .backgrounds .container_exp .exp3 .tag_exp img,
+  .languages .container_exp .exp3 .tag_exp img,
   .backgrounds .container_exp .exp3 .tag_back img,
+  .languages .container_exp .exp3 .tag_back img,
   .backgrounds .container_exp .exp4 .tag_exp img,
+  .languages .container_exp .exp4 .tag_exp img,
   .backgrounds .container_exp .exp4 .tag_back img,
+  .languages .container_exp .exp4 .tag_back img,
   .backgrounds .container_exp .exp5 .tag_exp img,
+  .languages .container_exp .exp5 .tag_exp img,
   .backgrounds .container_exp .exp5 .tag_back img,
+  .languages .container_exp .exp5 .tag_back img,
   .backgrounds .container_exp .exp6 .tag_exp img,
+  .languages .container_exp .exp6 .tag_exp img,
   .backgrounds .container_exp .exp6 .tag_back img,
+  .languages .container_exp .exp6 .tag_back img,
   .backgrounds .container_back .exp1 .tag_exp img,
+  .languages .container_back .exp1 .tag_exp img,
   .backgrounds .container_back .exp1 .tag_back img,
+  .languages .container_back .exp1 .tag_back img,
   .backgrounds .container_back .exp2 .tag_exp img,
+  .languages .container_back .exp2 .tag_exp img,
   .backgrounds .container_back .exp2 .tag_back img,
+  .languages .container_back .exp2 .tag_back img,
   .backgrounds .container_back .exp3 .tag_exp img,
+  .languages .container_back .exp3 .tag_exp img,
   .backgrounds .container_back .exp3 .tag_back img,
+  .languages .container_back .exp3 .tag_back img,
   .backgrounds .container_back .exp4 .tag_exp img,
+  .languages .container_back .exp4 .tag_exp img,
   .backgrounds .container_back .exp4 .tag_back img,
+  .languages .container_back .exp4 .tag_back img,
   .backgrounds .container_back .exp5 .tag_exp img,
+  .languages .container_back .exp5 .tag_exp img,
   .backgrounds .container_back .exp5 .tag_back img,
+  .languages .container_back .exp5 .tag_back img,
   .backgrounds .container_back .exp6 .tag_exp img,
-  .backgrounds .container_back .exp6 .tag_back img {
+  .languages .container_back .exp6 .tag_exp img,
+  .backgrounds .container_back .exp6 .tag_back img,
+  .languages .container_back .exp6 .tag_back img {
     width: 173px;
   }
   .experiences .container_exp .visibleExp p,
@@ -1464,9 +1901,13 @@ footer .contactMe {
   .experiences .container_back .visibleExp p,
   .experiences .container_back .visibleBack p,
   .backgrounds .container_exp .visibleExp p,
+  .languages .container_exp .visibleExp p,
   .backgrounds .container_exp .visibleBack p,
+  .languages .container_exp .visibleBack p,
   .backgrounds .container_back .visibleExp p,
-  .backgrounds .container_back .visibleBack p {
+  .languages .container_back .visibleExp p,
+  .backgrounds .container_back .visibleBack p,
+  .languages .container_back .visibleBack p {
     font-size: 12px;
     line-height: 16px;
   }
@@ -1475,9 +1916,13 @@ footer .contactMe {
   .experiences .container_back .visibleExp ul,
   .experiences .container_back .visibleBack ul,
   .backgrounds .container_exp .visibleExp ul,
+  .languages .container_exp .visibleExp ul,
   .backgrounds .container_exp .visibleBack ul,
+  .languages .container_exp .visibleBack ul,
   .backgrounds .container_back .visibleExp ul,
-  .backgrounds .container_back .visibleBack ul {
+  .languages .container_back .visibleExp ul,
+  .backgrounds .container_back .visibleBack ul,
+  .languages .container_back .visibleBack ul {
     list-style: none;
   }
   .experiences .container_exp .visibleExp ul li,
@@ -1485,15 +1930,20 @@ footer .contactMe {
   .experiences .container_back .visibleExp ul li,
   .experiences .container_back .visibleBack ul li,
   .backgrounds .container_exp .visibleExp ul li,
+  .languages .container_exp .visibleExp ul li,
   .backgrounds .container_exp .visibleBack ul li,
+  .languages .container_exp .visibleBack ul li,
   .backgrounds .container_back .visibleExp ul li,
-  .backgrounds .container_back .visibleBack ul li {
+  .languages .container_back .visibleExp ul li,
+  .backgrounds .container_back .visibleBack ul li,
+  .languages .container_back .visibleBack ul li {
     font-size: 12px;
     font-family: "MontserratAlternates-Regular";
     line-height: 20px;
   }
   .experiences .container_back,
-  .backgrounds .container_back {
+  .backgrounds .container_back,
+  .languages .container_back {
     padding-left: 0px;
   }
   .experiences .container_back .back1,
@@ -1503,11 +1953,17 @@ footer .contactMe {
   .experiences .container_back .back5,
   .experiences .container_back .back6,
   .backgrounds .container_back .back1,
+  .languages .container_back .back1,
   .backgrounds .container_back .back2,
+  .languages .container_back .back2,
   .backgrounds .container_back .back3,
+  .languages .container_back .back3,
   .backgrounds .container_back .back4,
+  .languages .container_back .back4,
   .backgrounds .container_back .back5,
-  .backgrounds .container_back .back6 {
+  .languages .container_back .back5,
+  .backgrounds .container_back .back6,
+  .languages .container_back .back6 {
     height: 100%;
     padding-top: 0px;
   }
@@ -1518,11 +1974,17 @@ footer .contactMe {
   .experiences .container_back .back5 .tag_back,
   .experiences .container_back .back6 .tag_back,
   .backgrounds .container_back .back1 .tag_back,
+  .languages .container_back .back1 .tag_back,
   .backgrounds .container_back .back2 .tag_back,
+  .languages .container_back .back2 .tag_back,
   .backgrounds .container_back .back3 .tag_back,
+  .languages .container_back .back3 .tag_back,
   .backgrounds .container_back .back4 .tag_back,
+  .languages .container_back .back4 .tag_back,
   .backgrounds .container_back .back5 .tag_back,
-  .backgrounds .container_back .back6 .tag_back {
+  .languages .container_back .back5 .tag_back,
+  .backgrounds .container_back .back6 .tag_back,
+  .languages .container_back .back6 .tag_back {
     height: 100%;
   }
   .experiences .container_back .back1 .tag_back img,
@@ -1530,13 +1992,17 @@ footer .contactMe {
   .experiences .container_back .back3 .tag_back img,
   .experiences .container_back .back4 .tag_back img,
   .experiences .container_back .back5 .tag_back img,
-  .experiences .container_back .back6 .tag_back img,
-  .backgrounds .container_back .back1 .tag_back img,
+  .experiences .container_back .back6 .tag_back img, .backgrounds .container_back .back1 .tag_back img, .languages .container_back .back1 .tag_back img,
   .backgrounds .container_back .back2 .tag_back img,
+  .languages .container_back .back2 .tag_back img,
   .backgrounds .container_back .back3 .tag_back img,
+  .languages .container_back .back3 .tag_back img,
   .backgrounds .container_back .back4 .tag_back img,
+  .languages .container_back .back4 .tag_back img,
   .backgrounds .container_back .back5 .tag_back img,
-  .backgrounds .container_back .back6 .tag_back img {
+  .languages .container_back .back5 .tag_back img,
+  .backgrounds .container_back .back6 .tag_back img,
+  .languages .container_back .back6 .tag_back img {
     width: 100px;
   }
   .experiences .container_back .back1 .container_flex,
@@ -1546,11 +2012,17 @@ footer .contactMe {
   .experiences .container_back .back5 .container_flex,
   .experiences .container_back .back6 .container_flex,
   .backgrounds .container_back .back1 .container_flex,
+  .languages .container_back .back1 .container_flex,
   .backgrounds .container_back .back2 .container_flex,
+  .languages .container_back .back2 .container_flex,
   .backgrounds .container_back .back3 .container_flex,
+  .languages .container_back .back3 .container_flex,
   .backgrounds .container_back .back4 .container_flex,
+  .languages .container_back .back4 .container_flex,
   .backgrounds .container_back .back5 .container_flex,
-  .backgrounds .container_back .back6 .container_flex {
+  .languages .container_back .back5 .container_flex,
+  .backgrounds .container_back .back6 .container_flex,
+  .languages .container_back .back6 .container_flex {
     width: 60%;
   }
   /* design footer */
@@ -1684,14 +2156,18 @@ footer .contactMe {
   .experiences .container_exp,
   .experiences .container_back,
   .backgrounds .container_exp,
-  .backgrounds .container_back {
+  .languages .container_exp,
+  .backgrounds .container_back,
+  .languages .container_back {
     width: 50%;
     height: 362px;
   }
   .experiences .container_exp div > p,
   .experiences .container_back div > p,
   .backgrounds .container_exp div > p,
-  .backgrounds .container_back div > p {
+  .languages .container_exp div > p,
+  .backgrounds .container_back div > p,
+  .languages .container_back div > p {
     font-size: 18px;
   }
   .experiences .container_exp .exp1,
@@ -1719,29 +2195,53 @@ footer .contactMe {
   .experiences .container_back .back5,
   .experiences .container_back .back6,
   .backgrounds .container_exp .exp1,
+  .languages .container_exp .exp1,
   .backgrounds .container_exp .exp2,
+  .languages .container_exp .exp2,
   .backgrounds .container_exp .exp3,
+  .languages .container_exp .exp3,
   .backgrounds .container_exp .exp4,
+  .languages .container_exp .exp4,
   .backgrounds .container_exp .exp5,
+  .languages .container_exp .exp5,
   .backgrounds .container_exp .exp6,
+  .languages .container_exp .exp6,
   .backgrounds .container_exp .back1,
+  .languages .container_exp .back1,
   .backgrounds .container_exp .back2,
+  .languages .container_exp .back2,
   .backgrounds .container_exp .back3,
+  .languages .container_exp .back3,
   .backgrounds .container_exp .back4,
+  .languages .container_exp .back4,
   .backgrounds .container_exp .back5,
+  .languages .container_exp .back5,
   .backgrounds .container_exp .back6,
+  .languages .container_exp .back6,
   .backgrounds .container_back .exp1,
+  .languages .container_back .exp1,
   .backgrounds .container_back .exp2,
+  .languages .container_back .exp2,
   .backgrounds .container_back .exp3,
+  .languages .container_back .exp3,
   .backgrounds .container_back .exp4,
+  .languages .container_back .exp4,
   .backgrounds .container_back .exp5,
+  .languages .container_back .exp5,
   .backgrounds .container_back .exp6,
+  .languages .container_back .exp6,
   .backgrounds .container_back .back1,
+  .languages .container_back .back1,
   .backgrounds .container_back .back2,
+  .languages .container_back .back2,
   .backgrounds .container_back .back3,
+  .languages .container_back .back3,
   .backgrounds .container_back .back4,
+  .languages .container_back .back4,
   .backgrounds .container_back .back5,
-  .backgrounds .container_back .back6 {
+  .languages .container_back .back5,
+  .backgrounds .container_back .back6,
+  .languages .container_back .back6 {
     height: 100%;
   }
   .experiences .container_exp .exp1 .container_flex,
@@ -1769,42 +2269,70 @@ footer .contactMe {
   .experiences .container_back .back5 .container_flex,
   .experiences .container_back .back6 .container_flex,
   .backgrounds .container_exp .exp1 .container_flex,
+  .languages .container_exp .exp1 .container_flex,
   .backgrounds .container_exp .exp2 .container_flex,
+  .languages .container_exp .exp2 .container_flex,
   .backgrounds .container_exp .exp3 .container_flex,
+  .languages .container_exp .exp3 .container_flex,
   .backgrounds .container_exp .exp4 .container_flex,
+  .languages .container_exp .exp4 .container_flex,
   .backgrounds .container_exp .exp5 .container_flex,
+  .languages .container_exp .exp5 .container_flex,
   .backgrounds .container_exp .exp6 .container_flex,
+  .languages .container_exp .exp6 .container_flex,
   .backgrounds .container_exp .back1 .container_flex,
+  .languages .container_exp .back1 .container_flex,
   .backgrounds .container_exp .back2 .container_flex,
+  .languages .container_exp .back2 .container_flex,
   .backgrounds .container_exp .back3 .container_flex,
+  .languages .container_exp .back3 .container_flex,
   .backgrounds .container_exp .back4 .container_flex,
+  .languages .container_exp .back4 .container_flex,
   .backgrounds .container_exp .back5 .container_flex,
+  .languages .container_exp .back5 .container_flex,
   .backgrounds .container_exp .back6 .container_flex,
+  .languages .container_exp .back6 .container_flex,
   .backgrounds .container_back .exp1 .container_flex,
+  .languages .container_back .exp1 .container_flex,
   .backgrounds .container_back .exp2 .container_flex,
+  .languages .container_back .exp2 .container_flex,
   .backgrounds .container_back .exp3 .container_flex,
+  .languages .container_back .exp3 .container_flex,
   .backgrounds .container_back .exp4 .container_flex,
+  .languages .container_back .exp4 .container_flex,
   .backgrounds .container_back .exp5 .container_flex,
+  .languages .container_back .exp5 .container_flex,
   .backgrounds .container_back .exp6 .container_flex,
+  .languages .container_back .exp6 .container_flex,
   .backgrounds .container_back .back1 .container_flex,
+  .languages .container_back .back1 .container_flex,
   .backgrounds .container_back .back2 .container_flex,
+  .languages .container_back .back2 .container_flex,
   .backgrounds .container_back .back3 .container_flex,
+  .languages .container_back .back3 .container_flex,
   .backgrounds .container_back .back4 .container_flex,
+  .languages .container_back .back4 .container_flex,
   .backgrounds .container_back .back5 .container_flex,
-  .backgrounds .container_back .back6 .container_flex {
+  .languages .container_back .back5 .container_flex,
+  .backgrounds .container_back .back6 .container_flex,
+  .languages .container_back .back6 .container_flex {
     height: 100%;
   }
   .experiences .container_exp .subtext > p,
   .experiences .container_back .subtext > p,
   .backgrounds .container_exp .subtext > p,
-  .backgrounds .container_back .subtext > p {
+  .languages .container_exp .subtext > p,
+  .backgrounds .container_back .subtext > p,
+  .languages .container_back .subtext > p {
     font-family: "MontserratAlternates-Medium";
     font-size: 14px;
   }
   .experiences .container_exp .subtext > p a,
   .experiences .container_back .subtext > p a,
   .backgrounds .container_exp .subtext > p a,
-  .backgrounds .container_back .subtext > p a {
+  .languages .container_exp .subtext > p a,
+  .backgrounds .container_back .subtext > p a,
+  .languages .container_back .subtext > p a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
@@ -1812,15 +2340,21 @@ footer .contactMe {
   .experiences .container_back .subtext > p a:hover,
   .experiences .container_back .subtext > p a:active,
   .backgrounds .container_exp .subtext > p a:hover,
+  .languages .container_exp .subtext > p a:hover,
   .backgrounds .container_exp .subtext > p a:active,
+  .languages .container_exp .subtext > p a:active,
   .backgrounds .container_back .subtext > p a:hover,
-  .backgrounds .container_back .subtext > p a:active {
+  .languages .container_back .subtext > p a:hover,
+  .backgrounds .container_back .subtext > p a:active,
+  .languages .container_back .subtext > p a:active {
     color: #c62a40;
   }
   .experiences .container_exp .subtext > p .more,
   .experiences .container_back .subtext > p .more,
   .backgrounds .container_exp .subtext > p .more,
-  .backgrounds .container_back .subtext > p .more {
+  .languages .container_exp .subtext > p .more,
+  .backgrounds .container_back .subtext > p .more,
+  .languages .container_back .subtext > p .more {
     position: relative;
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
@@ -1832,7 +2366,9 @@ footer .contactMe {
   .experiences .container_exp .subtext > p .more::before,
   .experiences .container_back .subtext > p .more::before,
   .backgrounds .container_exp .subtext > p .more::before,
-  .backgrounds .container_back .subtext > p .more::before {
+  .languages .container_exp .subtext > p .more::before,
+  .backgrounds .container_back .subtext > p .more::before,
+  .languages .container_back .subtext > p .more::before {
     content: "";
     position: absolute;
     left: 45%;
@@ -1847,7 +2383,9 @@ footer .contactMe {
   .experiences .container_exp .subtext > p .more:hover,
   .experiences .container_back .subtext > p .more:hover,
   .backgrounds .container_exp .subtext > p .more:hover,
-  .backgrounds .container_back .subtext > p .more:hover {
+  .languages .container_exp .subtext > p .more:hover,
+  .backgrounds .container_back .subtext > p .more:hover,
+  .languages .container_back .subtext > p .more:hover {
     color: #c62a40;
   }
   .experiences .container_exp .tag_exp,
@@ -1855,9 +2393,13 @@ footer .contactMe {
   .experiences .container_back .tag_exp,
   .experiences .container_back .tag_back,
   .backgrounds .container_exp .tag_exp,
+  .languages .container_exp .tag_exp,
   .backgrounds .container_exp .tag_back,
+  .languages .container_exp .tag_back,
   .backgrounds .container_back .tag_exp,
-  .backgrounds .container_back .tag_back {
+  .languages .container_back .tag_exp,
+  .backgrounds .container_back .tag_back,
+  .languages .container_back .tag_back {
     height: 100%;
   }
   .experiences .container_exp .visibleExp p,
@@ -1865,9 +2407,13 @@ footer .contactMe {
   .experiences .container_back .visibleExp p,
   .experiences .container_back .visibleBack p,
   .backgrounds .container_exp .visibleExp p,
+  .languages .container_exp .visibleExp p,
   .backgrounds .container_exp .visibleBack p,
+  .languages .container_exp .visibleBack p,
   .backgrounds .container_back .visibleExp p,
-  .backgrounds .container_back .visibleBack p {
+  .languages .container_back .visibleExp p,
+  .backgrounds .container_back .visibleBack p,
+  .languages .container_back .visibleBack p {
     font-size: 13px;
     line-height: 20px;
   }
@@ -1876,13 +2422,17 @@ footer .contactMe {
   .experiences .container_back .back3 .tag_back img,
   .experiences .container_back .back4 .tag_back img,
   .experiences .container_back .back5 .tag_back img,
-  .experiences .container_back .back6 .tag_back img,
-  .backgrounds .container_back .back1 .tag_back img,
+  .experiences .container_back .back6 .tag_back img, .backgrounds .container_back .back1 .tag_back img, .languages .container_back .back1 .tag_back img,
   .backgrounds .container_back .back2 .tag_back img,
+  .languages .container_back .back2 .tag_back img,
   .backgrounds .container_back .back3 .tag_back img,
+  .languages .container_back .back3 .tag_back img,
   .backgrounds .container_back .back4 .tag_back img,
+  .languages .container_back .back4 .tag_back img,
   .backgrounds .container_back .back5 .tag_back img,
-  .backgrounds .container_back .back6 .tag_back img {
+  .languages .container_back .back5 .tag_back img,
+  .backgrounds .container_back .back6 .tag_back img,
+  .languages .container_back .back6 .tag_back img {
     width: 115px;
   }
   footer p {

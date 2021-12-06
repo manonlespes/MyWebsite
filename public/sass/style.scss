@@ -547,11 +547,44 @@ html {
 
 /* design section languages */
 .languages {
-    margin-top: 70px;
+    @extend .backgrounds;
+    height: 250px;
+    margin-bottom: 200px;
 
     .title4 {
+        @extend .title1;
         img {
             width: 200px;
+        }
+    }
+
+    .container-languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+        .imageSpeaking {
+            width: 50%;
+            img {
+                width: 200px;
+            }
+        }
+
+        .spoken-languages {
+            width: 50%;
+            height: 100%;
+            background-color: $cherry;
+            border-radius: 82% 55% 66% 50%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            line-height: 30px;
+            font-family: $MvtThin;
+            color: white;
         }
     }
 }

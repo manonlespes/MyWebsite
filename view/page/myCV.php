@@ -392,16 +392,26 @@
 
 <section class="languages">
 
-<div class="title4">
-            <img src="public/images/title_languages.png" alt="languages">
+    <div class="title4">
+        <img src="public/images/title_languages.png" alt="languages">
+    </div>
+
+    <div class="container-languages">
+        <div class="imageSpeaking">
+            <picture>
+                <source media="(min-width:700px)" srcset="public/images/">
+                <source media="(min-width:960px)" srcset="public/images/">
+                <img src="public/images/small_screen_speak.png" alt="experiences">
+            </picture>
         </div>
 
-    <div class="imageSpeaking">
-        <picture>
-            <source media="(min-width:700px)" srcset="public/images/">
-            <source media="(min-width:960px)" srcset="public/images/">
-            <img src="public/images/small_screen_speak.png" alt="experiences">
-        </picture>
+        <div class="spoken-languages">
+            <p>English</p>
+            <p>French</p>
+            <p>German</p>
+            <p>Spanish</p>
+        </div>
+
     </div>
 
 </section>
