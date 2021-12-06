@@ -7,7 +7,7 @@
             <li><a href="#experiences">Experiences</a></li>
             <li><a href="#backgrounds">Backgrounds</a></li>
             <li><a href="#">Skills</a></li>
-            <li><a href="#">Languages</a></li>
+            <li><a href="#languages">Languages</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </div>

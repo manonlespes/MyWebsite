@@ -1118,6 +1118,15 @@ html {
   width: 90px;
 }
 
+/* design section languages */
+.languages {
+  margin-top: 70px;
+}
+
+.languages .title4 img {
+  width: 200px;
+}
+
 /* design footer */
 footer {
   height: 7.5em;

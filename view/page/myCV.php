@@ -31,7 +31,7 @@
 </section>
 
 <section class="background_dotted_dashed">
-  
+
     <section id="experiences" class="experiences fade-in">
 
         <div class="title1">
@@ -386,7 +386,22 @@
 
 </section>
 
+<section class="skills">
 
-<section style="height:100px">
+</section>
+
+<section class="languages">
+
+<div class="title4">
+            <img src="public/images/title_languages.png" alt="languages">
+        </div>
+
+    <div class="imageSpeaking">
+        <picture>
+            <source media="(min-width:700px)" srcset="public/images/">
+            <source media="(min-width:960px)" srcset="public/images/">
+            <img src="public/images/small_screen_speak.png" alt="experiences">
+        </picture>
+    </div>
 
 </section>
