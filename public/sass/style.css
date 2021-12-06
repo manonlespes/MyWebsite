@@ -1463,6 +1463,30 @@ html {
   line-height: 30px;
   font-family: "MvtDirect-Thin";
   color: white;
+  position: relative;
+  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  /*  .hide-bubble{
+                display: none;
+                overflow: hidden;
+            } */
+}
+
+.languages .container-languages .spoken-languages p {
+  cursor: pointer;
+}
+
+.languages .container-languages .spoken-languages .end-bubble {
+  width: 0;
+  height: 0;
+  border-left: 2.5vh solid transparent;
+  border-right: 3vh solid transparent;
+  border-top: 13vh solid #c62a40;
+  position: absolute;
+  top: 29%;
+  right: 86%;
+  -webkit-transform: rotate(60deg);
+  transform: rotate(80deg);
 }
 
 /* design footer */

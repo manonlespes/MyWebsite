@@ -410,6 +410,7 @@
             <p>French</p>
             <p>German</p>
             <p>Spanish</p>
+            <div class="end-bubble hide-bubble"></div>
         </div>
 
     </div>

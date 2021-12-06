@@ -564,6 +564,7 @@ html {
         justify-content: center;
         align-items: center;
         width: 90%;
+        z-index:-2;
 
         .imageSpeaking {
             width: 50%;
@@ -585,6 +586,31 @@ html {
             line-height: 30px;
             font-family: $MvtThin;
             color: white;
+            position: relative;
+            box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+
+            p{
+                cursor: pointer;
+            }
+
+            .end-bubble {
+                width: 0;
+                height: 0;
+                border-left: 2.5vh solid transparent;
+                border-right: 3vh solid transparent;
+                border-top: 13vh solid $cherry;
+                position: absolute;
+                top: 29%;
+                right: 86%;
+                -webkit-transform: rotate(60deg);
+                transform: rotate(80deg);
+                z-index:-1;
+
+           /*  .hide-bubble{
+                display: none;
+                overflow: hidden;
+            } */
+
         }
     }
 }
