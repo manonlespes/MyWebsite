@@ -1430,14 +1430,14 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  z-index: -2;
 }
 
 .languages .container-languages .imageSpeaking {
   width: 50%;
+  z-index: -2;
 }
 
-.languages .container-languages .imageSpeaking img {
+.languages .container-languages .imageSpeaking picture img {
   width: 200px;
 }
 
@@ -1459,18 +1459,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
   line-height: 30px;
   font-family: "MvtDirect-Thin";
   color: white;
   position: relative;
-  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-}
-
-.languages .container-languages .spoken-languages p {
-  cursor: pointer;
 }
 
 .languages .container-languages .spoken-languages .end-bubble {
@@ -1485,10 +1477,11 @@ html {
   -webkit-transform: rotate(60deg);
   transform: rotate(80deg);
   z-index: -1;
-  /*  .hide-bubble{
-                display: none;
-                overflow: hidden;
-            } */
+}
+
+.languages .container-languages .spoken-languages .hide-bubble {
+  display: none;
+  overflow: hidden;
 }
 
 /* design footer */
@@ -2051,6 +2044,36 @@ footer .contactMe {
   .languages .container_back .back6 .container_flex {
     width: 60%;
   }
+  /* design section languages */
+  .languages {
+    height: 450px;
+  }
+  .languages .container-languages .imageSpeaking {
+    width: 60%;
+    z-index: -2;
+  }
+  .languages .container-languages .imageSpeaking picture img {
+    width: 350px;
+  }
+  .languages .container-languages .spoken-languages {
+    width: 40%;
+    height: 88%;
+    border-radius: 81% 58% 82% 69%;
+  }
+  .languages .container-languages .spoken-languages p {
+    font-family: "MvtDirect-Black";
+    font-size: 1.5em;
+    line-height: 35px;
+  }
+  .languages .container-languages .spoken-languages .end-bubble {
+    border-left: 2.5vh solid transparent;
+    border-right: 4vh solid transparent;
+    border-top: 13vh solid #c62a40;
+    top: 41%;
+    right: 105%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(70deg);
+  }
   /* design footer */
   footer p {
     font-size: 1em;
@@ -2460,6 +2483,38 @@ footer .contactMe {
   .backgrounds .container_back .back6 .tag_back img,
   .languages .container_back .back6 .tag_back img {
     width: 115px;
+  }
+  /* design section languages */
+  .languages {
+    height: 570px;
+  }
+  .languages .container-languages .imageSpeaking {
+    width: 50%;
+    z-index: -2;
+  }
+  .languages .container-languages .imageSpeaking picture img {
+    width: 500px;
+  }
+  .languages .container-languages .spoken-languages {
+    width: 60%;
+  }
+  .languages .container-languages .spoken-languages p {
+    font-size: 2em;
+    line-height: 70px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    opacity: 0.85;
+  }
+  .languages .container-languages .spoken-languages p:hover {
+    opacity: 1;
+  }
+  .languages .container-languages .spoken-languages .end-bubble {
+    border-left: 4vh solid transparent;
+    border-right: 7vh solid transparent;
+    border-top: 35vh solid #c62a40;
+    top: 32%;
+    right: 103%;
   }
   footer p {
     font-size: 1.5em;

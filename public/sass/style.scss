@@ -42,6 +42,8 @@ $cherry: #c62a40;
 $skyblue: #22d3b8;
 $darkgreen: #1b2d2a;
 $blue: #1d7294;
+$pink: #f98091;
+
 $linear: linear-gradient(
     to bottom,
     #0e7a69,
@@ -57,6 +59,7 @@ $linear: linear-gradient(
     #9cefe2,
     #b0f5eb
 );
+
 $simpleTransition: all 0.5s ease;
 
 body {
@@ -564,12 +567,14 @@ html {
         justify-content: center;
         align-items: center;
         width: 90%;
-        z-index: -2;
 
         .imageSpeaking {
             width: 50%;
-            img {
-                width: 200px;
+            z-index: -2;
+            picture {
+                img {
+                    width: 200px;
+                }
             }
         }
 
@@ -582,16 +587,10 @@ html {
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            align-content: space-around;
             line-height: 30px;
             font-family: $MvtThin;
             color: white;
             position: relative;
-            box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-
-            p {
-                cursor: pointer;
-            }
 
             .end-bubble {
                 width: 0;
@@ -605,15 +604,16 @@ html {
                 -webkit-transform: rotate(60deg);
                 transform: rotate(80deg);
                 z-index: -1;
-
-                /*  .hide-bubble{
+            }
+            
+            .hide-bubble {
                 display: none;
                 overflow: hidden;
-            } */
             }
         }
     }
 }
+
 /* design footer */
 
 footer {
@@ -844,6 +844,51 @@ footer {
             }
         }
     }
+
+    /* design section languages */
+    .languages {
+        height: 450px;
+
+        .title4 {
+            img {
+            }
+        }
+
+        .container-languages {
+            .imageSpeaking {
+                width: 60%;
+                z-index: -2;
+                picture {
+                    img {
+                        width: 350px;
+                    }
+                }
+            }
+
+            .spoken-languages {
+                width: 40%;
+                height: 88%;
+                border-radius: 81% 58% 82% 69%;
+
+                p {
+                    font-family: $MvtBlack;
+                    font-size: 1.5em;
+                    line-height: 35px;
+                }
+
+                .end-bubble {
+                    border-left: 2.5vh solid transparent;
+                    border-right: 4vh solid transparent;
+                    border-top: 13vh solid $cherry;
+                    top: 41%;
+                    right: 105%;
+                    -webkit-transform: rotate(60deg);
+                    transform: rotate(70deg);
+                }
+            }
+        }
+    }
+
     /* design footer */
 
     footer {
@@ -879,7 +924,7 @@ footer {
             .red_line {
                 display: block;
                 overflow: visible;
-                background-color: #c62a40;
+                background-color: $cherry;
                 height: 175px;
                 z-index: 4;
                 width: 4px;
@@ -1087,6 +1132,47 @@ footer {
                     img {
                         width: 115px;
                     }
+                }
+            }
+        }
+    }
+
+    /* design section languages */
+    .languages {
+        height: 570px;
+
+        .container-languages {
+            .imageSpeaking {
+                width: 50%;
+                z-index: -2;
+                picture {
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+
+            .spoken-languages {
+                width: 60%;
+
+                p {
+                    font-size: 2em;
+                    line-height: 70px;
+                    transition: $simpleTransition;
+                    cursor: pointer;
+                    opacity: 0.85;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                .end-bubble {
+                    border-left: 4vh solid transparent;
+                    border-right: 7vh solid transparent;
+                    border-top: 35vh solid $cherry;
+                    top: 32%;
+                    right: 103%;
                 }
             }
         }
