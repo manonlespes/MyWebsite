@@ -322,7 +322,6 @@ html {
   width: 310px;
 }
 
-/* design background_dotted_dashed */
 /* design experiences_section */
 .fade-in {
   opacity: 0;
@@ -1456,6 +1455,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1482,6 +1483,24 @@ html {
 .languages .container-languages .spoken-languages .hide-bubble {
   display: none;
   overflow: hidden;
+}
+
+.languages .container-languages .spoken-languages .text-language {
+  line-height: normal;
+  width: 80%;
+}
+
+.languages .container-languages .spoken-languages .text-language h3 {
+  font-family: "MvtDirect-Thin";
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.languages .container-languages .spoken-languages .text-language p {
+  font-family: "MontserratAlternates-Regular";
+  font-size: 0.7em;
+  text-align: center;
 }
 
 /* design footer */

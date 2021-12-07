@@ -286,11 +286,6 @@ html {
     }
 }
 
-/* design background_dotted_dashed */
-
-.background_dotted_dashed {
-}
-
 /* design experiences_section */
 
 .fade-in {
@@ -586,6 +581,7 @@ html {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
+            align-content: center;
             align-items: center;
             line-height: 30px;
             font-family: $MvtThin;
@@ -605,10 +601,28 @@ html {
                 transform: rotate(80deg);
                 z-index: -1;
             }
-            
+
             .hide-bubble {
                 display: none;
                 overflow: hidden;
+            }
+
+            .text-language{
+               line-height: normal;
+                width: 80%;
+
+                h3{
+                    font-family: $MvtThin; 
+                    font-size: 0.8em;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+                
+                p{
+                    font-family: $MontReg;
+                    font-size: 0.7em;
+                    text-align: center;
+                }
             }
         }
     }
@@ -848,11 +862,6 @@ footer {
     /* design section languages */
     .languages {
         height: 450px;
-
-        .title4 {
-            img {
-            }
-        }
 
         .container-languages {
             .imageSpeaking {
