@@ -399,15 +399,13 @@
         </div>
 
         <div class="spoken-languages">
-            <!-- <p id="english">English</p>
+            <p id="english">English</p>
             <p id="french">French</p>
             <p id="german">German</p>
-            <p id="spanish">Spanish</p> -->
+            <p id="spanish">Spanish</p>
             <div id="text-language" class="text-language">
-                <h3>English</h3>
-                <p>Hello there !<br> My English is pretty good. According to the Common European Framework of Reference for Languages, I would say my level is C1.</p>
             </div>
-            <div class="end-bubble"></div>
+            <div id="hideshowbubble"class="hide-bubble end-bubble"></div>
         </div>
 
     </div>

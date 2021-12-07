@@ -2093,6 +2093,15 @@ footer .contactMe {
     -webkit-transform: rotate(60deg);
     transform: rotate(70deg);
   }
+  .languages .container-languages .spoken-languages .text-language h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .languages .container-languages .spoken-languages .text-language p {
+    line-height: 20px;
+    font-family: "MontserratAlternates-Regular";
+    font-size: 0.85em;
+  }
   /* design footer */
   footer p {
     font-size: 1em;
@@ -2534,6 +2543,15 @@ footer .contactMe {
     border-top: 35vh solid #c62a40;
     top: 32%;
     right: 103%;
+  }
+  .languages .container-languages .spoken-languages .text-language h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  .languages .container-languages .spoken-languages .text-language p {
+    line-height: 20px;
+    font-size: 1em;
+    line-height: 35px;
   }
   footer p {
     font-size: 1.5em;

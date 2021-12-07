@@ -607,18 +607,18 @@ html {
                 overflow: hidden;
             }
 
-            .text-language{
-               line-height: normal;
+            .text-language {
+                line-height: normal;
                 width: 80%;
 
-                h3{
-                    font-family: $MvtThin; 
+                h3 {
+                    font-family: $MvtThin;
                     font-size: 0.8em;
                     text-align: center;
                     margin-bottom: 5px;
                 }
-                
-                p{
+
+                p {
                     font-family: $MontReg;
                     font-size: 0.7em;
                     text-align: center;
@@ -893,6 +893,19 @@ footer {
                     right: 105%;
                     -webkit-transform: rotate(60deg);
                     transform: rotate(70deg);
+                }
+
+                .text-language {
+                    h3 {
+                        font-size: 1.2em;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        line-height: 20px;
+                        font-family: $MontReg;
+                        font-size: 0.85em;
+                    }
                 }
             }
         }
@@ -1182,6 +1195,19 @@ footer {
                     border-top: 35vh solid $cherry;
                     top: 32%;
                     right: 103%;
+                }
+
+                .text-language {
+                    h3 {
+                        font-size: 2em;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        line-height: 20px;
+                        font-size: 1em;
+                        line-height: 35px;
+                    }
                 }
             }
         }
