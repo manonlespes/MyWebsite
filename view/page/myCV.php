@@ -1,5 +1,5 @@
 <div class="logo">
-    <a href="#"><img src="public/images/Logo.png" alt="Logo"></a> <!-- TODO set an ancre -->
+    <a href="#"><img src="public/images/Logo.png" alt="Logo"></a>
 </div>
 
 
@@ -34,12 +34,17 @@
 
 <section id="experiences" class="experiences fade-in">
 
-    <div class="title1">
-        <picture>
+    <div class="title1" onload="init();">
+        <!-- <picture>
             <source media="(min-width:700px)" srcset="public/images/experiences_medium.gif">
             <source media="(min-width:960px)" srcset="public/images/experiences_medium.gif">
             <img src="public/images/experiences.gif" alt="experiences">
-        </picture>
+        </picture> -->
+        <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:200px; height:68px">
+            <canvas id="canvas" width="200" height="68" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:68px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+        </div>
     </div>
 
     <div class="container_exp">
@@ -405,7 +410,7 @@
             <p id="spanish">Spanish</p>
             <div id="text-language" class="text-language">
             </div>
-            <div id="hideshowbubble"class="hide-bubble end-bubble"></div>
+            <div id="hideshowbubble" class="hide-bubble end-bubble"></div>
         </div>
 
     </div>
