@@ -1495,6 +1495,7 @@ html {
   font-size: 0.8em;
   text-align: center;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .languages .container-languages .spoken-languages .text-language p {
