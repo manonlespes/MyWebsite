@@ -1,6 +1,6 @@
 <footer>
     <div>
-        <p>@2022 - Created with &hearts; by Manon Lespes </p>
+        <p>@2022 - Made with &hearts; by Manon Lespes </p>
     </div>
     <div class="social_icon">
         <a href="https://github.com/manonlespes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
