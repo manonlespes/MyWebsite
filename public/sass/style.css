@@ -2316,7 +2316,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 1px #0e7a69;
+  border: solid 1px transparent;
   border-top-left-radius: 85% 40%;
   border-top-right-radius: 85% 40%;
 }
