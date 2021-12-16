@@ -390,73 +390,81 @@
     </div>
 
     <div class="container_skills">
-        <div class="basics">
-            <div>
-                <i class="fab fa-html5"></i>
+        <div class="container_icons">
+            <div class="basics">
+                <div>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div>
+                <i class="fab fa-css3-alt"></i>
+                </div>
+                <div>
+                <i class="fab fa-sass"></i>
+                </div>
+                <div>
+                    <i class="fab fa-js"></i>
+                </div>
+                <div>
+                    <img src="public/images/jquery.png" alt="jquery">
+                </div>
             </div>
-            <div>
-            <i class="fab fa-css3-alt"></i>
+    
+            <div class="backend">
+                <div>
+                    <i class="fab fa-php"></i>
+                </div>
+                <div>
+                    <img src="public/images/mysql.png" alt="MySQL">
+                </div>
+                <div>
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div>
+                    <i class="fab fa-react"></i>
+                </div>
+                <div>
+                    <i class="fab fa-angular"></i>
+                </div>
             </div>
-            <div>
-            <i class="fab fa-sass"></i>
+    
+            <div class="others">
+                <div>
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i>
+                </div>
+                <div>
+                    <img src="public/images/vsCode.png" alt="VisualStudioCode">
+                </div>
+                <div>
+                    <i class="fab fa-wordpress"></i>
+                </div>
             </div>
-            <div>
-                <i class="fab fa-js"></i>
-            </div>
-            <div>
-                <img src="public/images/jquery.png" alt="jquery">
+    
+            <div class="adobe">
+                <div>
+                    <img src="public/images/photoshop.png" alt="photoshop">
+                </div>
+                <div>
+                    <img src="public/images/illustrator.png" alt="illustrator">
+                </div>
+                <div>
+                    <img src="public/images/xd.png" alt="xd">
+                </div>
+                <div>
+                    <img src="public/images/premiere.png" alt="premierPro">
+                </div>
+                <!-- <div>
+                    <img src="public/images/animate.png" alt="animate">
+                </div> -->
             </div>
         </div>
 
-        <div class="backend">
-            <div>
-                <i class="fab fa-php"></i>
+        <div class="gauge">
+            <div class="gaugeBody">
             </div>
-            <div>
-                <img src="public/images/mysql.png" alt="MySQL">
-            </div>
-            <div>
-                <i class="fab fa-node-js"></i>
-            </div>
-            <div>
-                <i class="fab fa-react"></i>
-            </div>
-            <div>
-                <i class="fab fa-angular"></i>
-            </div>
-        </div>
-
-        <div class="others">
-            <div>
-                <i class="fab fa-bootstrap"></i>
-            </div>
-            <div>
-                <i class="fab fa-github"></i>
-            </div>
-            <div>
-                <img src="public/images/vsCode.png" alt="VisualStudioCode">
-            </div>
-            <div>
-                <i class="fab fa-wordpress"></i>
-            </div>
-        </div>
-
-        <div class="adobe">
-            <div>
-                <img src="public/images/photoshop.png" alt="photoshop">
-            </div>
-            <div>
-                <img src="public/images/illustrator.png" alt="illustrator">
-            </div>
-            <div>
-                <img src="public/images/xd.png" alt="xd">
-            </div>
-            <div>
-                <img src="public/images/premiere.png" alt="premierPro">
-            </div>
-            <!-- <div>
-                <img src="public/images/animate.png" alt="animate">
-            </div> -->
+            <div class="gaugFill"></div>
         </div>
 
     </div>
