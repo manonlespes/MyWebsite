@@ -543,13 +543,60 @@ html {
     }
 }
 
+/* design section skills */
+
+.skills {
+    @extend .backgrounds;
+
+    .title4 { /* TODO change the size of the image */
+        @extend .title1;
+        
+        img {
+            width: 200px;
+        }
+    }
+
+    .container_skills {
+        @extend .container_back;
+
+        .basics,
+        .backend,
+        .others,
+        .adobe {
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+            width: 80%;
+            justify-content: space-evenly;
+            align-items: center;
+
+            img {
+                width: 30px;/* with js or find a i fab */
+            }
+
+            /* i:focus{
+                color:$pink;
+            } */
+
+            i {
+                font-size: 2em;
+                color: $green;
+
+                &:active {
+                    color: $pink;
+                }
+            }
+        }
+    }
+}
+
 /* design section languages */
 .languages {
     @extend .backgrounds;
     height: 250px;
     margin-bottom: 200px;
 
-    .title4 {
+    .title5 {
         @extend .title1;
         img {
             width: 200px;

@@ -383,9 +383,89 @@
         </div>
 </section>
 
-<section id="languages" class="languages">
+<section id="skills" class="skills">
 
     <div class="title4">
+        <img src="public/images/title_skills.png" alt="skills">
+    </div>
+
+    <div class="container_skills">
+        <div class="basics">
+            <div>
+                <i class="fab fa-html5"></i>
+            </div>
+            <div>
+            <i class="fab fa-css3-alt"></i>
+            </div>
+            <div>
+            <i class="fab fa-sass"></i>
+            </div>
+            <div>
+                <i class="fab fa-js"></i>
+            </div>
+            <div>
+                <img src="public/images/jquery.png" alt="jquery">
+            </div>
+        </div>
+
+        <div class="backend">
+            <div>
+                <i class="fab fa-php"></i>
+            </div>
+            <div>
+                <img src="public/images/mysql.png" alt="MySQL">
+            </div>
+            <div>
+                <i class="fab fa-node-js"></i>
+            </div>
+            <div>
+                <i class="fab fa-react"></i>
+            </div>
+            <div>
+                <i class="fab fa-angular"></i>
+            </div>
+        </div>
+
+        <div class="others">
+            <div>
+                <i class="fab fa-bootstrap"></i>
+            </div>
+            <div>
+                <i class="fab fa-github"></i>
+            </div>
+            <div>
+                <img src="public/images/vsCode.png" alt="VisualStudioCode">
+            </div>
+            <div>
+                <i class="fab fa-wordpress"></i>
+            </div>
+        </div>
+
+        <div class="adobe">
+            <div>
+                <img src="public/images/photoshop.png" alt="photoshop">
+            </div>
+            <div>
+                <img src="public/images/illustrator.png" alt="illustrator">
+            </div>
+            <div>
+                <img src="public/images/xd.png" alt="xd">
+            </div>
+            <div>
+                <img src="public/images/premiere.png" alt="premierPro">
+            </div>
+            <!-- <div>
+                <img src="public/images/animate.png" alt="animate">
+            </div> -->
+        </div>
+
+    </div>
+
+</section>
+
+<section id="languages" class="languages">
+
+    <div class="title5">
         <img src="public/images/title_languages.png" alt="languages">
     </div>
 
@@ -405,7 +485,7 @@
             <p id="spanish">Spanish</p>
             <div id="text-language" class="text-language">
             </div>
-            <div id="hideshowbubble"class="hide-bubble end-bubble"></div>
+            <div id="hideshowbubble" class="hide-bubble end-bubble"></div>
         </div>
 
     </div>
