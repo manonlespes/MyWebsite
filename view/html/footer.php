@@ -5,7 +5,7 @@
     <div class="social_icon">
         <a href="https://github.com/manonlespes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/manon-lespes-bb48498b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-        <a href="public/document/Manon_Lespes_CV_EN.pdf" target="_blank" download="newfilename"><i class="fas fa-file-pdf"></i></a>
+        <a href="public/document/Manon_Lespes_CV_EN.pdf" target="_blank" download="ManonLespes_CV"><i class="fas fa-file-pdf"></i></a><!-- TODO change the pdf updated -->
         <a href="mailto:manonlespes@hotmail.fr" target="_blank" class="contactMeSmall">
             <img src="public/images/contact_me.png" alt="image_ManonLespes"><!-- default -->
         </a>

@@ -3941,6 +3941,7 @@ footer .contactMe {
   .skills .container_skills .container_icons .others i:hover,
   .skills .container_skills .container_icons .adobe i:hover {
     color: #f98091;
+    scale: 0.9;
   }
   .skills .container_skills .container_icons .basics svg,
   .skills .container_skills .container_icons .backend svg,
@@ -3960,6 +3961,7 @@ footer .contactMe {
   .skills .container_skills .container_icons .others svg path:hover,
   .skills .container_skills .container_icons .adobe svg path:hover {
     fill: #f98091;
+    scale: 0.9;
   }
   .skills .container_skills .gauge {
     width: 6%;
@@ -3990,6 +3992,7 @@ footer .contactMe {
   }
   .languages .container-languages .spoken-languages p:hover {
     opacity: 1;
+    font-size: 1.8em;
   }
   .languages .container-languages .spoken-languages .end-bubble {
     border-left: 4vh solid transparent;
@@ -4045,6 +4048,7 @@ footer .contactMe {
   }
   footer .social_icon a i:hover {
     color: #22d3b8;
+    scale: 0.9;
   }
   footer .social_icon .red_line {
     display: block;

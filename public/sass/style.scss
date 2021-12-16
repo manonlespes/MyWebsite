@@ -1309,6 +1309,7 @@ footer {
 
                         &:hover {
                             color: $pink;
+                            scale: 0.9;
                         }
                     }
 
@@ -1319,6 +1320,7 @@ footer {
                             transition: $simpleTransition;
                             &:hover {
                                 fill: $pink;
+                                scale: 0.9;
                             }
                         }
                     }
@@ -1360,6 +1362,7 @@ footer {
 
                     &:hover {
                         opacity: 1;
+                        font-size:1.8em;
                     }
                 }
 
@@ -1417,6 +1420,7 @@ footer {
 
                     &:hover {
                         color: $skyblue;
+                        scale: 0.9;
                     }
                 }
             }
