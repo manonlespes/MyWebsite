@@ -1,7 +1,9 @@
 <div class="logo">
-    <a href="#"><img src="public/images/Logo.png" alt="Logo"></a> <!-- TODO set an ancre -->
+    <a href="#"><img src="public/images/Logo.png" title="My Logo" alt="Logo"></a>
 </div>
 
+<!-- TODO check all the titles of the images -->
+<!-- TODO review the header/menu fixed -->
 
 <section class="introduction">
     <div class="images_intro">
@@ -9,7 +11,7 @@
             <picture>
                 <source media="(min-width:700px)" srcset="public/images/medium_screen.png">
                 <source media="(min-width:960px)" srcset="public/images/large_screen.png">
-                <img src="public/images/small_screen.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/small_screen.png" title="Hello! It's Manon and behind my shoulder is my lovely cat, Chatshimi!" alt="image_ManonLespes"><!-- default -->
             </picture>
         </div>
     </div>
@@ -26,7 +28,7 @@
 
 <section class="aim_banner fade-in">
     <div class="aim">
-        <img src="public/images/aim.png" alt="seeking_intership_position">
+        <img src="public/images/aim.png" title="My current professional aims" alt="seeking_intership_position">
     </div>
 </section>
 
@@ -38,7 +40,7 @@
         <picture>
             <source media="(min-width:700px)" srcset="public/images/experiences_medium.gif">
             <source media="(min-width:960px)" srcset="public/images/experiences_medium.gif">
-            <img src="public/images/experiences.gif" alt="experiences">
+            <img src="public/images/experiences.gif" title="My experiences" alt="experiences">
         </picture>
     </div>
 
@@ -60,7 +62,7 @@
 
             <div class="tag_exp">
                 <p>01/2020-12/2020</p>
-                <img src="public/images/tag_exp.png" alt="tag_year">
+                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -86,7 +88,7 @@
 
             <div class="tag_exp">
                 <p>08/2018-10/2019</p>
-                <img src="public/images/tag_exp.png" alt="tag_year">
+                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -118,7 +120,7 @@
 
             <div class="tag_exp">
                 <p>2014-2018</p>
-                <img src="public/images/tag_exp.png" alt="tag_year">
+                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -142,7 +144,7 @@
 
             <div class="tag_exp">
                 <p>08/2017-10/2017</p>
-                <img src="public/images/tag_exp.png" alt="tag_year">
+                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -166,7 +168,7 @@
 
             <div class="tag_exp">
                 <p>06/2013-09/2013</p>
-                <img src="public/images/tag_exp.png" alt="tag_year">
+                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -186,7 +188,7 @@
 
             <div class="tag_exp">
                 <p>06/2012-09/2012</p>
-                <img src="public/images/tag_exp.png" alt="tag_year">
+                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
     </div>
@@ -195,7 +197,7 @@
 <section id="backgrounds" class="backgrounds fade-in">
 
     <div class="title2">
-        <img src="public/images/title_background.png" alt="backgrounds">
+        <img src="public/images/title_background.png" title="My backgrounds" alt="backgrounds">
     </div>
 
     <div class="container_back">
@@ -385,7 +387,7 @@
 
 <section id="skills" class="skills fade-in">
 
-    <div class="title4">
+    <div class="title3">
         <img src="public/images/title_skills.png" alt="skills">
     </div>
 
@@ -492,8 +494,7 @@
 </section>
 
 <section id="languages" class="languages">
-
-    <div class="title5">
+    <div class="title4">
         <img src="public/images/title_languages.png" alt="languages">
     </div>
 
@@ -517,5 +518,44 @@
         </div>
 
     </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="title5">
+        <img src="public/images/title_projects.png" title="My projects" alt="projects">
+    </div>
+
+    <ul class="pseudo_slider">
+        <li class="project1">
+            <a class="project1_background">
+                <picture>
+                    <source srcset="" type="image/" sizes="">
+                    <img src="" alt="">
+                </picture>
+            </a>
+        </li>
+
+        <li class="project2">
+            <a class="project2_background">
+                <picture>
+                    <source srcset="" type="image/" sizes="">
+                    <img src="" alt="">
+                </picture>
+            </a>
+        </li>
+
+        <li class="project3">
+            <a class="project3_background">
+                <picture>
+                    <source srcset="" type="image/" sizes="">
+                    <img src="" alt="">
+                </picture>
+            </a>
+        </li>
+    </ul>
+
+
+
+
 
 </section>

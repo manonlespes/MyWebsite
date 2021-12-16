@@ -548,7 +548,7 @@ html {
 .skills {
     @extend .backgrounds;
 
-    .title4 {
+    .title3 {
         @extend .title1;
 
         img {
@@ -586,7 +586,7 @@ html {
             align-items: center;
 
             svg {
-                /* TODO check the active/hover on the div when path is too thin! */
+                /* TODO check the active/hover on the div when path is too thin! + check cause not working on chrome*/
                 width: 30px;
 
                 path {
@@ -632,9 +632,8 @@ html {
 .languages {
     @extend .backgrounds;
     height: 250px;
-    margin-bottom: 200px;
 
-    .title5 {
+    .title4 {
         @extend .title2;
         img {
             width: 200px;
@@ -710,6 +709,51 @@ html {
                     text-align: center;
                 }
             }
+        }
+    }
+}
+
+/* design projects */
+
+.projects {
+    @extend .skills;
+    margin-bottom: 100px;
+
+    .title5 {
+        @extend .title3;
+    }
+
+    .pseudo_slider {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: visible;
+        scroll-snap-type: x mandatory;
+
+        .project1 {
+            width: 190px;
+            height: 190px;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+            list-style: none;
+            scroll-snap-align: center;
+
+            .project1_background {
+            }
+        }
+
+        .project2 {
+            @extend .project1;
+            border-color: $pink;
+        }
+
+        .project3 {
+            @extend .project1;
+            border-color: $green;
         }
     }
 }
@@ -948,7 +992,7 @@ footer {
     /* design section skills */
 
     .skills {
-        .title4 {
+        .title3 {
             img {
                 width: 200px;
             }
@@ -1060,6 +1104,8 @@ footer {
             transition: height 1s ease-in;
 
             a {
+                text-decoration: none;
+
                 i {
                     color: $green;
                     font-size: 2em;
@@ -1362,7 +1408,7 @@ footer {
 
                     &:hover {
                         opacity: 1;
-                        font-size:1.8em;
+                        font-size: 1.8em;
                     }
                 }
 
