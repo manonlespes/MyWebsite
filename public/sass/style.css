@@ -2105,6 +2105,9 @@ html {
   height: 215px;
   -ms-flex-line-pack: baseline;
       align-content: baseline;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  height: 250px;
 }
 
 .skills .container_skills .container_icons {
@@ -2122,6 +2125,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  margin: 10px;
 }
 
 .skills .container_skills .basics,
@@ -2135,7 +2139,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 15px;
   width: 80%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -2148,12 +2151,19 @@ html {
             } */
 }
 
-.skills .container_skills .basics img,
-.skills .container_skills .backend img,
-.skills .container_skills .others img,
-.skills .container_skills .adobe img {
+.skills .container_skills .basics svg,
+.skills .container_skills .backend svg,
+.skills .container_skills .others svg,
+.skills .container_skills .adobe svg {
+  /* TODO check the active/hover on the div when path is too thin! */
   width: 30px;
-  /* with js or find a i fab */
+}
+
+.skills .container_skills .basics svg path:active,
+.skills .container_skills .backend svg path:active,
+.skills .container_skills .others svg path:active,
+.skills .container_skills .adobe svg path:active {
+  fill: #f98091;
 }
 
 .skills .container_skills .basics i,
@@ -3224,18 +3234,23 @@ footer .contactMe {
     margin-top: 0;
     height: 300px;
   }
+  .skills .container_skills .container_icons .basics,
+  .skills .container_skills .container_icons .backend,
+  .skills .container_skills .container_icons .others,
+  .skills .container_skills .container_icons .adobe {
+    margin-top: 15px;
+  }
   .skills .container_skills .container_icons .basics i,
   .skills .container_skills .container_icons .backend i,
   .skills .container_skills .container_icons .others i,
   .skills .container_skills .container_icons .adobe i {
     font-size: 3em;
   }
-  .skills .container_skills .container_icons .basics img,
-  .skills .container_skills .container_icons .backend img,
-  .skills .container_skills .container_icons .others img,
-  .skills .container_skills .container_icons .adobe img {
-    /* TODO to change here as well */
-    width: 40px;
+  .skills .container_skills .container_icons .basics svg,
+  .skills .container_skills .container_icons .backend svg,
+  .skills .container_skills .container_icons .others svg,
+  .skills .container_skills .container_icons .adobe svg {
+    width: 35px;
   }
   .skills .container_skills .gauge {
     height: 240px;
@@ -3398,8 +3413,8 @@ footer .contactMe {
   }
   .introduction .text_intro p a {
     color: #0e7a69;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .introduction .text_intro p a:hover {
     color: #c62a40;
@@ -3732,8 +3747,8 @@ footer .contactMe {
   .skills .container_back .subtext > p a,
   .languages .container_back .subtext > p a,
   .skills .container_skills .subtext > p a {
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active,
   .experiences .container_back .subtext > p a:hover,
@@ -3771,8 +3786,8 @@ footer .contactMe {
   .skills .container_skills .subtext > p .more {
     position: relative;
     cursor: pointer;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     /* &:hover::before {
                             background-size: 100% 2px;
                     } */
@@ -3918,8 +3933,8 @@ footer .contactMe {
   .skills .container_skills .container_icons .others i,
   .skills .container_skills .container_icons .adobe i {
     font-size: 4em;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .skills .container_skills .container_icons .basics i:hover,
   .skills .container_skills .container_icons .backend i:hover,
@@ -3927,12 +3942,24 @@ footer .contactMe {
   .skills .container_skills .container_icons .adobe i:hover {
     color: #f98091;
   }
-  .skills .container_skills .container_icons .basics img,
-  .skills .container_skills .container_icons .backend img,
-  .skills .container_skills .container_icons .others img,
-  .skills .container_skills .container_icons .adobe img {
-    /* TODO to change here as well */
+  .skills .container_skills .container_icons .basics svg,
+  .skills .container_skills .container_icons .backend svg,
+  .skills .container_skills .container_icons .others svg,
+  .skills .container_skills .container_icons .adobe svg {
     width: 45px;
+  }
+  .skills .container_skills .container_icons .basics svg path,
+  .skills .container_skills .container_icons .backend svg path,
+  .skills .container_skills .container_icons .others svg path,
+  .skills .container_skills .container_icons .adobe svg path {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .skills .container_skills .container_icons .basics svg path:hover,
+  .skills .container_skills .container_icons .backend svg path:hover,
+  .skills .container_skills .container_icons .others svg path:hover,
+  .skills .container_skills .container_icons .adobe svg path:hover {
+    fill: #f98091;
   }
   .skills .container_skills .gauge {
     width: 6%;
@@ -3956,8 +3983,8 @@ footer .contactMe {
   .languages .container-languages .spoken-languages p {
     font-size: 2em;
     line-height: 70px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
     opacity: 0.85;
   }
@@ -4005,16 +4032,16 @@ footer .contactMe {
             align-items: center;
     height: 15%;
     border: solid 1px transparent;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   footer .social_icon a:hover {
     border: solid 1px #22d3b8;
   }
   footer .social_icon a i {
     color: #0e7a69;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   footer .social_icon a i:hover {
     color: #22d3b8;
@@ -4033,8 +4060,8 @@ footer .contactMe {
     height: 430px;
   }
   footer .contactMe div a {
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   footer .contactMe div a:hover {
     color: #22d3b8;

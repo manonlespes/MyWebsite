@@ -69,7 +69,7 @@ french.addEventListener("click", function () {
 
     const p = document.createElement('p');  
     textLanguage.appendChild(p);
-    p.innerHTML = `Bonjour ! <br> French is my mother tongue. Je peux donc facilement m'adapter à différents environnements linguistique.`;
+    p.innerHTML = `Bonjour ! <br> French is my mother tongue. Je peux donc facilement m'adapter à différents environnements linguistiques.`;
 
 });
 

@@ -6,7 +6,7 @@
             </li> <!-- TODO make it visible only on click -->
             <li><a href="#experiences">Experiences</a></li>
             <li><a href="#backgrounds">Backgrounds</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#languages">Languages</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>

@@ -60,7 +60,7 @@ $linear: linear-gradient(
     #b0f5eb
 );
 
-$simpleTransition: all 0.5s ease;
+$simpleTransition: all 0.3s ease-in-out;
 
 body {
     font-size: 15px;
@@ -562,6 +562,9 @@ html {
         flex-flow: row nowrap;
         height: 215px;
         align-content: baseline;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        height: 250px;
 
         .container_icons {
             display: flex;
@@ -569,6 +572,7 @@ html {
             justify-content: center;
             align-items: center;
             width: 80%;
+            margin: 10px;
         }
 
         .basics,
@@ -577,13 +581,19 @@ html {
         .adobe {
             display: flex;
             flex-direction: row;
-            margin-top: 15px;
             width: 80%;
             justify-content: space-evenly;
             align-items: center;
 
-            img {
-                width: 30px; /* with js or find a i fab */
+            svg {
+                /* TODO check the active/hover on the div when path is too thin! */
+                width: 30px;
+
+                path {
+                    &:active {
+                        fill: $pink;
+                    }
+                }
             }
 
             /* i:focus{
@@ -938,10 +948,9 @@ footer {
     /* design section skills */
 
     .skills {
-
-        .title4{
-            img{
-                width:200px;
+        .title4 {
+            img {
+                width: 200px;
             }
         }
 
@@ -954,13 +963,14 @@ footer {
                 .backend,
                 .others,
                 .adobe {
+                    margin-top: 15px;
+
                     i {
                         font-size: 3em;
                     }
 
-                    img {
-                        /* TODO to change here as well */
-                        width: 40px;
+                    svg {
+                        width: 35px;
                     }
                 }
             }
@@ -1297,14 +1307,20 @@ footer {
                         font-size: 4em;
                         transition: $simpleTransition;
 
-                        &:hover{
+                        &:hover {
                             color: $pink;
                         }
                     }
 
-                    img {
-                        /* TODO to change here as well */
+                    svg {
                         width: 45px;
+
+                        path {
+                            transition: $simpleTransition;
+                            &:hover {
+                                fill: $pink;
+                            }
+                        }
                     }
                 }
             }
