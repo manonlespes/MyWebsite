@@ -383,7 +383,7 @@
         </div>
 </section>
 
-<section id="skills" class="skills">
+<section id="skills" class="skills fade-in">
 
     <div class="title4">
         <img src="public/images/title_skills.png" alt="skills">

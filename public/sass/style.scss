@@ -558,17 +558,9 @@ html {
     }
 
     .container_skills {
-        width: 90%;
-        background: transparent;
-        margin-top: 25px;
-        border-radius: 77% 273% 90% 28% / 35% 31% 35% 100%;
-        border-top: 3px solid $skyblue;
-        border-left: 3px solid $skyblue;
+        @extend .container_back;
         display: flex;
         flex-flow: row nowrap;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        overflow-y: scroll;
         height: 215px;
         align-content: baseline;
 
@@ -621,7 +613,7 @@ html {
                 height: 100%;
                 border: 3px solid $pink;
                 top: 20px;
-                border-radius: 12px;
+                border-radius: 20px;
             }
         }
     }
@@ -634,7 +626,7 @@ html {
     margin-bottom: 200px;
 
     .title5 {
-        @extend .title1;
+        @extend .title2;
         img {
             width: 200px;
         }
@@ -944,6 +936,41 @@ footer {
         }
     }
 
+    /* design section skills */
+
+    .skills {
+        .container_skills {
+            margin-top: 0;
+            height: 300px;
+
+            .container_icons {
+                .basics,
+                .backend,
+                .others,
+                .adobe {
+                    i {
+                        font-size: 3em;
+                    }
+
+                    img {
+                        /* TODO to change here as well */
+                        width: 40px;
+                    }
+                }
+            }
+
+            .gauge {
+                height: 240px;
+                top: 25px;
+                width: 8%;
+
+                .gaugeBody {
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
     /* design section languages */
     .languages {
         height: 450px;
@@ -1240,6 +1267,46 @@ footer {
                         width: 115px;
                     }
                 }
+            }
+        }
+    }
+
+    /* design section skills */
+
+    .skills {
+        .container_skills {
+            overflow-y: hidden;
+
+            .container_icons {
+                width: 100%;
+                margin-top: 30px;
+
+                .basics,
+                .backend,
+                .others,
+                .adobe {
+                    margin-top: 25px;
+
+                    i {
+                        font-size: 4em;
+                        transition: $simpleTransition;
+
+                        &:hover{
+                            color: $pink;
+                        }
+                    }
+
+                    img {
+                        /* TODO to change here as well */
+                        width: 45px;
+                    }
+                }
+            }
+
+            .gauge {
+                width: 6%;
+                height: 280px;
+                top: 46px;
             }
         }
     }
