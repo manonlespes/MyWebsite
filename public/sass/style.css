@@ -2090,12 +2090,8 @@ html {
 }
 
 /* design section skills */
-.skills .title4 {
-  /* TODO change the size of the image */
-}
-
 .skills .title4 img {
-  width: 200px;
+  width: 113px;
 }
 
 .skills .container_skills {
@@ -3221,6 +3217,9 @@ footer .contactMe {
     width: 60%;
   }
   /* design section skills */
+  .skills .title4 img {
+    width: 200px;
+  }
   .skills .container_skills {
     margin-top: 0;
     height: 300px;
