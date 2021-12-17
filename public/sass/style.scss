@@ -325,12 +325,31 @@ html {
     .title1 {
         justify-content: flex-start;
         margin-left: 20px;
+        width: 200px !important;
+        .test {
+            width: 200px !important;
+        }
+    }
+
+    #animation_container {
+        position:relative;
+        margin:0;
+        left:0;right:0;
+        top:0;bottom:0;
+        width: 200px;
+        height: 200px;
+      }
+    
+
+    /* .title1 {
+        justify-content: flex-start;
+        margin-left: 20px;
         picture {
             img {
                 width: 200px;
             }
         }
-    }
+    } */
 
     .container_exp,
     .container_back {

@@ -44,9 +44,9 @@
         </picture>
     </div> -->
 
-    <div id="animation_container">
-		<canvas id="canvas"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:68px; position: absolute; left: 0px; top: 0px; display: block;">
+    <div id="animation_container" class="animation_container">
+		<canvas id="canvas" class="test"></canvas>
+		<div id="dom_overlay_container">
 		</div>
 	</div>
 
