@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/sass/style.css">
-    <script src="https://kit.fontawesome.com/0e9c9dec41.js" crossorigin="anonymous"></script>
-    <title>Manon's Website</title>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>experiences+medium</title>
 <!-- write your code here -->
 <style>
   #animation_container {
@@ -17,7 +22,7 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="public/js/experiences.js?1638432465536"></script>
+<script src="experiences+medium.js?1638432465536"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -49,6 +54,10 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-
-
-    
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:200px; height:68px">
+		<canvas id="canvas" width="200" height="68" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:68px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>

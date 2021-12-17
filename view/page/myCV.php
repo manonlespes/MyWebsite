@@ -36,13 +36,19 @@
 
 <section id="experiences" class="experiences fade-in">
 
-    <div class="title1">
+    <!-- <div class="title1">
         <picture>
             <source media="(min-width:700px)" srcset="public/images/experiences_medium.gif">
             <source media="(min-width:960px)" srcset="public/images/experiences_medium.gif">
             <img src="public/images/experiences.gif" title="My experiences" alt="experiences">
         </picture>
-    </div>
+    </div> -->
+
+    <div id="animation_container">
+		<canvas id="canvas"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:68px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
 
     <div class="container_exp">
         <div class="exp1">
