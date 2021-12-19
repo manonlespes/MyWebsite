@@ -325,31 +325,12 @@ html {
     .title1 {
         justify-content: flex-start;
         margin-left: 20px;
-        width: 200px !important;
-        .test {
-            width: 200px !important;
-        }
-    }
-
-    #animation_container {
-        position:relative;
-        margin:0;
-        left:0;right:0;
-        top:0;bottom:0;
-        width: 200px;
-        height: 200px;
-      }
-    
-
-    /* .title1 {
-        justify-content: flex-start;
-        margin-left: 20px;
         picture {
             img {
                 width: 200px;
             }
         }
-    } */
+    }
 
     .container_exp,
     .container_back {
@@ -742,27 +723,21 @@ html {
         @extend .title3;
     }
 
-    .pseudo_slider {
-        margin: 0;
-        padding: 0;
+    .container_pseudo_slider {
         display: flex;
-        list-style-type: none;
-        max-width: 100%;
+        flex-wrap: nowrap;
         overflow-x: auto;
-        overflow-y: visible;
-        scroll-snap-type: x mandatory;
+        width: 100vw;
+
+        .card {
+            flex: 0 0 auto;
+        }
 
         .project1 {
             width: 190px;
             height: 190px;
             border: 1px solid black;
-            overflow: hidden;
-            position: relative;
-            list-style: none;
-            scroll-snap-align: center;
-
-            .project1_background {
-            }
+            margin-left: 30px;
         }
 
         .project2 {
@@ -773,6 +748,7 @@ html {
         .project3 {
             @extend .project1;
             border-color: $green;
+            margin-right: 30px;
         }
     }
 }

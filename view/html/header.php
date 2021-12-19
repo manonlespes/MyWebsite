@@ -7,16 +7,8 @@
     <link rel="stylesheet" href="public/sass/style.css">
     <script src="https://kit.fontawesome.com/0e9c9dec41.js" crossorigin="anonymous"></script>
     <title>Manon's Website</title>
-<!-- write your code here -->
-<style>
-  #animation_container {
-	position:absolute;
-	margin:auto;
-	left:0;right:0;
-	top:0;bottom:0;
-  }
-</style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+<!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="public/js/experiences.js?1638432465536"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -45,10 +37,10 @@ function handleComplete(evt,comp) {
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
-</script>
+</script> -->
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body>
 
 
     

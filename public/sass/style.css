@@ -3004,36 +3004,36 @@ html {
   margin-bottom: 100px;
 }
 
-.projects .pseudo_slider {
-  margin: 0;
-  padding: 0;
+.projects .container_pseudo_slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
-  max-width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   overflow-x: auto;
-  overflow-y: visible;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  width: 100vw;
 }
 
-.projects .pseudo_slider .project1, .projects .pseudo_slider .project2, .projects .pseudo_slider .project3 {
+.projects .container_pseudo_slider .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.projects .container_pseudo_slider .project1, .projects .container_pseudo_slider .project2, .projects .container_pseudo_slider .project3 {
   width: 190px;
   height: 190px;
   border: 1px solid black;
-  overflow: hidden;
-  position: relative;
-  list-style: none;
-  scroll-snap-align: center;
+  margin-left: 30px;
 }
 
-.projects .pseudo_slider .project2 {
+.projects .container_pseudo_slider .project2 {
   border-color: #f98091;
 }
 
-.projects .pseudo_slider .project3 {
+.projects .container_pseudo_slider .project3 {
   border-color: #0e7a69;
+  margin-right: 30px;
 }
 
 /* design footer */

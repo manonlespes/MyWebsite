@@ -36,19 +36,19 @@
 
 <section id="experiences" class="experiences fade-in">
 
-    <!-- <div class="title1">
+    <div class="title1">
         <picture>
             <source media="(min-width:700px)" srcset="public/images/experiences_medium.gif">
             <source media="(min-width:960px)" srcset="public/images/experiences_medium.gif">
             <img src="public/images/experiences.gif" title="My experiences" alt="experiences">
         </picture>
-    </div> -->
+    </div>
 
-    <div id="animation_container" class="animation_container">
+    <!--   <div id="animation_container" class="animation_container">
 		<canvas id="canvas" class="test"></canvas>
 		<div id="dom_overlay_container">
 		</div>
-	</div>
+	</div> -->
 
     <div class="container_exp">
         <div class="exp1">
@@ -531,34 +531,43 @@
         <img src="public/images/title_projects.png" title="My projects" alt="projects">
     </div>
 
-    <ul class="pseudo_slider">
-        <li class="project1">
-            <a class="project1_background">
-                <picture>
-                    <source srcset="" type="image/" sizes="">
-                    <img src="" alt="">
-                </picture>
-            </a>
-        </li>
+    <div class="container_pseudo_slider">
+        <div class="card project1"> <h3>Yolo</h3></div>
+        <div class="card project2"> <h3>Yolo</h3></div>
+        <div class="card project3"> <h3>Yolo</h3></div>
 
-        <li class="project2">
-            <a class="project2_background">
-                <picture>
-                    <source srcset="" type="image/" sizes="">
-                    <img src="" alt="">
-                </picture>
-            </a>
-        </li>
 
-        <li class="project3">
-            <a class="project3_background">
-                <picture>
-                    <source srcset="" type="image/" sizes="">
-                    <img src="" alt="">
-                </picture>
-            </a>
-        </li>
-    </ul>
+
+        <!-- ul class="pseudo_slider">
+            <li class="project1">
+                <a class="project1_background">
+                    <picture>
+                        <source srcset="" type="image/" sizes="">
+                        <img src="" alt="">
+                    </picture>
+                </a>
+            </li>
+
+            <li class="project2">
+                <a class="project2_background">
+                    <picture>
+                        <source srcset="" type="image/" sizes="">
+                        <img src="" alt="">
+                    </picture>
+                </a>
+            </li>
+
+            <li class="project3">
+                <a class="project3_background">
+                    <picture>
+                        <source srcset="" type="image/" sizes="">
+                        <img src="" alt="">
+                    </picture>
+                </a>
+            </li>
+        </ul> -->
+
+    </div>
 
 
 
