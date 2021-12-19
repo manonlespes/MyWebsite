@@ -728,6 +728,8 @@ html {
         flex-wrap: nowrap;
         overflow-x: auto;
         width: 100vw;
+        justify-content: flex-start;
+        align-items: center;
 
         .card {
             flex: 0 0 auto;
@@ -736,19 +738,41 @@ html {
         .project1 {
             width: 190px;
             height: 190px;
-            border: 1px solid black;
-            margin-left: 30px;
+            border: 1px solid $green;
+            margin-left: 60px;
+            margin-right: 30px;
+            border-radius: 98% 58% 98% 65% /83% 61% 112% 92%;
+            background-color: $green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg{
+                height: 130px;
+            }
         }
 
         .project2 {
             @extend .project1;
             border-color: $pink;
+            margin-right: 30px;
+            background-color: $pink;
+
+            picture{
+                img{
+                    width: 30px;
+                    transform: rotate(0.1turn);
+                }
+            }
         }
 
         .project3 {
             @extend .project1;
             border-color: $green;
             margin-right: 30px;
+            background-image: url(../images/Carte-postale.png);
+            background-size: cover;
+            background-position: center;
         }
     }
 }

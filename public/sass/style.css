@@ -3012,6 +3012,12 @@ html {
       flex-wrap: nowrap;
   overflow-x: auto;
   width: 100vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .container_pseudo_slider .card {
@@ -3023,17 +3029,44 @@ html {
 .projects .container_pseudo_slider .project1, .projects .container_pseudo_slider .project2, .projects .container_pseudo_slider .project3 {
   width: 190px;
   height: 190px;
-  border: 1px solid black;
-  margin-left: 30px;
+  border: 1px solid #0e7a69;
+  margin-left: 60px;
+  margin-right: 30px;
+  border-radius: 98% 58% 98% 65% /83% 61% 112% 92%;
+  background-color: #0e7a69;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .container_pseudo_slider .project1 svg, .projects .container_pseudo_slider .project2 svg, .projects .container_pseudo_slider .project3 svg {
+  height: 130px;
 }
 
 .projects .container_pseudo_slider .project2 {
   border-color: #f98091;
+  margin-right: 30px;
+  background-color: #f98091;
+}
+
+.projects .container_pseudo_slider .project2 picture img {
+  width: 30px;
+  -webkit-transform: rotate(0.1turn);
+          transform: rotate(0.1turn);
 }
 
 .projects .container_pseudo_slider .project3 {
   border-color: #0e7a69;
   margin-right: 30px;
+  background-image: url(../images/Carte-postale.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /* design footer */
