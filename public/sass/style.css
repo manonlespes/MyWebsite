@@ -3004,6 +3004,10 @@ html {
   margin-bottom: 100px;
 }
 
+.projects .title5 img {
+  width: 140px;
+}
+
 .projects .container_pseudo_slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3018,12 +3022,14 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 20px;
 }
 
 .projects .container_pseudo_slider .card {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  position: relative;
 }
 
 .projects .container_pseudo_slider .project1, .projects .container_pseudo_slider .project2, .projects .container_pseudo_slider .project3 {
@@ -3055,18 +3061,25 @@ html {
   background-color: #f98091;
 }
 
-.projects .container_pseudo_slider .project2 picture img {
+.projects .container_pseudo_slider .project2 .microphone img {
   width: 30px;
   -webkit-transform: rotate(0.1turn);
           transform: rotate(0.1turn);
+  margin-left: 75%;
 }
 
 .projects .container_pseudo_slider .project3 {
-  border-color: #0e7a69;
+  border-color: transparent;
   margin-right: 30px;
   background-image: url(../images/Carte-postale.png);
   background-size: cover;
   background-position: center;
+}
+
+.projects .container_pseudo_slider .figures {
+  position: absolute;
+  bottom: 0;
+  left: -23px;
 }
 
 /* design footer */
@@ -4405,6 +4418,7 @@ footer .contactMe {
   /* design section languages */
   .languages {
     height: 450px;
+    margin-bottom: 120px;
   }
   .languages .container-languages .imageSpeaking {
     width: 60%;
@@ -4440,6 +4454,23 @@ footer .contactMe {
     line-height: 20px;
     font-family: "MontserratAlternates-Regular";
     font-size: 0.85em;
+  }
+  /* design projects */
+  .projects .container_pseudo_slider {
+    width: 76vw;
+  }
+  .projects .container_pseudo_slider .card {
+    width: 225px;
+    height: 225px;
+  }
+  .projects .container_pseudo_slider .figures {
+    left: -40px;
+  }
+  .projects .container_pseudo_slider .figures picture img {
+    width: 93px;
+  }
+  .projects .container_pseudo_slider .project1 svg, .projects .container_pseudo_slider .project2 svg, .projects .container_pseudo_slider .project3 svg {
+    height: 150px;
   }
   /* design footer */
   footer p {
@@ -4551,7 +4582,7 @@ footer .contactMe {
   }
   /* design intro */
   .introduction .images_intro .image_Manon picture img {
-    width: 1195px;
+    width: 930px;
   }
   .introduction .text_intro {
     padding-bottom: 40px;
@@ -5377,6 +5408,23 @@ footer .contactMe {
     line-height: 20px;
     font-size: 1em;
     line-height: 35px;
+  }
+  /* design section projects */
+  .projects .container_pseudo_slider {
+    width: 75vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .projects .container_pseudo_slider .card {
+    width: 261px;
+    height: 261px;
+  }
+  .projects .container_pseudo_slider .figures picture img {
+    width: 97px;
+  }
+  .projects .container_pseudo_slider .project1 svg, .projects .container_pseudo_slider .project2 svg, .projects .container_pseudo_slider .project3 svg {
+    height: 170px;
   }
   footer p {
     font-size: 1.5em;

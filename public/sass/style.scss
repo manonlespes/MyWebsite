@@ -721,6 +721,9 @@ html {
 
     .title5 {
         @extend .title3;
+        img {
+            width: 140px;
+        }
     }
 
     .container_pseudo_slider {
@@ -730,9 +733,11 @@ html {
         width: 100vw;
         justify-content: flex-start;
         align-items: center;
+        padding-bottom: 20px;
 
         .card {
             flex: 0 0 auto;
+            position: relative;
         }
 
         .project1 {
@@ -747,7 +752,7 @@ html {
             justify-content: center;
             align-items: center;
 
-            svg{
+            svg {
                 height: 130px;
             }
         }
@@ -758,21 +763,28 @@ html {
             margin-right: 30px;
             background-color: $pink;
 
-            picture{
-                img{
+            .microphone {
+                img {
                     width: 30px;
                     transform: rotate(0.1turn);
+                    margin-left: 75%;
                 }
             }
         }
 
         .project3 {
             @extend .project1;
-            border-color: $green;
+            border-color: transparent;
             margin-right: 30px;
             background-image: url(../images/Carte-postale.png);
             background-size: cover;
             background-position: center;
+        }
+
+        .figures {
+            position: absolute;
+            bottom: 0;
+            left: -23px;
         }
     }
 }
@@ -1053,6 +1065,7 @@ footer {
     /* design section languages */
     .languages {
         height: 450px;
+        margin-bottom: 120px;
 
         .container-languages {
             .imageSpeaking {
@@ -1097,6 +1110,35 @@ footer {
                         font-family: $MontReg;
                         font-size: 0.85em;
                     }
+                }
+            }
+        }
+    }
+
+    /* design projects */
+
+    .projects {
+        .container_pseudo_slider {
+            width: 76vw;
+
+            .card {
+                width: 225px;
+                height: 225px;
+            }
+
+            .figures {
+                left: -40px;
+
+                picture {
+                    img {
+                        width: 93px;
+                    }
+                }
+            }
+
+            .project1 {
+                svg {
+                    height: 150px;
                 }
             }
         }
@@ -1216,7 +1258,7 @@ footer {
             .image_Manon {
                 picture {
                     img {
-                        width: 1195px;
+                        width: 930px;
                     }
                 }
             }
@@ -1450,6 +1492,34 @@ footer {
                         font-size: 1em;
                         line-height: 35px;
                     }
+                }
+            }
+        }
+    }
+
+    /* design section projects */
+
+    .projects {
+        .container_pseudo_slider {
+            width: 75vw;
+            justify-content: space-evenly;
+
+            .card {
+                width: 261px;
+                height: 261px;
+            }
+
+            .figures {
+                picture {
+                    img {
+                        width: 97px;
+                    }
+                }
+            }
+
+            .project1 {
+                svg {
+                    height: 170px;
                 }
             }
         }
