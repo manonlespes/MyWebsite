@@ -499,13 +499,13 @@
 
 </section>
 
-<section id="languages" class="languages">
+<section id="languages" class="languages fade-in">
     <div class="title4">
         <img src="public/images/title_languages.png" alt="languages">
     </div>
 
     <div class="container-languages">
-        <div class="imageSpeaking">
+        <div class="imageSpeaking" id="manonSpeaking">
             <picture>
                 <source media="(min-width:700px)" srcset="public/images/medium_screen_speak.png">
                 <source media="(min-width:960px)" srcset="public/images/large_screen_speak.png">
@@ -526,13 +526,13 @@
     </div>
 </section>
 
-<section id="projects" class="projects">
+<section id="projects" class="projects fade-in">
     <div class="title5">
         <img src="public/images/title_projects.png" title="My projects" alt="projects">
     </div>
 
     <div class="container_pseudo_slider">
-        <a class="card project1 href=" #" target="_blank" rel="noopener noreferrer">
+        <a class="card project1 "href="#" target="_blank" rel="noopener noreferrer">
             <svg id="Groupe_10900" data-name="Groupe 10900" xmlns="http://www.w3.org/2000/svg" width="189.334" height="272.806" viewBox="0 0 189.334 272.806">
                 <path id="Tracé_1120" data-name="Tracé 1120" d="M638.961-548.042a92.777,92.777,0,0,0-95.1-92.747c-49.4,1.205-89.544,41.621-90.44,91.024-.445,24.537,28.29,69.246,30.059,72.31l17.991,31.162,40.707,70.506a4.623,4.623,0,0,0,8.006,0l40.707-70.506,17.981-31.144C610.67-480.546,638.961-524.227,638.961-548.042Z" transform="translate(-451.523 643.599)" fill="#282828" />
                 <g id="Groupe_1591" data-name="Groupe 1591" transform="translate(0 0)">
@@ -550,7 +550,7 @@
                 </picture>
             </div>
         </a>
-        <a class="card project2 href=" #" target="_blank" rel="noopener noreferrer">
+        <a class="card project2" href="#" target="_blank" rel="noopener noreferrer">
             <picture class="microphone">
                 <source srcset="" type="image/" sizes=""><!-- TODO -->
                 <img src="public/images/microgris.png" title="Grey Microphone" alt="grey_microphone">
@@ -563,7 +563,7 @@
                 </picture>
             </div>
         </a>
-        <a class="card project3 href=" #" target="_blank" rel="noopener noreferrer">
+        <a class="card project3" href="#" target="_blank" rel="noopener noreferrer">
             <div class="figures">
                 <picture class="figure2">
                     <source media="(min-width:700px)" srcset="public/images/figures/three_medium.png">
