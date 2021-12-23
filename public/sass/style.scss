@@ -612,18 +612,33 @@ html {
 
         .gauge {
             position: relative;
+            top:25%;
             width: 10%;
-            top: 20px;
+            bottom: 0;     
             display: flex;
             height: 176px;
 
             .gaugeBody {
+                position: absolute;
                 width: 100%;
                 height: 100%;
                 border: 3px solid $pink;
-                top: 20px;
+                background-color: transparent;
+                bottom: 0px;
                 border-radius: 20px;
+                z-index: 2;
             }
+
+            .gaugeFill {
+                @extend .gaugeBody;
+                background-color: $red;
+                height: 50%;
+                border: 1px solid $red;
+                border-radius: 10px;
+                z-index: 1;
+                
+            }
+
         }
     }
 }
@@ -1438,6 +1453,10 @@ footer {
                 width: 6%;
                 height: 280px;
                 top: 46px;
+
+                .gaugeBody{
+                    right: 20px;
+                }
             }
         }
     }

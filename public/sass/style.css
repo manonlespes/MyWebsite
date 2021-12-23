@@ -2884,20 +2884,32 @@ html {
 
 .skills .container_skills .gauge, .projects .container_skills .gauge {
   position: relative;
+  top: 25%;
   width: 10%;
-  top: 20px;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 176px;
 }
 
-.skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody {
+.skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+  position: absolute;
   width: 100%;
   height: 100%;
   border: 3px solid #f98091;
-  top: 20px;
+  background-color: transparent;
+  bottom: 0px;
   border-radius: 20px;
+  z-index: 2;
+}
+
+.skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+  background-color: #7a0e1d;
+  height: 50%;
+  border: 1px solid #7a0e1d;
+  border-radius: 10px;
+  z-index: 1;
 }
 
 /* design section languages */
@@ -4412,7 +4424,7 @@ footer .contactMe {
     top: 25px;
     width: 8%;
   }
-  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody {
+  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
     border-radius: 25px;
   }
   /* design section languages */
@@ -5366,6 +5378,9 @@ footer .contactMe {
     width: 6%;
     height: 280px;
     top: 46px;
+  }
+  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+    right: 20px;
   }
   /* design section languages */
   .languages {

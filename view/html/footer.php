@@ -30,7 +30,8 @@
 <script src="public/js/detailsExp.js"></script>
 <script src="public/js/fadeIn.js"></script>
 <script src="public/js/languages.js"></script>
-<!-- script title=animation experiences -->
+<script src="public/js/gauge.js"></script>
+
 
 </body>
 
