@@ -2893,7 +2893,7 @@ html {
   height: 176px;
 }
 
-.skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+.skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70, .skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2904,12 +2904,21 @@ html {
   z-index: 2;
 }
 
-.skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+.skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70 {
   background-color: #7a0e1d;
-  height: 50%;
+  height: 80%;
   border: 1px solid #7a0e1d;
-  border-radius: 10px;
+  border-top-right-radius: 5px 7px;
   z-index: 1;
+}
+
+.skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70 {
+  height: 50%;
+}
+
+.skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
+  display: none;
+  overflow: hidden;
 }
 
 /* design section languages */
@@ -4424,7 +4433,7 @@ footer .contactMe {
     top: 25px;
     width: 8%;
   }
-  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70, .skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
     border-radius: 25px;
   }
   /* design section languages */
@@ -5379,7 +5388,7 @@ footer .contactMe {
     height: 280px;
     top: 46px;
   }
-  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill, .projects .container_skills .gauge .gaugeFill {
+  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70, .skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
     right: 20px;
   }
   /* design section languages */

@@ -629,14 +629,25 @@ html {
                 z-index: 2;
             }
 
-            .gaugeFill {
+            .gaugeFill90 {
                 @extend .gaugeBody;
                 background-color: $red;
-                height: 50%;
+                height: 80%;
                 border: 1px solid $red;
-                border-radius: 10px;
+                border-top-right-radius: 5px 7px;
                 z-index: 1;
-                
+                //transition: $simpleTransition; TODO // check how the height can be smoother
+            }
+
+            .gaugeFill70 {
+                @extend .gaugeFill90;
+                height: 50%;
+            }
+
+            .gaugeFillHidden {
+                @extend .gaugeBody;
+                display: none;
+                overflow: hidden;
             }
 
         }
