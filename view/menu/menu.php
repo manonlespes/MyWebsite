@@ -4,11 +4,11 @@
             <li id="close_menu">
                 <img src="public/images/cross_closed.png" alt="cross_closed">
             </li>
-            <li><a href="#experiences">Experiences</a></li>
-            <li><a href="#backgrounds">Backgrounds</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="?section=myCV#experiences">Experiences</a></li>
+            <li><a href="?section=myCV#backgrounds">Backgrounds</a></li>
+            <li><a href="?section=myCV#skills">Skills</a></li>
+            <li><a href="?section=myCV#languages">Languages</a></li>
+            <li><a href="?section=myCV#projects">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </div>
     </ul>

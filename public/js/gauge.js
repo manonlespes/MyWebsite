@@ -10,11 +10,21 @@ const vsCode = document.getElementById("vsCode");
 
 
 html.addEventListener("click", function (){
-    gaugeFill.classList.toggle("gaugeFillHidden");
-    
-    if (!(gaugeFill).classList.contains("gaugeFill90")){
+
+    if (gaugeFill.classList.contains("gaugeFillHidden")) {
+        gaugeFill.classList.toggle("gaugeFillHidden")
         gaugeFill.classList.add("gaugeFill90")
     }
+
+    else if (gaugeFill.classList.contains("gaugeFill70") ){
+        gaugeFill.classList.remove("gaugeFill70")
+        gaugeFill.classList.add("gaugeFill90")
+    }
+
+    else{
+        gaugeFill.classList.add("gaugeFill90")
+    }
+
 });
 
 illustrator.addEventListener("click", function (){

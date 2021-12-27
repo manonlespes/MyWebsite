@@ -2,32 +2,60 @@
 
 const moreExp1 = document.getElementById("moreExp1");
 const detailsExp1 = document.getElementById("detailsExp1");
+/* const moreExperiences = Array.from(document.querySelectorAll(".more"));
+
+moreExperiences.forEach(moreExperience => {
+
+    moreExperience.addEventListener("click", () => {
+        const activeElements = Array.from(document.querySelectorAll(".visibleExp"))
+
+        activeElements.forEach(activeElement => {
+            activeElement.classList.remove("visibleExp");
+            activeElement.classList.add("hide");
+        });
+        moreExperience.parentElement.classList.add("visibleExp");
+
+    });
+}); */
+
+
+/* const buttonElements = Array.from(document.querySelectorAll('.button'));
+buttonElements.forEach(buttonElement => {
+    buttonElement.addEventListener('click', () => {
+        const activeElements = Array.from(document.querySelectorAll('.is-active'));
+        activeElements.forEach(activeElement => {
+            activeElement.classList.remove('is-active');
+        });
+        buttonElement.parentElement.classList.add('is-active');
+    });
+}); */
+
 
 moreExp1.addEventListener("click", function (e) {
-    e.preventDefault;
-    
+  e.preventDefault;
+
     /* remove the hide class */
     detailsExp1.classList.toggle("hide");
     /* add the visibleExp class */
     detailsExp1.classList.toggle("visibleExp");
-    
+
     /*write back see more + */
 
     /* change the text */
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
-    }
-    else{
+   }
+   else {
         this.innerHTML = "SEE LESS -"
-    }
-})
+   }
+ })
 
 const moreExp2 = document.getElementById("moreExp2");
 const detailsExp2 = document.getElementById("detailsExp2");
 
 moreExp2.addEventListener("click", function (e) {
     e.preventDefault;
-   
+
     /* remove the hide class */
     detailsExp2.classList.toggle("hide");
     /* add the visibleExp class */
@@ -38,7 +66,7 @@ moreExp2.addEventListener("click", function (e) {
     if (this.innerHTML == "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
-    else{
+    else {
         this.innerHTML = "SEE LESS -"
     }
 })
@@ -48,11 +76,11 @@ const detailsExp3 = document.getElementById("detailsExp3");
 
 moreExp3.addEventListener("click", function (e) {
     e.preventDefault;
-   /* change the text */
+    /* change the text */
     if (this.innerHTML == "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
-    else{
+    else {
         this.innerHTML = "SEE LESS -"
     }
 
@@ -69,11 +97,11 @@ const detailsExp4 = document.getElementById("detailsExp4");
 
 moreExp4.addEventListener("click", function (e) {
     e.preventDefault;
-   /* change the text */
+    /* change the text */
     if (this.innerHTML == "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
-    else{
+    else {
         this.innerHTML = "SEE LESS -"
     }
 
