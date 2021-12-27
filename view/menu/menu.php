@@ -14,7 +14,13 @@
     </ul>
 </nav>
 
-<div id="menu_hamburger">
-    <img src="public/images/hamburger.png" title="Love veggie burgers" alt="menu_hamburger"><!-- Do you also love eating vegetarian foods ? Hire me then, we will code and share foods! -->
-</div>
+<nav class="permanent_nav">
 
+    <div class="logo">
+        <a href="#"><img src="public/images/Logo.png" title="My Logo" alt="Logo"></a>
+    </div>
+
+    <div id="menu_hamburger">
+        <img src="public/images/hamburger.png" title="Love veggie burgers" alt="menu_hamburger"><!-- Do you also love eating vegetarian foods ? Hire me then, we will code and share foods! -->
+    </div>
+</nav>

@@ -1,9 +1,5 @@
-<div class="logo">
-    <a href="#"><img src="public/images/Logo.png" title="My Logo" alt="Logo"></a>
-</div>
 
 <!-- TODO check all the titles of the images -->
-<!-- TODO review the header/menu fixed -->
 
 <section class="introduction">
     <div class="images_intro">

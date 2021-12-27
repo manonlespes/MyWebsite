@@ -79,15 +79,45 @@ html {
 }
 
 /* design Menu */
-#menu_hamburger {
-  position: fixed;
-  z-index: 2;
-  top: 15px;
-  right: 20px;
+.permanent_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  background-color: rgba(242, 245, 248, 0.8);
+}
+
+.permanent_nav .logo {
+  margin-left: 25px;
   cursor: pointer;
 }
 
-#menu_hamburger img {
+.permanent_nav .logo a img {
+  width: 60px;
+}
+
+.permanent_nav #menu_hamburger {
+  position: relative;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.permanent_nav #menu_hamburger img {
   width: 40px;
 }
 
@@ -215,18 +245,6 @@ html {
 }
 
 /* design Intro */
-.logo a {
-  position: fixed;
-  z-index: 9999999999;
-  top: 15px;
-  left: 20px;
-  cursor: pointer;
-}
-
-.logo a img {
-  width: 60px;
-}
-
 .introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,7 +258,7 @@ html {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 80vw;
-  margin-top: 100px;
+  margin-top: 30px;
   padding-bottom: 5px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #22d3b8), color-stop(10%, rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to right, #22d3b8 30%, rgba(255, 255, 255, 0) 10%);
@@ -3163,11 +3181,19 @@ footer .contactMe {
 /*******************Responsive Tablet */
 @media only screen and (min-width: 700px) {
   /* design Menu */
-  #menu_hamburger {
-    width: 100px;
-    top: 25px;
+  .permanent_nav {
+    height: 150px;
   }
-  #menu_hamburger img {
+  .permanent_nav .logo {
+    margin-left: 40px;
+  }
+  .permanent_nav .logo a img {
+    width: 110px;
+  }
+  .permanent_nav #menu_hamburger {
+    width: 100px;
+  }
+  .permanent_nav #menu_hamburger img {
     width: 90px;
   }
   .navBar {
@@ -3185,13 +3211,6 @@ footer .contactMe {
     width: 40px;
   }
   /* design Intro */
-  .logo a {
-    left: 30px;
-    top: 20px;
-  }
-  .logo a img {
-    width: 110px;
-  }
   .introduction .images_intro .image_Manon picture img {
     width: 740px;
   }
@@ -4581,10 +4600,13 @@ footer .contactMe {
 /***********************Responsive Desktop */
 @media only screen and (min-width: 960px) {
   /* design menu */
-  #menu_hamburger {
+  .permanent_nav .logo {
+    margin-left: 45px;
+  }
+  .permanent_nav #menu_hamburger {
     width: 150px;
   }
-  #menu_hamburger img {
+  .permanent_nav #menu_hamburger img {
     width: 100px;
   }
   .navBar {
