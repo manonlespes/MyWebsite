@@ -1261,6 +1261,7 @@ footer {
     /* design menu */
 
     .permanent_nav {
+        overflow-y: hidden;
     
         .logo{
             margin-left: 45px;
@@ -1420,6 +1421,10 @@ footer {
             }
         }
 
+        .exeriences{
+            height: 750px;
+        }
+
         .container_back {
             .back1,
             .back2,
@@ -1439,6 +1444,8 @@ footer {
     /* design section skills */
 
     .skills {
+        margin-bottom: 150px;
+
         .container_skills {
             overflow-y: hidden;
 
@@ -1464,13 +1471,11 @@ footer {
 
                     svg {
                         width: 45px;
+                        transition: $simpleTransition;
 
-                        path {
-                            transition: $simpleTransition;
-                            &:hover {
-                                fill: $pink;
-                                scale: 0.9;
-                            }
+                        &:hover {
+                            fill: $pink;
+                            scale: 0.9;
                         }
                     }
                 }
@@ -1491,6 +1496,7 @@ footer {
     /* design section languages */
     .languages {
         height: 570px;
+        margin-top: 100px;
 
         .container-languages {
             .imageSpeaking {

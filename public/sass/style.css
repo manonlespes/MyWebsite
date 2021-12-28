@@ -4600,6 +4600,9 @@ footer .contactMe {
 /***********************Responsive Desktop */
 @media only screen and (min-width: 960px) {
   /* design menu */
+  .permanent_nav {
+    overflow-y: hidden;
+  }
   .permanent_nav .logo {
     margin-left: 45px;
   }
@@ -5280,6 +5283,13 @@ footer .contactMe {
     font-size: 13px;
     line-height: 20px;
   }
+  .experiences .exeriences,
+  .backgrounds .exeriences,
+  .skills .exeriences,
+  .projects .exeriences,
+  .languages .exeriences {
+    height: 750px;
+  }
   .experiences .container_back .back1 .tag_back img, .experiences .skills .container_skills .back1 .tag_back img, .skills .experiences .container_skills .back1 .tag_back img, .experiences .projects .container_skills .back1 .tag_back img, .projects .experiences .container_skills .back1 .tag_back img,
   .experiences .container_back .back2 .tag_back img,
   .experiences .skills .container_skills .back2 .tag_back img,
@@ -5339,6 +5349,9 @@ footer .contactMe {
     width: 115px;
   }
   /* design section skills */
+  .skills, .projects {
+    margin-bottom: 150px;
+  }
   .skills .container_skills, .projects .container_skills {
     overflow-y: hidden;
   }
@@ -5384,24 +5397,16 @@ footer .contactMe {
   .skills .container_skills .container_icons .adobe svg,
   .projects .container_skills .container_icons .adobe svg {
     width: 45px;
-  }
-  .skills .container_skills .container_icons .basics svg path, .projects .container_skills .container_icons .basics svg path,
-  .skills .container_skills .container_icons .backend svg path,
-  .projects .container_skills .container_icons .backend svg path,
-  .skills .container_skills .container_icons .others svg path,
-  .projects .container_skills .container_icons .others svg path,
-  .skills .container_skills .container_icons .adobe svg path,
-  .projects .container_skills .container_icons .adobe svg path {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .skills .container_skills .container_icons .basics svg path:hover, .projects .container_skills .container_icons .basics svg path:hover,
-  .skills .container_skills .container_icons .backend svg path:hover,
-  .projects .container_skills .container_icons .backend svg path:hover,
-  .skills .container_skills .container_icons .others svg path:hover,
-  .projects .container_skills .container_icons .others svg path:hover,
-  .skills .container_skills .container_icons .adobe svg path:hover,
-  .projects .container_skills .container_icons .adobe svg path:hover {
+  .skills .container_skills .container_icons .basics svg:hover, .projects .container_skills .container_icons .basics svg:hover,
+  .skills .container_skills .container_icons .backend svg:hover,
+  .projects .container_skills .container_icons .backend svg:hover,
+  .skills .container_skills .container_icons .others svg:hover,
+  .projects .container_skills .container_icons .others svg:hover,
+  .skills .container_skills .container_icons .adobe svg:hover,
+  .projects .container_skills .container_icons .adobe svg:hover {
     fill: #f98091;
     scale: 0.9;
   }
@@ -5416,6 +5421,7 @@ footer .contactMe {
   /* design section languages */
   .languages {
     height: 570px;
+    margin-top: 100px;
   }
   .languages .container-languages .imageSpeaking {
     width: 50%;
