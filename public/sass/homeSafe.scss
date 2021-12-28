@@ -1,0 +1,77 @@
+@import "library/font.scss";
+@import "library/responsive.scss";
+
+/* variables colors  */
+
+$white: #f2f5f8;
+$green: #0e7a69;
+$red: #7a0e1d;
+$cherry: #c62a40;
+$skyblue: #22d3b8;
+$darkgreen: #1b2d2a;
+$blue: #1d7294;
+$pink: #f98091;
+
+$linear: linear-gradient(
+    to bottom,
+    #0e7a69,
+    #128a77,
+    #159a85,
+    #19ab94,
+    #1dbca3,
+    #34c7af,
+    #45d1ba,
+    #55dcc6,
+    #6fe2d0,
+    #86e9d9,
+    #9cefe2,
+    #b0f5eb
+);
+
+$simpleTransition: all 0.3s ease-in-out;
+
+body {
+    font-size: 15px;
+    background: $white; /* TODO faire le mode dark */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* custum scroll-bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $skyblue;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $linear;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $skyblue;
+    opacity: 0.3;
+}
+
+h2{
+    font-family: $MvtBlack;
+    color: $green;
+}
