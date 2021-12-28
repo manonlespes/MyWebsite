@@ -494,7 +494,7 @@
 
 </section>
 
-<section id="languages" class="languages fade-in">
+<section id="languages" class="languages">
     <div class="title4">
         <img src="public/images/title_languages.png" alt="languages">
     </div>

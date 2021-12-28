@@ -111,7 +111,6 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    width: 100vw;
     position: sticky;
     top: 0;
     z-index: 6;
@@ -871,7 +870,7 @@ footer {
     /* design Menu */
 
     .permanent_nav {
-        height:150px;
+        height: 150px;
 
         .logo {
             margin-left: 40px;
@@ -1261,14 +1260,19 @@ footer {
     /* design menu */
 
     .permanent_nav {
-        overflow-y: hidden;
-    
-        .logo{
+        height: 135px;
+
+        .logo {
             margin-left: 45px;
         }
 
         #menu_hamburger {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
             width: 150px;
+            margin-right: 0;
             img {
                 width: 100px;
             }
@@ -1297,6 +1301,8 @@ footer {
     /* design intro */
 
     .introduction {
+        margin-top: 0;
+
         .images_intro {
             .image_Manon {
                 picture {
@@ -1421,7 +1427,7 @@ footer {
             }
         }
 
-        .exeriences{
+        .exeriences {
             height: 750px;
         }
 

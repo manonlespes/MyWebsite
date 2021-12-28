@@ -94,7 +94,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 90px;
-  width: 100vw;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -4601,13 +4600,27 @@ footer .contactMe {
 @media only screen and (min-width: 960px) {
   /* design menu */
   .permanent_nav {
-    overflow-y: hidden;
+    height: 135px;
   }
   .permanent_nav .logo {
     margin-left: 45px;
   }
   .permanent_nav #menu_hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 150px;
+    margin-right: 0;
   }
   .permanent_nav #menu_hamburger img {
     width: 100px;
@@ -4627,6 +4640,9 @@ footer .contactMe {
     width: 50px;
   }
   /* design intro */
+  .introduction {
+    margin-top: 0;
+  }
   .introduction .images_intro .image_Manon picture img {
     width: 930px;
   }
