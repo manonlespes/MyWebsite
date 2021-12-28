@@ -3106,6 +3106,42 @@ html {
   margin-left: 75%;
 }
 
+.projects .container_pseudo_slider .txtProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f2f5f8;
+  font-family: "MvtIndirect-Black";
+  font-family: "MvtIndirect-Black";
+  font-size: 0.85rem;
+  width: 80%;
+  padding-left: 40px;
+  height: 45%;
+  text-align: center;
+}
+
+.projects .container_pseudo_slider .txtProject .buttonProject {
+  width: 75%;
+  background-color: #f2f5f8;
+  border: 1px #f2f5f8 solid;
+  border-radius: 15px;
+}
+
+.projects .container_pseudo_slider .txtProject .buttonProject a {
+  text-decoration: none;
+  color: #0e7a69;
+}
+
 .projects .container_pseudo_slider .project3 {
   border-color: transparent;
   margin-right: 30px;
@@ -4511,6 +4547,11 @@ footer .contactMe {
   .projects .container_pseudo_slider .project1 svg, .projects .container_pseudo_slider .project2 svg, .projects .container_pseudo_slider .project3 svg {
     height: 150px;
   }
+  .projects .container_pseudo_slider .txtProject {
+    font-size: 1rem;
+    width: 85%;
+    padding-left: 36px;
+  }
   /* design footer */
   footer p {
     font-size: 1em;
@@ -4603,7 +4644,7 @@ footer .contactMe {
     height: 135px;
   }
   .permanent_nav .logo {
-    margin-left: 45px;
+    margin-left: 60px;
   }
   .permanent_nav #menu_hamburger {
     display: -webkit-box;
@@ -5128,31 +5169,34 @@ footer .contactMe {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .experiences .container_exp .subtext > p a:hover, .experiences .container_exp .subtext > p a:active,
+  .experiences .container_exp .subtext > p a:hover,
   .experiences .container_back .subtext > p a:hover,
   .experiences .skills .container_skills .subtext > p a:hover,
   .skills .experiences .container_skills .subtext > p a:hover,
   .experiences .projects .container_skills .subtext > p a:hover,
   .projects .experiences .container_skills .subtext > p a:hover,
-  .experiences .container_back .subtext > p a:active,
-  .experiences .skills .container_skills .subtext > p a:active,
-  .skills .experiences .container_skills .subtext > p a:active,
-  .experiences .projects .container_skills .subtext > p a:active,
-  .projects .experiences .container_skills .subtext > p a:active,
   .backgrounds .container_exp .subtext > p a:hover,
   .skills .container_exp .subtext > p a:hover,
   .projects .container_exp .subtext > p a:hover,
   .languages .container_exp .subtext > p a:hover,
-  .backgrounds .container_exp .subtext > p a:active,
-  .skills .container_exp .subtext > p a:active,
-  .projects .container_exp .subtext > p a:active,
-  .languages .container_exp .subtext > p a:active,
   .backgrounds .container_back .subtext > p a:hover,
   .skills .container_back .subtext > p a:hover,
   .projects .container_back .subtext > p a:hover,
   .languages .container_back .subtext > p a:hover,
   .skills .container_skills .subtext > p a:hover,
-  .projects .container_skills .subtext > p a:hover,
+  .projects .container_skills .subtext > p a:hover {
+    color: #c62a40;
+  }
+  .experiences .container_exp .subtext > p a:active,
+  .experiences .container_back .subtext > p a:active,
+  .experiences .skills .container_skills .subtext > p a:active,
+  .skills .experiences .container_skills .subtext > p a:active,
+  .experiences .projects .container_skills .subtext > p a:active,
+  .projects .experiences .container_skills .subtext > p a:active,
+  .backgrounds .container_exp .subtext > p a:active,
+  .skills .container_exp .subtext > p a:active,
+  .projects .container_exp .subtext > p a:active,
+  .languages .container_exp .subtext > p a:active,
   .backgrounds .container_back .subtext > p a:active,
   .skills .container_back .subtext > p a:active,
   .projects .container_back .subtext > p a:active,
@@ -5478,6 +5522,7 @@ footer .contactMe {
     line-height: 35px;
   }
   /* design section projects */
+  /* TODO add a media query only for the pseudo slider of the project - width higher than 1080 to delete the overflow (issue with the margin-left of the project1*/
   .projects .container_pseudo_slider {
     width: 75vw;
     -webkit-box-pack: space-evenly;
@@ -5487,12 +5532,19 @@ footer .contactMe {
   .projects .container_pseudo_slider .card {
     width: 261px;
     height: 261px;
+    cursor: pointer;
   }
   .projects .container_pseudo_slider .figures picture img {
     width: 97px;
   }
+  .projects .container_pseudo_slider .project1, .projects .container_pseudo_slider .project2, .projects .container_pseudo_slider .project3 {
+    margin-left: 200px;
+  }
   .projects .container_pseudo_slider .project1 svg, .projects .container_pseudo_slider .project2 svg, .projects .container_pseudo_slider .project3 svg {
     height: 170px;
+  }
+  .projects .container_pseudo_slider .txtProject {
+    font-size: 1.2rem;
   }
   footer p {
     font-size: 1.5em;
@@ -5546,6 +5598,7 @@ footer .contactMe {
   footer .contactMe {
     width: 167px;
     height: 430px;
+    left: 25px;
   }
   footer .contactMe div a {
     -webkit-transition: all 0.3s ease-in-out;

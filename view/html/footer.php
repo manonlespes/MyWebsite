@@ -1,6 +1,6 @@
 <footer>
     <div>
-        <p>@2022 - Made with &hearts; by Manon Lespes </p>
+        <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Made with &hearts; by Manon Lespes</p>
     </div>
     <div class="social_icon">
         <a href="https://github.com/manonlespes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -31,6 +31,7 @@
 <script src="public/js/fadeIn.js"></script>
 <script src="public/js/languages.js"></script>
 <script src="public/js/gauge.js"></script>
+<script src="public/js/projects.js"></script>
 
 
 </body>

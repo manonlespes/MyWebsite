@@ -1,4 +1,3 @@
-
 <!-- TODO check all the titles of the images -->
 
 <section class="introduction">
@@ -494,7 +493,7 @@
 
 </section>
 
-<section id="languages" class="languages">
+<section id="languages" class="languages ">
     <div class="title4">
         <img src="public/images/title_languages.png" alt="languages">
     </div>
@@ -527,7 +526,7 @@
     </div>
 
     <div class="container_pseudo_slider">
-        <a class="card project1 " href="?section=homeSafe" target="_blank" rel="noopener noreferrer">
+        <div id="project1" class="card project1">
             <svg id="Groupe_10900" data-name="Groupe 10900" xmlns="http://www.w3.org/2000/svg" width="189.334" height="272.806" viewBox="0 0 189.334 272.806">
                 <path id="Tracé_1120" data-name="Tracé 1120" d="M638.961-548.042a92.777,92.777,0,0,0-95.1-92.747c-49.4,1.205-89.544,41.621-90.44,91.024-.445,24.537,28.29,69.246,30.059,72.31l17.991,31.162,40.707,70.506a4.623,4.623,0,0,0,8.006,0l40.707-70.506,17.981-31.144C610.67-480.546,638.961-524.227,638.961-548.042Z" transform="translate(-451.523 643.599)" fill="#282828" />
                 <g id="Groupe_1591" data-name="Groupe 1591" transform="translate(0 0)">
@@ -537,6 +536,14 @@
                 </g>
             </svg>
 
+            <!-- how it will look when event is happening -> check my javascript
+             <div class="txtProject1">
+                <div>First project in group</div>
+                <div class="buttonProject1">
+                    <a href="https://github.com/Lison-creator/home_safe" target="_blank" rel="noopener noreferrer">&lt; code &gt;</a>
+                </div>
+            </div> -->
+
             <div class="figures">
                 <picture class="figure1">
                     <source media="(min-width:700px)" srcset="public/images/figures/one_medium.png">
@@ -544,10 +551,9 @@
                     <img src="public/images/figures/one_small.png" title="First project" alt="first_project">
                 </picture>
             </div>
-        </a>
-        <a class="card project2" href="#" target="_blank" rel="noopener noreferrer">
-            <picture class="microphone">
-                <source srcset="" type="image/" sizes=""><!-- TODO -->
+        </div>
+        <div id="project2" class="card project2">
+            <picture id="microphone" class="microphone">
                 <img src="public/images/microgris.png" title="Grey Microphone" alt="grey_microphone">
             </picture>
 
@@ -557,7 +563,7 @@
                     <img src="public/images/figures/two_small.png" title="Second project" alt="second_project">
                 </picture>
             </div>
-        </a>
+        </div>
         <a class="card project3" href="#" target="_blank" rel="noopener noreferrer">
             <div class="figures">
                 <picture class="figure2">

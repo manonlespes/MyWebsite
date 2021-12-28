@@ -803,6 +803,33 @@ html {
             }
         }
 
+        .txtProject {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: $white;
+            font-family: $MvtIndirect;
+            font-family: "MvtIndirect-Black";
+            font-size: 0.85rem;
+            width: 80%;
+            padding-left: 40px;
+            height: 45%;
+            text-align: center;
+
+            .buttonProject {
+                width: 75%;
+                background-color: $white;
+                border: 1px $white solid;
+                border-radius: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: $green;
+                }
+            }
+        }
+        
         .project3 {
             @extend .project1;
             border-color: transparent;
@@ -1174,6 +1201,12 @@ footer {
                     height: 150px;
                 }
             }
+
+            .txtProject {
+                font-size: 1rem;
+                width: 85%;
+                padding-left: 36px;
+            }
         }
     }
 
@@ -1263,7 +1296,7 @@ footer {
         height: 135px;
 
         .logo {
-            margin-left: 45px;
+            margin-left: 60px;
         }
 
         #menu_hamburger {
@@ -1379,7 +1412,9 @@ footer {
                 a {
                     transition: $simpleTransition;
 
-                    &:hover,
+                    &:hover {
+                        color: $cherry;
+                    }
                     &:active {
                         color: $cherry;
                     }
@@ -1557,6 +1592,8 @@ footer {
 
     /* design section projects */
 
+    /* TODO add a media query only for the pseudo slider of the project - width higher than 1080 to delete the overflow (issue with the margin-left of the project1*/
+
     .projects {
         .container_pseudo_slider {
             width: 75vw;
@@ -1565,6 +1602,7 @@ footer {
             .card {
                 width: 261px;
                 height: 261px;
+                cursor: pointer;
             }
 
             .figures {
@@ -1576,9 +1614,14 @@ footer {
             }
 
             .project1 {
+                margin-left: 200px;
                 svg {
                     height: 170px;
                 }
+            }
+
+            .txtProject {
+                font-size: 1.2rem;
             }
         }
     }
@@ -1632,6 +1675,7 @@ footer {
         .contactMe {
             width: 167px;
             height: 430px;
+            left: 25px;
 
             div {
                 a {
