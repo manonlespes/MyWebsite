@@ -6,8 +6,8 @@ if (isset($_GET['section'])) {
             include("controller/myCVController.php");
             break;
 
-        case 'homeSafe':
-            include("controller/homeSafeController.php");
+        case 'projects':
+            include("controller/projectsController.php");
             break;
 
         default:
