@@ -71,3 +71,57 @@ html {
     opacity: 0.3;
 }
 
+section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    height: 80vh;
+    margin-top: 50px;
+   
+    
+    h2{
+        font-family: $MvtBlack;
+        text-align: center;
+        color: $cherry;
+    }
+
+    picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        height: 200px;
+        img{
+            width: 180px;
+        }
+    }
+
+    .row{
+        width: inherit;
+        margin: auto;
+        margin-top: 40px;
+
+        .text{
+            h3{
+                font-family: $MvtIndirect;
+                text-align: center;
+                color: $green;
+                font-size: 1.2rem;
+            }
+
+            p{
+                margin-top: 10px;
+                font-family: $MontMed;
+                font-size: 0.75rem;
+            }
+        }
+
+    }
+
+
+}
