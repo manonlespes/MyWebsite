@@ -77,4 +77,76 @@ html {
   background: #22d3b8;
   opacity: 0.3;
 }
+
+.drawings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+
+.drawings h2 {
+  font-family: "MvtDirect-Black";
+  text-align: center;
+  color: #c62a40;
+  margin-bottom: 40px;
+}
+
+.drawings .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1000px;
+}
+
+.drawings .gallery .border {
+  border: 1px #22d3b8 solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.drawings .gallery .desc {
+  font-family: "MontserratAlternates-Regular";
+  color: #1b2d2a;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.drawings .gallery .desc a {
+  text-decoration: none;
+  color: #c62a40;
+}
+
+.drawings .gallery .desc a:visited {
+  /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
+  color: #0e7a69;
+}
+
+.drawings .gallery img {
+  width: 80vw;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=projects.css.map */

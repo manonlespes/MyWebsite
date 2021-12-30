@@ -859,6 +859,24 @@ footer {
     border: solid 1px transparent;
     border-top-left-radius: 85% 40%;
     border-top-right-radius: 85% 40%;
+    position: relative;
+
+    .up{
+        position: absolute;
+        bottom: 120px;
+
+        .fa-sort-up{
+            font-size: 2.2rem;
+            color: $cherry;
+        }
+
+        div{
+            font-size: 1.2rem;
+            font-family: $MvtBlack;
+            color: $cherry;
+        }
+    }
+    
 
     p {
         color: $white;

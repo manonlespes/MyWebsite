@@ -1,6 +1,14 @@
 <footer>
+
+    <div class="up">
+        <a href="#"><i class="fas fa-sort-up"></i></a>
+        <div>up</div>
+    </div>
+
     <div>
-        <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Made with &hearts; by Manon Lespes</p>
+        <p> Copyright &copy; <script>
+                document.write(new Date().getFullYear())
+            </script> Made with &hearts; by Manon Lespes</p>
     </div>
     <div class="social_icon">
         <a href="https://github.com/manonlespes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>

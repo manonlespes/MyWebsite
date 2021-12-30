@@ -71,3 +71,60 @@ html {
     opacity: 0.3;
 }
 
+.drawings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 10px;
+
+    h2{
+        font-family: $MvtBlack;
+        text-align: center;
+        color: $cherry;
+        margin-bottom: 40px;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        justify-content: space-around;
+        align-items: center;
+        height: 1000px;
+       
+        .border{
+            border: 1px $skyblue solid;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+        
+        
+        .desc{
+            font-family: $MontReg;
+            color: $darkgreen;
+            text-align: center;
+            font-size: 0.75rem;
+
+            a{
+                text-decoration: none;
+                color: $cherry;
+
+                &:visited{ /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
+                    color: $green;
+                }
+            }
+        }
+
+        img{
+            width: 80vw;
+            border-radius: 5px;
+        }
+
+    }
+
+}
