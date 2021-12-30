@@ -202,4 +202,25 @@ html {
     margin-top: 30px;
   }
 }
+
+/*******************Responsive desktop */
+@media only screen and (min-width: 960px) {
+  .page404 {
+    margin-top: 30px;
+  }
+  .row .list li a {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .row .list li a:hover {
+    color: #c62a40;
+  }
+  .row .question span a {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .row .question span a:hover {
+    color: #0e7a69;
+  }
+}
 /*# sourceMappingURL=404.css.map */

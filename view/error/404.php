@@ -18,8 +18,8 @@
                     <li><a href="?section=myCV" target="_blank" rel="noopener noreferrer">Home Page</a></li>
                     <li><a href="?section=myCV#experiences" target="_blank" rel="noopener noreferrer">Experiences</a></li>
                     <li><a href="?section=myCV#backgrounds" target="_blank" rel="noopener noreferrer">Backgrounds</a></li>
-                    <li><a href="?section=myCV#languages" target="_blank" rel="noopener noreferrer">Languages</a></li>
                     <li><a href="?section=myCV#skills" target="_blank" rel="noopener noreferrer">Skills</a></li>
+                    <li><a href="?section=myCV#languages" target="_blank" rel="noopener noreferrer">Languages</a></li>
                     <li><a href="?section=myCV#projects" target="_blank" rel="noopener noreferrer">Projects</a></li>
                 </ul>
             </div>

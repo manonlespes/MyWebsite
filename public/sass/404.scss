@@ -137,19 +137,19 @@ html {
                 line-height: 20px;
             }
 
-            li{
-                a{
+            li {
+                a {
                     text-decoration: none;
                     color: $green;
                 }
             }
         }
 
-        .question{
+        .question {
             margin-top: 15px;
 
-            span{
-                a{
+            span {
+                a {
                     text-decoration: none;
                     color: $cherry;
                 }
@@ -160,38 +160,66 @@ html {
 
 /*******************Responsive Tablet */
 @media #{$tablet} {
-
-    .page404{
+    .page404 {
         width: 70vw;
 
-        h2{
+        h2 {
             font-size: 1.5rem;
         }
 
-        .row{
-            .text{
-                h2{
+        .row {
+            .text {
+                h2 {
                     font-size: 1.5rem;
                 }
-    
-                p{
+
+                p {
                     font-size: 1rem;
                 }
             }
-    
-            .list{
-                ul{
+
+            .list {
+                ul {
                     line-height: 30px;
                     font-size: 1rem;
                 }
             }
-    
-            .question{
+
+            .question {
                 margin-top: 30px;
             }
         }
-
     }
-
 }
 
+/*******************Responsive desktop */
+@media #{$desktop} {
+    .page404 {
+        margin-top: 30px;
+    }
+
+    .row {
+        .list {
+            li {
+                a {
+                    transition: $simpleTransition;
+                    &:hover {
+                        color: $cherry;
+                    }
+                }
+            }
+        }
+
+        .question {
+            span {
+                a {
+                    transition: $simpleTransition;
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}
