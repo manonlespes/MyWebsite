@@ -78,7 +78,7 @@ html {
   opacity: 0.3;
 }
 
-section {
+.page404 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,13 +98,13 @@ section {
   margin-top: 50px;
 }
 
-section h2 {
+.page404 h2 {
   font-family: "MvtDirect-Black";
   text-align: center;
   color: #c62a40;
 }
 
-section picture {
+.page404 picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,26 +118,88 @@ section picture {
   height: 200px;
 }
 
-section picture img {
+.page404 picture img {
   width: 180px;
 }
 
-section .row {
+.page404 .row {
   width: inherit;
   margin: auto;
   margin-top: 40px;
 }
 
-section .row .text h3 {
+.page404 .row .text h3 {
   font-family: "MvtIndirect-Black";
   text-align: center;
   color: #0e7a69;
   font-size: 1.2rem;
 }
 
-section .row .text p {
+.page404 .row .text p {
   margin-top: 10px;
   font-family: "MontserratAlternates-Medium";
   font-size: 0.75rem;
+}
+
+.page404 .row .text p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.page404 .row .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.page404 .row .list ul {
+  list-style: none;
+  font-family: "MontserratAlternates-Medium";
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+
+.page404 .row .list li a {
+  text-decoration: none;
+  color: #0e7a69;
+}
+
+.page404 .row .question {
+  margin-top: 15px;
+}
+
+.page404 .row .question span a {
+  text-decoration: none;
+  color: #c62a40;
+}
+
+/*******************Responsive Tablet */
+@media only screen and (min-width: 700px) {
+  .page404 {
+    width: 70vw;
+  }
+  .page404 h2 {
+    font-size: 1.5rem;
+  }
+  .page404 .row .text h2 {
+    font-size: 1.5rem;
+  }
+  .page404 .row .text p {
+    font-size: 1rem;
+  }
+  .page404 .row .list ul {
+    line-height: 30px;
+    font-size: 1rem;
+  }
+  .page404 .row .question {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=404.css.map */

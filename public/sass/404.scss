@@ -71,8 +71,7 @@ html {
     opacity: 0.3;
 }
 
-section{
-
+.page404 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,47 +80,118 @@ section{
     margin: auto;
     height: 80vh;
     margin-top: 50px;
-   
-    
-    h2{
+
+    h2 {
         font-family: $MvtBlack;
         text-align: center;
         color: $cherry;
     }
 
-    picture{
+    picture {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
 
         height: 200px;
-        img{
+        img {
             width: 180px;
         }
     }
 
-    .row{
+    .row {
         width: inherit;
         margin: auto;
         margin-top: 40px;
 
-        .text{
-            h3{
+        .text {
+            h3 {
                 font-family: $MvtIndirect;
                 text-align: center;
                 color: $green;
                 font-size: 1.2rem;
             }
 
-            p{
+            p {
                 margin-top: 10px;
                 font-family: $MontMed;
                 font-size: 0.75rem;
+
+                &:last-of-type {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+
+            ul {
+                list-style: none;
+                font-family: $MontMed;
+                font-size: 0.75rem;
+                line-height: 20px;
+            }
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: $green;
+                }
+            }
+        }
+
+        .question{
+            margin-top: 15px;
+
+            span{
+                a{
+                    text-decoration: none;
+                    color: $cherry;
+                }
+            }
+        }
+    }
+}
+
+/*******************Responsive Tablet */
+@media #{$tablet} {
+
+    .page404{
+        width: 70vw;
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        .row{
+            .text{
+                h2{
+                    font-size: 1.5rem;
+                }
+    
+                p{
+                    font-size: 1rem;
+                }
+            }
+    
+            .list{
+                ul{
+                    line-height: 30px;
+                    font-size: 1rem;
+                }
+            }
+    
+            .question{
+                margin-top: 30px;
             }
         }
 
     }
 
-
 }
+

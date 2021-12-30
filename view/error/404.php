@@ -1,4 +1,4 @@
-<section>
+<section class="page404">
     <h2>We looked everywhere for this page</h2>
 
     <picture>
@@ -11,15 +11,24 @@
         <div class="text">
             <h3>Error 404</h3>
             <p>Sorry, Chatshimi (#alwaysBlameMyCat) may have walked on my computer... </p>
-            <p>But maybe, we can still help you to find what you are looking for: </p>
+            <p>But maybe, we can still help you to find what you are looking for:</p>
             
-            <ul>
-                <li>Home Page</li>
-                <li>Experiences</li>
-                <li>Backgrounds</li>
-                <li></li>
-            </ul>
-        
+            <div class="list">
+                <ul>
+                    <li><a href="?section=myCV" target="_blank" rel="noopener noreferrer">Home Page</a></li>
+                    <li><a href="?section=myCV#experiences" target="_blank" rel="noopener noreferrer">Experiences</a></li>
+                    <li><a href="?section=myCV#backgrounds" target="_blank" rel="noopener noreferrer">Backgrounds</a></li>
+                    <li><a href="?section=myCV#languages" target="_blank" rel="noopener noreferrer">Languages</a></li>
+                    <li><a href="?section=myCV#skills" target="_blank" rel="noopener noreferrer">Skills</a></li>
+                    <li><a href="?section=myCV#projects" target="_blank" rel="noopener noreferrer">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="question">
+            <h3>Any other questions?</h3>
+            <p>Drop me a line <span><a href="mailto:manonlespes@hotmail.fr">here</a></span>. Looking forward to hearing from you! </p>
+           
+            </div>
         </div>
     </div>
 </section>
