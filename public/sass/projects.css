@@ -113,7 +113,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80vw;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -146,7 +146,38 @@ html {
 }
 
 .drawings .gallery img {
-  width: 80vw;
+  width: 100%;
   border-radius: 5px;
 }
+
+/***********************Responsive tablet */
+@media only screen and (min-width: 700px) {
+  .drawings h2 {
+    font-size: 2rem;
+  }
+  .drawings .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    width: 60vw;
+  }
+  .drawings .gallery .desc {
+    font-size: 0.85rem;
+    padding-top: 5px;
+    line-height: 25px;
+  }
+  .drawings .gallery .border {
+    margin: 15px 0px;
+    width: 100%;
+  }
+}
+
+/***********************Responsive desktop */
 /*# sourceMappingURL=projects.css.map */

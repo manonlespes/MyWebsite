@@ -71,7 +71,7 @@ html {
     opacity: 0.3;
 }
 
-.drawings{
+.drawings {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,50 +81,79 @@ html {
     margin-bottom: 100px;
     margin-top: 10px;
 
-    h2{
+    h2 {
         font-family: $MvtBlack;
         text-align: center;
         color: $cherry;
         margin-bottom: 40px;
     }
 
-    .gallery{
+    .gallery {
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
         height: 1000px;
-       
-        .border{
+
+        .border {
             border: 1px $skyblue solid;
             padding: 5px;
             border-radius: 5px;
-
         }
-        
-        
-        .desc{
+
+        .desc {
             font-family: $MontReg;
             color: $darkgreen;
             text-align: center;
             font-size: 0.75rem;
 
-            a{
+            a {
                 text-decoration: none;
                 color: $cherry;
 
-                &:visited{ /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
+                &:visited {
+                    /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
                     color: $green;
                 }
             }
         }
 
-        img{
-            width: 80vw;
+        img {
+            width: 100%;
             border-radius: 5px;
         }
-
     }
+}
 
+/***********************Responsive tablet */
+@media #{$tablet} {
+    .drawings {
+        h2 {
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+            width: 60vw;
+
+            .desc {
+                font-size: 0.85rem;
+                padding-top: 5px;
+                line-height: 25px;
+            }
+            
+            .border {
+                margin: 15px 0px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/***********************Responsive desktop */
+@media #{$desktop} {
 }
