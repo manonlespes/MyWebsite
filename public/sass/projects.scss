@@ -134,7 +134,6 @@ html {
         }
 
         .gallery {
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             height: auto;
@@ -156,4 +155,18 @@ html {
 
 /***********************Responsive desktop */
 @media #{$desktop} {
+
+    .drawings {
+
+        .gallery {
+            display: unset;
+            display: grid;
+            width: 70vw;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            align-items: unset;
+        }
+        
+       
+    }
 }
