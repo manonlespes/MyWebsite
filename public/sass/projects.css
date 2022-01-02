@@ -215,6 +215,8 @@ html {
   }
   .drawings .gallery2 {
     height: auto;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .drawings .desc span {
     font-size: 0.95rem;

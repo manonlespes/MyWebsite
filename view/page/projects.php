@@ -21,13 +21,18 @@
 
     <h3>Personal drawings</h3>
 
-    <!-- <picture>
-                <source media="(min-width:700px)" srcset="public/images/medium_screen_speak.png">
-                <source media="(min-width:960px)" srcset="public/images/large_screen_speak.png">
-                <img src="public/images/small_screen_speak.png" alt="experiences">
-            </picture> -->
-
     <div class="gallery2">
+
+        <div class="border">
+            <a target="_blank" href="leopard_small.jpg">
+                <picture>
+                    <source media= "(min-width:700px) "srcset="public/images/gallery/leopard_medium.jpg">
+                    <source media="(min-width:960px)" srcset="public/images/gallery/leopard_large.jpg">
+                    <img src="public/images/gallery/leopard_small.jpg" title="The gaze of a leopard" alt="gaze-leopard">
+                </picture>
+            </a>
+            <div class="desc"><span>The Gaze Of A Leopard</span><br> Dry pastel - Real size</div>
+        </div>
 
         <div class="border">
             <a target="_blank" href="Eye_cat_small.jpg">
@@ -39,7 +44,7 @@
             </a>
             <div class="desc"><span>Eyes Of A Cat</span>  <br> Dry pastel - Real size</div>
         </div>
-
+        
         <div class="border">
             <a target="_blank" href="fruit_small.jpg">
                 <picture>
@@ -62,16 +67,6 @@
             <div class="desc"><span>Little Girl</span><br> Dry pastel - Real size</div>
         </div>
 
-        <div class="border">
-            <a target="_blank" href="leopard_small.jpg">
-                <picture>
-                    <source media= "(min-width:700px) "srcset="public/images/gallery/leopard_medium.jpg">
-                    <source media="(min-width:960px)" srcset="public/images/gallery/leopard_large.jpg">
-                    <img src="public/images/gallery/leopard_small.jpg" title="The gaze of a leopard" alt="gaze-leopard">
-                </picture>
-            </a>
-            <div class="desc"><span>The Gaze Of A Leopard</span><br> Dry pastel - Real size</div>
-        </div>
     </div>
 
 </section>
