@@ -3176,6 +3176,23 @@ footer {
   border: solid 1px transparent;
   border-top-left-radius: 85% 40%;
   border-top-right-radius: 85% 40%;
+  position: relative;
+}
+
+footer .up {
+  position: absolute;
+  bottom: 120px;
+}
+
+footer .up .fa-sort-up {
+  font-size: 2.2rem;
+  color: #c62a40;
+}
+
+footer .up div {
+  font-size: 1.2rem;
+  font-family: "MvtDirect-Black";
+  color: #c62a40;
 }
 
 footer p {

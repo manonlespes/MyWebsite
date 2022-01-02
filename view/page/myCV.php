@@ -564,7 +564,7 @@
                 </picture>
             </div>
         </div>
-        <a class="card project3" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="card project3" href="?section=projects" target="_blank" rel="noopener noreferrer">
             <div class="figures">
                 <picture class="figure2">
                     <source media="(min-width:700px)" srcset="public/images/figures/three_medium.png">

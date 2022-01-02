@@ -171,6 +171,10 @@ html {
   color: #0e7a69;
 }
 
+.page404 .row .list li a:active, .page404 .row .list li a:focus {
+  color: #c62a40;
+}
+
 .page404 .row .question {
   margin-top: 15px;
 }

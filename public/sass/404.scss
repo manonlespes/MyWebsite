@@ -141,6 +141,11 @@ html {
                 a {
                     text-decoration: none;
                     color: $green;
+
+                    &:active, 
+                    &:focus{
+                        color: $cherry;
+                    }
                 }
             }
         }
@@ -152,6 +157,8 @@ html {
                 a {
                     text-decoration: none;
                     color: $cherry;
+
+
                 }
             }
         }
