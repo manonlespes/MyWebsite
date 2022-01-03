@@ -221,5 +221,15 @@ html {
   .drawings .desc span {
     font-size: 0.95rem;
   }
+  .drawings .border a img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  .drawings .border a img:hover {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: all 0.3s ease-in-out;
+            transform: all 0.3s ease-in-out;
+  }
 }
 /*# sourceMappingURL=projects.css.map */

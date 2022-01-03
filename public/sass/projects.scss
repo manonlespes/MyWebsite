@@ -200,6 +200,7 @@ html {
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
         }
+
         .gallery2{
             height: auto;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -208,6 +209,18 @@ html {
         .desc{
             span{
                 font-size: 0.95rem;
+            }
+        }
+
+        .border {
+            a{
+                img{
+                    filter: grayscale(100%);
+                    &:hover{
+                        filter: none;
+                        transform: $simpleTransition;
+                    }
+                }
             }
         }
         
