@@ -94,8 +94,9 @@ html {
           align-items: center;
   width: 80vw;
   margin: auto;
-  height: 80vh;
+  height: auto;
   margin-top: 50px;
+  margin-bottom: 55px;
 }
 
 .page404 h2 {
@@ -188,6 +189,7 @@ html {
 @media only screen and (min-width: 700px) {
   .page404 {
     width: 70vw;
+    height: 100vw;
   }
   .page404 h2 {
     font-size: 1.5rem;
@@ -211,6 +213,8 @@ html {
 @media only screen and (min-width: 960px) {
   .page404 {
     margin-top: 30px;
+    height: 100vh;
+    margin-bottom: 50px;
   }
   .row .list li a {
     -webkit-transition: all 0.3s ease-in-out;
