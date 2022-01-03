@@ -140,6 +140,14 @@ html {
         @extend .gallery;
         height: 1350px;
     }
+
+    .animate{
+        @extend .gallery;
+
+        div#dom_overlay_container{
+            visibility: hidden;
+        }
+    }
 }
 
 /***********************Responsive tablet */

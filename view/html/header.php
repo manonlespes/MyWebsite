@@ -11,15 +11,16 @@
     <script src="https://kit.fontawesome.com/0e9c9dec41.js" crossorigin="anonymous"></script>
     <title>Manon's Website</title>
 
-<!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="public/js/experiences.js?1638432465536"></script>
+<!-- write your code here -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="public/js/snowman.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("A17A8BB07932C34480945311B549D68C");
+	var comp=AdobeAn.getComposition("32AF3D71713FD5499CBBF6173C6105E3");
 	var lib=comp.getLibrary();
 	handleComplete({},comp);
 }
@@ -27,8 +28,9 @@ function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.experiencesmedium();
-	stage = new lib.Stage(canvas);	
+	exportRoot = new lib.bonhommedeneige();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
@@ -36,14 +38,14 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
-</script> -->
-<!-- write your code here -->
+</script>
+
 </head>
-<body>
+<body onload="init();">
 
 
     

@@ -110,7 +110,7 @@ html {
   margin-bottom: 0px;
 }
 
-.drawings .gallery, .drawings .gallery2 {
+.drawings .gallery, .drawings .gallery2, .drawings .animate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,40 +127,44 @@ html {
   height: 520px;
 }
 
-.drawings .gallery .border, .drawings .gallery2 .border {
+.drawings .gallery .border, .drawings .gallery2 .border, .drawings .animate .border {
   border: 1px #22d3b8 solid;
   padding: 5px;
   border-radius: 5px;
 }
 
-.drawings .gallery .desc, .drawings .gallery2 .desc {
+.drawings .gallery .desc, .drawings .gallery2 .desc, .drawings .animate .desc {
   font-family: "MontserratAlternates-Regular";
   color: #1b2d2a;
   text-align: center;
   font-size: 0.75rem;
 }
 
-.drawings .gallery .desc span, .drawings .gallery2 .desc span {
+.drawings .gallery .desc span, .drawings .gallery2 .desc span, .drawings .animate .desc span {
   font-style: italic;
 }
 
-.drawings .gallery .desc a, .drawings .gallery2 .desc a {
+.drawings .gallery .desc a, .drawings .gallery2 .desc a, .drawings .animate .desc a {
   text-decoration: none;
   color: #c62a40;
 }
 
-.drawings .gallery .desc a:visited, .drawings .gallery2 .desc a:visited {
+.drawings .gallery .desc a:visited, .drawings .gallery2 .desc a:visited, .drawings .animate .desc a:visited {
   /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
   color: #0e7a69;
 }
 
-.drawings .gallery img, .drawings .gallery2 img {
+.drawings .gallery img, .drawings .gallery2 img, .drawings .animate img {
   width: 100%;
   border-radius: 5px;
 }
 
 .drawings .gallery2 {
   height: 1350px;
+}
+
+.drawings .animate div#dom_overlay_container {
+  visibility: hidden;
 }
 
 /***********************Responsive tablet */
@@ -173,7 +177,7 @@ html {
     margin-bottom: 30px;
     font-size: 1.3rem;
   }
-  .drawings .gallery, .drawings .gallery2 {
+  .drawings .gallery, .drawings .gallery2, .drawings .animate {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -183,12 +187,12 @@ html {
     height: auto;
     width: 60vw;
   }
-  .drawings .gallery .desc, .drawings .gallery2 .desc {
+  .drawings .gallery .desc, .drawings .gallery2 .desc, .drawings .animate .desc {
     font-size: 0.85rem;
     padding-top: 5px;
     line-height: 25px;
   }
-  .drawings .gallery .border, .drawings .gallery2 .border {
+  .drawings .gallery .border, .drawings .gallery2 .border, .drawings .animate .border {
     margin: 15px 0px;
     width: 100%;
   }
@@ -204,7 +208,7 @@ html {
     margin-bottom: 40px;
     font-size: 1.5rem;
   }
-  .drawings .gallery, .drawings .gallery2 {
+  .drawings .gallery, .drawings .gallery2, .drawings .animate {
     display: unset;
     display: -ms-grid;
     display: grid;

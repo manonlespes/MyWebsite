@@ -26,7 +26,7 @@
         <div class="border">
             <a target="_blank" href="leopard_small.jpg">
                 <picture>
-                    <source media= "(min-width:700px) "srcset="public/images/gallery/leopard_medium.jpg">
+                    <source media="(min-width:700px) " srcset="public/images/gallery/leopard_medium.jpg">
                     <source media="(min-width:960px)" srcset="public/images/gallery/leopard_large.jpg">
                     <img src="public/images/gallery/leopard_small.jpg" title="The gaze of a leopard" alt="gaze-leopard">
                 </picture>
@@ -37,18 +37,18 @@
         <div class="border">
             <a target="_blank" href="Eye_cat_small.jpg">
                 <picture>
-                    <source media= "(min-width:700px) "srcset="public/images/gallery/Eye_cat_medium.jpg">
+                    <source media="(min-width:700px) " srcset="public/images/gallery/Eye_cat_medium.jpg">
                     <source media="(min-width:960px)" srcset="public/images/gallery/Eye_cat_large.jpg">
                     <img src="public/images/gallery/Eye_cat_small.jpg" title="Eyes of Cat" alt="Eyes-of-cat">
                 </picture>
             </a>
-            <div class="desc"><span>Eyes Of A Cat</span>  <br> Dry pastel - Real size</div>
+            <div class="desc"><span>Eyes Of A Cat</span> <br> Dry pastel - Real size</div>
         </div>
-        
+
         <div class="border">
             <a target="_blank" href="fruit_small.jpg">
                 <picture>
-                    <source media= "(min-width:700px) "srcset="public/images/gallery/fruit_medium.jpg">
+                    <source media="(min-width:700px) " srcset="public/images/gallery/fruit_medium.jpg">
                     <source media="(min-width:960px)" srcset="public/images/gallery/fruit_large.jpg">
                     <img src="public/images/gallery/fruit_small.jpg" title="Red fruits" alt="fruits">
                 </picture>
@@ -59,7 +59,7 @@
         <div class="border">
             <a target="_blank" href="girl_small.jpg">
                 <picture>
-                    <source media= "(min-width:700px) "srcset="public/images/gallery/girl_medium.jpg">
+                    <source media="(min-width:700px) " srcset="public/images/gallery/girl_medium.jpg">
                     <source media="(min-width:960px)" srcset="public/images/gallery/girl_large.jpg">
                     <img src="public/images/gallery/girl_small.jpg" title="Little girl" alt="litte-girl">
                 </picture>
@@ -69,4 +69,12 @@
 
     </div>
 
+    <h3>Projects done with Adobe Animate</h3>
+
+    <div id="animation_container" class="animate">
+        <canvas id="canvas"></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+    </div>
+   
 </section>
