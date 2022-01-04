@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 const project1 = document.getElementById("project1");
 const project2 = document.getElementById("project2");
 
@@ -103,3 +101,24 @@ function close() {
 buttons.forEach(button => button.addEventListener('click', open));
 overlay.addEventListener('click', close);
  */
+
+
+//creation of a match function
+function mediaQueryLarge(x){
+  if (x.matches){
+    document.body.style.backgroundColor="yellow";
+  }
+  else{
+    document.body.style.backgroundColor="#F2F5F8";
+  }
+}
+
+//creation of my mediaQUery list
+const min960 = window.matchMedia("(max-width: 700px)")
+
+//call of the function to be run 
+mediaQueryLarge(min960);
+
+//Add the match function as a listener for state changes:
+min960.addListener(mediaQueryLarge);
+
