@@ -106,7 +106,14 @@ overlay.addEventListener('click', close);
 //creation of a match function
 function mediaQueryLarge(x){
   if (x.matches){
-    document.body.style.backgroundColor="yellow";
+    //document.body.style.backgroundColor="yellow";
+
+   project1.addEventListener("mouseover", function () {
+     const card = document.querySelectorAll(".card");
+
+    card.classList.toggle("below")
+    })
+
   }
   else{
     document.body.style.backgroundColor="#F2F5F8";
@@ -114,7 +121,7 @@ function mediaQueryLarge(x){
 }
 
 //creation of my mediaQUery list
-const min960 = window.matchMedia("(max-width: 700px)")
+const min960 = window.matchMedia("(min-width: 960px)")
 
 //call of the function to be run 
 mediaQueryLarge(min960);

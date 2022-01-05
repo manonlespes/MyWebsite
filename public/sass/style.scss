@@ -843,6 +843,7 @@ html {
             position: absolute;
             bottom: 0;
             left: -23px;
+            z-index : 99;
         }
     }
 }
@@ -1621,6 +1622,13 @@ footer {
                 width: 261px;
                 height: 261px;
                 cursor: pointer;
+            }
+
+            .below {
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.8s;
+                background-color: black;
             }
 
             .figures {

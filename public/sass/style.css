@@ -3154,6 +3154,7 @@ html {
   position: absolute;
   bottom: 0;
   left: -23px;
+  z-index: 99;
 }
 
 /* design footer */
@@ -5550,6 +5551,13 @@ footer .contactMe {
     width: 261px;
     height: 261px;
     cursor: pointer;
+  }
+  .projects .container_pseudo_slider .below {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    background-color: black;
   }
   .projects .container_pseudo_slider .figures picture img {
     width: 97px;
