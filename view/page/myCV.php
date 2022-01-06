@@ -57,7 +57,7 @@
 
                 <div class="subtext">
                     <p><a href="https://wecglobal.org/" target="_blank" rel="noopener noreferrer">World Employment Confederation</a></p>
-                    <p>Brussels, Belgium <span class="more" id="moreExp1">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreExp-1">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div id="detailsExp1" class="hide">
+        <div id="detailsExp-1" class="hide">
             <p>&lowast; Organisation of all internal & institutional events (General Assemblies, Committees meetings, ILO/WEC meetings, UNI-Europa and WEC-Europe conferences, etc.) and in charge of the memberships (membership development, responses to various requests, daily administrative tasks, etc.). </p>
             <p>&lowast; Project Coordinator on the <a href="https://wecglobal.org/private-employment-industry/safely-back-to-work-in-the-new-normal-alliance/" target="_blank" rel="noopener noreferrer" class="project">Safely Back to Work- Alliance project</a>: help in collecting data, organisation of interviews with Members, draft of concept notes for different projects, set the agenda for the meetings with the Taskforce Members, creation and filling a dashboard to monitor impact of the crisis on the industry, support in creation of podcasts (<a href="https://www.buzzsprout.com/1417132" target="_blank" rel="noopener noreferrer" class="project">World Views on the World of Work</a>), ensure compliance with project plans, budgets and expenditures.</p>
         </div>
@@ -83,7 +83,7 @@
 
                 <div class="subtext">
                     <p><a href="http://www.downtowneurope.be/" target="_blank" rel="noopener noreferrer">Downtown Europe</a></p>
-                    <p>Brussels, Belgium <span class="more" id="moreExp2">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreExp-2">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
             </div>
         </div>
 
-        <div id="detailsExp2" class="hide">
+        <div id="detailsExp-2" class="hide">
             <p>&lowast; Organisation of events (logistics and communication with the suppliers), administrative support, communication with participants, website developments with Aventri software, travel arrangements & assistance with visas, preparation of documents for participants, drafting of final reports, daily administrative tasks & answering call of tenders.</p>
             <p>&lowast; Development of the digital communication (Facebook, LinkedIn, YouTube, update on the website of the company), etc.</p>
             <p>&lowast; Management and submission of the Label Entreprise Eco-dynamique.</p>
@@ -115,7 +115,7 @@
 
                 <div class="subtext">
                     <p><a href="http://www.downtowneurope.be/" target="_blank" rel="noopener noreferrer">Downtown Europe</a></p>
-                    <p>Brussels, Belgium <span class="more" id="moreExp3">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreExp-3">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <div id="detailsExp3" class="hide">
+        <div id="detailsExp-3" class="hide">
             <p>&lowast; Welcoming participants, giving microphones during the meetings, assisting participants, VIPs & speakers, etc.</p>
         </div>
 
@@ -139,7 +139,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.ciudadalegria.org.mx/" target="_blank" rel="noopener noreferrer">Fundación Ciudad de la Alégrià</a></p>
-                    <p>Cancùn, Mexico <span class="more" id="moreExp4">SEE MORE +</span></p>
+                    <p>Cancùn, Mexico <span class="more" id="moreExp-4">SEE MORE +</span></p>
                 </div>
             </div>
 
@@ -149,7 +149,7 @@
             </div>
         </div>
 
-        <div id="detailsExp4" class="hide">
+        <div id="detailsExp-4" class="hide">
             <p>&lowast; Development of a project in order to attract international interns, volunteer in the different sections. Simultaneously, I was conducting research on female sex tourism in Cancún for my master’s thesis.</p>
         </div>
 
@@ -498,7 +498,7 @@
         <img src="public/images/title_languages.png" alt="languages">
     </div>
 
-    <div class="container-languages">
+    <div class="container-languages ">
         <div class="imageSpeaking" id="manonSpeaking">
             <picture>
                 <source media="(min-width:700px)" srcset="public/images/medium_screen_speak.png">
@@ -507,7 +507,7 @@
             </picture>
         </div>
 
-        <div class="spoken-languages">
+        <div class="spoken-languages ">
             <p id="english">English</p>
             <p id="french">French</p>
             <p id="german">German</p>

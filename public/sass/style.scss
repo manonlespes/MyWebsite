@@ -671,6 +671,17 @@ html {
         }
     }
 
+    .fade-side {
+        opacity: 0;
+        transform: translateX(-40%);
+        transition: opacity 250ms ease, transform 250ms ease;
+    }
+    
+    .fade-side.appearSide {
+        opacity: 1;
+        transform: translateX(0);
+    }    
+
     .container-languages {
         display: flex;
         flex-direction: row;
