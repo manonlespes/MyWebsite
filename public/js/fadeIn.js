@@ -7,7 +7,7 @@ const faders = document.querySelectorAll(".fade-in");
 /* creation of an observer */
 const appearOptions = {
     threshold: 1,
-    rootMargin: "0px 0px -150px 0px" /* when the scroll down reaches -150px */
+    rootMargin: "0px 0px -120px 0px" /* when the scroll down reaches -150px */
 };
 
 //creation of the callback function
@@ -33,12 +33,12 @@ faders.forEach(fader => {
 
 /***************** Fade-in from right/left to center */
 
-const faders2 = document.querySelectorAll(".fade-side");
+const fadersLeft = document.querySelectorAll(".fade-sideLeft");
 
 /* creation of an observer */
-const appearOptions2 = {
+const appearOptionsLeft = {
     threshold: 1,
-    rootMargin: "0px 0px -100px 0px" /* when the scroll down reaches -150px */
+    rootMargin: "15px 10px -120px 1px" /* when the scroll down reaches -150px */
 };
 
 //creation of the callback function
@@ -49,17 +49,17 @@ const appearOnScroll2 = new IntersectionObserver(function (entries, appearOnScro
         if (!entry.isIntersecting) {
             return;
         } else {
-            entry.target.classList.add('appearSide');
+            entry.target.classList.add('appearSideLeft');
             appearOnScroll2.unobserve(entry.target);
         }
     })
 },
 
-    appearOptions2);
+    appearOptionsLeft);
 
 //
-faders2.forEach(fader2 => {
-    appearOnScroll2.observe(fader2);
+fadersLeft.forEach(faderLeft => {
+    appearOnScroll2.observe(faderLeft);
 });
 
 

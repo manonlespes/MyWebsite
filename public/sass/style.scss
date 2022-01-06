@@ -187,8 +187,33 @@ html {
 }
 
 .hide_menu {
+   
+    @include keyframes(bounceBack) {
+        0% {
+            transform: translateY(0px);
+        }
+        20% {
+            transform: translateY(-50px);
+        }
+        40% {
+            transform: translateY(-5px);
+        }
+        60% {
+            transform: translateY(-50px);
+        }
+        80% {
+            transform: translateY(-2px);
+        }
+        100% {
+            transform: translateY(-1px);
+        }
+    }
+    
+    @include animation(bounceBack, 0.8s, ease, 1); 
     display: none;
+
 }
+
 
 .bounce {
     @include keyframes(bounce) {
@@ -214,6 +239,9 @@ html {
 
     @include animation(bounce, 0.8s, ease, 1);
 }
+
+    
+
 
 /* design Intro */
 
@@ -314,6 +342,8 @@ html {
     align-items: center;
     width: 100vw;
     margin: auto;
+    z-index: 5;
+    position: relative;
 
     .title1,
     .title2 {
@@ -518,6 +548,7 @@ html {
 }
 
 .backgrounds {
+    z-index: 4;
     margin-top: 70px;
 
     .title2 {
@@ -553,6 +584,7 @@ html {
 
 .skills {
     @extend .backgrounds;
+    z-index: 3;
 
     .title3 {
         @extend .title1;
@@ -671,13 +703,25 @@ html {
         }
     }
 
-    .fade-side {
+    .fade-sideLeft {
         opacity: 0;
         transform: translateX(-40%);
         transition: opacity 250ms ease, transform 250ms ease;
     }
     
-    .fade-side.appearSide {
+    .fade-sideRight {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 250ms ease, transform 250ms ease;
+        overflow-x: hidden;
+    }
+
+    .fade-sideLeft.appearSideLeft {
+        opacity: 1;
+        transform: translateX(0);
+    }    
+
+    .fade-sideRight.appearSideRight {
         opacity: 1;
         transform: translateX(0);
     }    

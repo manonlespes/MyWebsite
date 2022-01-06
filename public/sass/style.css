@@ -171,7 +171,73 @@ html {
 }
 
 .hide_menu {
+  -webkit-animation-name: bounceBack;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-name: bounceBack;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-iteration-count: 1;
+  animation-name: bounceBack;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
   display: none;
+}
+
+@-webkit-keyframes bounceBack {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  80% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+@keyframes bounceBack {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  80% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
 }
 
 .bounce {
@@ -377,6 +443,8 @@ html {
           align-items: center;
   width: 100vw;
   margin: auto;
+  z-index: 5;
+  position: relative;
 }
 
 .experiences .title1, .experiences .skills .title3, .skills .experiences .title3, .experiences .projects .title3, .projects .experiences .title3, .experiences .projects .title5, .projects .experiences .title5,
@@ -2690,6 +2758,7 @@ html {
 .skills,
 .projects,
 .languages {
+  z-index: 4;
   margin-top: 70px;
 }
 
@@ -2793,6 +2862,10 @@ html {
 }
 
 /* design section skills */
+.skills, .projects {
+  z-index: 3;
+}
+
 .skills .title3 img, .projects .title3 img, .projects .title5 img {
   width: 113px;
 }
@@ -2947,7 +3020,7 @@ html {
   width: 200px;
 }
 
-.languages .fade-side {
+.languages .fade-sideLeft {
   opacity: 0;
   -webkit-transform: translateX(-40%);
           transform: translateX(-40%);
@@ -2957,7 +3030,24 @@ html {
   transition: opacity 250ms ease, transform 250ms ease, -webkit-transform 250ms ease;
 }
 
-.languages .fade-side.appearSide {
+.languages .fade-sideRight {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: opacity 250ms ease, transform 250ms ease;
+  transition: opacity 250ms ease, transform 250ms ease, -webkit-transform 250ms ease;
+  overflow-x: hidden;
+}
+
+.languages .fade-sideLeft.appearSideLeft {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.languages .fade-sideRight.appearSideRight {
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);

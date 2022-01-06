@@ -1,19 +1,53 @@
 'use strict';
 
+const moreBackgrounds = document.querySelectorAll(".more");
+// moreBackS : [moreBack-1, moreBack-2, moreBack-3, moreBack-4]
+
+
+moreBackgrounds.forEach(moreBackground=>{
+
+    moreBackground.addEventListener("click", () => {
+
+        //split and take the second element after the - which will be the number (index 1)
+        let elementId = moreBackground.id.split("-")[1];
+
+        let activeElId = `#detailsBack-${elementId}`;
+
+        //dev only the content of to the element selected
+        const selectedEl = document.querySelector(activeElId)
+        selectedEl.classList.toggle("hide")
+        selectedEl.classList.toggle("visibleBack")
+
+
+        //write back see more + 
+        // change the text 
+        if (moreExperience.innerHTML === "SEE LESS -") {
+            moreExperience.innerHTML = "SEE MORE +"
+        }
+        else {
+            moreExperience.innerHTML = "SEE LESS -"}
+
+    });
+
+})
+
+
+
+/* 
 const moreBack1 = document.getElementById("moreBack1");
 const detailsBack1 = document.getElementById("detailsBack1");
 
 moreBack1.addEventListener("click", function (e) {
     e.preventDefault;
     
-    /* remove the hide class */
+    //remove the hide class
     detailsBack1.classList.toggle("hide");
-    /* add the visibleBack class */
+    //add the visibleBack class
     detailsBack1.classList.toggle("visibleBack");
     
-    /*write back see more + */
+    //write back see more +
 
-    /* change the text */
+    //change the text
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
@@ -28,13 +62,13 @@ const detailsBack2 = document.getElementById("detailsBack2");
 moreBack2.addEventListener("click", function (e) {
     e.preventDefault;
    
-    /* remove the hide class */
+    //remove the hide class
     detailsBack2.classList.toggle("hide");
-    /* add the visibleBack class */
+    //add the visibleBack class
     detailsBack2.classList.toggle("visibleBack");
-    /*write back see more + */
+    //write back see more +
 
-    /* change the text */
+    //change the text
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
@@ -48,7 +82,7 @@ const detailsBack3 = document.getElementById("detailsBack3");
 
 moreBack3.addEventListener("click", function (e) {
     e.preventDefault;
-   /* change the text */
+   //change the text
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
@@ -56,12 +90,12 @@ moreBack3.addEventListener("click", function (e) {
         this.innerHTML = "SEE LESS -"
     }
 
-    /* remove the hide class */
+    //remove the hide class
     detailsBack3.classList.toggle("hide");
-    /* add the visibleBack class */
+    //add the visibleBack class
     detailsBack3.classList.toggle("visibleBack");
 
-    /*write back see more + */
+    //write back see more +
 })
 
 const moreBack4 = document.getElementById("moreBack4");
@@ -69,7 +103,7 @@ const detailsBack4 = document.getElementById("detailsBack4");
 
 moreBack4.addEventListener("click", function (e) {
     e.preventDefault;
-   /* change the text */
+   //change the text
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
@@ -77,12 +111,12 @@ moreBack4.addEventListener("click", function (e) {
         this.innerHTML = "SEE LESS -"
     }
 
-    /* remove the hide class */
+    //remove the hide class
     detailsBack4.classList.toggle("hide");
-    /* add the visibleBack class */
+    //add the visibleBack class
     detailsBack4.classList.toggle("visibleBack");
 
-    /*write back see more + */
+    //write back see more +
 })
 
 const moreBack5 = document.getElementById("moreBack5");
@@ -91,7 +125,7 @@ const detailsBack5 = document.getElementById("detailsBack5");
 
 moreBack5.addEventListener("click", function (e) {
     e.preventDefault;
-   /* change the text */
+   //change the text
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
@@ -99,12 +133,12 @@ moreBack5.addEventListener("click", function (e) {
         this.innerHTML = "SEE LESS -"
     }
 
-    /* remove the hide class */
+    //remove the hide class
     detailsBack5.classList.toggle("hide");
-    /* add the visibleBack class */
+    //add the visibleBack class
     detailsBack5.classList.toggle("visibleBack");
 
-    /*write back see more + */
+    //write back see more +
 })
 
 const moreBack6 = document.getElementById("moreBack6");
@@ -113,7 +147,7 @@ const detailsBack6 = document.getElementById("detailsBack6");
 
 moreBack6.addEventListener("click", function (e) {
     e.preventDefault;
-   /* change the text */
+   //change the text
     if (this.innerHTML === "SEE LESS -") {
         this.innerHTML = "SEE MORE +"
     }
@@ -121,14 +155,12 @@ moreBack6.addEventListener("click", function (e) {
         this.innerHTML = "SEE LESS -"
     }
 
-    /* remove the hide class */
+    //remove the hide class
     detailsBack6.classList.toggle("hide");
-    /* add the visibleBack class */
+    //add the visibleBack class
     detailsBack6.classList.toggle("visibleBack");
 
-    /*write back see more + */
-})
+    //write back see more +
+}) */
 
 
-
-/* à faire avec un call back ou alors créer une fonctione particulière */

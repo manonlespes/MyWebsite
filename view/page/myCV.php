@@ -218,11 +218,11 @@
 
                 <div class="subtext">
                     <p><a href="https://www.interface3.be/fr/formation/webmaster" target="_blank" rel="noopener noreferrer">Interface3</a></p>
-                    <p>Brussels, Belgium <span class="more" id="moreBack1">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="more" id="moreBack-1">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
-        <div id="detailsBack1" class="hide">
+        <div id="detailsBack-1" class="hide">
             <p>&lowast; Study of programing languages, frameworks and CMS :</p>
             <ul>
                 <li>Html5, CSS3, SASS according to W3C standards</li>
@@ -265,12 +265,12 @@
 
                 <div class="subtext">
                     <p><a href="https://www.bruxellesformation.brussels/catalogue-bf-entreprises/lassertivite-comme-outil-de-travail/" target="_blank" rel="noopener noreferrer">Bruxelles Formation</a></p>
-                    <p>Brussels, Belgium <span id="moreBack2" class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack-2" class="more">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
 
-        <div id="detailsBack2" class="hide">
+        <div id="detailsBack-2" class="hide">
             <p>&lowast; Promote effective communication within your team</p>
             <p>&lowast; Assert yourself while recognising the other person</p>
             <p>&lowast; To be heard without being aggressive</p>
@@ -295,12 +295,12 @@
                     <p><a href="https://www.ulb.be/en/programme/ma-babl#programme" target="_blank" rel="noopener noreferrer">Minor Multiculturality</a></p>
                     <p>Languages EN, ES, DE, FR</p>
                     <p><a href="https://www.ulb.be/en/programme/ma-babl" target="_blank" rel="noopener noreferrer">ULB</a></p>
-                    <p>Brussels, Belgium <span id="moreBack3" class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack-3" class="more">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
 
-        <div id="detailsBack3" class="hide">
+        <div id="detailsBack-3" class="hide">
             <p>&lowast; Cross-cultural communications, communication, tourism, social studies, anthropology, and languages (English, French, German & Spanish).</p>
             <p>&lowast; Master thesis on women sex tourism in Cancún – analysis through an intersectional feminist approach (Vs male sex tourism) - 3 months spent in Mexico: Une recherche exploratoire sur le tourisme sexuel féminin à Cancún – Quelles méthodologies et quelles approches privilégier ?</p>
         </div>
@@ -323,12 +323,12 @@
                     <p>Erasmus Dublin (2014) at UCD - 3 months</p>
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://ltc.ulb.be/nos-departements-d-enseignement/ecole-de-traduction-et-interpretation-isti-cooremans-1" target="_blank" rel="noopener noreferrer">ISTI</a></p>
-                    <p>Brussels, Belgium <span id="moreBack4" class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack-4" class="more">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
 
-        <div id="detailsBack4" class="hide">
+        <div id="detailsBack-4" class="hide">
             <p>&lowast; Marketing, communication, law, geopolitics, sociology, science, linguistic, study of languages and cultures (English, French & German).</p>
             <p>&lowast; Translation from German to French or English to French mainly.</p>
         </div>
@@ -350,12 +350,12 @@
                 <div class="subtext">
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://www.ict-toulouse.fr/formation/licence-langues-etrangeres-appliquees/" target="_blank" rel="noopener noreferrer">ICT</a> </p>
-                    <p>Toulouse, France <span id="moreBack5" class="more">SEE MORE +</span></p>
+                    <p>Toulouse, France <span id="moreBack-5" class="more">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
 
-        <div id="detailsBack5" class="hide">
+        <div id="detailsBack-5" class="hide">
             <p>&lowast; Marketing, communication, law, geopolitics, sociology, science, linguistic, study of languages and cultures (English, French & German).</p>
         </div>
 
@@ -376,12 +376,12 @@
                 <div class="subtext">
                     <p>Minor German</p>
                     <p> <a href="https://saint-sernin.mon-ent-occitanie.fr/" target="_blank" rel="noopener noreferrer">Lycée Saint-Sernin</a></p>
-                    <p>Toulouse, France <span id="moreBack6" class="more">SEE MORE +</span></p>
+                    <p>Toulouse, France <span id="moreBack-6" class="more">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
 
-        <div id="detailsBack6" class="hide">
+        <div id="detailsBack-6" class="hide">
             <p>&lowast; First semester spent in Linz, Austria (intercultural exchange via AFS France).</p>
         </div>
 </section>
@@ -498,8 +498,8 @@
         <img src="public/images/title_languages.png" alt="languages">
     </div>
 
-    <div class="container-languages ">
-        <div class="imageSpeaking" id="manonSpeaking">
+    <div class="container-languages">
+        <div class="imageSpeaking fade-sideLeft" id="manonSpeaking">
             <picture>
                 <source media="(min-width:700px)" srcset="public/images/medium_screen_speak.png">
                 <source media="(min-width:960px)" srcset="public/images/large_screen_speak.png">

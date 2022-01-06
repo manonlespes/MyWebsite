@@ -221,16 +221,16 @@ html {
         }
 
         .border {
-            a{
+            a{ 
                 img{
                     filter: grayscale(100%);
+                    transition: filter 1s ease-in-out;
+                   
                     &:hover{
                         filter: none;
-                        transform: $simpleTransition;
                     }
                 }
             }
         }
-        
     }
 }

@@ -228,12 +228,14 @@ html {
   .drawings .border a img {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+    transition: -webkit-filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
   }
   .drawings .border a img:hover {
     -webkit-filter: none;
             filter: none;
-    -webkit-transform: all 0.3s ease-in-out;
-            transform: all 0.3s ease-in-out;
   }
 }
 /*# sourceMappingURL=projects.css.map */

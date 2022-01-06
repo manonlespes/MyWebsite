@@ -3,7 +3,7 @@
 
 const moreExperiences = document.querySelectorAll(".more");
 // moreExpS : [moreExp1, moreExp2, moreExp3, moreExp4]
-console.log(moreExperiences)
+//console.log(moreExperiences)
 
 moreExperiences.forEach(moreExperience => {
 
@@ -11,8 +11,8 @@ moreExperiences.forEach(moreExperience => {
         
 
         //split and take the second element after the - which will be the number (index 1)
-        let elementId = moreExperience.id.split('-')[1];
-        console.log(elementId);
+        let elementId = moreExperience.id.split("-")[1];
+        //onsole.log(elementId);
         let activeElId = `#detailsExp-${elementId}`;
         const activeElement = document.querySelector(activeElId)
         // activeElements.forEach(activeElement => {
@@ -35,7 +35,7 @@ moreExperiences.forEach(moreExperience => {
 
 
 
-/******** the code below works but is a liiiiiitle bit too long, I think, so the one above is  */
+/******** the code below works but is a liiiiiitle bit too long, I think ;), so the one above is much better */
 
 
 /* const moreExp1 = document.getElementById("moreExp1");
