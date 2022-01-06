@@ -38,26 +38,24 @@ const fadersLeft = document.querySelectorAll(".fade-sideLeft");
 /* creation of an observer */
 const appearOptionsLeft = {
     threshold: 1,
-    rootMargin: "15px 10px -120px 1px" /* when the scroll down reaches -150px */
+    rootMargin: "0px 0px -120px 0px" /* when the scroll down reaches -150px */
 };
 
 //creation of the callback function
-const appearOnScroll2 = new IntersectionObserver(function (entries, appearOnScroll2) {
+const appearOnScroll2 = new IntersectionObserver(function (entry, appearOnScroll2) {
 
-    //for each entry, you'll do the code below
-    entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
         } else {
             entry.target.classList.add('appearSideLeft');
             appearOnScroll2.unobserve(entry.target);
         }
-    })
+    
 },
 
     appearOptionsLeft);
 
-//
+// application of the function
 fadersLeft.forEach(faderLeft => {
     appearOnScroll2.observe(faderLeft);
 });

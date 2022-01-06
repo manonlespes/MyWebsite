@@ -3038,7 +3038,6 @@ html {
   transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, transform 250ms ease;
   transition: opacity 250ms ease, transform 250ms ease, -webkit-transform 250ms ease;
-  overflow-x: hidden;
 }
 
 .languages .fade-sideLeft.appearSideLeft {

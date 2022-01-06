@@ -713,7 +713,7 @@ html {
         opacity: 0;
         transform: translateX(100%);
         transition: opacity 250ms ease, transform 250ms ease;
-        overflow-x: hidden;
+       // visibility: hidden ;
     }
 
     .fade-sideLeft.appearSideLeft {
