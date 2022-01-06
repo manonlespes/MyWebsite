@@ -3159,7 +3159,7 @@ html {
 
 /* design footer */
 footer {
-  height: 7.5em;
+  height: 10.5em;
   background-color: #0e7a69;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -3182,7 +3182,7 @@ footer {
 
 footer .up {
   position: absolute;
-  bottom: 120px;
+  bottom: 175px;
 }
 
 footer .up .fa-sort-up {
@@ -3194,6 +3194,10 @@ footer .up div {
   font-size: 1.2rem;
   font-family: "MvtDirect-Black";
   color: #c62a40;
+}
+
+footer .copyright {
+  margin-top: 10px;
 }
 
 footer p {
@@ -3229,6 +3233,20 @@ footer .social_icon .red_line {
 footer .contactMe {
   display: none;
   overflow: hidden;
+}
+
+footer .fonts {
+  width: 85%;
+}
+
+footer .fonts p {
+  font-size: 0.55em;
+  font-family: "MontserratAlternates-Light";
+}
+
+footer .fonts a {
+  text-decoration: none;
+  color: #22d3b8;
 }
 
 /*******************Responsive Tablet */
@@ -4585,7 +4603,7 @@ footer .contactMe {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    bottom: 88px;
+    bottom: 125px;
     right: 0;
     height: 440px;
     z-index: 5;
@@ -4629,7 +4647,7 @@ footer .contactMe {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    bottom: 100px;
+    bottom: 145px;
     left: 0;
     height: 390px;
     z-index: 5;
@@ -4652,6 +4670,26 @@ footer .contactMe {
   }
   footer .contactMe .dropLine img {
     width: 100px;
+  }
+  footer .fonts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 25px;
+    width: 80%;
+  }
+  footer .fonts p {
+    font-size: 0.75em;
   }
 }
 
@@ -5576,7 +5614,7 @@ footer .contactMe {
   }
   footer .social_icon {
     width: 235px;
-    bottom: 100px;
+    bottom: 145px;
   }
   footer .social_icon a {
     border-radius: 50%;
@@ -5634,6 +5672,16 @@ footer .contactMe {
   }
   footer .contactMe .dropLine img {
     width: 130px;
+  }
+  footer .fonts p {
+    font-size: 0.9rem;
+  }
+  footer .fonts a {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .fonts a:hover {
+    color: #1b2d2a;
   }
 }
 /*# sourceMappingURL=style.css.map */
