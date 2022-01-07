@@ -674,7 +674,7 @@ html {
                 border: 1px solid $red;
                 border-top-right-radius: 5px 7px;
                 z-index: 1;
-                //transition: $simpleTransition; TODO // check how the height can be smoother
+                //transition: $simpleTransition; TODO // check how the height can't be smoother
             }
 
             .gaugeFill70 {
