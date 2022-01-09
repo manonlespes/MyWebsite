@@ -8,6 +8,9 @@ const illustrator = document.getElementById("illustrator");
 const xd = document.getElementById("xd");
 const vsCode = document.getElementById("vsCode");
 
+const comfortable = document.querySelectorAll(".comfortable");
+/* TODO continue to add the class to all the programmes wanted not finished */
+// use of a forEach
 
 html.addEventListener("click", function (){
 

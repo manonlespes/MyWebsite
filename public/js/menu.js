@@ -31,5 +31,20 @@ close_menu.addEventListener('click', function(){
 })
 
 
+/*----------------------------- SHADOW MENU -----------------------------*/
+
+
+function shadowMenu(){
+    const nav = document.querySelector(".permanent_nav")
+
+    if(!(nav.classList.contains("shadow-menu"))){
+        nav.classList.toggle("shadow-menu")
+    }
+    else{
+        nav.classList.remove("shadow-menu")
+    }
+}
+
+
 
 

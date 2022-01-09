@@ -44,7 +44,7 @@ function handleComplete(evt,comp) {
 </script>
 
 </head>
-<body onload="init();">
+<body onscroll="shadowMenu();" onload="init();">
 
 
     

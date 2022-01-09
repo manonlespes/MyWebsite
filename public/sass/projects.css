@@ -37,7 +37,6 @@
 body {
   font-size: 15px;
   background: #f2f5f8;
-  /* TODO faire le mode dark */
 }
 
 * {
@@ -151,7 +150,6 @@ html {
 }
 
 .drawings .illustrator .desc a:visited, .drawings .pastel .desc a:visited, .drawings .chatshimi .desc a:visited, .drawings .animate .desc a:visited {
-  /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
   color: #0e7a69;
 }
 

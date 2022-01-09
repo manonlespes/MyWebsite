@@ -63,7 +63,7 @@ project2.addEventListener("click", function(){
     divButton.setAttribute("class", "buttonProject");
 
     //addtion od a description text
-    divWord.innerHTML= "first project in group"
+    divWord.innerHTML= "second project in group"
 
 
     //where the two divs should be nested -> inside the div.txtProject1

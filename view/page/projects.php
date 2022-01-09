@@ -50,7 +50,7 @@
                     <img src="public/images/gallery/leopard_small.jpg" title="The gaze of a leopard" alt="gaze-leopard">
                 </picture>
             </a>
-            <div class="desc"><span>The Gaze Of A Leopard</span><br> Dry pastel - Real size</div>
+            <div class="desc"><span>The Gaze Of A Leopard</span><br> Dry pastel - 30cm X 49.5cm </div>
         </div>
 
         <div class="border">
@@ -61,7 +61,7 @@
                     <img src="public/images/gallery/Eye_cat_small.jpg" title="Eyes of Cat" alt="Eyes-of-cat">
                 </picture>
             </a>
-            <div class="desc"><span>Eyes Of A Cat</span> <br> Dry pastel - Real size</div>
+            <div class="desc"><span>Eyes Of A Cat</span> <br> Dry pastel - 23cm x 31cm </div>
         </div>
 
         <div class="border">
@@ -72,7 +72,7 @@
                     <img src="public/images/gallery/fruit_small.jpg" title="Red fruits" alt="fruits">
                 </picture>
             </a>
-            <div class="desc"><span>Red Fruits</span><br> Dry pastel - Real size</div>
+            <div class="desc"><span>Red Fruits</span><br> Dry pastel - 24cm X 24cm</div>
         </div>
 
         <div class="border">
@@ -83,7 +83,7 @@
                     <img src="public/images/gallery/girl_small.jpg" title="Little girl" alt="litte-girl">
                 </picture>
             </a>
-            <div class="desc"><span>Little Girl</span><br> Dry pastel - Real size</div>
+            <div class="desc"><span>Little Girl</span><br> Dry pastel - 31.5cm X 24.5cm</div>
         </div>
 
     </div>
