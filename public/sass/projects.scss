@@ -95,13 +95,14 @@ html {
     }
 
 
-    .gallery {
+    .illustrator {
         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: space-around;
         align-items: center;
-        height: 520px;
+        height: 600px;
+        margin-top: 15px;
 
         .border {
             border: 1px $skyblue solid;
@@ -128,6 +129,12 @@ html {
                     color: $green;
                 }
             }
+
+            .text{
+                text-align: initial;
+                margin-top: 5px;
+                line-height: 15px;
+            }
         }
 
         img {
@@ -136,17 +143,22 @@ html {
         }
     }
 
-    .gallery2{
-        @extend .gallery;
-        height: 1350px;
+    .pastel{
+        @extend .illustrator;
+        height: 1400px;
     }
 
-    .animate{
-        @extend .gallery;
+    .chatshimi{
+        @extend .illustrator;
 
         div#dom_overlay_container{
             visibility: hidden;
         }
+    }
+    
+    .animate{
+       @extend .illustrator;
+       margin-bottom: 20px;
     }
 }
 
@@ -165,7 +177,7 @@ html {
             font-size: 1.3rem;
         }
 
-        .gallery {
+        .illustrator {
             flex-direction: row;
             flex-wrap: wrap;
             height: auto;
@@ -183,7 +195,11 @@ html {
             }
         }
 
-        .gallery2{
+        .animate{
+            margin-bottom: 45px;
+        }
+
+        .pastel{
             height: auto;
         }
     }
@@ -201,7 +217,7 @@ html {
             font-size: 1.5rem;
         }
 
-        .gallery {
+        .illustrator {
             display: unset;
             display: grid;
             width: 70vw;
@@ -209,7 +225,7 @@ html {
             grid-gap: 20px;
         }
 
-        .gallery2{
+        .pastel{
             height: auto;
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
@@ -224,11 +240,27 @@ html {
             a{ 
                 img{
                     filter: grayscale(100%);
-                    transition: filter 1s ease-in-out;
+                    transition: $simpleTransition;
                    
                     &:hover{
                         filter: none;
+                        transform: scale(0.95);
                     }
+                }
+            }
+        }
+
+        .animate{
+            display: flex;
+
+            .desc{
+
+                p{
+                    font-size: 1rem;
+                }
+    
+                .text{
+                    line-height: 27px;
                 }
             }
         }

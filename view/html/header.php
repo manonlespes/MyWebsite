@@ -11,16 +11,15 @@
     <script src="https://kit.fontawesome.com/0e9c9dec41.js" crossorigin="anonymous"></script>
     <title>Manon's Website</title>
 
-<!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="public/js/snowman.js"></script>
+<script src="public/js/coloriage.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("32AF3D71713FD5499CBBF6173C6105E3");
+	var comp=AdobeAn.getComposition("61DEEE75188EA0458B9D82F932470B70");
 	var lib=comp.getLibrary();
 	handleComplete({},comp);
 }
@@ -28,7 +27,7 @@ function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.bonhommedeneige();
+	exportRoot = new lib.coloriage();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.

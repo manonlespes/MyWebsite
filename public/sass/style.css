@@ -37,7 +37,6 @@
 body {
   font-size: 15px;
   background: #f2f5f8;
-  /* TODO faire le mode dark */
 }
 
 * {
@@ -99,6 +98,9 @@ html {
   top: 0;
   z-index: 6;
   background-color: rgba(242, 245, 248, 0.8);
+  border-bottom: 1px solid rgba(99, 99, 99, 0.2);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .permanent_nav .logo {
