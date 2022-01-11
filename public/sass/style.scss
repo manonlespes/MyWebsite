@@ -64,7 +64,8 @@ $simpleTransition: all 0.3s ease-in-out;
 
 body {
     font-size: 15px;
-    background: $white; /* TODO faire le mode dark */
+   background: $white; 
+
 }
 
 * {
@@ -115,6 +116,7 @@ html {
     top: 0;
     z-index: 6;
     background-color: rgba(242, 245, 248, 0.8);
+    
 
     .logo {
         margin-left: 25px;
@@ -135,6 +137,11 @@ html {
             width: 40px;
         }
     }
+}
+
+.shadow-menu{
+    border-bottom: 1px solid rgba(99, 99, 99, 0.2);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .navBar {
@@ -187,8 +194,33 @@ html {
 }
 
 .hide_menu {
+   
+    @include keyframes(bounceBack) {
+        0% {
+            transform: translateY(0px);
+        }
+        20% {
+            transform: translateY(-50px);
+        }
+        40% {
+            transform: translateY(-5px);
+        }
+        60% {
+            transform: translateY(-50px);
+        }
+        80% {
+            transform: translateY(-2px);
+        }
+        100% {
+            transform: translateY(-1px);
+        }
+    }
+    
+    @include animation(bounceBack, 0.8s, ease, 1); 
     display: none;
+
 }
+
 
 .bounce {
     @include keyframes(bounce) {
@@ -214,6 +246,9 @@ html {
 
     @include animation(bounce, 0.8s, ease, 1);
 }
+
+    
+
 
 /* design Intro */
 
@@ -314,6 +349,8 @@ html {
     align-items: center;
     width: 100vw;
     margin: auto;
+    z-index: 5;
+    position: relative;
 
     .title1,
     .title2 {
@@ -518,6 +555,7 @@ html {
 }
 
 .backgrounds {
+    z-index: 4;
     margin-top: 70px;
 
     .title2 {
@@ -553,6 +591,7 @@ html {
 
 .skills {
     @extend .backgrounds;
+    z-index: 3;
 
     .title3 {
         @extend .title1;
@@ -642,7 +681,7 @@ html {
                 border: 1px solid $red;
                 border-top-right-radius: 5px 7px;
                 z-index: 1;
-                //transition: $simpleTransition; TODO // check how the height can be smoother
+                //transition: $simpleTransition; TODO // check how the height can't be smoother
             }
 
             .gaugeFill70 {
@@ -670,6 +709,29 @@ html {
             width: 200px;
         }
     }
+
+    .fade-sideLeft {
+        opacity: 0;
+        transform: translateX(-40%);
+        transition: opacity 250ms ease, transform 250ms ease;
+    }
+    
+    .fade-sideRight {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 250ms ease, transform 250ms ease;
+       // visibility: hidden ;
+    }
+
+    .fade-sideLeft.appearSideLeft {
+        opacity: 1;
+        transform: translateX(0);
+    }    
+
+    .fade-sideRight.appearSideRight {
+        opacity: 1;
+        transform: translateX(0);
+    }    
 
     .container-languages {
         display: flex;
@@ -843,6 +905,7 @@ html {
             position: absolute;
             bottom: 0;
             left: -23px;
+            z-index : 99;
         }
     }
 }
@@ -850,7 +913,7 @@ html {
 /* design footer */
 
 footer {
-    height: 7.5em;
+    height: 10.5em;
     background-color: $green;
     justify-content: space-evenly;
     display: flex;
@@ -863,7 +926,7 @@ footer {
 
     .up{
         position: absolute;
-        bottom: 120px;
+        bottom: 175px;
 
         .fa-sort-up{
             font-size: 2.2rem;
@@ -877,6 +940,9 @@ footer {
         }
     }
     
+    .copyright{
+        margin-top:10px
+    }
 
     p {
         color: $white;
@@ -907,6 +973,21 @@ footer {
     .contactMe {
         display: none;
         overflow: hidden;
+    }
+
+    .fonts{
+        width: 85%;
+
+        p{
+            font-size: 0.55em;
+            font-family: $MontLight;
+        }
+
+        a{
+            text-decoration: none;
+            color: $skyblue;
+        }
+
     }
 }
 
@@ -1240,7 +1321,7 @@ footer {
             display: flex;
             justify-content: space-around;
             flex-flow: column;
-            bottom: 88px;
+            bottom: 125px;
             right: 0;
             height: 440px;
             z-index: 5;
@@ -1279,7 +1360,7 @@ footer {
             display: flex;
             justify-content: space-between;
             flex-flow: column;
-            bottom: 100px;
+            bottom: 145px;
             left: 0;
             height: 390px;
             z-index: 5;
@@ -1301,6 +1382,19 @@ footer {
                 img {
                     width: 100px;
                 }
+            }
+        }
+
+        .fonts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 25px;
+            width: 80%;
+
+            p{
+                font-size: 0.75em;
             }
         }
     }
@@ -1623,6 +1717,13 @@ footer {
                 cursor: pointer;
             }
 
+            .below {
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.8s;
+                background-color: black;
+            }
+
             .figures {
                 picture {
                     img {
@@ -1651,7 +1752,7 @@ footer {
 
         .social_icon {
             width: 235px;
-            bottom: 100px;
+            bottom: 145px;
 
             a {
                 border-radius: 50%;
@@ -1708,6 +1809,20 @@ footer {
             .dropLine {
                 img {
                     width: 130px;
+                }
+            }
+        }
+
+        .fonts{
+            p{
+                font-size: 0.9rem;
+            }
+            
+            a{
+                transition: $simpleTransition;
+
+                &:hover{
+                    color: $darkgreen;
                 }
             }
         }

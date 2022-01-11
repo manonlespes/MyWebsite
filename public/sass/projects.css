@@ -37,7 +37,6 @@
 body {
   font-size: 15px;
   background: #f2f5f8;
-  /* TODO faire le mode dark */
 }
 
 * {
@@ -110,7 +109,7 @@ html {
   margin-bottom: 0px;
 }
 
-.drawings .gallery, .drawings .gallery2 {
+.drawings .illustrator, .drawings .pastel, .drawings .chatshimi, .drawings .animate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,43 +123,57 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 520px;
+  height: 600px;
+  margin-top: 15px;
 }
 
-.drawings .gallery .border, .drawings .gallery2 .border {
+.drawings .illustrator .border, .drawings .pastel .border, .drawings .chatshimi .border, .drawings .animate .border {
   border: 1px #22d3b8 solid;
   padding: 5px;
   border-radius: 5px;
 }
 
-.drawings .gallery .desc, .drawings .gallery2 .desc {
+.drawings .illustrator .desc, .drawings .pastel .desc, .drawings .chatshimi .desc, .drawings .animate .desc {
   font-family: "MontserratAlternates-Regular";
   color: #1b2d2a;
   text-align: center;
   font-size: 0.75rem;
 }
 
-.drawings .gallery .desc span, .drawings .gallery2 .desc span {
+.drawings .illustrator .desc span, .drawings .pastel .desc span, .drawings .chatshimi .desc span, .drawings .animate .desc span {
   font-style: italic;
 }
 
-.drawings .gallery .desc a, .drawings .gallery2 .desc a {
+.drawings .illustrator .desc a, .drawings .pastel .desc a, .drawings .chatshimi .desc a, .drawings .animate .desc a {
   text-decoration: none;
   color: #c62a40;
 }
 
-.drawings .gallery .desc a:visited, .drawings .gallery2 .desc a:visited {
-  /* TODO check my graphic chart for hover/visited/active/focus link -> coherence */
+.drawings .illustrator .desc a:visited, .drawings .pastel .desc a:visited, .drawings .chatshimi .desc a:visited, .drawings .animate .desc a:visited {
   color: #0e7a69;
 }
 
-.drawings .gallery img, .drawings .gallery2 img {
+.drawings .illustrator .desc .text, .drawings .pastel .desc .text, .drawings .chatshimi .desc .text, .drawings .animate .desc .text {
+  text-align: initial;
+  margin-top: 5px;
+  line-height: 15px;
+}
+
+.drawings .illustrator img, .drawings .pastel img, .drawings .chatshimi img, .drawings .animate img {
   width: 100%;
   border-radius: 5px;
 }
 
-.drawings .gallery2 {
-  height: 1350px;
+.drawings .pastel {
+  height: 1400px;
+}
+
+.drawings .chatshimi div#dom_overlay_container {
+  visibility: hidden;
+}
+
+.drawings .animate {
+  margin-bottom: 20px;
 }
 
 /***********************Responsive tablet */
@@ -173,7 +186,7 @@ html {
     margin-bottom: 30px;
     font-size: 1.3rem;
   }
-  .drawings .gallery, .drawings .gallery2 {
+  .drawings .illustrator, .drawings .pastel, .drawings .chatshimi, .drawings .animate {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -183,16 +196,19 @@ html {
     height: auto;
     width: 60vw;
   }
-  .drawings .gallery .desc, .drawings .gallery2 .desc {
+  .drawings .illustrator .desc, .drawings .pastel .desc, .drawings .chatshimi .desc, .drawings .animate .desc {
     font-size: 0.85rem;
     padding-top: 5px;
     line-height: 25px;
   }
-  .drawings .gallery .border, .drawings .gallery2 .border {
+  .drawings .illustrator .border, .drawings .pastel .border, .drawings .chatshimi .border, .drawings .animate .border {
     margin: 15px 0px;
     width: 100%;
   }
-  .drawings .gallery2 {
+  .drawings .animate {
+    margin-bottom: 45px;
+  }
+  .drawings .pastel {
     height: auto;
   }
 }
@@ -204,7 +220,7 @@ html {
     margin-bottom: 40px;
     font-size: 1.5rem;
   }
-  .drawings .gallery, .drawings .gallery2 {
+  .drawings .illustrator, .drawings .pastel, .drawings .chatshimi, .drawings .animate {
     display: unset;
     display: -ms-grid;
     display: grid;
@@ -213,11 +229,36 @@ html {
         grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  .drawings .gallery2 {
+  .drawings .pastel {
     height: auto;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .drawings .desc span {
     font-size: 0.95rem;
+  }
+  .drawings .border a img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .drawings .border a img:hover {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  .drawings .animate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .drawings .animate .desc p {
+    font-size: 1rem;
+  }
+  .drawings .animate .desc .text {
+    line-height: 27px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

@@ -15,9 +15,8 @@
 </nav>
 
 <nav class="permanent_nav">
-
     <div class="logo">
-        <a href="#"><img src="public/images/Logo.png" title="My Logo" alt="Logo"></a>
+        <a href="?section=myCV"><img src="public/images/Logo.png" title="My Logo" alt="Logo"></a>
     </div>
 
     <div id="menu_hamburger">

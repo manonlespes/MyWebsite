@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 const project1 = document.getElementById("project1");
 const project2 = document.getElementById("project2");
 
@@ -65,7 +63,7 @@ project2.addEventListener("click", function(){
     divButton.setAttribute("class", "buttonProject");
 
     //addtion od a description text
-    divWord.innerHTML= "first project in group"
+    divWord.innerHTML= "second project in group"
 
 
     //where the two divs should be nested -> inside the div.txtProject1
@@ -103,3 +101,31 @@ function close() {
 buttons.forEach(button => button.addEventListener('click', open));
 overlay.addEventListener('click', close);
  */
+
+
+//creation of a match function
+function mediaQueryLarge(x){
+  if (x.matches){
+    //document.body.style.backgroundColor="yellow";
+
+   project1.addEventListener("mouseover", function () {
+     const card = document.querySelectorAll(".card");
+
+    card.classList.toggle("below")
+    })
+
+  }
+  else{
+    document.body.style.backgroundColor="#F2F5F8";
+  }
+}
+
+//creation of my mediaQUery list
+const min960 = window.matchMedia("(min-width: 960px)")
+
+//call of the function to be run 
+mediaQueryLarge(min960);
+
+//Add the match function as a listener for state changes:
+min960.addListener(mediaQueryLarge);
+

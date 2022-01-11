@@ -5,15 +5,16 @@
         <div>up</div>
     </div>
 
-    <div>
+    <div class="copyright">
         <p> Copyright &copy; <script>
                 document.write(new Date().getFullYear())
             </script> Made with &hearts; by Manon Lespes</p>
     </div>
+
     <div class="social_icon">
         <a href="https://github.com/manonlespes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/manon-lespes-bb48498b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-        <a href="public/document/Manon_Lespes_CV_EN.pdf" target="_blank" download="ManonLespes_CV"><i class="fas fa-file-pdf"></i></a><!-- TODO change the pdf updated -->
+        <a href="public/document/Manon_Lespes_CV_EN.pdf" target="_blank" download="ManonLespes_CV" onclick="reminder()"><i class="fas fa-file-pdf"></i></a><!-- TODO change the pdf updated -->
         <a href="mailto:manonlespes@hotmail.fr" target="_blank" class="contactMeSmall">
             <img src="public/images/contact_me.png" alt="image_ManonLespes"><!-- default -->
         </a>
@@ -29,9 +30,15 @@
             <img src="public/images/dessin.png" alt="contact_me_drawing">
         </div>
     </div>
+
+    <div class="fonts">
+        <p>Fonts were designed and created by badass womxn.</p>
+        <p>Thanks to Maria Ramos and Noel Pretorius for the fonts <a href="http://www.nmtype.com/" target="_blank" rel="noopener noreferrer">Movement</a>!</p>
+        <p>Thanks to <a href="https://github.com/JulietaUla/Montserrat" target="_blank" rel="noopener noreferrer">Julieta Ulanovsky</a>, Sol Matas, Juan Pablo del Peral, Jacques le Bailly for the font Montserrat Alternates!</p>
+    </div>
 </footer>
 
-<!-- créditer dans le footer les fonts movment et Montesserat Alternates -->
+<!-- Fonts were designed and created by badass womxn. More avaible here : https://www.design-research.be/by-womxn/   -->
 
 <script src="public/js/menu.js"></script>
 <script src="public/js/detailsBack.js"></script>
@@ -40,6 +47,12 @@
 <script src="public/js/languages.js"></script>
 <script src="public/js/gauge.js"></script>
 <script src="public/js/projects.js"></script>
+
+<script>
+    function reminder (){
+        alert("Please, consider the environment should you wish to print it. Thanks a lot ! :)")
+    }
+</script>
 
 
 </body>

@@ -32,7 +32,7 @@ $simpleTransition: all 0.3s ease-in-out;
 
 body {
     font-size: 15px;
-    background: $white; /* TODO faire le mode dark */
+    background: $white; 
 }
 
 * {
@@ -78,8 +78,9 @@ html {
     align-items: center;
     width: 80vw;
     margin: auto;
-    height: 80vh;
+    height: auto;
     margin-top: 50px;
+    margin-bottom: 55px;
 
     h2 {
         font-family: $MvtBlack;
@@ -169,6 +170,7 @@ html {
 @media #{$tablet} {
     .page404 {
         width: 70vw;
+        height: 100vw;
 
         h2 {
             font-size: 1.5rem;
@@ -203,6 +205,9 @@ html {
 @media #{$desktop} {
     .page404 {
         margin-top: 30px;
+        height: 100vh;
+        margin-bottom: 50px;
+
     }
 
     .row {
