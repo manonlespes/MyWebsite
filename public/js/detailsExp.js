@@ -10,16 +10,23 @@ moreExperiences.forEach(moreExperience => {
     moreExperience.addEventListener("click", () => {
         
 
-        //split and take the second element after the - which will be the number (index 1)
+        //split from - and take the second element after the - which will be the number (index 1)
         let elementId = moreExperience.id.split("-")[1];
-        //onsole.log(elementId);
+        console.log(elementId);
         let activeElId = `#detailsExp-${elementId}`;
         const activeElement = document.querySelector(activeElId)
-        // activeElements.forEach(activeElement => {
-            activeElement.classList.toggle("hide")
-            activeElement.classList.toggle("visibleExp")
-        //     console.log(activeElement.classList)
-        // });
+        console.log(activeElement)
+
+        //if(!(activeElement) && (activeElement.classList.has("visibleExp"))){
+            //you can close the element that has been previously open
+                activeElement.classList.toggle("hide")
+                activeElement.classList.remove("visibleExp")
+        /// else{
+            //otherwise, you can remove the hide class and add the visbleExp class
+          //  activeElement.classList.toggle("hide")
+           // activeElement.classList.toggle("visibleExp")
+        //}
+
 
         //write back see more + 
 

@@ -216,7 +216,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.interface3.be/fr/formation/webmaster" target="_blank" rel="noopener noreferrer">Interface3</a></p>
-                    <p>Brussels, Belgium <span class="more" id="moreBack-1">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span class="moreBack" id="moreBack-1">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
@@ -263,7 +263,7 @@
 
                 <div class="subtext">
                     <p><a href="https://www.bruxellesformation.brussels/catalogue-bf-entreprises/lassertivite-comme-outil-de-travail/" target="_blank" rel="noopener noreferrer">Bruxelles Formation</a></p>
-                    <p>Brussels, Belgium <span id="moreBack-2" class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack-2" class="moreBack">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
@@ -293,7 +293,7 @@
                     <p><a href="https://www.ulb.be/en/programme/ma-babl#programme" target="_blank" rel="noopener noreferrer">Minor Multiculturality</a></p>
                     <p>Languages EN, ES, DE, FR</p>
                     <p><a href="https://www.ulb.be/en/programme/ma-babl" target="_blank" rel="noopener noreferrer">ULB</a></p>
-                    <p>Brussels, Belgium <span id="moreBack-3" class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack-3" class="moreBack">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
@@ -321,7 +321,7 @@
                     <p>Erasmus Dublin (2014) at UCD - 3 months</p>
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://ltc.ulb.be/nos-departements-d-enseignement/ecole-de-traduction-et-interpretation-isti-cooremans-1" target="_blank" rel="noopener noreferrer">ISTI</a></p>
-                    <p>Brussels, Belgium <span id="moreBack-4" class="more">SEE MORE +</span></p>
+                    <p>Brussels, Belgium <span id="moreBack-4" class="moreBack">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
@@ -348,7 +348,7 @@
                 <div class="subtext">
                     <p>Languages EN, DE, FR</p>
                     <p><a href="https://www.ict-toulouse.fr/formation/licence-langues-etrangeres-appliquees/" target="_blank" rel="noopener noreferrer">ICT</a> </p>
-                    <p>Toulouse, France <span id="moreBack-5" class="more">SEE MORE +</span></p>
+                    <p>Toulouse, France <span id="moreBack-5" class="moreBack">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
@@ -374,7 +374,7 @@
                 <div class="subtext">
                     <p>Minor German</p>
                     <p> <a href="https://saint-sernin.mon-ent-occitanie.fr/" target="_blank" rel="noopener noreferrer">Lycée Saint-Sernin</a></p>
-                    <p>Toulouse, France <span id="moreBack-6" class="more">SEE MORE +</span></p>
+                    <p>Toulouse, France <span id="moreBack-6" class="moreBack">SEE MORE +</span></p>
                 </div>
             </div>
         </div>
@@ -393,7 +393,7 @@
     <div class="container_skills">
         <div class="container_icons">
             <div class="basics">
-                <div id="html" class="comfortable">
+                <div id="html">
                     <i class="fab fa-html5"></i>
                 </div>
                 <div id="css">
@@ -459,13 +459,13 @@
                     </svg>
                 </div>
 
-                <div id="illustrator" class="comfortable">
+                <div id="illustrator">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="58.5" viewBox="0 0 60 58.5">
                         <path id="Icon_simple-adobeillustrator" data-name="Icon simple-adobeillustrator" d="M0,.45v58.5H60V.45Zm2.5,2.5h55v53.5H2.5ZM20.813,33.575l-1.98,7.495c-.043.208-.125.255-.37.255h-3.67c-.25,0-.287-.083-.25-.37l7.1-24.863a7.712,7.712,0,0,0,.245-2.083c0-.165.083-.25.208-.25h5.24c.165,0,.25.045.29.25l7.963,26.985c.042.208,0,.33-.208.33H31.255c-.208,0-.33-.05-.37-.215l-2.062-7.537H20.8Zm6.97-4.063c-.7-2.765-2.35-8.82-2.97-11.75H24.77c-.535,2.925-1.855,7.875-2.888,11.75Zm11.25-13.895a2.557,2.557,0,1,1,5.115,0,2.4,2.4,0,0,1-2.6,2.557,2.35,2.35,0,0,1-2.525-2.557Zm.28,5.685c0-.2.082-.275.29-.275h3.925c.22,0,.3.083.3.29V41.055c0,.208-.04.29-.288.29H39.665c-.25,0-.333-.125-.333-.325V21.3Z" transform="translate(0 -0.45)" fill="#0e7a69" />
                     </svg>
                 </div>
 
-                <div id="xd" class="comfortable">
+                <div id="xd">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="58.5" viewBox="0 0 60 58.5">
                         <path id="Icon_simple-adobexd" data-name="Icon simple-adobexd" d="M49.375.45H10.625A10.616,10.616,0,0,0,0,11.075v37.25A10.616,10.616,0,0,0,10.625,58.95h38.75A10.616,10.616,0,0,0,60,48.325V11.075A10.616,10.616,0,0,0,49.375.45Zm8.1,46.9a9.057,9.057,0,0,1-9.05,9.1H11.575A9.09,9.09,0,0,1,2.5,47.375V12.025A9.09,9.09,0,0,1,11.575,2.95H48.4a9.075,9.075,0,0,1,9.075,9.075ZM23.725,27.825l7,13.45c.125.2.05.4-.15.4h-4.35a.491.491,0,0,1-.525-.325c-1.6-3.3-3.225-6.6-4.9-10.15h-.05c-1.5,3.35-3.15,6.875-4.75,10.175a.48.48,0,0,1-.45.275H11.425c-.25,0-.275-.2-.15-.35l6.85-13.05L11.5,15.05a.2.2,0,0,1,.15-.35h4.3a.394.394,0,0,1,.45.275c1.575,3.3,3.175,6.7,4.675,10.025h.05c1.45-3.3,3.05-6.725,4.6-10,.125-.2.2-.325.45-.325H30.2c.2,0,.275.15.15.35ZM31.95,31.9c0-5.825,3.875-10.375,10.025-10.375a11.086,11.086,0,0,1,1.3.05V14.95a.251.251,0,0,1,.25-.25h3.95c.2,0,.25.075.25.2V37.85a17.806,17.806,0,0,0,.125,2.45c0,.15-.05.2-.2.275a14.892,14.892,0,0,1-6.4,1.45C35.825,42.05,31.95,38.7,31.95,31.9Zm11.325-6.4a3.781,3.781,0,0,0-1.45-.25c-3.15,0-5.35,2.425-5.35,6.45,0,4.6,2.25,6.45,5.075,6.45a4.716,4.716,0,0,0,1.725-.275V25.5Z" transform="translate(0 -0.45)" fill="#0e7a69" />
                     </svg>
@@ -481,12 +481,6 @@
                 </div> -->
             </div>
         </div>
-
-        <div class="gauge">
-            <div class="gaugeBody"></div>
-            <div id="gaugeFill" class="gaugeFillHidden"></div>
-        </div>
-
     </div>
 
 </section>
