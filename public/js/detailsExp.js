@@ -14,22 +14,20 @@ moreExperiences.forEach(moreExperience => {
         let elementId = moreExperience.id.split("-")[1];
         console.log(elementId);
         let activeElId = `#detailsExp-${elementId}`;
-        const activeElement = document.querySelector(activeElId)
-        console.log(activeElement)
+        const activeElements = document.querySelector(activeElId)
+                
+        activeElements.classList.toggle("hide")
+        activeElements.classList.toggle("visibleExp")
 
-        //if(!(activeElement) && (activeElement.classList.has("visibleExp"))){
-            //you can close the element that has been previously open
-                activeElement.classList.toggle("hide")
+        activeElements.forEach(activeElement => {
+
+            if (activeElement.classList.has("visibleExp")) {
                 activeElement.classList.remove("visibleExp")
-        /// else{
-            //otherwise, you can remove the hide class and add the visbleExp class
-          //  activeElement.classList.toggle("hide")
-           // activeElement.classList.toggle("visibleExp")
-        //}
-
-
-        //write back see more + 
-
+                activeElement.classList.add("hide")
+            }
+        }); 
+        
+        //******write back see more + 
         // change the text 
         if (moreExperience.innerHTML === "SEE LESS -") {
             moreExperience.innerHTML = "SEE MORE +"

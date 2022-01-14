@@ -1471,7 +1471,7 @@ footer {
                     }
                 }
 
-                .more {
+                .more, .moreBack {
                     position: relative;
                     cursor: pointer;
                     transition: $simpleTransition;
@@ -1496,9 +1496,6 @@ footer {
                     &:hover {
                         color: $cherry;
                     }
-                }
-                .moreBack{
-                    @extend .more;
                 }
             }
 

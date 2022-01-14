@@ -9,7 +9,6 @@
             <li><a href="?section=myCV#skills">Skills</a></li>
             <li><a href="?section=myCV#languages">Languages</a></li>
             <li><a href="?section=myCV#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
         </div>
     </ul>
 </nav>
@@ -23,3 +22,4 @@
         <img src="public/images/hamburger.png" title="Love veggie burgers" alt="menu_hamburger"><!-- Do you also love eating vegetarian foods ? Hire me then, we will code and share foods! -->
     </div>
 </nav>
+
