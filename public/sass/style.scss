@@ -201,7 +201,7 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(255, 0, 0, 0.233);
+    background-color: rgba(29, 114, 148, 0.363);
     z-index: 99999900;
 
     &.menu_back_hide {
@@ -349,11 +349,11 @@ html {
     opacity: 0;
     transform: translateY(-40%);
     transition: opacity 250ms ease, transform 250ms ease;
-}
 
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
+    &.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .experiences,
@@ -1605,7 +1605,7 @@ footer {
                 z-index: -2;
                 picture {
                     img {
-                        width: 500px;
+                        width: 638px;
                     }
                 }
             }

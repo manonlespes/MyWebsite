@@ -183,7 +183,7 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(255, 0, 0, 0.233);
+  background-color: rgba(29, 114, 148, 0.363);
   z-index: 99999900;
 }
 
@@ -5643,7 +5643,7 @@ footer .fonts a {
     z-index: -2;
   }
   .languages .container-languages .imageSpeaking picture img {
-    width: 500px;
+    width: 638px;
   }
   .languages .container-languages .spoken-languages {
     width: 60%;

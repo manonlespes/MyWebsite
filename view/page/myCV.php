@@ -500,33 +500,32 @@
         </div>
 
         <div class="spoken-languages ">
-            <div>
-                <p id="english">English</p>
-                <p id="french">French</p>
-                <p id="german">German</p>
-                <p id="spanish">Spanish</p> 
+            <div id="title_languages">
+                <p id="lg-1" class="languages_bubble">English</p>
+                <p id="lg-2" class="languages_bubble">French</p>
+                <p id="lg-3" class="languages_bubble">German</p>
+                <p id="lg-4" class="languages_bubble">Spanish</p> 
             </div>
             <div id="text-language" class="text-language">
-                <div class="english-text hide-text">
-                    <h3>English</h3>
+                <div id="text-1" class= "hide-text">
+                    <h3 class="close_language">English</h3>
                     <p>Hello there! <br> My English is pretty good. According to the Common European Framework of Reference for Languages, my level is C1.</p>
                 </div>
-                <div class="french-text hide-text">
-                    <h3>french</h3>
+                <div id="text-2" class= "hide-text">
+                    <h3 class="close_language">french</h3>
                     <p>Bonjour ! <br> French is my mother tongue. Je peux donc facilement m'adapter à différents environnements linguistiques.</p>
                 </div>
-                <div class="german-text hide-text">
-                    <h3>German</h3>
+                <div id="text-3" class= "hide-text">
+                    <h3 class="close_language">German</h3>
                     <p>Hallo! <br>Deutsch ist meine Lieblingssprache. Ich würde gerne mehr auf Deutsch sprechen, aber in einem beruflichen Kontext hatte ich noch nie die Gelegenheit, es zu verwenden (level B1/B2).</p>
                 </div>
-                <div class="spanish-text hide-text">
-                    <h3>Spanish</h3>
+                <div id="text-4" class="hide-text">
+                    <h3 class="close_language">Spanish</h3>
                     <p>Porque aprendí español en la universidad y en México. Lo entiendo/leo más que lo hablo, pero si es necesario estoy lista a practicar más el idioma (level A2/B1).</p>
                 </div>
             </div>
             <div id="hideshowbubble" class="hide-bubble end-bubble"></div>
         </div>
-
     </div>
 </section>
 
