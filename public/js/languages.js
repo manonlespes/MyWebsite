@@ -7,9 +7,11 @@ const spanish = document.getElementById("spanish");
 const hideBubble = document.getElementById("hideshowbubble");
 const textLanguage = document.getElementById("text-language");
 const meAndChatshimi = document.getElementById("manonSpeaking");
-const spoken = document.getElementById("spoken-languages");
 
 
+
+
+/* 
 english.addEventListener("click", function () {
 
     hideBubble.classList.toggle("hide-bubble");
@@ -165,3 +167,4 @@ spanish.addEventListener("click", function () {
 
 });
 
+ */

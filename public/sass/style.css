@@ -131,7 +131,7 @@ html {
   border-bottom-left-radius: 200px;
   background-color: #0e7a69;
   position: fixed;
-  z-index: 99999999;
+  z-index: 99999901;
   top: 0px;
   right: 0px;
 }
@@ -173,6 +173,22 @@ html {
   color: #f2f5f8;
   text-decoration: none;
   font-family: "MvtDirect-Thin";
+}
+
+.menu_back {
+  min-height: 100vh;
+  height: 100%;
+  min-width: 100vw;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.233);
+  z-index: 99999900;
+}
+
+.menu_back.menu_back_hide {
+  display: none;
 }
 
 .hide_menu {
@@ -3065,6 +3081,11 @@ html {
 }
 
 .languages .container-languages .spoken-languages .hide-bubble {
+  display: none;
+  overflow: hidden;
+}
+
+.languages .container-languages .spoken-languages .hide-text {
   display: none;
   overflow: hidden;
 }
