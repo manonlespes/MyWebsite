@@ -131,7 +131,7 @@ html {
   border-bottom-left-radius: 200px;
   background-color: #0e7a69;
   position: fixed;
-  z-index: 99999999;
+  z-index: 99999901;
   top: 0px;
   right: 0px;
 }
@@ -173,6 +173,22 @@ html {
   color: #f2f5f8;
   text-decoration: none;
   font-family: "MvtDirect-Thin";
+}
+
+.menu_back {
+  min-height: 100vh;
+  height: 100%;
+  min-width: 100vw;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(29, 114, 148, 0.363);
+  z-index: 99999900;
+}
+
+.menu_back.menu_back_hide {
+  display: none;
 }
 
 .hide_menu {
@@ -2905,7 +2921,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 10px;
 }
 
@@ -2946,16 +2962,6 @@ html {
   width: 30px;
 }
 
-.skills .container_skills .basics svg path:active, .projects .container_skills .basics svg path:active,
-.skills .container_skills .backend svg path:active,
-.projects .container_skills .backend svg path:active,
-.skills .container_skills .others svg path:active,
-.projects .container_skills .others svg path:active,
-.skills .container_skills .adobe svg path:active,
-.projects .container_skills .adobe svg path:active {
-  fill: #f98091;
-}
-
 .skills .container_skills .basics i, .projects .container_skills .basics i,
 .skills .container_skills .backend i,
 .projects .container_skills .backend i,
@@ -2965,55 +2971,6 @@ html {
 .projects .container_skills .adobe i {
   font-size: 2em;
   color: #0e7a69;
-}
-
-.skills .container_skills .basics i:active, .projects .container_skills .basics i:active,
-.skills .container_skills .backend i:active,
-.projects .container_skills .backend i:active,
-.skills .container_skills .others i:active,
-.projects .container_skills .others i:active,
-.skills .container_skills .adobe i:active,
-.projects .container_skills .adobe i:active {
-  color: #f98091;
-}
-
-.skills .container_skills .gauge, .projects .container_skills .gauge {
-  position: relative;
-  top: 25%;
-  width: 10%;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 176px;
-}
-
-.skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70, .skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 3px solid #f98091;
-  background-color: transparent;
-  bottom: 0px;
-  border-radius: 20px;
-  z-index: 2;
-}
-
-.skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70 {
-  background-color: #7a0e1d;
-  height: 80%;
-  border: 1px solid #7a0e1d;
-  border-top-right-radius: 5px 7px;
-  z-index: 1;
-}
-
-.skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70 {
-  height: 50%;
-}
-
-.skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
-  display: none;
-  overflow: hidden;
 }
 
 /* design section languages */
@@ -3124,6 +3081,11 @@ html {
 }
 
 .languages .container-languages .spoken-languages .hide-bubble {
+  display: none;
+  overflow: hidden;
+}
+
+.languages .container-languages .spoken-languages .hide-text {
   display: none;
   overflow: hidden;
 }
@@ -4628,14 +4590,6 @@ footer .fonts a {
   .projects .container_skills .container_icons .adobe svg {
     width: 35px;
   }
-  .skills .container_skills .gauge, .projects .container_skills .gauge {
-    height: 240px;
-    top: 25px;
-    width: 8%;
-  }
-  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70, .skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
-    border-radius: 25px;
-  }
   /* design section languages */
   .languages {
     height: 450px;
@@ -5371,22 +5325,37 @@ footer .fonts a {
   .projects .container_skills .subtext > p a:active {
     color: #c62a40;
   }
-  .experiences .container_exp .subtext > p .more,
+  .experiences .container_exp .subtext > p .more, .experiences .container_exp .subtext > p .moreBack,
   .experiences .container_back .subtext > p .more,
   .experiences .skills .container_skills .subtext > p .more,
   .skills .experiences .container_skills .subtext > p .more,
   .experiences .projects .container_skills .subtext > p .more,
   .projects .experiences .container_skills .subtext > p .more,
+  .experiences .container_back .subtext > p .moreBack,
+  .experiences .skills .container_skills .subtext > p .moreBack,
+  .skills .experiences .container_skills .subtext > p .moreBack,
+  .experiences .projects .container_skills .subtext > p .moreBack,
+  .projects .experiences .container_skills .subtext > p .moreBack,
   .backgrounds .container_exp .subtext > p .more,
   .skills .container_exp .subtext > p .more,
   .projects .container_exp .subtext > p .more,
   .languages .container_exp .subtext > p .more,
+  .backgrounds .container_exp .subtext > p .moreBack,
+  .skills .container_exp .subtext > p .moreBack,
+  .projects .container_exp .subtext > p .moreBack,
+  .languages .container_exp .subtext > p .moreBack,
   .backgrounds .container_back .subtext > p .more,
   .skills .container_back .subtext > p .more,
   .projects .container_back .subtext > p .more,
   .languages .container_back .subtext > p .more,
   .skills .container_skills .subtext > p .more,
-  .projects .container_skills .subtext > p .more {
+  .projects .container_skills .subtext > p .more,
+  .backgrounds .container_back .subtext > p .moreBack,
+  .skills .container_back .subtext > p .moreBack,
+  .projects .container_back .subtext > p .moreBack,
+  .languages .container_back .subtext > p .moreBack,
+  .skills .container_skills .subtext > p .moreBack,
+  .projects .container_skills .subtext > p .moreBack {
     position: relative;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
@@ -5395,22 +5364,37 @@ footer .fonts a {
                             background-size: 100% 2px;
                     } */
   }
-  .experiences .container_exp .subtext > p .more::before,
+  .experiences .container_exp .subtext > p .more::before, .experiences .container_exp .subtext > p .moreBack::before,
   .experiences .container_back .subtext > p .more::before,
   .experiences .skills .container_skills .subtext > p .more::before,
   .skills .experiences .container_skills .subtext > p .more::before,
   .experiences .projects .container_skills .subtext > p .more::before,
   .projects .experiences .container_skills .subtext > p .more::before,
+  .experiences .container_back .subtext > p .moreBack::before,
+  .experiences .skills .container_skills .subtext > p .moreBack::before,
+  .skills .experiences .container_skills .subtext > p .moreBack::before,
+  .experiences .projects .container_skills .subtext > p .moreBack::before,
+  .projects .experiences .container_skills .subtext > p .moreBack::before,
   .backgrounds .container_exp .subtext > p .more::before,
   .skills .container_exp .subtext > p .more::before,
   .projects .container_exp .subtext > p .more::before,
   .languages .container_exp .subtext > p .more::before,
+  .backgrounds .container_exp .subtext > p .moreBack::before,
+  .skills .container_exp .subtext > p .moreBack::before,
+  .projects .container_exp .subtext > p .moreBack::before,
+  .languages .container_exp .subtext > p .moreBack::before,
   .backgrounds .container_back .subtext > p .more::before,
   .skills .container_back .subtext > p .more::before,
   .projects .container_back .subtext > p .more::before,
   .languages .container_back .subtext > p .more::before,
   .skills .container_skills .subtext > p .more::before,
-  .projects .container_skills .subtext > p .more::before {
+  .projects .container_skills .subtext > p .more::before,
+  .backgrounds .container_back .subtext > p .moreBack::before,
+  .skills .container_back .subtext > p .moreBack::before,
+  .projects .container_back .subtext > p .moreBack::before,
+  .languages .container_back .subtext > p .moreBack::before,
+  .skills .container_skills .subtext > p .moreBack::before,
+  .projects .container_skills .subtext > p .moreBack::before {
     content: "";
     position: absolute;
     left: 45%;
@@ -5422,22 +5406,37 @@ footer .fonts a {
     background: rgba(14, 122, 105, 0.15);
     z-index: -1;
   }
-  .experiences .container_exp .subtext > p .more:hover,
+  .experiences .container_exp .subtext > p .more:hover, .experiences .container_exp .subtext > p .moreBack:hover,
   .experiences .container_back .subtext > p .more:hover,
   .experiences .skills .container_skills .subtext > p .more:hover,
   .skills .experiences .container_skills .subtext > p .more:hover,
   .experiences .projects .container_skills .subtext > p .more:hover,
   .projects .experiences .container_skills .subtext > p .more:hover,
+  .experiences .container_back .subtext > p .moreBack:hover,
+  .experiences .skills .container_skills .subtext > p .moreBack:hover,
+  .skills .experiences .container_skills .subtext > p .moreBack:hover,
+  .experiences .projects .container_skills .subtext > p .moreBack:hover,
+  .projects .experiences .container_skills .subtext > p .moreBack:hover,
   .backgrounds .container_exp .subtext > p .more:hover,
   .skills .container_exp .subtext > p .more:hover,
   .projects .container_exp .subtext > p .more:hover,
   .languages .container_exp .subtext > p .more:hover,
+  .backgrounds .container_exp .subtext > p .moreBack:hover,
+  .skills .container_exp .subtext > p .moreBack:hover,
+  .projects .container_exp .subtext > p .moreBack:hover,
+  .languages .container_exp .subtext > p .moreBack:hover,
   .backgrounds .container_back .subtext > p .more:hover,
   .skills .container_back .subtext > p .more:hover,
   .projects .container_back .subtext > p .more:hover,
   .languages .container_back .subtext > p .more:hover,
   .skills .container_skills .subtext > p .more:hover,
-  .projects .container_skills .subtext > p .more:hover {
+  .projects .container_skills .subtext > p .more:hover,
+  .backgrounds .container_back .subtext > p .moreBack:hover,
+  .skills .container_back .subtext > p .moreBack:hover,
+  .projects .container_back .subtext > p .moreBack:hover,
+  .languages .container_back .subtext > p .moreBack:hover,
+  .skills .container_skills .subtext > p .moreBack:hover,
+  .projects .container_skills .subtext > p .moreBack:hover {
     color: #c62a40;
   }
   .experiences .container_exp .tag_exp,
@@ -5612,7 +5611,6 @@ footer .fonts a {
   .projects .container_skills .container_icons .others i:hover,
   .skills .container_skills .container_icons .adobe i:hover,
   .projects .container_skills .container_icons .adobe i:hover {
-    color: #f98091;
     scale: 0.9;
   }
   .skills .container_skills .container_icons .basics svg, .projects .container_skills .container_icons .basics svg,
@@ -5633,16 +5631,7 @@ footer .fonts a {
   .projects .container_skills .container_icons .others svg:hover,
   .skills .container_skills .container_icons .adobe svg:hover,
   .projects .container_skills .container_icons .adobe svg:hover {
-    fill: #f98091;
     scale: 0.9;
-  }
-  .skills .container_skills .gauge, .projects .container_skills .gauge {
-    width: 6%;
-    height: 280px;
-    top: 46px;
-  }
-  .skills .container_skills .gauge .gaugeBody, .projects .container_skills .gauge .gaugeBody, .skills .container_skills .gauge .gaugeFill90, .projects .container_skills .gauge .gaugeFill90, .skills .container_skills .gauge .gaugeFill70, .projects .container_skills .gauge .gaugeFill70, .skills .container_skills .gauge .gaugeFillHidden, .projects .container_skills .gauge .gaugeFillHidden {
-    right: 20px;
   }
   /* design section languages */
   .languages {
@@ -5654,7 +5643,7 @@ footer .fonts a {
     z-index: -2;
   }
   .languages .container-languages .imageSpeaking picture img {
-    width: 500px;
+    width: 638px;
   }
   .languages .container-languages .spoken-languages {
     width: 60%;

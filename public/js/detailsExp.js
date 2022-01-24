@@ -10,19 +10,24 @@ moreExperiences.forEach(moreExperience => {
     moreExperience.addEventListener("click", () => {
         
 
-        //split and take the second element after the - which will be the number (index 1)
+        //split from - and take the second element after the - which will be the number (index 1)
         let elementId = moreExperience.id.split("-")[1];
-        //onsole.log(elementId);
+        console.log(elementId);
         let activeElId = `#detailsExp-${elementId}`;
-        const activeElement = document.querySelector(activeElId)
-        // activeElements.forEach(activeElement => {
-            activeElement.classList.toggle("hide")
-            activeElement.classList.toggle("visibleExp")
-        //     console.log(activeElement.classList)
-        // });
+        const activeElements = document.querySelector(activeElId)
+                
+        activeElements.classList.toggle("hide")
+        activeElements.classList.toggle("visibleExp")
 
-        //write back see more + 
+        activeElements.forEach(activeElement => {
 
+            if (activeElement.classList.has("visibleExp")) {
+                activeElement.classList.remove("visibleExp")
+                activeElement.classList.add("hide")
+            }
+        }); 
+        
+        //******write back see more + 
         // change the text 
         if (moreExperience.innerHTML === "SEE LESS -") {
             moreExperience.innerHTML = "SEE MORE +"

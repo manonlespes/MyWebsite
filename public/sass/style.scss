@@ -150,7 +150,7 @@ html {
     border-bottom-left-radius: 200px;
     background-color: $green;
     position: fixed;
-    z-index: 99999999;
+    z-index: 99999901;
     top: 0px;
     right: 0px;
 
@@ -190,6 +190,22 @@ html {
                 font-family: $MvtThin;
             }
         }
+    }
+}
+
+.menu_back {
+    min-height: 100vh;
+    height: 100%;
+    min-width: 100vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(29, 114, 148, 0.363);
+    z-index: 99999900;
+
+    &.menu_back_hide {
+        display: none;
     }
 }
 
@@ -333,11 +349,11 @@ html {
     opacity: 0;
     transform: translateY(-40%);
     transition: opacity 250ms ease, transform 250ms ease;
-}
 
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
+    &.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .experiences,
@@ -616,7 +632,7 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 100%;
             margin: 10px;
         }
 
@@ -633,12 +649,6 @@ html {
             svg {
                 /* TODO check the active/hover on the div when path is too thin! + check cause not working on chrome*/
                 width: 30px;
-
-                path {
-                    &:active {
-                        fill: $pink;
-                    }
-                }
             }
 
             /* i:focus{
@@ -648,51 +658,6 @@ html {
             i {
                 font-size: 2em;
                 color: $green;
-
-                &:active {
-                    color: $pink;
-                }
-            }
-        }
-
-        .gauge {
-            position: relative;
-            top: 25%;
-            width: 10%;
-            bottom: 0;
-            display: flex;
-            height: 176px;
-
-            .gaugeBody {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                border: 3px solid $pink;
-                background-color: transparent;
-                bottom: 0px;
-                border-radius: 20px;
-                z-index: 2;
-            }
-
-            .gaugeFill90 {
-                @extend .gaugeBody;
-                background-color: $red;
-                height: 80%;
-                border: 1px solid $red;
-                border-top-right-radius: 5px 7px;
-                z-index: 1;
-                //transition: $simpleTransition; TODO // check how the height can't be smoother
-            }
-
-            .gaugeFill70 {
-                @extend .gaugeFill90;
-                height: 50%;
-            }
-
-            .gaugeFillHidden {
-                @extend .gaugeBody;
-                display: none;
-                overflow: hidden;
             }
         }
     }
@@ -781,6 +746,11 @@ html {
 
             .hide-bubble {
                 display: none;
+                overflow: hidden;
+            }
+
+            .hide-text {
+                display:none;
                 overflow: hidden;
             }
 
@@ -1208,16 +1178,6 @@ footer {
                     }
                 }
             }
-
-            .gauge {
-                height: 240px;
-                top: 25px;
-                width: 8%;
-
-                .gaugeBody {
-                    border-radius: 25px;
-                }
-            }
         }
     }
 
@@ -1532,7 +1492,7 @@ footer {
                     }
                 }
 
-                .more {
+                .more, .moreBack {
                     position: relative;
                     cursor: pointer;
                     transition: $simpleTransition;
@@ -1617,7 +1577,6 @@ footer {
                         transition: $simpleTransition;
 
                         &:hover {
-                            color: $pink;
                             scale: 0.9;
                         }
                     }
@@ -1626,21 +1585,10 @@ footer {
                         width: 45px;
                         transition: $simpleTransition;
 
-                        &:hover {
-                            fill: $pink;
+                       &:hover { 
                             scale: 0.9;
-                        }
+                        } 
                     }
-                }
-            }
-
-            .gauge {
-                width: 6%;
-                height: 280px;
-                top: 46px;
-
-                .gaugeBody {
-                    right: 20px;
                 }
             }
         }
@@ -1657,7 +1605,7 @@ footer {
                 z-index: -2;
                 picture {
                     img {
-                        width: 500px;
+                        width: 638px;
                     }
                 }
             }
