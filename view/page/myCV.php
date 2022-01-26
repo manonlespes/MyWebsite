@@ -31,9 +31,9 @@
 
     <div class="title1">
         <picture>
-            <source media="(min-width:700px)" srcset="public/images/titles/experiences_medium.gif">
-            <source media="(min-width:960px)" srcset="public/images/titles/experiences_medium.gif">
-            <img src="public/images/titles/experiences.gif" title="My experiences" alt="experiences">
+            <source media="(min-width:700px)" srcset="public/images/titles/experiences_reviewed.gif">
+            <source media="(min-width:960px)" srcset="public/images/titles/experiences_reviewed.gif">
+            <img src="public/images/titles/experiences_reviewed.gif" title="My experiences" alt="experiences">
         </picture>
     </div>
 
@@ -196,7 +196,7 @@
 <section id="backgrounds" class="backgrounds fade-in">
 
     <div class="title2">
-        <img src="public/images/titles/title_background.png" title="My backgrounds" alt="backgrounds">
+        <img src="public/images/titles/backgrounds.gif" title="My backgrounds" alt="backgrounds">
     </div>
 
     <div class="container_back">
@@ -387,7 +387,7 @@
 <section id="skills" class="skills fade-in">
 
     <div class="title3">
-        <img src="public/images/titles/title_skills.png" alt="skills">
+        <img src="public/images/titles/skills.gif" alt="skills">
     </div>
 
     <div class="container_skills">
@@ -487,7 +487,7 @@
 
 <section id="languages" class="languages ">
     <div class="title4">
-        <img src="public/images/titles/title_languages.png" alt="languages">
+        <img src="public/images/titles/languages.gif" alt="languages">
     </div>
 
     <div class="container-languages">
@@ -531,7 +531,7 @@
 
 <section id="projects" class="projects fade-in">
     <div class="title5">
-        <img src="public/images/titles/title_projects.png" title="My projects" alt="projects">
+        <img src="public/images/titles/projects.gif" title="My projects" alt="projects">
     </div>
 
     <div class="container_pseudo_slider">

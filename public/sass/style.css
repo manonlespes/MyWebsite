@@ -2888,7 +2888,7 @@ html {
 }
 
 .skills .title3 img, .projects .title3 img, .projects .title5 img {
-  width: 113px;
+  width: 170px;
 }
 
 .skills .container_skills, .projects .container_skills {
@@ -3112,10 +3112,6 @@ html {
 /* design projects */
 .projects {
   margin-bottom: 100px;
-}
-
-.projects .title5 img {
-  width: 140px;
 }
 
 .projects .container_pseudo_slider {
@@ -3423,7 +3419,7 @@ footer .fonts a {
   .projects .title2 img,
   .languages .title2 img,
   .languages .title4 img {
-    width: 335px;
+    width: 270px;
   }
   .experiences .title1 picture img, .experiences .skills .title3 picture img, .skills .experiences .title3 picture img, .experiences .projects .title3 picture img, .projects .experiences .title3 picture img, .experiences .projects .title5 picture img, .projects .experiences .title5 picture img,
   .backgrounds .title1 picture img,
@@ -3433,7 +3429,7 @@ footer .fonts a {
   .skills .title3 picture img,
   .projects .title3 picture img,
   .projects .title5 picture img {
-    width: 335px;
+    width: 270px;
   }
   .experiences .container_exp,
   .experiences .container_back,
@@ -4562,7 +4558,7 @@ footer .fonts a {
   }
   /* design section skills */
   .skills .title3 img, .projects .title3 img, .projects .title5 img {
-    width: 200px;
+    width: 215px;
   }
   .skills .container_skills, .projects .container_skills {
     margin-top: 0;
@@ -5640,7 +5636,7 @@ footer .fonts a {
   }
   /* design section languages */
   .languages {
-    height: 570px;
+    height: 765px;
     margin-top: 100px;
   }
   .languages .container-languages .imageSpeaking {
