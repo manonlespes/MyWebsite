@@ -492,7 +492,7 @@
 </section>
 
 <section id="languages" class="languages ">
-    <div class="title4">
+    <div class="title4 fade-in">
         <img src="public/images/titles/languages_1loop.gif" alt="languages">
     </div>
 
