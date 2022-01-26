@@ -6,7 +6,7 @@ const faders = document.querySelectorAll(".fade-in");
 
 /* creation of an observer */
 const appearOptions = {
-    threshold: 1,
+    threshold: 0.85,
     rootMargin: "0px 0px -120px 0px" /* when the scroll down reaches -150px */
 };
 
@@ -37,8 +37,8 @@ const fadersLeft = document.querySelectorAll(".fade-sideLeft");
 
 /* creation of an observer */
 const appearOptionsLeft = {
-    threshold: 1,
-    rootMargin: "0px 0px -90px 0px" /* when the scroll down reaches -100px */
+    threshold: 0.5,
+    rootMargin: "0px 0px -100px 0px" /* when the scroll down reaches -100px */
 };
 
 //creation of the callback function
@@ -69,19 +69,19 @@ const fadersRight = document.querySelectorAll(".fade-sideRight");
 
 /* creation of an observer */
 const appearOptionsRight = {
-    threshold: 1,
-    rootMargin: "0px 0px -110px 0px" /* when the scroll down reaches -150px */
+    threshold: 0.5,
+    rootMargin: "0px 0px -100px 0px" /* when the scroll down reaches -150px */
 };
 
 //creation of the callback function
-const appearOnScroll3 = new IntersectionObserver((entries, appearOnScroll2) =>{
+const appearOnScroll3 = new IntersectionObserver((entries, appearOnScroll3) =>{
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
         
         else {
             entry.target.classList.add('appearSideRight');
-            appearOnScroll2.unobserve(entry.target);
+            appearOnScroll3.unobserve(entry.target);
         }
     })
     
@@ -91,7 +91,7 @@ const appearOnScroll3 = new IntersectionObserver((entries, appearOnScroll2) =>{
 
 // application of the function
 fadersRight.forEach(faderRight => {
-    appearOnScroll2.observe(faderRight);
+    appearOnScroll3.observe(faderRight);
 });
 
 

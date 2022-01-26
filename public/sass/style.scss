@@ -64,8 +64,7 @@ $simpleTransition: all 0.3s ease-in-out;
 
 body {
     font-size: 15px;
-   background: $white; 
-
+    background: $white;
 }
 
 * {
@@ -116,7 +115,6 @@ html {
     top: 0;
     z-index: 6;
     background-color: rgba(242, 245, 248, 0.8);
-    
 
     .logo {
         margin-left: 25px;
@@ -139,7 +137,7 @@ html {
     }
 }
 
-.shadow-menu{
+.shadow-menu {
     border-bottom: 1px solid rgba(99, 99, 99, 0.2);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -210,7 +208,6 @@ html {
 }
 
 .hide_menu {
-   
     @include keyframes(bounceBack) {
         0% {
             transform: translateY(0px);
@@ -231,12 +228,10 @@ html {
             transform: translateY(-1px);
         }
     }
-    
-    @include animation(bounceBack, 0.8s, ease, 1); 
+
+    @include animation(bounceBack, 0.8s, ease, 1);
     display: none;
-
 }
-
 
 .bounce {
     @include keyframes(bounce) {
@@ -262,9 +257,6 @@ html {
 
     @include animation(bounce, 0.8s, ease, 1);
 }
-
-    
-
 
 /* design Intro */
 
@@ -624,7 +616,7 @@ html {
         height: 215px;
         align-content: baseline;
         padding-bottom: 0px;
-        margin-top: 0px;
+        margin-top: 25px;
         height: 250px;
 
         .container_icons {
@@ -666,7 +658,8 @@ html {
 /* design section languages */
 .languages {
     @extend .backgrounds;
-    height: 250px;
+    height: 285px;
+    margin-top: 50px;
 
     .title4 {
         @extend .title2;
@@ -677,26 +670,26 @@ html {
 
     .fade-sideLeft {
         opacity: 0;
-        transform: translateX(-40%);
+        transform: translateX(-13%); 
         transition: opacity 250ms ease, transform 250ms ease;
     }
-    
+
     .fade-sideRight {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(13%);
         transition: opacity 250ms ease, transform 250ms ease;
-       // visibility: hidden ;
+        
     }
 
     .fade-sideLeft.appearSideLeft {
         opacity: 1;
         transform: translateX(0);
-    }    
+    }
 
     .fade-sideRight.appearSideRight {
         opacity: 1;
         transform: translateX(0);
-    }    
+    }
 
     .container-languages {
         display: flex;
@@ -750,20 +743,22 @@ html {
             }
 
             .hide-text {
-                display:none;
+                display: none;
                 overflow: hidden;
             }
 
             .text-language {
                 line-height: normal;
                 width: 80%;
-
-                h3 {
-                    font-family: $MvtThin;
-                    font-size: 0.8em;
-                    text-align: center;
-                    margin-bottom: 5px;
-                    cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;               
+               
+                .close_language {
+                    width: 30px;
+                    padding-bottom: 5px;
+                    display: flex;
+                    margin: auto;
                 }
 
                 p {
@@ -863,7 +858,7 @@ html {
                 }
             }
         }
-        
+
         .project3 {
             @extend .project1;
             border-color: transparent;
@@ -877,7 +872,7 @@ html {
             position: absolute;
             bottom: 0;
             left: -23px;
-            z-index : 99;
+            z-index: 99;
         }
     }
 }
@@ -896,24 +891,24 @@ footer {
     border-top-right-radius: 85% 40%;
     position: relative;
 
-    .up{
+    .up {
         position: absolute;
         bottom: 175px;
 
-        .fa-sort-up{
+        .fa-sort-up {
             font-size: 2.2rem;
             color: $cherry;
         }
 
-        div{
+        div {
             font-size: 1.2rem;
             font-family: $MvtBlack;
             color: $cherry;
         }
     }
-    
-    .copyright{
-        margin-top:10px
+
+    .copyright {
+        margin-top: 10px;
     }
 
     p {
@@ -947,19 +942,18 @@ footer {
         overflow: hidden;
     }
 
-    .fonts{
+    .fonts {
         width: 85%;
 
-        p{
+        p {
             font-size: 0.55em;
             font-family: $MontLight;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: $skyblue;
         }
-
     }
 }
 
@@ -1221,11 +1215,7 @@ footer {
                 }
 
                 .text-language {
-                    h3 {
-                        font-size: 1.2em;
-                        margin-bottom: 10px;
-                    }
-
+                   
                     p {
                         line-height: 20px;
                         font-family: $MontReg;
@@ -1347,7 +1337,7 @@ footer {
             }
         }
 
-        .fonts{
+        .fonts {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1355,7 +1345,7 @@ footer {
             line-height: 25px;
             width: 80%;
 
-            p{
+            p {
                 font-size: 0.75em;
             }
         }
@@ -1494,7 +1484,8 @@ footer {
                     }
                 }
 
-                .more, .moreBack {
+                .more,
+                .moreBack {
                     position: relative;
                     cursor: pointer;
                     transition: $simpleTransition;
@@ -1587,9 +1578,9 @@ footer {
                         width: 45px;
                         transition: $simpleTransition;
 
-                       &:hover { 
+                        &:hover {
                             scale: 0.9;
-                        } 
+                        }
                     }
                 }
             }
@@ -1615,6 +1606,14 @@ footer {
             .spoken-languages {
                 width: 60%;
 
+                .fade-sideLeft {
+                    transform: translateX(-40%); 
+                }
+            
+                .fade-sideRight {
+                    transform: translateX(40%);
+                }
+
                 p {
                     font-size: 2em;
                     line-height: 70px;
@@ -1637,10 +1636,11 @@ footer {
                 }
 
                 .text-language {
-                    h3 {
-                        font-size: 2em;
-                        margin-bottom: 15px;
+
+                    .close_language {
+                        width: 60px;
                     }
+    
 
                     p {
                         line-height: 20px;
@@ -1756,15 +1756,15 @@ footer {
             }
         }
 
-        .fonts{
-            p{
+        .fonts {
+            p {
                 font-size: 0.9rem;
             }
-            
-            a{
+
+            a {
                 transition: $simpleTransition;
 
-                &:hover{
+                &:hover {
                     color: $darkgreen;
                 }
             }

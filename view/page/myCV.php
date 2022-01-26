@@ -1,4 +1,3 @@
-
 <section class="introduction">
     <div class="images_intro">
         <div class="image_Manon">
@@ -31,9 +30,9 @@
 
     <div class="title1">
         <picture>
-            <source media="(min-width:700px)" srcset="public/images/titles/experiences_reviewed.gif">
-            <source media="(min-width:960px)" srcset="public/images/titles/experiences_reviewed.gif">
-            <img src="public/images/titles/experiences_reviewed.gif" title="My experiences" alt="experiences">
+            <!--  <source media="(min-width:700px)" srcset="public/images/titles/experiences_reviewed.gif">
+            <source media="(min-width:960px)" srcset="public/images/titles/experiences_reviewed.gif"> -->
+            <img src="public/images/titles/experiences_1loop.gif" title="My experiences" alt="experiences">
         </picture>
     </div>
 
@@ -196,7 +195,7 @@
 <section id="backgrounds" class="backgrounds fade-in">
 
     <div class="title2">
-        <img src="public/images/titles/backgrounds.gif" title="My backgrounds" alt="backgrounds">
+        <img src="public/images/titles/backgrounds_1loop.gif" title="My backgrounds" alt="backgrounds">
     </div>
 
     <div class="container_back">
@@ -387,7 +386,7 @@
 <section id="skills" class="skills fade-in">
 
     <div class="title3">
-        <img src="public/images/titles/skills.gif" alt="skills">
+        <img src="public/images/titles/skills_1loop.gif" alt="skills">
     </div>
 
     <div class="container_skills">
@@ -487,7 +486,7 @@
 
 <section id="languages" class="languages ">
     <div class="title4">
-        <img src="public/images/titles/languages.gif" alt="languages">
+        <img src="public/images/titles/languages_1loop.gif" alt="languages">
     </div>
 
     <div class="container-languages">
@@ -499,28 +498,28 @@
             </picture>
         </div>
 
-        <div class="spoken-languages ">
+        <div class="spoken-languages fade-sideRight">
             <div id="title_languages">
                 <p id="lg-1" class="languages_bubble">English</p>
                 <p id="lg-2" class="languages_bubble">French</p>
                 <p id="lg-3" class="languages_bubble">German</p>
-                <p id="lg-4" class="languages_bubble">Spanish</p> 
+                <p id="lg-4" class="languages_bubble">Spanish</p>
             </div>
             <div id="text-language" class="text-language">
-                <div id="text-1" class= "hide-text">
-                    <h3 class="close_language">English</h3>
+                <div id="text-1" class="hide-text">
+                    <img class="close_language" src="public/images/icons/cross_closed.png" alt="cross_language" title="close the language">
                     <p>Hello there! <br> My English is pretty good. According to the Common European Framework of Reference for Languages, my level is C1.</p>
                 </div>
-                <div id="text-2" class= "hide-text">
-                    <h3 class="close_language">french</h3>
+                <div id="text-2" class="hide-text">
+                    <img class="close_language" src="public/images/icons/cross_closed.png" alt="cross_language" title="close the language">
                     <p>Bonjour ! <br> French is my mother tongue. Je peux donc facilement m'adapter à différents environnements linguistiques.</p>
                 </div>
-                <div id="text-3" class= "hide-text">
-                    <h3 class="close_language">German</h3>
+                <div id="text-3" class="hide-text">
+                    <img class="close_language" src="public/images/icons/cross_closed.png" alt="cross_language" title="close the language">
                     <p>Hallo! <br>Deutsch ist meine Lieblingssprache. Ich würde gerne mehr auf Deutsch sprechen, aber in einem beruflichen Kontext hatte ich noch nie die Gelegenheit, es zu verwenden (level B1/B2).</p>
                 </div>
                 <div id="text-4" class="hide-text">
-                    <h3 class="close_language">Spanish</h3>
+                    <img class="close_language" src="public/images/icons/cross_closed.png" alt="cross_language" title="close the language">
                     <p>Porque aprendí español en la universidad y en México. Lo entiendo/leo más que lo hablo, pero si es necesario estoy lista a practicar más el idioma (level A2/B1).</p>
                 </div>
             </div>
@@ -531,7 +530,7 @@
 
 <section id="projects" class="projects fade-in">
     <div class="title5">
-        <img src="public/images/titles/projects.gif" title="My projects" alt="projects">
+        <img src="public/images/titles/projects_1loop.gif" title="My projects" alt="projects">
     </div>
 
     <div class="container_pseudo_slider">
@@ -545,7 +544,7 @@
                 </g>
             </svg>
 
-             <div id="homeSafe" class="hideProject">
+            <div id="homeSafe" class="hideProject">
                 <div>First project in group</div>
                 <div class="buttonProject">
                     <a href="https://github.com/Lison-creator/home_safe" target="_blank" rel="noopener noreferrer">&lt; code &gt;</a>

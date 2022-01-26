@@ -2903,7 +2903,7 @@ html {
   -ms-flex-line-pack: baseline;
       align-content: baseline;
   padding-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 25px;
   height: 250px;
 }
 
@@ -2975,7 +2975,8 @@ html {
 
 /* design section languages */
 .languages {
-  height: 250px;
+  height: 285px;
+  margin-top: 50px;
 }
 
 .languages .title4 img {
@@ -2984,8 +2985,8 @@ html {
 
 .languages .fade-sideLeft {
   opacity: 0;
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
+  -webkit-transform: translateX(-13%);
+          transform: translateX(-13%);
   -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, transform 250ms ease;
@@ -2994,8 +2995,8 @@ html {
 
 .languages .fade-sideRight {
   opacity: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(13%);
+          transform: translateX(13%);
   -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, transform 250ms ease;
@@ -3093,14 +3094,25 @@ html {
 .languages .container-languages .spoken-languages .text-language {
   line-height: normal;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.languages .container-languages .spoken-languages .text-language h3 {
-  font-family: "MvtDirect-Thin";
-  font-size: 0.8em;
-  text-align: center;
-  margin-bottom: 5px;
-  cursor: pointer;
+.languages .container-languages .spoken-languages .text-language .close_language {
+  width: 30px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
 
 .languages .container-languages .spoken-languages .text-language p {
@@ -4622,10 +4634,6 @@ footer .fonts a {
     -webkit-transform: rotate(60deg);
     transform: rotate(70deg);
   }
-  .languages .container-languages .spoken-languages .text-language h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
   .languages .container-languages .spoken-languages .text-language p {
     line-height: 20px;
     font-family: "MontserratAlternates-Regular";
@@ -5326,7 +5334,8 @@ footer .fonts a {
   .projects .container_skills .subtext > p a:active {
     color: #c62a40;
   }
-  .experiences .container_exp .subtext > p .more, .experiences .container_exp .subtext > p .moreBack,
+  .experiences .container_exp .subtext > p .more,
+  .experiences .container_exp .subtext > p .moreBack,
   .experiences .container_back .subtext > p .more,
   .experiences .skills .container_skills .subtext > p .more,
   .skills .experiences .container_skills .subtext > p .more,
@@ -5365,7 +5374,8 @@ footer .fonts a {
                             background-size: 100% 2px;
                     } */
   }
-  .experiences .container_exp .subtext > p .more::before, .experiences .container_exp .subtext > p .moreBack::before,
+  .experiences .container_exp .subtext > p .more::before,
+  .experiences .container_exp .subtext > p .moreBack::before,
   .experiences .container_back .subtext > p .more::before,
   .experiences .skills .container_skills .subtext > p .more::before,
   .skills .experiences .container_skills .subtext > p .more::before,
@@ -5407,7 +5417,8 @@ footer .fonts a {
     background: rgba(14, 122, 105, 0.15);
     z-index: -1;
   }
-  .experiences .container_exp .subtext > p .more:hover, .experiences .container_exp .subtext > p .moreBack:hover,
+  .experiences .container_exp .subtext > p .more:hover,
+  .experiences .container_exp .subtext > p .moreBack:hover,
   .experiences .container_back .subtext > p .more:hover,
   .experiences .skills .container_skills .subtext > p .more:hover,
   .skills .experiences .container_skills .subtext > p .more:hover,
@@ -5649,6 +5660,14 @@ footer .fonts a {
   .languages .container-languages .spoken-languages {
     width: 60%;
   }
+  .languages .container-languages .spoken-languages .fade-sideLeft {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  .languages .container-languages .spoken-languages .fade-sideRight {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
   .languages .container-languages .spoken-languages p {
     font-size: 2em;
     line-height: 70px;
@@ -5668,9 +5687,8 @@ footer .fonts a {
     top: 32%;
     right: 103%;
   }
-  .languages .container-languages .spoken-languages .text-language h3 {
-    font-size: 2em;
-    margin-bottom: 15px;
+  .languages .container-languages .spoken-languages .text-language .close_language {
+    width: 60px;
   }
   .languages .container-languages .spoken-languages .text-language p {
     line-height: 20px;
