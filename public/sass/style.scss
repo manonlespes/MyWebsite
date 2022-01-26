@@ -115,6 +115,7 @@ html {
     top: 0;
     z-index: 6;
     background-color: rgba(242, 245, 248, 0.8);
+    margin-bottom: 50px;
 
     .logo {
         margin-left: 25px;
@@ -628,24 +629,20 @@ html {
             margin: 10px;
         }
 
-        .basics,
-        .backend,
-        .others,
-        .adobe {
+        .comfortable_with,
+        .intermediate_mid,
+        .novice_high,
+        .novice_mid {
             display: flex;
             flex-direction: row;
             width: 80%;
             justify-content: space-evenly;
             align-items: center;
+            height: 50px;
 
             svg {
-                /* TODO check the active/hover on the div when path is too thin! + check cause not working on chrome*/
                 width: 30px;
             }
-
-            /* i:focus{
-                color:$pink;
-            } */
 
             i {
                 font-size: 2em;
@@ -670,7 +667,7 @@ html {
 
     .fade-sideLeft {
         opacity: 0;
-        transform: translateX(-13%); 
+        transform: translateX(-13%);
         transition: opacity 250ms ease, transform 250ms ease;
     }
 
@@ -678,7 +675,6 @@ html {
         opacity: 0;
         transform: translateX(13%);
         transition: opacity 250ms ease, transform 250ms ease;
-        
     }
 
     .fade-sideLeft.appearSideLeft {
@@ -702,9 +698,16 @@ html {
             width: 50%;
             z-index: -2;
             picture {
+                opacity: 1;
                 img {
                     width: 200px;
                 }
+            }
+
+            .hideImageSpeaking {
+                display: none;
+                opacity: 0;
+                transition: $simpleTransition;
             }
         }
 
@@ -730,8 +733,8 @@ html {
                 border-right: 3vh solid transparent;
                 border-top: 13vh solid $cherry;
                 position: absolute;
-                top: 29%;
-                right: 86%;
+                top: 46%;
+                right: 79%;
                 -webkit-transform: rotate(60deg);
                 transform: rotate(80deg);
                 z-index: -1;
@@ -752,8 +755,8 @@ html {
                 width: 80%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;               
-               
+                align-items: center;
+
                 .close_language {
                     width: 30px;
                     padding-bottom: 5px;
@@ -1159,10 +1162,10 @@ footer {
             height: 300px;
 
             .container_icons {
-                .basics,
-                .backend,
-                .others,
-                .adobe {
+                .comfortable_with,
+                .intermediate_mid,
+                .novice_high,
+                .novice_mid {
                     margin-top: 15px;
 
                     i {
@@ -1215,7 +1218,6 @@ footer {
                 }
 
                 .text-language {
-                   
                     p {
                         line-height: 20px;
                         font-family: $MontReg;
@@ -1559,11 +1561,12 @@ footer {
                 width: 100%;
                 margin-top: 30px;
 
-                .basics,
-                .backend,
-                .others,
-                .adobe {
+                .comfortable_with,
+                .intermediate_mid,
+                .novice_high,
+                .novice_mid {
                     margin-top: 25px;
+                    height: 80px;
 
                     i {
                         font-size: 4em;
@@ -1607,9 +1610,9 @@ footer {
                 width: 60%;
 
                 .fade-sideLeft {
-                    transform: translateX(-40%); 
+                    transform: translateX(-40%);
                 }
-            
+
                 .fade-sideRight {
                     transform: translateX(40%);
                 }
@@ -1631,16 +1634,14 @@ footer {
                     border-left: 4vh solid transparent;
                     border-right: 7vh solid transparent;
                     border-top: 35vh solid $cherry;
-                    top: 32%;
+                    top: 45%;
                     right: 103%;
                 }
 
                 .text-language {
-
                     .close_language {
                         width: 60px;
                     }
-    
 
                     p {
                         line-height: 20px;
@@ -1653,8 +1654,6 @@ footer {
     }
 
     /* design section projects */
-
-    /* TODO add a media query only for the pseudo slider of the project - width higher than 1080 to delete the overflow (issue with the margin-left of the project1*/
 
     .projects {
         .container_pseudo_slider {

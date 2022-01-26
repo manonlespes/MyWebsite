@@ -98,6 +98,7 @@ html {
   top: 0;
   z-index: 6;
   background-color: rgba(242, 245, 248, 0.8);
+  margin-bottom: 50px;
 }
 
 .permanent_nav .logo {
@@ -2925,13 +2926,13 @@ html {
   margin: 10px;
 }
 
-.skills .container_skills .basics, .projects .container_skills .basics,
-.skills .container_skills .backend,
-.projects .container_skills .backend,
-.skills .container_skills .others,
-.projects .container_skills .others,
-.skills .container_skills .adobe,
-.projects .container_skills .adobe {
+.skills .container_skills .comfortable_with, .projects .container_skills .comfortable_with,
+.skills .container_skills .intermediate_mid,
+.projects .container_skills .intermediate_mid,
+.skills .container_skills .novice_high,
+.projects .container_skills .novice_high,
+.skills .container_skills .novice_mid,
+.projects .container_skills .novice_mid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2946,29 +2947,26 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* i:focus{
-                color:$pink;
-            } */
+  height: 50px;
 }
 
-.skills .container_skills .basics svg, .projects .container_skills .basics svg,
-.skills .container_skills .backend svg,
-.projects .container_skills .backend svg,
-.skills .container_skills .others svg,
-.projects .container_skills .others svg,
-.skills .container_skills .adobe svg,
-.projects .container_skills .adobe svg {
-  /* TODO check the active/hover on the div when path is too thin! + check cause not working on chrome*/
+.skills .container_skills .comfortable_with svg, .projects .container_skills .comfortable_with svg,
+.skills .container_skills .intermediate_mid svg,
+.projects .container_skills .intermediate_mid svg,
+.skills .container_skills .novice_high svg,
+.projects .container_skills .novice_high svg,
+.skills .container_skills .novice_mid svg,
+.projects .container_skills .novice_mid svg {
   width: 30px;
 }
 
-.skills .container_skills .basics i, .projects .container_skills .basics i,
-.skills .container_skills .backend i,
-.projects .container_skills .backend i,
-.skills .container_skills .others i,
-.projects .container_skills .others i,
-.skills .container_skills .adobe i,
-.projects .container_skills .adobe i {
+.skills .container_skills .comfortable_with i, .projects .container_skills .comfortable_with i,
+.skills .container_skills .intermediate_mid i,
+.projects .container_skills .intermediate_mid i,
+.skills .container_skills .novice_high i,
+.projects .container_skills .novice_high i,
+.skills .container_skills .novice_mid i,
+.projects .container_skills .novice_mid i {
   font-size: 2em;
   color: #0e7a69;
 }
@@ -3037,8 +3035,19 @@ html {
   z-index: -2;
 }
 
+.languages .container-languages .imageSpeaking picture {
+  opacity: 1;
+}
+
 .languages .container-languages .imageSpeaking picture img {
   width: 200px;
+}
+
+.languages .container-languages .imageSpeaking .hideImageSpeaking {
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .languages .container-languages .spoken-languages {
@@ -3074,8 +3083,8 @@ html {
   border-right: 3vh solid transparent;
   border-top: 13vh solid #c62a40;
   position: absolute;
-  top: 29%;
-  right: 86%;
+  top: 46%;
+  right: 79%;
   -webkit-transform: rotate(60deg);
   transform: rotate(80deg);
   z-index: -1;
@@ -4576,31 +4585,31 @@ footer .fonts a {
     margin-top: 0;
     height: 300px;
   }
-  .skills .container_skills .container_icons .basics, .projects .container_skills .container_icons .basics,
-  .skills .container_skills .container_icons .backend,
-  .projects .container_skills .container_icons .backend,
-  .skills .container_skills .container_icons .others,
-  .projects .container_skills .container_icons .others,
-  .skills .container_skills .container_icons .adobe,
-  .projects .container_skills .container_icons .adobe {
+  .skills .container_skills .container_icons .comfortable_with, .projects .container_skills .container_icons .comfortable_with,
+  .skills .container_skills .container_icons .intermediate_mid,
+  .projects .container_skills .container_icons .intermediate_mid,
+  .skills .container_skills .container_icons .novice_high,
+  .projects .container_skills .container_icons .novice_high,
+  .skills .container_skills .container_icons .novice_mid,
+  .projects .container_skills .container_icons .novice_mid {
     margin-top: 15px;
   }
-  .skills .container_skills .container_icons .basics i, .projects .container_skills .container_icons .basics i,
-  .skills .container_skills .container_icons .backend i,
-  .projects .container_skills .container_icons .backend i,
-  .skills .container_skills .container_icons .others i,
-  .projects .container_skills .container_icons .others i,
-  .skills .container_skills .container_icons .adobe i,
-  .projects .container_skills .container_icons .adobe i {
+  .skills .container_skills .container_icons .comfortable_with i, .projects .container_skills .container_icons .comfortable_with i,
+  .skills .container_skills .container_icons .intermediate_mid i,
+  .projects .container_skills .container_icons .intermediate_mid i,
+  .skills .container_skills .container_icons .novice_high i,
+  .projects .container_skills .container_icons .novice_high i,
+  .skills .container_skills .container_icons .novice_mid i,
+  .projects .container_skills .container_icons .novice_mid i {
     font-size: 3em;
   }
-  .skills .container_skills .container_icons .basics svg, .projects .container_skills .container_icons .basics svg,
-  .skills .container_skills .container_icons .backend svg,
-  .projects .container_skills .container_icons .backend svg,
-  .skills .container_skills .container_icons .others svg,
-  .projects .container_skills .container_icons .others svg,
-  .skills .container_skills .container_icons .adobe svg,
-  .projects .container_skills .container_icons .adobe svg {
+  .skills .container_skills .container_icons .comfortable_with svg, .projects .container_skills .container_icons .comfortable_with svg,
+  .skills .container_skills .container_icons .intermediate_mid svg,
+  .projects .container_skills .container_icons .intermediate_mid svg,
+  .skills .container_skills .container_icons .novice_high svg,
+  .projects .container_skills .container_icons .novice_high svg,
+  .skills .container_skills .container_icons .novice_mid svg,
+  .projects .container_skills .container_icons .novice_mid svg {
     width: 35px;
   }
   /* design section languages */
@@ -5596,53 +5605,54 @@ footer .fonts a {
     width: 100%;
     margin-top: 30px;
   }
-  .skills .container_skills .container_icons .basics, .projects .container_skills .container_icons .basics,
-  .skills .container_skills .container_icons .backend,
-  .projects .container_skills .container_icons .backend,
-  .skills .container_skills .container_icons .others,
-  .projects .container_skills .container_icons .others,
-  .skills .container_skills .container_icons .adobe,
-  .projects .container_skills .container_icons .adobe {
+  .skills .container_skills .container_icons .comfortable_with, .projects .container_skills .container_icons .comfortable_with,
+  .skills .container_skills .container_icons .intermediate_mid,
+  .projects .container_skills .container_icons .intermediate_mid,
+  .skills .container_skills .container_icons .novice_high,
+  .projects .container_skills .container_icons .novice_high,
+  .skills .container_skills .container_icons .novice_mid,
+  .projects .container_skills .container_icons .novice_mid {
     margin-top: 25px;
+    height: 80px;
   }
-  .skills .container_skills .container_icons .basics i, .projects .container_skills .container_icons .basics i,
-  .skills .container_skills .container_icons .backend i,
-  .projects .container_skills .container_icons .backend i,
-  .skills .container_skills .container_icons .others i,
-  .projects .container_skills .container_icons .others i,
-  .skills .container_skills .container_icons .adobe i,
-  .projects .container_skills .container_icons .adobe i {
+  .skills .container_skills .container_icons .comfortable_with i, .projects .container_skills .container_icons .comfortable_with i,
+  .skills .container_skills .container_icons .intermediate_mid i,
+  .projects .container_skills .container_icons .intermediate_mid i,
+  .skills .container_skills .container_icons .novice_high i,
+  .projects .container_skills .container_icons .novice_high i,
+  .skills .container_skills .container_icons .novice_mid i,
+  .projects .container_skills .container_icons .novice_mid i {
     font-size: 4em;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .skills .container_skills .container_icons .basics i:hover, .projects .container_skills .container_icons .basics i:hover,
-  .skills .container_skills .container_icons .backend i:hover,
-  .projects .container_skills .container_icons .backend i:hover,
-  .skills .container_skills .container_icons .others i:hover,
-  .projects .container_skills .container_icons .others i:hover,
-  .skills .container_skills .container_icons .adobe i:hover,
-  .projects .container_skills .container_icons .adobe i:hover {
+  .skills .container_skills .container_icons .comfortable_with i:hover, .projects .container_skills .container_icons .comfortable_with i:hover,
+  .skills .container_skills .container_icons .intermediate_mid i:hover,
+  .projects .container_skills .container_icons .intermediate_mid i:hover,
+  .skills .container_skills .container_icons .novice_high i:hover,
+  .projects .container_skills .container_icons .novice_high i:hover,
+  .skills .container_skills .container_icons .novice_mid i:hover,
+  .projects .container_skills .container_icons .novice_mid i:hover {
     scale: 0.9;
   }
-  .skills .container_skills .container_icons .basics svg, .projects .container_skills .container_icons .basics svg,
-  .skills .container_skills .container_icons .backend svg,
-  .projects .container_skills .container_icons .backend svg,
-  .skills .container_skills .container_icons .others svg,
-  .projects .container_skills .container_icons .others svg,
-  .skills .container_skills .container_icons .adobe svg,
-  .projects .container_skills .container_icons .adobe svg {
+  .skills .container_skills .container_icons .comfortable_with svg, .projects .container_skills .container_icons .comfortable_with svg,
+  .skills .container_skills .container_icons .intermediate_mid svg,
+  .projects .container_skills .container_icons .intermediate_mid svg,
+  .skills .container_skills .container_icons .novice_high svg,
+  .projects .container_skills .container_icons .novice_high svg,
+  .skills .container_skills .container_icons .novice_mid svg,
+  .projects .container_skills .container_icons .novice_mid svg {
     width: 45px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .skills .container_skills .container_icons .basics svg:hover, .projects .container_skills .container_icons .basics svg:hover,
-  .skills .container_skills .container_icons .backend svg:hover,
-  .projects .container_skills .container_icons .backend svg:hover,
-  .skills .container_skills .container_icons .others svg:hover,
-  .projects .container_skills .container_icons .others svg:hover,
-  .skills .container_skills .container_icons .adobe svg:hover,
-  .projects .container_skills .container_icons .adobe svg:hover {
+  .skills .container_skills .container_icons .comfortable_with svg:hover, .projects .container_skills .container_icons .comfortable_with svg:hover,
+  .skills .container_skills .container_icons .intermediate_mid svg:hover,
+  .projects .container_skills .container_icons .intermediate_mid svg:hover,
+  .skills .container_skills .container_icons .novice_high svg:hover,
+  .projects .container_skills .container_icons .novice_high svg:hover,
+  .skills .container_skills .container_icons .novice_mid svg:hover,
+  .projects .container_skills .container_icons .novice_mid svg:hover {
     scale: 0.9;
   }
   /* design section languages */
@@ -5684,7 +5694,7 @@ footer .fonts a {
     border-left: 4vh solid transparent;
     border-right: 7vh solid transparent;
     border-top: 35vh solid #c62a40;
-    top: 32%;
+    top: 45%;
     right: 103%;
   }
   .languages .container-languages .spoken-languages .text-language .close_language {
@@ -5696,7 +5706,6 @@ footer .fonts a {
     line-height: 35px;
   }
   /* design section projects */
-  /* TODO add a media query only for the pseudo slider of the project - width higher than 1080 to delete the overflow (issue with the margin-left of the project1*/
   .projects .container_pseudo_slider {
     width: 75vw;
     -webkit-box-pack: space-evenly;
