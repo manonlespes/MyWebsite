@@ -4,6 +4,8 @@ const languages = document.querySelectorAll('.languages_bubble');
 const titleLanguages = document.getElementById('title_languages');
 const closeLanguage = document.querySelectorAll('.close_language');
 const bubble = document.getElementById('hideshowbubble');
+const openMouth = document.getElementById('openMouth');
+const closeMouth = document.getElementById('closeMouth');
 
 // for each Lg selected, there is an event on click
 languages.forEach(language => {
@@ -23,6 +25,8 @@ languages.forEach(language => {
         activeLanguage.classList.remove('hide-text');
         titleLanguages.classList.add('hide-text');
         bubble.classList.remove('hide-bubble');
+        openMouth.classList.remove('hideImageSpeaking');
+        closeMouth.classList.add('hideImageSpeaking');
 
 
         closeLanguage.forEach(element => {
@@ -33,6 +37,8 @@ languages.forEach(language => {
                 activeLanguage.classList.add('hide-text')
                 titleLanguages.classList.remove('hide-text')
                 bubble.classList.add('hide-bubble');
+                openMouth.classList.add('hideImageSpeaking');
+                closeMouth.classList.remove('hideImageSpeaking');
 
             });
         });

@@ -98,6 +98,7 @@ html {
   top: 0;
   z-index: 6;
   background-color: rgba(242, 245, 248, 0.8);
+  margin-bottom: 50px;
 }
 
 .permanent_nav .logo {
@@ -2888,7 +2889,7 @@ html {
 }
 
 .skills .title3 img, .projects .title3 img, .projects .title5 img {
-  width: 113px;
+  width: 170px;
 }
 
 .skills .container_skills, .projects .container_skills {
@@ -2903,7 +2904,7 @@ html {
   -ms-flex-line-pack: baseline;
       align-content: baseline;
   padding-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 25px;
   height: 250px;
 }
 
@@ -2925,13 +2926,13 @@ html {
   margin: 10px;
 }
 
-.skills .container_skills .basics, .projects .container_skills .basics,
-.skills .container_skills .backend,
-.projects .container_skills .backend,
-.skills .container_skills .others,
-.projects .container_skills .others,
-.skills .container_skills .adobe,
-.projects .container_skills .adobe {
+.skills .container_skills .comfortable_with, .projects .container_skills .comfortable_with,
+.skills .container_skills .intermediate_mid,
+.projects .container_skills .intermediate_mid,
+.skills .container_skills .novice_high,
+.projects .container_skills .novice_high,
+.skills .container_skills .novice_mid,
+.projects .container_skills .novice_mid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2946,36 +2947,34 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* i:focus{
-                color:$pink;
-            } */
+  height: 50px;
 }
 
-.skills .container_skills .basics svg, .projects .container_skills .basics svg,
-.skills .container_skills .backend svg,
-.projects .container_skills .backend svg,
-.skills .container_skills .others svg,
-.projects .container_skills .others svg,
-.skills .container_skills .adobe svg,
-.projects .container_skills .adobe svg {
-  /* TODO check the active/hover on the div when path is too thin! + check cause not working on chrome*/
+.skills .container_skills .comfortable_with svg, .projects .container_skills .comfortable_with svg,
+.skills .container_skills .intermediate_mid svg,
+.projects .container_skills .intermediate_mid svg,
+.skills .container_skills .novice_high svg,
+.projects .container_skills .novice_high svg,
+.skills .container_skills .novice_mid svg,
+.projects .container_skills .novice_mid svg {
   width: 30px;
 }
 
-.skills .container_skills .basics i, .projects .container_skills .basics i,
-.skills .container_skills .backend i,
-.projects .container_skills .backend i,
-.skills .container_skills .others i,
-.projects .container_skills .others i,
-.skills .container_skills .adobe i,
-.projects .container_skills .adobe i {
+.skills .container_skills .comfortable_with i, .projects .container_skills .comfortable_with i,
+.skills .container_skills .intermediate_mid i,
+.projects .container_skills .intermediate_mid i,
+.skills .container_skills .novice_high i,
+.projects .container_skills .novice_high i,
+.skills .container_skills .novice_mid i,
+.projects .container_skills .novice_mid i {
   font-size: 2em;
   color: #0e7a69;
 }
 
 /* design section languages */
 .languages {
-  height: 250px;
+  height: 285px;
+  margin-top: 50px;
 }
 
 .languages .title4 img {
@@ -2984,8 +2983,8 @@ html {
 
 .languages .fade-sideLeft {
   opacity: 0;
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
+  -webkit-transform: translateX(-13%);
+          transform: translateX(-13%);
   -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, transform 250ms ease;
@@ -2994,8 +2993,8 @@ html {
 
 .languages .fade-sideRight {
   opacity: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(13%);
+          transform: translateX(13%);
   -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, transform 250ms ease;
@@ -3036,8 +3035,19 @@ html {
   z-index: -2;
 }
 
+.languages .container-languages .imageSpeaking picture {
+  opacity: 1;
+}
+
 .languages .container-languages .imageSpeaking picture img {
   width: 200px;
+}
+
+.languages .container-languages .imageSpeaking .hideImageSpeaking {
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .languages .container-languages .spoken-languages {
@@ -3073,8 +3083,8 @@ html {
   border-right: 3vh solid transparent;
   border-top: 13vh solid #c62a40;
   position: absolute;
-  top: 29%;
-  right: 86%;
+  top: 46%;
+  right: 79%;
   -webkit-transform: rotate(60deg);
   transform: rotate(80deg);
   z-index: -1;
@@ -3093,14 +3103,25 @@ html {
 .languages .container-languages .spoken-languages .text-language {
   line-height: normal;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.languages .container-languages .spoken-languages .text-language h3 {
-  font-family: "MvtDirect-Thin";
-  font-size: 0.8em;
-  text-align: center;
-  margin-bottom: 5px;
-  cursor: pointer;
+.languages .container-languages .spoken-languages .text-language .close_language {
+  width: 30px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
 
 .languages .container-languages .spoken-languages .text-language p {
@@ -3112,10 +3133,6 @@ html {
 /* design projects */
 .projects {
   margin-bottom: 100px;
-}
-
-.projects .title5 img {
-  width: 140px;
 }
 
 .projects .container_pseudo_slider {
@@ -3142,14 +3159,19 @@ html {
   position: relative;
 }
 
+.projects .container_pseudo_slider .hideProject {
+  display: none;
+  overflow: hidden;
+}
+
 .projects .container_pseudo_slider .project1, .projects .container_pseudo_slider .project2, .projects .container_pseudo_slider .project3 {
   width: 190px;
   height: 190px;
-  border: 1px solid #0e7a69;
+  border: 1px solid #22d3b8;
   margin-left: 60px;
   margin-right: 30px;
   border-radius: 98% 58% 98% 65% /83% 61% 112% 92%;
-  background-color: #0e7a69;
+  background-color: #22d3b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3217,7 +3239,7 @@ html {
 .projects .container_pseudo_slider .project3 {
   border-color: transparent;
   margin-right: 30px;
-  background-image: url(../images/Carte-postale.png);
+  background-image: url(../images/gallery/Carte_postale_1.png);
   background-size: cover;
   background-position: center;
 }
@@ -3418,7 +3440,7 @@ footer .fonts a {
   .projects .title2 img,
   .languages .title2 img,
   .languages .title4 img {
-    width: 335px;
+    width: 270px;
   }
   .experiences .title1 picture img, .experiences .skills .title3 picture img, .skills .experiences .title3 picture img, .experiences .projects .title3 picture img, .projects .experiences .title3 picture img, .experiences .projects .title5 picture img, .projects .experiences .title5 picture img,
   .backgrounds .title1 picture img,
@@ -3428,7 +3450,7 @@ footer .fonts a {
   .skills .title3 picture img,
   .projects .title3 picture img,
   .projects .title5 picture img {
-    width: 335px;
+    width: 270px;
   }
   .experiences .container_exp,
   .experiences .container_back,
@@ -4557,37 +4579,37 @@ footer .fonts a {
   }
   /* design section skills */
   .skills .title3 img, .projects .title3 img, .projects .title5 img {
-    width: 200px;
+    width: 215px;
   }
   .skills .container_skills, .projects .container_skills {
     margin-top: 0;
     height: 300px;
   }
-  .skills .container_skills .container_icons .basics, .projects .container_skills .container_icons .basics,
-  .skills .container_skills .container_icons .backend,
-  .projects .container_skills .container_icons .backend,
-  .skills .container_skills .container_icons .others,
-  .projects .container_skills .container_icons .others,
-  .skills .container_skills .container_icons .adobe,
-  .projects .container_skills .container_icons .adobe {
+  .skills .container_skills .container_icons .comfortable_with, .projects .container_skills .container_icons .comfortable_with,
+  .skills .container_skills .container_icons .intermediate_mid,
+  .projects .container_skills .container_icons .intermediate_mid,
+  .skills .container_skills .container_icons .novice_high,
+  .projects .container_skills .container_icons .novice_high,
+  .skills .container_skills .container_icons .novice_mid,
+  .projects .container_skills .container_icons .novice_mid {
     margin-top: 15px;
   }
-  .skills .container_skills .container_icons .basics i, .projects .container_skills .container_icons .basics i,
-  .skills .container_skills .container_icons .backend i,
-  .projects .container_skills .container_icons .backend i,
-  .skills .container_skills .container_icons .others i,
-  .projects .container_skills .container_icons .others i,
-  .skills .container_skills .container_icons .adobe i,
-  .projects .container_skills .container_icons .adobe i {
+  .skills .container_skills .container_icons .comfortable_with i, .projects .container_skills .container_icons .comfortable_with i,
+  .skills .container_skills .container_icons .intermediate_mid i,
+  .projects .container_skills .container_icons .intermediate_mid i,
+  .skills .container_skills .container_icons .novice_high i,
+  .projects .container_skills .container_icons .novice_high i,
+  .skills .container_skills .container_icons .novice_mid i,
+  .projects .container_skills .container_icons .novice_mid i {
     font-size: 3em;
   }
-  .skills .container_skills .container_icons .basics svg, .projects .container_skills .container_icons .basics svg,
-  .skills .container_skills .container_icons .backend svg,
-  .projects .container_skills .container_icons .backend svg,
-  .skills .container_skills .container_icons .others svg,
-  .projects .container_skills .container_icons .others svg,
-  .skills .container_skills .container_icons .adobe svg,
-  .projects .container_skills .container_icons .adobe svg {
+  .skills .container_skills .container_icons .comfortable_with svg, .projects .container_skills .container_icons .comfortable_with svg,
+  .skills .container_skills .container_icons .intermediate_mid svg,
+  .projects .container_skills .container_icons .intermediate_mid svg,
+  .skills .container_skills .container_icons .novice_high svg,
+  .projects .container_skills .container_icons .novice_high svg,
+  .skills .container_skills .container_icons .novice_mid svg,
+  .projects .container_skills .container_icons .novice_mid svg {
     width: 35px;
   }
   /* design section languages */
@@ -4620,10 +4642,6 @@ footer .fonts a {
     right: 105%;
     -webkit-transform: rotate(60deg);
     transform: rotate(70deg);
-  }
-  .languages .container-languages .spoken-languages .text-language h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
   }
   .languages .container-languages .spoken-languages .text-language p {
     line-height: 20px;
@@ -5325,7 +5343,8 @@ footer .fonts a {
   .projects .container_skills .subtext > p a:active {
     color: #c62a40;
   }
-  .experiences .container_exp .subtext > p .more, .experiences .container_exp .subtext > p .moreBack,
+  .experiences .container_exp .subtext > p .more,
+  .experiences .container_exp .subtext > p .moreBack,
   .experiences .container_back .subtext > p .more,
   .experiences .skills .container_skills .subtext > p .more,
   .skills .experiences .container_skills .subtext > p .more,
@@ -5364,7 +5383,8 @@ footer .fonts a {
                             background-size: 100% 2px;
                     } */
   }
-  .experiences .container_exp .subtext > p .more::before, .experiences .container_exp .subtext > p .moreBack::before,
+  .experiences .container_exp .subtext > p .more::before,
+  .experiences .container_exp .subtext > p .moreBack::before,
   .experiences .container_back .subtext > p .more::before,
   .experiences .skills .container_skills .subtext > p .more::before,
   .skills .experiences .container_skills .subtext > p .more::before,
@@ -5406,7 +5426,8 @@ footer .fonts a {
     background: rgba(14, 122, 105, 0.15);
     z-index: -1;
   }
-  .experiences .container_exp .subtext > p .more:hover, .experiences .container_exp .subtext > p .moreBack:hover,
+  .experiences .container_exp .subtext > p .more:hover,
+  .experiences .container_exp .subtext > p .moreBack:hover,
   .experiences .container_back .subtext > p .more:hover,
   .experiences .skills .container_skills .subtext > p .more:hover,
   .skills .experiences .container_skills .subtext > p .more:hover,
@@ -5584,58 +5605,59 @@ footer .fonts a {
     width: 100%;
     margin-top: 30px;
   }
-  .skills .container_skills .container_icons .basics, .projects .container_skills .container_icons .basics,
-  .skills .container_skills .container_icons .backend,
-  .projects .container_skills .container_icons .backend,
-  .skills .container_skills .container_icons .others,
-  .projects .container_skills .container_icons .others,
-  .skills .container_skills .container_icons .adobe,
-  .projects .container_skills .container_icons .adobe {
+  .skills .container_skills .container_icons .comfortable_with, .projects .container_skills .container_icons .comfortable_with,
+  .skills .container_skills .container_icons .intermediate_mid,
+  .projects .container_skills .container_icons .intermediate_mid,
+  .skills .container_skills .container_icons .novice_high,
+  .projects .container_skills .container_icons .novice_high,
+  .skills .container_skills .container_icons .novice_mid,
+  .projects .container_skills .container_icons .novice_mid {
     margin-top: 25px;
+    height: 80px;
   }
-  .skills .container_skills .container_icons .basics i, .projects .container_skills .container_icons .basics i,
-  .skills .container_skills .container_icons .backend i,
-  .projects .container_skills .container_icons .backend i,
-  .skills .container_skills .container_icons .others i,
-  .projects .container_skills .container_icons .others i,
-  .skills .container_skills .container_icons .adobe i,
-  .projects .container_skills .container_icons .adobe i {
+  .skills .container_skills .container_icons .comfortable_with i, .projects .container_skills .container_icons .comfortable_with i,
+  .skills .container_skills .container_icons .intermediate_mid i,
+  .projects .container_skills .container_icons .intermediate_mid i,
+  .skills .container_skills .container_icons .novice_high i,
+  .projects .container_skills .container_icons .novice_high i,
+  .skills .container_skills .container_icons .novice_mid i,
+  .projects .container_skills .container_icons .novice_mid i {
     font-size: 4em;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .skills .container_skills .container_icons .basics i:hover, .projects .container_skills .container_icons .basics i:hover,
-  .skills .container_skills .container_icons .backend i:hover,
-  .projects .container_skills .container_icons .backend i:hover,
-  .skills .container_skills .container_icons .others i:hover,
-  .projects .container_skills .container_icons .others i:hover,
-  .skills .container_skills .container_icons .adobe i:hover,
-  .projects .container_skills .container_icons .adobe i:hover {
+  .skills .container_skills .container_icons .comfortable_with i:hover, .projects .container_skills .container_icons .comfortable_with i:hover,
+  .skills .container_skills .container_icons .intermediate_mid i:hover,
+  .projects .container_skills .container_icons .intermediate_mid i:hover,
+  .skills .container_skills .container_icons .novice_high i:hover,
+  .projects .container_skills .container_icons .novice_high i:hover,
+  .skills .container_skills .container_icons .novice_mid i:hover,
+  .projects .container_skills .container_icons .novice_mid i:hover {
     scale: 0.9;
   }
-  .skills .container_skills .container_icons .basics svg, .projects .container_skills .container_icons .basics svg,
-  .skills .container_skills .container_icons .backend svg,
-  .projects .container_skills .container_icons .backend svg,
-  .skills .container_skills .container_icons .others svg,
-  .projects .container_skills .container_icons .others svg,
-  .skills .container_skills .container_icons .adobe svg,
-  .projects .container_skills .container_icons .adobe svg {
+  .skills .container_skills .container_icons .comfortable_with svg, .projects .container_skills .container_icons .comfortable_with svg,
+  .skills .container_skills .container_icons .intermediate_mid svg,
+  .projects .container_skills .container_icons .intermediate_mid svg,
+  .skills .container_skills .container_icons .novice_high svg,
+  .projects .container_skills .container_icons .novice_high svg,
+  .skills .container_skills .container_icons .novice_mid svg,
+  .projects .container_skills .container_icons .novice_mid svg {
     width: 45px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .skills .container_skills .container_icons .basics svg:hover, .projects .container_skills .container_icons .basics svg:hover,
-  .skills .container_skills .container_icons .backend svg:hover,
-  .projects .container_skills .container_icons .backend svg:hover,
-  .skills .container_skills .container_icons .others svg:hover,
-  .projects .container_skills .container_icons .others svg:hover,
-  .skills .container_skills .container_icons .adobe svg:hover,
-  .projects .container_skills .container_icons .adobe svg:hover {
+  .skills .container_skills .container_icons .comfortable_with svg:hover, .projects .container_skills .container_icons .comfortable_with svg:hover,
+  .skills .container_skills .container_icons .intermediate_mid svg:hover,
+  .projects .container_skills .container_icons .intermediate_mid svg:hover,
+  .skills .container_skills .container_icons .novice_high svg:hover,
+  .projects .container_skills .container_icons .novice_high svg:hover,
+  .skills .container_skills .container_icons .novice_mid svg:hover,
+  .projects .container_skills .container_icons .novice_mid svg:hover {
     scale: 0.9;
   }
   /* design section languages */
   .languages {
-    height: 570px;
+    height: 765px;
     margin-top: 100px;
   }
   .languages .container-languages .imageSpeaking {
@@ -5647,6 +5669,14 @@ footer .fonts a {
   }
   .languages .container-languages .spoken-languages {
     width: 60%;
+  }
+  .languages .container-languages .spoken-languages .fade-sideLeft {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  .languages .container-languages .spoken-languages .fade-sideRight {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
   }
   .languages .container-languages .spoken-languages p {
     font-size: 2em;
@@ -5664,12 +5694,11 @@ footer .fonts a {
     border-left: 4vh solid transparent;
     border-right: 7vh solid transparent;
     border-top: 35vh solid #c62a40;
-    top: 32%;
+    top: 45%;
     right: 103%;
   }
-  .languages .container-languages .spoken-languages .text-language h3 {
-    font-size: 2em;
-    margin-bottom: 15px;
+  .languages .container-languages .spoken-languages .text-language .close_language {
+    width: 60px;
   }
   .languages .container-languages .spoken-languages .text-language p {
     line-height: 20px;
@@ -5677,7 +5706,6 @@ footer .fonts a {
     line-height: 35px;
   }
   /* design section projects */
-  /* TODO add a media query only for the pseudo slider of the project - width higher than 1080 to delete the overflow (issue with the margin-left of the project1*/
   .projects .container_pseudo_slider {
     width: 75vw;
     -webkit-box-pack: space-evenly;
@@ -5688,13 +5716,6 @@ footer .fonts a {
     width: 261px;
     height: 261px;
     cursor: pointer;
-  }
-  .projects .container_pseudo_slider .below {
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-    background-color: black;
   }
   .projects .container_pseudo_slider .figures picture img {
     width: 97px;

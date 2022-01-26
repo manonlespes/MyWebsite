@@ -64,8 +64,7 @@ $simpleTransition: all 0.3s ease-in-out;
 
 body {
     font-size: 15px;
-   background: $white; 
-
+    background: $white;
 }
 
 * {
@@ -116,7 +115,7 @@ html {
     top: 0;
     z-index: 6;
     background-color: rgba(242, 245, 248, 0.8);
-    
+    margin-bottom: 50px;
 
     .logo {
         margin-left: 25px;
@@ -139,7 +138,7 @@ html {
     }
 }
 
-.shadow-menu{
+.shadow-menu {
     border-bottom: 1px solid rgba(99, 99, 99, 0.2);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -210,7 +209,6 @@ html {
 }
 
 .hide_menu {
-   
     @include keyframes(bounceBack) {
         0% {
             transform: translateY(0px);
@@ -231,12 +229,10 @@ html {
             transform: translateY(-1px);
         }
     }
-    
-    @include animation(bounceBack, 0.8s, ease, 1); 
+
+    @include animation(bounceBack, 0.8s, ease, 1);
     display: none;
-
 }
-
 
 .bounce {
     @include keyframes(bounce) {
@@ -262,9 +258,6 @@ html {
 
     @include animation(bounce, 0.8s, ease, 1);
 }
-
-    
-
 
 /* design Intro */
 
@@ -613,7 +606,7 @@ html {
         @extend .title1;
 
         img {
-            width: 113px;
+            width: 170px;
         }
     }
 
@@ -624,7 +617,7 @@ html {
         height: 215px;
         align-content: baseline;
         padding-bottom: 0px;
-        margin-top: 0px;
+        margin-top: 25px;
         height: 250px;
 
         .container_icons {
@@ -636,24 +629,20 @@ html {
             margin: 10px;
         }
 
-        .basics,
-        .backend,
-        .others,
-        .adobe {
+        .comfortable_with,
+        .intermediate_mid,
+        .novice_high,
+        .novice_mid {
             display: flex;
             flex-direction: row;
             width: 80%;
             justify-content: space-evenly;
             align-items: center;
+            height: 50px;
 
             svg {
-                /* TODO check the active/hover on the div when path is too thin! + check cause not working on chrome*/
                 width: 30px;
             }
-
-            /* i:focus{
-                color:$pink;
-            } */
 
             i {
                 font-size: 2em;
@@ -666,7 +655,8 @@ html {
 /* design section languages */
 .languages {
     @extend .backgrounds;
-    height: 250px;
+    height: 285px;
+    margin-top: 50px;
 
     .title4 {
         @extend .title2;
@@ -677,26 +667,25 @@ html {
 
     .fade-sideLeft {
         opacity: 0;
-        transform: translateX(-40%);
+        transform: translateX(-13%);
         transition: opacity 250ms ease, transform 250ms ease;
     }
-    
+
     .fade-sideRight {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(13%);
         transition: opacity 250ms ease, transform 250ms ease;
-       // visibility: hidden ;
     }
 
     .fade-sideLeft.appearSideLeft {
         opacity: 1;
         transform: translateX(0);
-    }    
+    }
 
     .fade-sideRight.appearSideRight {
         opacity: 1;
         transform: translateX(0);
-    }    
+    }
 
     .container-languages {
         display: flex;
@@ -709,9 +698,16 @@ html {
             width: 50%;
             z-index: -2;
             picture {
+                opacity: 1;
                 img {
                     width: 200px;
                 }
+            }
+
+            .hideImageSpeaking {
+                display: none;
+                opacity: 0;
+                transition: $simpleTransition;
             }
         }
 
@@ -737,8 +733,8 @@ html {
                 border-right: 3vh solid transparent;
                 border-top: 13vh solid $cherry;
                 position: absolute;
-                top: 29%;
-                right: 86%;
+                top: 46%;
+                right: 79%;
                 -webkit-transform: rotate(60deg);
                 transform: rotate(80deg);
                 z-index: -1;
@@ -750,20 +746,22 @@ html {
             }
 
             .hide-text {
-                display:none;
+                display: none;
                 overflow: hidden;
             }
 
             .text-language {
                 line-height: normal;
                 width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-                h3 {
-                    font-family: $MvtThin;
-                    font-size: 0.8em;
-                    text-align: center;
-                    margin-bottom: 5px;
-                    cursor: pointer;
+                .close_language {
+                    width: 30px;
+                    padding-bottom: 5px;
+                    display: flex;
+                    margin: auto;
                 }
 
                 p {
@@ -784,9 +782,6 @@ html {
 
     .title5 {
         @extend .title3;
-        img {
-            width: 140px;
-        }
     }
 
     .container_pseudo_slider {
@@ -803,14 +798,19 @@ html {
             position: relative;
         }
 
+        .hideProject {
+            display: none;
+            overflow: hidden;
+        }
+
         .project1 {
             width: 190px;
             height: 190px;
-            border: 1px solid $green;
+            border: 1px solid $skyblue;
             margin-left: 60px;
             margin-right: 30px;
             border-radius: 98% 58% 98% 65% /83% 61% 112% 92%;
-            background-color: $green;
+            background-color: $skyblue;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -861,12 +861,12 @@ html {
                 }
             }
         }
-        
+
         .project3 {
             @extend .project1;
             border-color: transparent;
             margin-right: 30px;
-            background-image: url(../images/Carte-postale.png);
+            background-image: url(../images/gallery/Carte_postale_1.png);
             background-size: cover;
             background-position: center;
         }
@@ -875,7 +875,7 @@ html {
             position: absolute;
             bottom: 0;
             left: -23px;
-            z-index : 99;
+            z-index: 99;
         }
     }
 }
@@ -894,24 +894,24 @@ footer {
     border-top-right-radius: 85% 40%;
     position: relative;
 
-    .up{
+    .up {
         position: absolute;
         bottom: 175px;
 
-        .fa-sort-up{
+        .fa-sort-up {
             font-size: 2.2rem;
             color: $cherry;
         }
 
-        div{
+        div {
             font-size: 1.2rem;
             font-family: $MvtBlack;
             color: $cherry;
         }
     }
-    
-    .copyright{
-        margin-top:10px
+
+    .copyright {
+        margin-top: 10px;
     }
 
     p {
@@ -945,19 +945,18 @@ footer {
         overflow: hidden;
     }
 
-    .fonts{
+    .fonts {
         width: 85%;
 
-        p{
+        p {
             font-size: 0.55em;
             font-family: $MontLight;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: $skyblue;
         }
-
     }
 }
 
@@ -1053,14 +1052,14 @@ footer {
         .title2 {
             margin-bottom: 45px;
             img {
-                width: 335px;
+                width: 270px;
             }
         }
 
         .title1 {
             picture {
                 img {
-                    width: 335px;
+                    width: 270px;
                 }
             }
         }
@@ -1154,7 +1153,7 @@ footer {
     .skills {
         .title3 {
             img {
-                width: 200px;
+                width: 215px;
             }
         }
 
@@ -1163,10 +1162,10 @@ footer {
             height: 300px;
 
             .container_icons {
-                .basics,
-                .backend,
-                .others,
-                .adobe {
+                .comfortable_with,
+                .intermediate_mid,
+                .novice_high,
+                .novice_mid {
                     margin-top: 15px;
 
                     i {
@@ -1219,11 +1218,6 @@ footer {
                 }
 
                 .text-language {
-                    h3 {
-                        font-size: 1.2em;
-                        margin-bottom: 10px;
-                    }
-
                     p {
                         line-height: 20px;
                         font-family: $MontReg;
@@ -1345,7 +1339,7 @@ footer {
             }
         }
 
-        .fonts{
+        .fonts {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1353,7 +1347,7 @@ footer {
             line-height: 25px;
             width: 80%;
 
-            p{
+            p {
                 font-size: 0.75em;
             }
         }
@@ -1492,7 +1486,8 @@ footer {
                     }
                 }
 
-                .more, .moreBack {
+                .more,
+                .moreBack {
                     position: relative;
                     cursor: pointer;
                     transition: $simpleTransition;
@@ -1566,11 +1561,12 @@ footer {
                 width: 100%;
                 margin-top: 30px;
 
-                .basics,
-                .backend,
-                .others,
-                .adobe {
+                .comfortable_with,
+                .intermediate_mid,
+                .novice_high,
+                .novice_mid {
                     margin-top: 25px;
+                    height: 80px;
 
                     i {
                         font-size: 4em;
@@ -1585,9 +1581,9 @@ footer {
                         width: 45px;
                         transition: $simpleTransition;
 
-                       &:hover { 
+                        &:hover {
                             scale: 0.9;
-                        } 
+                        }
                     }
                 }
             }
@@ -1596,7 +1592,7 @@ footer {
 
     /* design section languages */
     .languages {
-        height: 570px;
+        height: 765px;
         margin-top: 100px;
 
         .container-languages {
@@ -1612,6 +1608,14 @@ footer {
 
             .spoken-languages {
                 width: 60%;
+
+                .fade-sideLeft {
+                    transform: translateX(-40%);
+                }
+
+                .fade-sideRight {
+                    transform: translateX(40%);
+                }
 
                 p {
                     font-size: 2em;
@@ -1630,14 +1634,13 @@ footer {
                     border-left: 4vh solid transparent;
                     border-right: 7vh solid transparent;
                     border-top: 35vh solid $cherry;
-                    top: 32%;
+                    top: 45%;
                     right: 103%;
                 }
 
                 .text-language {
-                    h3 {
-                        font-size: 2em;
-                        margin-bottom: 15px;
+                    .close_language {
+                        width: 60px;
                     }
 
                     p {
@@ -1652,8 +1655,6 @@ footer {
 
     /* design section projects */
 
-    /* TODO add a media query only for the pseudo slider of the project - width higher than 1080 to delete the overflow (issue with the margin-left of the project1*/
-
     .projects {
         .container_pseudo_slider {
             width: 75vw;
@@ -1663,13 +1664,6 @@ footer {
                 width: 261px;
                 height: 261px;
                 cursor: pointer;
-            }
-
-            .below {
-                max-height: 0;
-                overflow: hidden;
-                transition: all 0.8s;
-                background-color: black;
             }
 
             .figures {
@@ -1761,15 +1755,15 @@ footer {
             }
         }
 
-        .fonts{
-            p{
+        .fonts {
+            p {
                 font-size: 0.9rem;
             }
-            
-            a{
+
+            a {
                 transition: $simpleTransition;
 
-                &:hover{
+                &:hover {
                     color: $darkgreen;
                 }
             }
