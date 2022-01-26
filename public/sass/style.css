@@ -3122,6 +3122,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  cursor: pointer;
 }
 
 .languages .container-languages .spoken-languages .text-language p {
