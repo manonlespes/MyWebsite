@@ -11,7 +11,7 @@ const appearOptions = {
 };
 
 //creation of the callback function
-const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 
     //for each entry, you'll do the code below
     entries.forEach(entry => {
@@ -38,11 +38,11 @@ const fadersLeft = document.querySelectorAll(".fade-sideLeft");
 /* creation of an observer */
 const appearOptionsLeft = {
     threshold: 1,
-    rootMargin: "0px 0px -110px 0px" /* when the scroll down reaches -150px */
+    rootMargin: "0px 0px -90px 0px" /* when the scroll down reaches -100px */
 };
 
 //creation of the callback function
-const appearOnScroll2 = new IntersectionObserver(function (entries, appearOnScroll2) {
+const appearOnScroll2 = new IntersectionObserver((entries, appearOnScroll2) => {
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -74,7 +74,7 @@ const appearOptionsRight = {
 };
 
 //creation of the callback function
-const appearOnScroll3 = new IntersectionObserver(function (entries, appearOnScroll2) {
+const appearOnScroll3 = new IntersectionObserver((entries, appearOnScroll2) =>{
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;

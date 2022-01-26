@@ -4,7 +4,7 @@
     <ul class="menu">
         <div class="list">
             <li id="close_menu">
-                <img src="public/images/cross_closed.png" alt="cross_closed">
+                <img src="public/images/icons/cross_closed.png" alt="cross_closed">
             </li>
             <li><a class="link_menu" href="?section=myCV#experiences">Experiences</a></li>
             <li><a class="link_menu" href="?section=myCV#backgrounds">Backgrounds</a></li>
@@ -21,7 +21,7 @@
     </div>
 
     <div id="menu_hamburger">
-        <img src="public/images/hamburger.png" title="Love veggie burgers" alt="menu_hamburger"><!-- Do you also love eating vegetarian food ? Hire me then, we will code and share foods! -->
+        <img src="public/images/icons/hamburger.png" title="Love veggie burgers" alt="menu_hamburger"><!-- Do you also love eating vegetarian food ? Hire me then, we will code and share foods! -->
     </div>
 </nav>
 

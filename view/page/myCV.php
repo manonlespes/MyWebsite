@@ -31,9 +31,9 @@
 
     <div class="title1">
         <picture>
-            <source media="(min-width:700px)" srcset="public/images/experiences_medium.gif">
-            <source media="(min-width:960px)" srcset="public/images/experiences_medium.gif">
-            <img src="public/images/experiences.gif" title="My experiences" alt="experiences">
+            <source media="(min-width:700px)" srcset="public/images/titles/experiences_medium.gif">
+            <source media="(min-width:960px)" srcset="public/images/titles/experiences_medium.gif">
+            <img src="public/images/titles/experiences.gif" title="My experiences" alt="experiences">
         </picture>
     </div>
 
@@ -61,7 +61,7 @@
 
             <div class="tag_exp">
                 <p>01/2020-12/2020</p>
-                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
+                <img src="public/images/icons/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -87,7 +87,7 @@
 
             <div class="tag_exp">
                 <p>08/2018-10/2019</p>
-                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
+                <img src="public/images/icons/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -119,7 +119,7 @@
 
             <div class="tag_exp">
                 <p>2014-2018</p>
-                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
+                <img src="public/images/icons/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -143,7 +143,7 @@
 
             <div class="tag_exp">
                 <p>08/2017-10/2017</p>
-                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
+                <img src="public/images/icons/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -167,7 +167,7 @@
 
             <div class="tag_exp">
                 <p>06/2013-09/2013</p>
-                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
+                <img src="public/images/icons/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
 
@@ -187,7 +187,7 @@
 
             <div class="tag_exp">
                 <p>06/2012-09/2012</p>
-                <img src="public/images/tag_exp.png" title="A tag for the years" alt="tag_year">
+                <img src="public/images/icons/tag_exp.png" title="A tag for the years" alt="tag_year">
             </div>
         </div>
     </div>
@@ -196,7 +196,7 @@
 <section id="backgrounds" class="backgrounds fade-in">
 
     <div class="title2">
-        <img src="public/images/title_background.png" title="My backgrounds" alt="backgrounds">
+        <img src="public/images/titles/title_background.png" title="My backgrounds" alt="backgrounds">
     </div>
 
     <div class="container_back">
@@ -205,7 +205,7 @@
             <picture class="tag_back">
                 <!-- <source media="(min-width:700px)" srcset="public/images/pen_back1_small.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
-                <img src="public/images/pen_back1_small.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/icons/pen_back1_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
             <div class="container_flex">
@@ -252,7 +252,7 @@
             <picture class="tag_back">
                 <!--  <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
-                <img src="public/images/pen_back2_small.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/icons/pen_back2_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
             <div class="container_flex">
@@ -280,7 +280,7 @@
             <picture class="tag_back">
                 <!--  <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
-                <img src="public/images/pen_back3_small.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/icons/pen_back3_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
             <div class="container_flex">
@@ -308,7 +308,7 @@
             <picture class="tag_back">
                 <!-- <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
-                <img src="public/images/pen_back4_small.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/icons/pen_back4_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
             <div class="container_flex">
@@ -336,7 +336,7 @@
             <picture class="tag_back">
                 <!-- <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
-                <img src="public/images/pen_back5_small.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/icons/pen_back5_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
             <div class="container_flex">
@@ -362,7 +362,7 @@
             <picture class="tag_back">
                 <!-- <source media="(min-width:700px)" srcset="public/images.png">
                 <source media="(min-width:960px)" srcset="public/images/.png"> -->
-                <img src="public/images/pen_back6_small.png" alt="image_ManonLespes"><!-- default -->
+                <img src="public/images/icons/pen_back6_small.png" alt="image_ManonLespes"><!-- default -->
             </picture>
 
             <div class="container_flex">
@@ -387,7 +387,7 @@
 <section id="skills" class="skills fade-in">
 
     <div class="title3">
-        <img src="public/images/title_skills.png" alt="skills">
+        <img src="public/images/titles/title_skills.png" alt="skills">
     </div>
 
     <div class="container_skills">
@@ -487,7 +487,7 @@
 
 <section id="languages" class="languages ">
     <div class="title4">
-        <img src="public/images/title_languages.png" alt="languages">
+        <img src="public/images/titles/title_languages.png" alt="languages">
     </div>
 
     <div class="container-languages">
@@ -531,7 +531,7 @@
 
 <section id="projects" class="projects fade-in">
     <div class="title5">
-        <img src="public/images/title_projects.png" title="My projects" alt="projects">
+        <img src="public/images/titles/title_projects.png" title="My projects" alt="projects">
     </div>
 
     <div class="container_pseudo_slider">
@@ -545,13 +545,12 @@
                 </g>
             </svg>
 
-            <!-- how it will look when event is happening -> check my javascript
-             <div class="txtProject1">
+             <div id="homeSafe" class="hideProject">
                 <div>First project in group</div>
-                <div class="buttonProject1">
+                <div class="buttonProject">
                     <a href="https://github.com/Lison-creator/home_safe" target="_blank" rel="noopener noreferrer">&lt; code &gt;</a>
                 </div>
-            </div> -->
+            </div>
 
             <div class="figures">
                 <picture class="figure1">
@@ -565,6 +564,13 @@
             <picture id="microphone" class="microphone">
                 <img src="public/images/microgris.png" title="Grey Microphone" alt="grey_microphone">
             </picture>
+
+            <div id="hackathon" class="hideProject">
+                <div>Second project in group</div>
+                <div class="buttonProject">
+                    <a href="https://github.com/fatimaKiki/hackathon-quizz-musical" target="_blank" rel="noopener noreferrer">&lt; code &gt;</a>
+                </div>
+            </div>
 
             <div class="figures">
                 <picture class="figure2">

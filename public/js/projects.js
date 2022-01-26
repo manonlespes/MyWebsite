@@ -1,106 +1,14 @@
 'use strict';
 
-const project1 = document.getElementById("project1");
-const project2 = document.getElementById("project2");
+/* TODO private to public HOME SAFE */
 
+const project1 = document.getElementById('project1');
+const project2 = document.getElementById('project2');
+const homeSafe = document.getElementById('homeSafe');
+const logo = document.getElementById('Groupe_10900');
+const microphone = document.getElementById('microphone');
+const hackathon = document.getElementById('hackathon');
 
-project1.addEventListener("click", function(){
-    const logo = document.getElementById("Groupe_10900");
-
-    logo.style.display = 'none';
-
-    //creation of a div with a class inside the div project1
-    const div1 = document.createElement('div');
-    div1.setAttribute("class", "txtProject");
-    project1.appendChild(div1);
-
-    //this div.txtProject1 will contain 2 divs
-    const divWord = document.createElement("div");
-    const divButton = document.createElement("div");
-
-    //additon of a class on the div that will contain a "a" element like a button
-    divButton.setAttribute("class", "buttonProject");
-
-    //addtion od a description text
-    divWord.innerHTML= "first project in group"
-
-
-    //where the two divs should be nested -> inside the div.txtProject1
-    div1.appendChild(divWord);
-    div1.appendChild(divButton);
-
-    //creation of a link -> a element
-    const a= document.createElement("a");
-    a.setAttribute("href", "https://github.com/Lison-creator/home_safe");
-    a.setAttribute("target", "blank");
-    a.setAttribute("rel", "noopener noreferrer");
-
-    //text of the element
-
-    a.innerHTML = `&lt; code &gt;`
-
-    //above element nested inside the divButton
-    divButton.appendChild(a);
-
-})
-
-project2.addEventListener("click", function(){
-
-    const microphone = document.getElementById("microphone");
-
-    microphone.style.display = 'none';
-
-    //creation of a div with a class inside the div project1
-    const div1 = document.createElement('div');
-    div1.setAttribute("class", "txtProject");
-    project2.appendChild(div1);
-
-    //this div.txtProject1 will contain 2 divs
-    const divWord = document.createElement("div");
-    const divButton = document.createElement("div");
-
-    //additon of a class on the div that will contain a "a" element like a button
-    divButton.setAttribute("class", "buttonProject");
-
-    //addtion od a description text
-    divWord.innerHTML= "second project in group"
-
-
-    //where the two divs should be nested -> inside the div.txtProject1
-    div1.appendChild(divWord);
-    div1.appendChild(divButton);
-
-    //creation of a link -> a element
-    const a= document.createElement("a");
-    a.setAttribute("href", "https://github.com/fatimaKiki/hackathon-quizz-musical");
-    a.setAttribute("target", "blank");
-    a.setAttribute("rel", "noopener noreferrer");
-
-    //text of the element
-
-    a.innerHTML = `&lt; code &gt;`
-
-    //above element nested inside the divButton
-    divButton.appendChild(a);
-})
-
-/* const buttons = document.querySelectorAll('.project');
-const overlay = document.querySelector('.overlay');
-const overlayImage = document.querySelector('.overlay__inner img');
-
-function open(e) {
-  overlay.classList.add('open');
-  const src= e.currentTarget.querySelector('img').src;
-  overlayImage.src = src;
-}
-
-function close() {
-  overlay.classList.remove('open');
-}
-
-buttons.forEach(button => button.addEventListener('click', open));
-overlay.addEventListener('click', close);
- */
 
 
 //creation of a match function
@@ -108,15 +16,13 @@ function mediaQueryLarge(x){
   if (x.matches){
     //document.body.style.backgroundColor="yellow";
 
-   project1.addEventListener("mouseover", function () {
-     const card = document.querySelectorAll(".card");
-
-    card.classList.toggle("below")
-    })
-
+   project1.addEventListener('mouseover', showHideProject);
+   project2.addEventListener('mouseover', showHideProject2);
+  
   }
   else{
-    document.body.style.backgroundColor="#F2F5F8";
+    project1.addEventListener('click', showHideProject);
+    project2.addEventListener('click', showHideProject2);
   }
 }
 
@@ -128,4 +34,22 @@ mediaQueryLarge(min960);
 
 //Add the match function as a listener for state changes:
 min960.addListener(mediaQueryLarge);
+
+/* all the functions show/hide */
+function showHideProject(){
+ 
+  logo.classList.toggle('hideProject')
+  homeSafe.classList.toggle('hideProject')
+  homeSafe.classList.toggle('txtProject')
+
+}
+
+
+function showHideProject2(){
+ 
+  microphone.classList.toggle('hideProject')
+  hackathon.classList.toggle('hideProject')
+  hackathon.classList.toggle('txtProject')
+
+}
 

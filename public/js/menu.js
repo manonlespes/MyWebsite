@@ -11,7 +11,9 @@ const menuBack = document.getElementById('menu_back');
 
 
 hamburger.addEventListener('click', openMenu);
+
 closeCross.addEventListener('click', closeMenu);
+
 const linksMenu = menu.querySelectorAll('.link_menu');
 linksMenu.forEach( (linkMenu) => {
     linkMenu.addEventListener('click', closeMenu);

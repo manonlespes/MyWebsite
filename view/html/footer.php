@@ -16,7 +16,7 @@
         <a href="https://www.linkedin.com/in/manon-lespes-bb48498b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         <a href="public/document/Manon_Lespes_CV_EN.pdf" target="_blank" download="ManonLespes_CV" onclick="reminder()"><i class="fas fa-file-pdf"></i></a><!-- TODO change the pdf updated -->
         <a href="mailto:manonlespes@hotmail.fr" target="_blank" class="contactMeSmall">
-            <img src="public/images/contact_me.png" alt="image_ManonLespes"><!-- default -->
+            <img src="public/images/icons/contact_me.png" alt="image_ManonLespes"><!-- default -->
         </a>
         <div class="red_line"></div>
     </div>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="dropLine">
-            <img src="public/images/dessin.png" alt="contact_me_drawing">
+            <img src="public/images/icons/dessin.png" alt="contact_me_drawing">
         </div>
     </div>
 

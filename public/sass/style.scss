@@ -803,14 +803,19 @@ html {
             position: relative;
         }
 
+        .hideProject {
+            display: none;
+            overflow: hidden;
+        }
+
         .project1 {
             width: 190px;
             height: 190px;
-            border: 1px solid $green;
+            border: 1px solid $skyblue;
             margin-left: 60px;
             margin-right: 30px;
             border-radius: 98% 58% 98% 65% /83% 61% 112% 92%;
-            background-color: $green;
+            background-color: $skyblue;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -866,7 +871,7 @@ html {
             @extend .project1;
             border-color: transparent;
             margin-right: 30px;
-            background-image: url(../images/Carte-postale.png);
+            background-image: url(../images/gallery/Carte_postale_1.png);
             background-size: cover;
             background-position: center;
         }
@@ -1663,13 +1668,6 @@ footer {
                 width: 261px;
                 height: 261px;
                 cursor: pointer;
-            }
-
-            .below {
-                max-height: 0;
-                overflow: hidden;
-                transition: all 0.8s;
-                background-color: black;
             }
 
             .figures {
