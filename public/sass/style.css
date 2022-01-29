@@ -2906,6 +2906,7 @@ html {
   padding-bottom: 0px;
   margin-top: 25px;
   height: 250px;
+  overflow: hidden;
 }
 
 .skills .container_skills .container_icons, .projects .container_skills .container_icons {
