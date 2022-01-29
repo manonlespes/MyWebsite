@@ -573,7 +573,7 @@
         </div>
         <div id="project2" class="card project2">
             <picture id="microphone" class="microphone">
-                <img src="public/images/microgris.png" title="Grey Microphone" alt="grey_microphone">
+                <img src="public/images/microGris.png" title="Grey Microphone" alt="grey_microphone">
             </picture>
 
             <div id="hackathon" class="hideProject">
