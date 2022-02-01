@@ -147,8 +147,8 @@ html {
 
 .navBar .list {
   font-size: 1.5em;
-  line-height: 22px;
-  padding-top: 10px;
+  line-height: 25px;
+  padding-top: 17px;
   padding-left: 60px;
 }
 
@@ -3072,7 +3072,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   line-height: 30px;
-  font-family: "MvtDirect-Thin";
+  font-family: "MvtDirect-Black";
   color: white;
   position: relative;
 }
@@ -3303,7 +3303,7 @@ footer p {
 }
 
 footer .social_icon {
-  width: 30%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

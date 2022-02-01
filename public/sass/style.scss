@@ -164,8 +164,8 @@ html {
 
     .list {
         font-size: 1.5em;
-        line-height: 22px;
-        padding-top: 10px;
+        line-height: 25px;
+        padding-top: 17px;
         padding-left: 60px;
 
         li {
@@ -723,7 +723,7 @@ html {
             align-content: center;
             align-items: center;
             line-height: 30px;
-            font-family: $MvtThin;
+            font-family: $MvtBlack;
             color: white;
             position: relative;
 
@@ -923,7 +923,7 @@ footer {
     }
 
     .social_icon {
-        width: 30%;
+        width: 65%;
         display: flex;
         justify-content: space-around;
         align-content: center;
