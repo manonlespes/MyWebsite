@@ -60,7 +60,7 @@ function handleComplete(evt,comp) {
     <div class="animate">
 
         <div class="desc">
-            <p class="text">The colouring is a original idea from our Adobe Animate course instructor. After the first exercise, I decided to take this project a step further. All the elements were first drawn on Illustrator and the colouring actions were done via Animate using some Js.</p>
+            <p class="text">The colouring is an original idea from our Adobe Animate course instructor. After the first exercise, I decided to take this project a step further. All the elements were first drawn on Illustrator and the colouring actions were done via Animate using some Js.</p>
             <p class="text">Altough the animation is responsive, it's best to try it on a desktop computer. Take the brush in the lower left corner and choose the colours you want to colour Chatshimi. Use the eraser above the painting box should you wish to start over.</p>
         </div>
 
