@@ -6,9 +6,7 @@
     </div>
 
     <div class="copyright">
-        <p> Copyright &copy; <script>
-                document.write(new Date().getFullYear())
-            </script> Made with &hearts; by Manon Lespes</p>
+        <p> Copyright &copy; 2022 - Made with &hearts; by Manon Lespes</p>
     </div>
 
     <div class="social_icon">
